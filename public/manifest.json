@@ -1,0 +1,17 @@
+{
+    "name": "Respira Saúde",
+    "short_name": "Respira Saúde",
+    "start_url": "/index.php",
+    "background_color": "#6777ef",
+    "description": "app respira saúde",
+    "display": "standalone",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "/img/respirasaude512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
