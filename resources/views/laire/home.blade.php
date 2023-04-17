@@ -117,8 +117,8 @@
 {{--  --}}
 @php
     // CONEXÃO COM BANCO
-    $info_doenca = Illuminate\Support\Facades\DB::select("SELECT * FROM pesquisadors");
-    $conta_pesqs = $info_doenca;
+    // $info_doenca = Illuminate\Support\Facades\DB::select("SELECT * FROM pesquisadors");
+    // $conta_pesqs = $info_doenca;
 @endphp
 {{--  --}}
 <section id="pesquisadores_bloco" class="w-[100%] inline-block">
