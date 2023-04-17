@@ -150,7 +150,7 @@
             {{-- SUBSTITUIR POR CADA UM DOS PESQUISADORES --}}
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="amanda" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="amanda" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -160,7 +160,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="karla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="karla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -170,7 +170,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="ivan" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="ivan" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -180,7 +180,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="joubert" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div id="joubert" class=" w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -190,7 +190,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="valbny" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="valbny" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -200,7 +200,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="gabriela" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="gabriela" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -210,7 +210,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -220,7 +220,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="sabrina" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="sabrina" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -230,7 +230,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="luana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="luana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -240,7 +240,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="thayla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="thayla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -250,7 +250,7 @@
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="juliana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+                <div   id="juliana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
