@@ -150,84 +150,115 @@
             {{-- SUBSTITUIR POR CADA UM DOS PESQUISADORES --}}
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
+                <div   id="amanda" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
                 {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
-                {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
-            </div>
-            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
-                {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
-                {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
+                <p class="text-[16px] font-bold text-center">Amanda Quirino</p>
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
+                <div   id="karla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
                 {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
-                {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
-            </div>
-            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
-                {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
-                {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
+                <p class="text-[16px] font-bold text-center">Karla Morganna</p>
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
+                <div   id="ivan" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
                 {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
-                {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
-            </div>
-            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
-                {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
-                {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
+                <p class="text-[16px] font-bold text-center">Ivan Daniel</p>
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
+                <div   id="joubert" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
                 {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
-                {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
-            </div>
-            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
-                {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
-                {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
+                <p class="text-[16px] font-bold text-center">Joubert Vitor </p>
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
+                <div   id="valbny" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
                 {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
+                <p class="text-[16px] font-bold text-center">Válbny Morais</p>
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]"></div>
+                <div   id="gabriela" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
                 {{--  --}}
-                <p class="text-[16px] font-bold text-center">Nome do Pesquisador</p>
+                <p class="text-[16px] font-bold text-center">Gabriela Chaves</p>
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
+                {{--  --}}
+                <div   id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
+                {{--  --}}
+                <p class="text-[16px] font-bold text-center">Vitória Jéssica</p>
+                {{--  --}}
+                <p class="text-[13px] text-center">UFRN</p>
+            </div>
+            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
+                {{--  --}}
+                <div   id="sabrina" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
+                {{--  --}}
+                <p class="text-[16px] font-bold text-center">Sabrina</p>
+                {{--  --}}
+                <p class="text-[13px] text-center">UFRN</p>
+            </div>
+            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
+                {{--  --}}
+                <div   id="luana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
+                {{--  --}}
+                <p class="text-[16px] font-bold text-center">Luana Moura</p>
+                {{--  --}}
+                <p class="text-[13px] text-center">UFRN</p>
+            </div>
+            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
+                {{--  --}}
+                <div   id="thayla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
+                {{--  --}}
+                <p class="text-[16px] font-bold text-center">Renata Tomaz</p>
+                {{--  --}}
+                <p class="text-[13px] text-center">UFRN</p>
+            </div>
+            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
+                {{--  --}}
+                <div   id="juliana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px]">
+
+                </div>
+                {{--  --}}
+                <p class="text-[16px] font-bold text-center">Juliana Souza</p>
+                {{--  --}}
+                <p class="text-[13px] text-center">UFRN</p>
+            </div>
+
 
 
         </div>

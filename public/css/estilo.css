@@ -503,29 +503,30 @@ button#bt2-1:hover{
 #pesquisadores_bloco{
     margin-top: 40vh;
 }
-#sabrina{
-    background-color: #00FF8C;
-    background-image: url('/img/Sabrina.jpeg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 #amanda{
     background-color: #00FF8C;
     background-image: url('/img/Amanda Quirino.jpg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+#karla{
+    background-color: #00FF8C;
+    background-image: url('/img/Karla Morganna.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
 
 }
-#renata{
+#ivan{
     background-color: #00FF8C;
-    background-image: url('/img/Renata Tomaz.jpg');
+    background-image: url('/img/Ivan Daniel.jpg');
     background-size:cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 #valbny{
     background-color: #00FF8C;
-    background-image: url('/img/VálbnyMorais.jpg');
+    background-image: url('/img/Válbny Morais.jpeg');
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -550,6 +551,50 @@ button#bt2-1:hover{
 
 
 }
+#sabrina{
+    background-color: #00FF8C;
+    background-image: url('/img/Sabrina.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+
+
+}
+#luana{
+    background-color: #00FF8C;
+    background-image: url('/img/Luana Moura.JPG');
+    background-size:cover;
+    background-repeat: no-repeat;
+
+
+}
+#renata{
+    background-color: #00FF8C;
+    background-image: url('/img/Renata Tomaz.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+
+
+}
+#thayla{
+    background-color: #00FF8C;
+    background-image: url('/img/Thayla Santino.jpg');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+#juliana{
+    background-color: #00FF8C;
+    background-image: url('/img/Juliana Souza.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+
+}
+
+
 
 /* MAPA */
 #mapa{
