@@ -14,26 +14,26 @@
     }
 
     // RESGATE DE RESUMO
-    $resumo    = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 2 AND bloco = 1");
-    $count1    = count($resumo);
+    // $resumo    = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 2 AND bloco = 1");
+    // $count1    = count($resumo);
 
-    @$texto_resumo = $resumo[0]->texto;
-
-    // RESGATE DE OBJETIVO
-    $objetivo  = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 2 AND bloco = 3");
-    $count2    = count($objetivo);
-
-    @$texto_objetivo = $objetivo[0]->texto;
+    // @$texto_resumo = $resumo[0]->texto;
 
     // RESGATE DE OBJETIVO
-    $resultado = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 2 AND bloco = 5");
-    $count3    = count($resultado);
+    // $objetivo  = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 2 AND bloco = 3");
+    // $count2    = count($objetivo);
 
-    @$texto_resultado1 = $resultado[0]->texto;
-    @$texto_resultado2 = $resultado[0]->texto2;
-    @$texto_resultado3 = $resultado[0]->texto3;
-    @$texto_resultado4 = $resultado[0]->texto4;
-    @$texto_resultado5 = $resultado[0]->texto5;
+    // @$texto_objetivo = $objetivo[0]->texto;
+
+    // RESGATE DE OBJETIVO
+    // $resultado = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 2 AND bloco = 5");
+    // $count3    = count($resultado);
+
+    // @$texto_resultado1 = $resultado[0]->texto;
+    // @$texto_resultado2 = $resultado[0]->texto2;
+    // @$texto_resultado3 = $resultado[0]->texto3;
+    // @$texto_resultado4 = $resultado[0]->texto4;
+    // @$texto_resultado5 = $resultado[0]->texto5;
 
 @endphp
 {{--  --}}
@@ -71,9 +71,9 @@
             {{--  --}}
             <ul class="float-right">
                 {{--  --}}
-                <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise">Efeitos da atenção domiciliar para adultos...</a></li>
+                {{-- <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise">Efeitos da atenção domiciliar para adultos...</a></li> --}}
                 {{-- <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população">Soluções para aumentar a aceitabilidade...</a></li> --}}
-                <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Desenvolvimento e validação de um sistema eletrônico para Avaliação, Suporte e Monitoramento da Asma (e-ASMA)">Desenvolvimento e validação de um sistema...</a></li>
+                {{-- <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Desenvolvimento e validação de um sistema eletrônico para Avaliação, Suporte e Monitoramento da Asma (e-ASMA)">Desenvolvimento e validação de um sistema...</a></li> --}}
             </ul>
             {{--  --}}
             <p id="text_projeto2_0" class="text-[30px] mt-[50px] leading-[30px] float-right text-right w-[500px] font-bold text-[#080E45]">Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população.</p>

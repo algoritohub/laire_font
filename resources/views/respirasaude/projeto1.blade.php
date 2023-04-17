@@ -15,14 +15,14 @@
     }
 
     // RESGATE DE PUBLICAÇÃO
-    $resumo   = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 1 AND bloco = 1");
-    $count1   = count($resumo);
+    // $resumo   = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 1 AND bloco = 1");
+    // $count1   = count($resumo);
 
-    @$texto_resumo_eng = $resumo[0]->texto_eng;
-    @$texto_resumo     = $resumo[0]->texto;
+    // @$texto_resumo_eng = $resumo[0]->texto_eng;
+    // @$texto_resumo     = $resumo[0]->texto;
 
     // RESGATE DE SESSÃO DE IDIOMA
-    @$session_idioma   = session('idioma');
+    // @$session_idioma   = session('idioma');
 
 @endphp
 
@@ -67,22 +67,23 @@
             <ul class="float-right">
                 {{--  --}}
                 {{-- <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise">Efeitos da atenção domiciliar para adultos...</a></li> --}}
-                <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população">Soluções para aumentar a aceitabilidade...</a></li>
-                <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Desenvolvimento e validação de um sistema eletrônico para Avaliação, Suporte e Monitoramento da Asma (e-ASMA)">Desenvolvimento e validação de um sistema...</a></li>
+                {{-- <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população">Soluções para aumentar a aceitabilidade...</a></li> --}}
+                {{-- <li class="ml-[25px] inline-block"><a href="#" class="text-[#212121] font-bold text-[14px]" title="Desenvolvimento e validação de um sistema eletrônico para Avaliação, Suporte e Monitoramento da Asma (e-ASMA)">Desenvolvimento e validação de um sistema...</a></li> --}}
             </ul>
             {{--  --}}
             <p id="text_projeto_0" class="text-[30px] leading-[30px] float-right mt-[60px] text-right w-[500px] font-bold text-[#080E45]">Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise</p>
             {{--  --}}
-            @if ($count1 > 0)
+            <p id="text_projeto_1" class="text-right mt-[40px] float-right text-justify w-[550px] text-[#080E45] text-[{{ $numb_font }}px]">TEXTO AQUI!</p>
+            {{-- @if ($count1 > 0) --}}
                 {{--  --}}
-                @if (isset($session_idioma) AND !empty($session_idioma))
+                {{-- @if (isset($session_idioma) AND !empty($session_idioma)) --}}
                     {{-- TEXTO INGLÊS --}}
-                    <p id="text_projeto_1" class="text-right mt-[40px] float-right text-justify w-[550px] text-[#080E45] text-[{{ $numb_font }}px]">{{ $texto_resumo_eng }}</p>
-                @else
+                    {{-- <p id="text_projeto_1" class="text-right mt-[40px] float-right text-justify w-[550px] text-[#080E45] text-[{{ $numb_font }}px]">{{ $texto_resumo_eng }}</p> --}}
+                {{-- @else --}}
                     {{-- TEXTO PORTUGUÊS --}}
-                    <p id="text_projeto_1" class="text-right mt-[40px] float-right text-justify w-[550px] text-[#080E45] text-[{{ $numb_font }}px]">{{ $texto_resumo }}</p>
-                @endif
-            @endif
+                    {{-- <p id="text_projeto_1" class="text-right mt-[40px] float-right text-justify w-[550px] text-[#080E45] text-[{{ $numb_font }}px]">{{ $texto_resumo }}</p> --}}
+                {{-- @endif --}}
+            {{-- @endif --}}
         </div>
     </div>
 </section>
@@ -109,25 +110,25 @@
 {{--  --}}
 @php
     // OBJETIVO DE PUBLICAÇÃO
-    $objetivo_cnt = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 1 AND bloco = 3");
-    $count2       = count($objetivo_cnt);
+    // $objetivo_cnt = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE pagina = 1 AND bloco = 3");
+    // $count2       = count($objetivo_cnt);
 
-    foreach ($objetivo_cnt as $objetivo) {}
+    // foreach ($objetivo_cnt as $objetivo) {}
 
-    @$texto_objetivo1      = $objetivo->texto;
-    @$texto_objetivo2      = $objetivo->texto2;
-    @$texto_objetivo3      = $objetivo->texto3;
-    @$texto_objetivo4      = $objetivo->texto4;
-    @$texto_objetivo5      = $objetivo->texto5;
+    // @$texto_objetivo1      = $objetivo->texto;
+    // @$texto_objetivo2      = $objetivo->texto2;
+    // @$texto_objetivo3      = $objetivo->texto3;
+    // @$texto_objetivo4      = $objetivo->texto4;
+    // @$texto_objetivo5      = $objetivo->texto5;
 
-    @$texto_objetivo_eng_1 = $objetivo->texto_eng;
-    @$texto_objetivo_eng_2 = $objetivo->texto2_eng;
-    @$texto_objetivo_eng_3 = $objetivo->texto3_eng;
-    @$texto_objetivo_eng_4 = $objetivo->texto4_eng;
-    @$texto_objetivo_eng_5 = $objetivo->texto5_eng;
+    // @$texto_objetivo_eng_1 = $objetivo->texto_eng;
+    // @$texto_objetivo_eng_2 = $objetivo->texto2_eng;
+    // @$texto_objetivo_eng_3 = $objetivo->texto3_eng;
+    // @$texto_objetivo_eng_4 = $objetivo->texto4_eng;
+    // @$texto_objetivo_eng_5 = $objetivo->texto5_eng;
 
     // RESGATE DE SESSÃO DE IDIOMA
-    @$session_idioma = session('idioma');
+    // @$session_idioma = session('idioma');
 
 @endphp
 {{-- BLOCO DE INFORMATIVO --}}
