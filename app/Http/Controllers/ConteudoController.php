@@ -146,4 +146,22 @@ class ConteudoController extends Controller
 
         return view('respirasaude.doencas', compact('doenca', 'tipo'));
     }
+
+    // PESQUISADORES PROJETO 1
+    public function PesquisadoresProjeto1($tipo, $nome)
+    {
+        $pesquisador = $nome;
+        $categoria   = $tipo;
+
+        return view('respirasaude.projeto1', ['pesquisador' => $pesquisador, 'categoria' => $categoria]);
+    }
+
+    // PESQUISADORES PROJETO 1
+    public function PesquisadoresProjeto2($tipo, $nome)
+    {
+        $pesquisador = $nome;
+        $categoria   = $tipo;
+
+        return view('respirasaude.projeto2', ['pesquisador' => $pesquisador, 'categoria' => $categoria]);
+    }
 }

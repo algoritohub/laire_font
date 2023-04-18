@@ -44,15 +44,24 @@ Route::get('/respira-saude/projeto/1', function () {
     return view('respirasaude.projeto1');
 })->name('projeto1');
 
+// PÁGINA DE DOENÇAS
+Route::get('/respira-saude/projeto/1/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto1"])->name('pesquisadores_projeto_1');
+
+
 // PROJETO2
 Route::get('/respira-saude/projeto/2', function () {
     return view('respirasaude.projeto2');
 })->name('projeto2');
 
+// PÁGINA DE DOENÇAS
+Route::get('/respira-saude/projeto/2/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto2"])->name('pesquisadores_projeto_2');
+
+
 // PROJETO3
 Route::get('/respira-saude/projeto/3', function () {
     return view('respirasaude.projeto3');
 })->name('projeto3');
+
 
 // PÁGINA DE DOENÇAS
 Route::get('/respira-saude/doencas/{tipo}/{doenca}', [ConteudoController::class, "PagDoencas"])->name('pag_doencas');
