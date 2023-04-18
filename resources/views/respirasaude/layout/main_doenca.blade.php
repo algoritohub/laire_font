@@ -35,13 +35,13 @@
     }
 
     // RESGATE DE DOENÇAS CRÔNICAS
-    $doencas_info  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 2");
+    // $doencas_info  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 2");
 
     // RESGATE DE DOENÇAS CRÔNICAS
-    $doencas_agds  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 1");
+    // $doencas_agds  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 1");
 
     // RESGATE DE INFOMAÇÃO DA DOENÇA
-    $info_doenca   = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE id = '$doenca'");
+    // $info_doenca   = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE id = '$doenca'");
 
 @endphp
 {{--  --}}
@@ -158,95 +158,86 @@
                         <nav id="menu_prime" class="mt-[0px]">
                             <ul class="menu">
                                 {{--  --}}
-                                @if ($info_doenca[0]->tipo == 2)
+                                @if (isset($tipo) AND !empty($tipo) AND $tipo == 'cronicas')
                                 {{--  --}}
                                 <li><b><a href="#">Doenças respiratórias crônicas</a></b>
                                     <ul>
                                         <li class="ma"><a href="#">Definição</a>
                                             <ul class="mx">
-                                                @foreach ($doencas_info as $doenca_definicao)
+                                                {{-- @foreach ($doencas_info as $doenca_definicao) --}}
                                                     {{--  --}}
-                                                    @if (isset($doenca_definicao->definicao) AND !empty($doenca_definicao->definicao))
+                                                    {{-- @if (isset($doenca_definicao->definicao) AND !empty($doenca_definicao->definicao)) --}}
                                                     {{--  --}}
-                                                    <li><a href="{{ route('doenca_cronica', ['id' => $doenca_definicao->id]) }}">{{ $doenca_definicao->nome }}</a></li>
-                                                    @endif
-                                                @endforeach
-                                                {{--
-                                                Asma
-                                                Fibrose Cística
-                                                DPOC
-                                                Bronquiectasia
-                                                Fibrose pulmonar
-                                                Sinusite
-                                                Hipertensão pulmonar
-                                                Síndrome pós-COVID-19
-                                                --}}
+                                                    {{-- <li><a href="{{ route('doenca_cronica', ['id' => $doenca_definicao->id]) }}">{{ $doenca_definicao->nome }}</a></li> --}}
+                                                    {{-- @endif --}}
+                                                {{-- @endforeach --}}
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}">Asma</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}">Fibrose Cística</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}">DPOC</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}">Bronquiectasia</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}">Fibrose pulmonar</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}">Sinusite</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}">Hipertensão pulmonar</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'síndrome_pos_covid_19']) }}">Síndrome pós-COVID-19</a></li>
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Como controlar os sintomas</a>
                                             <ul class="mx">
-                                                @foreach ($doencas_info as $doenca_controle)
+                                                {{-- @foreach ($doencas_info as $doenca_controle) --}}
                                                     {{--  --}}
-                                                    @if (isset($doenca_controle->controle) AND !empty($doenca_controle->controle))
+                                                    {{-- @if (isset($doenca_controle->controle) AND !empty($doenca_controle->controle)) --}}
                                                     {{--  --}}
-                                                    <li><a href="{{ route('doenca_cronica', ['id' => $doenca_controle->id]) }}#controle">{{ $doenca_controle->nome }}</a></li>
-                                                    @endif
-                                                @endforeach
-                                                {{--
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
-                                                --}}
+                                                    {{-- <li><a href="{{ route('doenca_cronica', ['id' => $doenca_controle->id]) }}#controle">{{ $doenca_controle->nome }}</a></li> --}}
+                                                    {{-- @endif --}}
+                                                {{-- @endforeach --}}
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}#sintomas">Fibrose Cística</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}#sintomas">DPOC</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}#sintomas">Bronquiectasia</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}#sintomas">Fibrose pulmonar</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}#sintomas">Sinusite</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}#sintomas">Hipertensão pulmonar</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}#sintomas">Síndrome pós-COVID-19</a></li>
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Tratamento</a>
                                             <ul class="mx">
-                                                @foreach ($doencas_info as $doenca_tratamento)
+                                                {{-- @foreach ($doencas_info as $doenca_tratamento) --}}
                                                     {{--  --}}
-                                                    @if (isset($doenca_tratamento->tratamento) AND !empty($doenca_tratamento->tratamento))
+                                                    {{-- @if (isset($doenca_tratamento->tratamento) AND !empty($doenca_tratamento->tratamento)) --}}
                                                     {{--  --}}
-                                                    <li><a href="{{ route('doenca_cronica', ['id' => $doenca_tratamento->id]) }}#tratamento">{{ $doenca_tratamento->nome }}</a></li>
-                                                    @endif
-                                                @endforeach
-                                                {{--
-                                                <li><a href="#">Asma</a></li>
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
-                                                --}}
+                                                    {{-- <li><a href="{{ route('doenca_cronica', ['id' => $doenca_tratamento->id]) }}#tratamento">{{ $doenca_tratamento->nome }}</a></li> --}}
+                                                    {{-- @endif --}}
+                                                {{-- @endforeach --}}
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}#tratamento">Fibrose Cística</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}#tratamento">DPOC</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}#tratamento">Bronquiectasia</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}#tratamento">Fibrose pulmonar</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}#tratamento">Sinusite</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}#tratamento">Hipertensão pulmonar</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}#tratamento">Síndrome pós-COVID-19</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                @else
+                                @elseif(isset($tipo) AND !empty($tipo) AND $tipo == 'agudas')
                                 <li><b><a href="#">Doenças respiratórias agudas</a></b>
                                     <ul>
                                         <li class="ma"><a href="#">Conheça as principais</a>
                                             <ul class="mx">
-                                                @foreach ($doencas_agds as $doenca_agds_definicao)
+                                                {{-- @foreach ($doencas_agds as $doenca_agds_definicao) --}}
                                                     {{--  --}}
-                                                    @if (isset($doenca_agds_definicao->definicao) AND !empty($doenca_agds_definicao->definicao))
+                                                    {{-- @if (isset($doenca_agds_definicao->definicao) AND !empty($doenca_agds_definicao->definicao)) --}}
                                                     {{--  --}}
-                                                    <li><a href="{{ route('doenca_aguda', ['id' => $doenca_agds_definicao->id]) }}">{{ $doenca_agds_definicao->nome }}</a></li>
-                                                    @endif
-                                                @endforeach
-                                                {{-- 
-                                                H1N1
-                                                COVID-19
-                                                Tuberculose
-                                                Influenza
-                                                Pneumonia
-                                                Bronquiolite
-                                                Coqueluxe<
-                                                --}}
+                                                    {{-- <li><a href="{{ route('doenca_aguda', ['id' => $doenca_agds_definicao->id]) }}">{{ $doenca_agds_definicao->nome }}</a></li> --}}
+                                                    {{-- @endif --}}
+                                                {{-- @endforeach --}}
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'h1n1']) }}">H1N1</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'covid_19']) }}">COVID-19</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'tuberculose']) }}">Tuberculose</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'influenza']) }}">Influenza</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></li>
+                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></li>
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Como prevenir?</a>
@@ -260,18 +251,18 @@
                                         <li><a href="#">Barreiras para prevenção</a></li>
                                         <li><a href="#">Facilitadores para prevenção</a></li>
                                     </ul>
-                                </li>
+                                </li> 
                                 @endif
                                 {{--  --}}
                                 <li><b><a href="#text_missao_RS">Definição</a></b></li>
                                 {{--  --}}
-                                @if(isset($info_doenca[0]->controle) AND !empty($info_doenca[0]->controle))
+                                {{-- @if(isset($info_doenca[0]->controle) AND !empty($info_doenca[0]->controle)) --}}
                                 <li><b><a href="#text_missao_RS">Como controlar os sintómas</a></b></li>
-                                @endif
+                                {{-- @endif --}}
                                 {{--  --}}
-                                @if(isset($info_doenca[0]->tratamento) AND !empty($info_doenca[0]->tratamento))
+                                {{-- @if(isset($info_doenca[0]->tratamento) AND !empty($info_doenca[0]->tratamento)) --}}
                                 <li><b><a href="#text_missao_RS">Tratamento</a></b></li>
-                                @endif
+                                {{-- @endif --}}
                                 {{--  --}}
                                 <li><b><a href="#projeto_extensao">Publicações</a></b></li>
                             </ul>
