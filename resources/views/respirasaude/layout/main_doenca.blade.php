@@ -219,7 +219,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                @elseif(isset($tipo) AND !empty($tipo) AND $tipo == 'cronicas')
+                                @elseif(isset($tipo) AND !empty($tipo) AND $tipo == 'agudas')
                                 <li><b><a href="#">Doenças respiratórias agudas</a></b>
                                     <ul>
                                         <li class="ma"><a href="#">Conheça as principais</a>
@@ -238,9 +238,9 @@
                                                 <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></li>
                                                 <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></li>
                                                 <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></li>
-                                            {{-- </ul>
+                                            </ul>
                                         </li>
-                                        {{-- <li class="ma"><a href="#">Como prevenir?</a> --}}
+                                        <li class="ma"><a href="#">Como prevenir?</a>
                                             <ul class="mx">
                                                 <li><a href="#">Vacinas</a></li>
                                                 <li><a href="#">Higienização das mãos</a></li>
