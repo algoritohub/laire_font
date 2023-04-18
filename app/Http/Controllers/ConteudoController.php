@@ -137,4 +137,13 @@ class ConteudoController extends Controller
     {
         return view('respirasaude.doencas', ['doenca' => $id]);
     }
+
+    // PÁGINA DE DOENÇA
+    public function PagDoencas($tipo, $doenca)
+    {
+        $doenca = $doenca;
+        $tipo   = $tipo;
+
+        return view('respirasaude.doencas', compact('doenca', 'tipo'));
+    }
 }

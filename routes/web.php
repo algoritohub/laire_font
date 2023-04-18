@@ -54,6 +54,9 @@ Route::get('/respira-saude/projeto/3', function () {
     return view('respirasaude.projeto3');
 })->name('projeto3');
 
+// PÁGINA DE DOENÇAS
+Route::get('/respira-saude/doencas/{tipo}/{doenca}', [ConteudoController::class, "PagDoencas"])->name('pag_doencas');
+
 // DOENÇAS CRÔNICAS
 Route::get('/respira-saude/doenca/cronica/{id}', [ConteudoController::class, "DoencaCronica"])->name('doenca_cronica');
 
