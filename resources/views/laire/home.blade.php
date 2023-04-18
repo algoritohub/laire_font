@@ -2,8 +2,8 @@
 @section('titulo', 'RespiraSaude | Home')
 @section('conteudo')
 
-{{-- FONT --}}
 @php
+    // FUNÇÃO FONT
     $session_font = session('font');
     if (isset($session_font) AND !empty($session_font)) {
         $numb_font = session('font');
@@ -11,6 +11,9 @@
     else{
         $numb_font = 15;
     }
+
+    // RECUPERAR INFORMAÇÕES DO PESQUISADOR
+    @$info_pesquisador = $_GET['info'];
 @endphp
 {{--  --}}
 <section id="fundo_lai" class="w-[100%] bg-[#080E45] mt-[80px] inline-block">
@@ -124,7 +127,7 @@
 <section id="pesquisadores_bloco" class="w-[100%] inline-block">
     {{--  --}}
     <center>
-        <p id="pesquisadores." class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Equipe</p>
+        <p id="pesquisadores" class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Equipe</p>
     </center>
     {{--  --}}
     <div id="sub_bloco_pesq" class="w-[90%] mx-[5%] mt-[50px] inline-block">
@@ -148,9 +151,10 @@
             {{-- <p class="text-center text-[13px]">Sem registros de pesquisadores!</p> --}}
             {{-- @endif --}}
             {{-- SUBSTITUIR POR CADA UM DOS PESQUISADORES --}}
+            <a href="?info=amanda#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="amanda" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="amanda" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -158,9 +162,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=karla#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="karla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="karla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -168,9 +175,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=ivan#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="ivan" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="ivan" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -178,6 +188,9 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=joubert#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
                 <div id="joubert" class=" w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
@@ -188,9 +201,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=valbny#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="valbny" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="valbny" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -198,9 +214,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=gabriela#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="gabriela" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="gabriela" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -208,9 +227,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=vitoria#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -218,9 +240,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=sabrina#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="sabrina" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="sabrina" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -228,9 +253,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=luana#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="luana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="luana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -238,9 +266,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=thayla#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="thayla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="thayla" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -248,9 +279,12 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
+            </a>
+            {{--  --}}
+            <a href="?info=juliana#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left box_pesq">
                 {{--  --}}
-                <div   id="juliana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+                <div id="juliana" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
 
                 </div>
                 {{--  --}}
@@ -258,11 +292,142 @@
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
-
-
-
+            </a>
         </div>
     </div>
+    {{-- MODAL INFO PESQUISADORES --}}
+    @if (isset($info_pesquisador) AND !empty($info_pesquisador))
+    {{--  --}}
+    <div class="modal_info_pesquisadores">
+        {{--  --}}
+        <div class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
+            {{-- Amanda Quirino --}}
+            @if ($info_pesquisador == "amanda")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[80%] inline-block float-left">
+                        {{--  --}}
+                        <p class="font-bold text-[20px]">Amanda Quirino</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[20%] inline-block float-left">
+                        {{--  --}}
+                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div style="background-image: url('/img/Amanda Quirino.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    {{--  --}}
+                    <p class="leading-[17px] text-[14px] text-center mt-[30px]"></p>
+                </div>
+            @endif
+            {{-- Karla Morganna --}}
+            @if ($info_pesquisador == "karla")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[80%] inline-block float-left">
+                        {{--  --}}
+                        <p class="font-bold text-[20px]">Karla Morganna</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[20%] inline-block float-left">
+                        {{--  --}}
+                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    {{--  --}}
+                    <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte. Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória, desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em saúde.
+                    </p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <center>
+                    {{--  --}}
+                    <ul class="mt-[20px]">
+                        <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                        <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                    </ul>
+                    </center>
+                </div>
+            @endif
+            {{-- Ivan Daniel --}}
+            @if ($info_pesquisador == "ivan")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[80%] inline-block float-left">
+                        {{--  --}}
+                        <p class="font-bold text-[20px]">Ivan Daniel</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[20%] inline-block float-left">
+                        {{--  --}}
+                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div style="background-image: url('/img/Ivan Daniel.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    {{--  --}}
+                    <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte (1994-1999), Especialização em Fisioterapia Respiratória pela Universidade Federal de São Paulo (2000-2001), Especialização em Fisiologia do Exercício pela Universidade Federal de São Paulo (2003), Especialista em Terapia Intensiva Adulto pela ASSOBRAFIR/COFFITO (2015), Mestrado em Ciências pelo Programa da Cardiologia da Universidade Federal de São Paulo (2008-2009) e Doutorado em Fisioterapia pelo Programa de Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte (2014-2017). Foi Professor da Especialização em Fisioterapia Respiratória da Universidade Federal de São Paulo (2001-2008), Professor Assistente do Centro Universitário São Camilo (2003-2008) e Professor Assistente do Centro Universitário de João Pessoa (2008). Atualmente é Professor Adjunto do Departamento de Fisioterapia da Universidade Federal do Rio Grande do Norte. Tem experiência na área de Fisioterapia, com ênfase em Fisioterapia Cardiorrespiratória, atuando principalmente nos seguintes temas: treinamento físico, capacidade funcional, qualidade de vida e suporte ventilatório.
+                    </p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <center>
+                    {{--  --}}
+                    <ul class="mt-[20px]">
+                        <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                        <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                    </ul>
+                    </center>
+                </div>
+            @endif
+            {{-- NOME DO PESQUISADOR --}}
+            @if ($info_pesquisador == "ID DO PESQUISADOR AQUI")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[80%] inline-block float-left">
+                        {{--  --}}
+                        <p class="font-bold text-[20px]">NOME DO PESQUISADOR</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[20%] inline-block float-left">
+                        {{--  --}}
+                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div style="background-image: url('/img/IMAGEMPESQUISADOR.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    {{--  --}}
+                    <p class="leading-[17px] text-[14px] text-justify mt-[30px]">TEXTO DESCRIÇÃO</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <center>
+                    {{--  --}}
+                    <ul class="mt-[20px]">
+                        <li class="mr-[20px] inline-block"><a href="LINKLATTES"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                        <li class="mr-[20px] inline-block"><a href="LINKORCID"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                    </ul>
+                    </center>
+                </div>
+            @endif
+            {{-- PRÓXIMO PESQUISADOR PESQUISADOR --}}
+        </div>
+    </div>
+    @endif
 </section>
 <!--patrocinadores -->
 <section id="patrocinadores" class="w-[100%] h-[600px] inline-block bg-[#ffffff]">
@@ -482,7 +647,7 @@
     </div>
 </section>
 {{--  --}}
-<div style="display: show;" class="modal_laire">
+<div style="display: none;" class="modal_laire">
     {{--  --}}
     <div class="w-[1000px] h-[500px] bg-[#ffffff] mx-auto mt-[10%] shadow-lg">
         {{--  --}}
