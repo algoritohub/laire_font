@@ -9,7 +9,8 @@
     }
 @endphp
 
-<div class="component">
+
+<div  class="component">
     {{-- SECTION --}}
     <section id="carrossel_prox1" class="w-[100%] mt-[100px] inline-block bg-[#5CD1FF]">
         {{--  --}}

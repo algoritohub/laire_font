@@ -826,6 +826,7 @@ button#bt2-1:hover{
 #fundo_lai{
     background: url('/img/arrival.jpg');
     background-size: 100%;
+
 }
 
 .tox{
@@ -1224,6 +1225,8 @@ button#bt2-1:hover{
         display: inline-block;
         background-image:linear-gradient(#B41102,#F81A07,#6C0700)
     }
+    
+
 
     /* CARROSSEL */
     #carrossel_pro1{

@@ -28,12 +28,14 @@
         <div id="box_laire_b" class="w-[40%] float-left inline-block h-[600px] pl-[60px]">
             {{--  --}}
             <p id="sub_text_box_a" class="text-[#ffffff] text-[20px] pl-[20px] border-l-[2px] text-justify border-l-[#ffffff] mt-[350px]">Atividades de ensino, pesquisa e extensão relacionadas às doenças respiratórias agudas e crônicas que comprometem a qualidade de vida de crianças, adolescentes e adultos</p>
+
+            <!-- não estou conseguindo encaixar este texto no resposivo, mesmo ajusatando ele continua sumindo metade do texto, a partir da palavara qualidade-->
         </div>
     </div>
 </section>
 
 {{-- CAIXA DE NOTÍCIAS --}}
-<div class="slider">
+<div  class="slider">
     {{--  --}}
     <div id="noticias_slide" class="slides">
         <input type="radio" name="radio-btn" id="radio1">
