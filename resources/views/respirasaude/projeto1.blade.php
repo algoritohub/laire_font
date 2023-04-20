@@ -99,10 +99,9 @@
         {{--  --}}
         <p class="text-[25px] font-bold mb-[40px] mt-[180px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
 
-        <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <b class="cursor-pointer" id="DPOC">Doença Pulmonar Obstrutiva Crônica (DPOC)</b> <div style="display: none;" id="blue" class="w-[400px] h-[100px] absolute bg-[blue]"></div> , a <b class="cursor-pointer" id="asma">asma</b> <div style="display: none;" id="yellow" class="w-[400px] h-[100px] absolute bg-[yellow]"></div>, a <b class="cursor-pointer" id="fibrose">fibrose cística</b> <div style="display: none;" id="purple" class="w-[400px] h-[100px] absolute bg-[purple]"></div>, a <b>bronquiectasia</b> e a <b>fibrose pulmonar</b>.</p>
+        <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <b class="cursor-pointer">Doença Pulmonar Obstrutiva Crônica (DPOC)</b>, a <b class="cursor-pointer">asma</b>, a <b class="cursor-pointer">fibrose cística</b>, a <b>bronquiectasia</b> e a <b>fibrose pulmonar</b>.</p>
         <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Aqui no <b>RespiraSaúde</b> vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS). Nesta pesquisa nós realizamos uma <b>revisão</b>sistemática</b> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas. <b>Isso mesmo, nós comparamos os resultados do tratamento recebido em casa com o recebido no hospital!</b></p>
         {{-- <button class="px-[30px] mt-[20px] h-[40px] bg-[#080E45] text-[#00FF8C]">More information</button> --}}
-        <div style="display: none;" id="ask1" class="w-[300px] h-[200px] bg-[blue]"></div>
     </div>
 </section>
 {{-- OBJETIVO --}}

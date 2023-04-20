@@ -841,7 +841,7 @@
         <p  class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Eventos</p>
     </center>
     {{--  --}}
-    <div class="w-[94%] mx-[3%] my-[10px] inline-block">
+    <div style="display: none;" class="w-[94%] mx-[3%] my-[10px] inline-block">
         {{--  --}}
         <ul class="float-right mr-[30px]">
             <li class="inline-block ml-[20px]"><button class="w-[120px] h-[40px] text-[#ffffff] bg-[blue]">Encerrados</button></li>

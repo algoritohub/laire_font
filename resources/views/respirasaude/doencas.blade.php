@@ -23,22 +23,31 @@
         <div id="caixa-cinza-1" class="w-[100%] bg-[#eeeeee] inline-block">
             {{--  --}}
             <div id="texto" class="w-[50%] pl-[5%] h-[600px] inline-block float-left">
-                {{--  --}}
-                <div id="box_audio" style="background: url('/img/TUBERCULOSE 01.jpg'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
-                {{--  --}}
-                <div class="mt-[10%]"  style="display: none;" id="box_libra" class="w-[780px] inline-block absolute h-[450px]">
+
+
+                {{-- ESSE BLOCO SERÁ REPLICADO --}}
+
+                {{-- ASMA --}}
+                <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <video id="video_missao" class="w-[780px]" controls="controls">
-                        <source src="/img/" type="video/mp4">
-                    </video>
+                    <div id="box_audio" style="background: url('/img/Asma.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
+                    {{--  --}}
+                    <div class="w-[100%] h-[40px] mt-[50px]">
+                        <ul class="">
+                            <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                            <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                        </ul>
+                    </div>
+                    {{--  --}}
+                    <div class="mt-[40px]" style="display: none;" id="box_libra" class="w-[780px] inline-block absolute h-[450px]">
+                        {{-- AQUI VAI O VÍDEO DE ASMA --}}
+                        <video id="video_missao" class="w-[780px]" controls="controls">
+                            <source src="/img/" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-                {{--  --}}
-                <div class="w-[100%] h-[40px] mt-[50px]">
-                    <ul class="">
-                        <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
-                        <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
-                    </ul>
-                </div>
+
+
             </div>
             {{--  --}}
             <div id="caixa_text_missao" class="w-[50%] pr-[5%] h-[700px] pt-[70px] inline-block float-left bg-[#5CD1FF]">
@@ -119,7 +128,7 @@
 {{-- TRATAMENTO --}}
 
 {{-- PUBLICAÇÕES --}}
-<section class="w-[94%] my-[100px] mx-[3%] inline-block">
+<section style="display: none;" class="w-[94%] my-[100px] mx-[3%] inline-block">
     {{--  --}}
     <div class="w-[100%] inline-block">
         {{--  --}}
