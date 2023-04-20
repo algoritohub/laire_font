@@ -28,12 +28,14 @@
         <div id="box_laire_b" class="w-[40%] float-left inline-block h-[600px] pl-[60px]">
             {{--  --}}
             <p id="sub_text_box_a" class="text-[#ffffff] text-[20px] pl-[20px] border-l-[2px] text-justify border-l-[#ffffff] mt-[350px]">Atividades de ensino, pesquisa e extensão relacionadas às doenças respiratórias agudas e crônicas que comprometem a qualidade de vida de crianças, adolescentes e adultos</p>
+
+            <!-- não estou conseguindo encaixar este texto no resposivo, mesmo ajusatando ele continua sumindo metade do texto, a partir da palavara qualidade-->
         </div>
     </div>
 </section>
 
 {{-- CAIXA DE NOTÍCIAS --}}
-<div class="slider">
+<div  class="slider">
     {{--  --}}
     <div id="noticias_slide" class="slides">
         <input type="radio" name="radio-btn" id="radio1">
@@ -847,6 +849,7 @@
             <li class="inline-block ml-[20px]"><button class="w-[120px] h-[40px] text-[#ffffff] bg-[blue]">Encerrados</button></li>
             <li class="inline-block ml-[20px]"><button class="w-[120px] h-[40px] text-[#ffffff] bg-[blue]">Futuros</button></li>
         </ul>
+        <div id="bk."></div>
     </div>
     {{--  --}}
     <div class="w-[94%] mx-[3%] mt-[70px] inline-block">
@@ -882,6 +885,7 @@
                 </div>
                 {{--  --}}
             </div>
+
             {{--  --}}
             <div class="w-[100%] inline-block h-[150px]">
                 {{--  --}}
@@ -908,7 +912,7 @@
             </div>
         </div>
         {{--  --}}
-        <div id="bk1" class="w-[20%] mx-[2.5%] float-left">
+        <div id="bk1" id="bk1." class="w-[20%] mx-[2.5%] float-left">
             {{--  --}}
             <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
@@ -918,6 +922,7 @@
                     {{--  --}}
                     <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
                 </div>
+                <div id="social" ></div>
                 {{--  --}}
             </div>
             {{--  --}}
@@ -934,6 +939,7 @@
     <div  class="w-[100%]">
 
         {{--  --}}
+
         <div id="botao_facebook"  class="w-[30.3%] h-[200px] mx-[1.5%] float-left bg-[silver]">
             <center ><a  href="https://www.facebook.com/laire.lab" target="_blanck" ><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/facebook.png"/> <p class="text-[#ffffff] float-left">Facebook</p></button></a><center>
         </div>
