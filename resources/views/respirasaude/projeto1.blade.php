@@ -57,8 +57,13 @@
             {{--  --}}
             <div class="w-[100%] inline-block mt-[480px]">
                 {{--  --}}
-                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[120px] " src="/img/4.png" alt=""></li>
-                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[120px]" src="/img/6.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/6.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/4.png" alt=""></li>
+                <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/9.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[250px] " src="/img/10.png" alt=""></li>
+
             </div>
         </div>
         {{--  --}}

@@ -41,7 +41,13 @@
                         </ul>
                     </div>
             </div>
+            <div class="w-[100%] inline-block mt-[495px]">
+                {{--  --}}
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/6.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[140px]" src="/img/7.png" alt=""></li>
+            </div>
         </div>
+
         {{--  --}}
         <div id="cx_azul_text_projeto2"  class="w-[50%] pr-[5%] h-[600px] pt-[30px] inline-block float-left bg-[#5CD1FF]">
             {{--  --}}
