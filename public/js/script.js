@@ -401,3 +401,105 @@ $(document).ready(function(){
         $("#box_audio1").hide();
     });
 });
+
+// DPOC
+$(document).ready(function(){
+    $("#audios2").click(function(event){
+        event.preventDefault();
+        $("#box_audio2").fadeIn();
+        $("#box_libra2").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras2").click(function(event){
+        event.preventDefault();
+        $("#box_libra2").fadeIn();
+        $("#box_audio2").hide();
+    });
+});
+
+// BRONQUIECTASIA
+$(document).ready(function(){
+    $("#audios3").click(function(event){
+        event.preventDefault();
+        $("#box_audio3").fadeIn();
+        $("#box_libra3").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras3").click(function(event){
+        event.preventDefault();
+        $("#box_libra3").fadeIn();
+        $("#box_audio3").hide();
+    });
+});
+
+// fibrose pulmonar
+$(document).ready(function(){
+    $("#audios4").click(function(event){
+        event.preventDefault();
+        $("#box_audio4").fadeIn();
+        $("#box_libra4").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras4").click(function(event){
+        event.preventDefault();
+        $("#box_libra4").fadeIn();
+        $("#box_audio4").hide();
+    });
+});
+//SINUSITE
+$(document).ready(function(){
+    $("#audios5").click(function(event){
+        event.preventDefault();
+        $("#box_audio5").fadeIn();
+        $("#box_libra5").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras5").click(function(event){
+        event.preventDefault();
+        $("#box_libra5").fadeIn();
+        $("#box_audio5").hide();
+    });
+});
+//HIPERTENSÃO PULMONAR
+$(document).ready(function(){
+    $("#audios6").click(function(event){
+        event.preventDefault();
+        $("#box_audio6").fadeIn();
+        $("#box_libra6").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras6").click(function(event){
+        event.preventDefault();
+        $("#box_libra6").fadeIn();
+        $("#box_audio6").hide();
+    });
+
+});
+//SINDROME PÓS-COVID 19
+$(document).ready(function(){
+    $("#audios7").click(function(event){
+        event.preventDefault();
+        $("#box_audio7").fadeIn();
+        $("#box_libra7").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras7").click(function(event){
+        event.preventDefault();
+        $("#box_libra7").fadeIn();
+        $("#box_audio7").hide();
+    });
+
+});
+

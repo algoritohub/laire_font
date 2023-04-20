@@ -85,7 +85,7 @@
                     </div>
                     {{--  --}}
                     <div class="mt-[40px]" style="display: none;" id="box_libra2" class="w-[780px] inline-block absolute h-[450px]">
-                        {{-- AQUI VAI O VÍDEO DE FIBROSE CÍSTICA --}}
+                        {{-- AQUI VAI O VÍDEO DE DPOC--}}
                         <video id="video_missao" class="w-[780px]" controls="controls">
                             <source src="/img/" type="video/mp4">
                         </video>
@@ -93,7 +93,125 @@
                 </div>
                 @endif
 
+
+                @if (!empty($doenca) AND $doenca == "bronquiectasia")
+                {{-- BRONQUIECTASIA --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="box_audio3" style="background: url('/img/Bronquiectasia.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
+                    {{--  --}}
+                    <div class="w-[100%] h-[40px] mt-[50px]">
+                        <ul class="">
+                            <li class="mr-[2px] inline-block"><img id="audios3" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                            <li class="mr-[2px] inline-block"><img id="libras3" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                        </ul>
+                    </div>
+                    {{--  --}}
+                    <div class="mt-[40px]" style="display: none;" id="box_libra3" class="w-[780px] inline-block absolute h-[450px]">
+                        {{-- AQUI VAI O VÍDEO DE BRONQUIECTASIA --}}
+                        <video id="video_missao" class="w-[780px]" controls="controls">
+                            <source src="/img/VIDEO_AQUI" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                @endif
+
+                {{-- Fibrose pulmonar --}}
+                @if (!empty($doenca) AND $doenca == "fibrose_pulmonar")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="box_audio4" style="background: url('/img/Fibrose pulmonar.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
+                    {{--  --}}
+                    <div class="w-[100%] h-[40px] mt-[50px]">
+                        <ul class="">
+                            <li class="mr-[2px] inline-block"><img id="audios4" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                            <li class="mr-[2px] inline-block"><img id="libras4" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                        </ul>
+                    </div>
+                    {{--  --}}
+                    <div class="mt-[40px]" style="display: none;" id="box_libra4" class="w-[780px] inline-block absolute h-[450px]">
+                        {{-- AQUI VAI O VÍDEO DE FIBROSE PULMONAR--}}
+                        <video id="video_missao" class="w-[780px]" controls="controls">
+                            <source src="/img/VIDEO_AQUI" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+            @endif
+            {{-- SINUSITE --}}
+            @if (!empty($doenca) AND $doenca == "sinusite")
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="box_audio5" style="background: url('/img/Sinusite.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
+                {{--  --}}
+                <div class="w-[100%] h-[40px] mt-[50px]">
+                    <ul class="">
+                        <li class="mr-[2px] inline-block"><img id="audios5" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        <li class="mr-[2px] inline-block"><img id="libras5" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                    </ul>
+                </div>
+                {{--  --}}
+                <div class="mt-[40px]" style="display: none;" id="box_libra5" class="w-[780px] inline-block absolute h-[450px]">
+                    {{-- AQUI VAI O VÍDEO DE SINUSITE --}}
+                    <video id="video_missao" class="w-[780px]" controls="controls">
+                        <source src="/img/VIDEO_AQUI" type="video/mp4">
+                    </video>
+                </div>
             </div>
+            @endif
+
+             {{-- HIPERTENSÃO PULMONAR --}}
+             @if (!empty($doenca) AND $doenca == "hipertensao_pulmonar")
+             <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="box_audio6" style="background: url('/img/Hipertensão pulmonar.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
+                {{--  --}}
+                <div class="w-[100%] h-[40px] mt-[50px]">
+                    <ul class="">
+                        <li class="mr-[2px] inline-block"><img id="audios6" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        <li class="mr-[2px] inline-block"><img id="libras6" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                    </ul>
+                </div>
+                {{--  --}}
+                <div class="mt-[40px]" style="display: none;" id="box_libra6" class="w-[780px] inline-block absolute h-[450px]">
+                    {{-- AQUI VAI O VÍDEO DE HIPERTENSAO PULMONAR --}}
+                    <video id="video_missao" class="w-[780px]" controls="controls">
+                        <source src="/img/VIDEO_AQUI" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+             @endif
+
+             {{-- SINDROME PÓS-COVID 19 --}}
+             @if (!empty($doenca) AND $doenca == "sindrome_pos_covid_19")
+             <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="box_audio7" style="background: url('/img/Covid-19.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
+                {{--  --}}
+                <div class="w-[100%] h-[40px] mt-[50px]">
+                    <ul class="">
+                        <li class="mr-[2px] inline-block"><img id="audios7" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        <li class="mr-[2px] inline-block"><img id="libras7" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                    </ul>
+                </div>
+                {{--  --}}
+                <div class="mt-[40px]" style="display: none;" id="box_libra7" class="w-[780px] inline-block absolute h-[450px]">
+                    {{-- AQUI VAI O VÍDEO DE SINDROME POS COVID 19 --}}
+                    <video id="video_missao" class="w-[780px]" controls="controls">
+                        <source src="/img/VIDEO_AQUI" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+             @endif
+
+                {{-- aqui --}}
+
+            </div>
+
+
+
             {{--  --}}
             <div id="caixa_text_missao" class="w-[50%] pr-[5%] h-[700px] pt-[70px] inline-block float-left bg-[#5CD1FF]">
 
