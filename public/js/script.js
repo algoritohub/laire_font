@@ -38,24 +38,6 @@ $(document).ready(function(){
     });
 });
 
-// ACESSIBILIDADE
-$(document).ready(function(){
-    $("#audios").click(function(event){
-        event.preventDefault();
-        $("#box_audio").fadeIn();
-        $("#box_libra").hide();
-    });
-});
-
-$(document).ready(function(){
-    $("#libras").click(function(event){
-        event.preventDefault();
-        $("#box_libra").fadeIn();
-        $("#box_audio").hide();
-    });
-});
-
-
 $(document).ready(function(){
     $("#modal_laire").click(function(event){
         event.preventDefault();
@@ -380,5 +362,42 @@ $(document).ready(function(){
         $("#menu_lai").fadeIn();
         $("#busca_search_lai_out").hide();
         $("#busca_lai").hide();
+    });
+});
+
+
+// DOENÇAS
+
+// ASMA
+$(document).ready(function(){
+    $("#audios").click(function(event){
+        event.preventDefault();
+        $("#box_audio").fadeIn();
+        $("#box_libra").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras").click(function(event){
+        event.preventDefault();
+        $("#box_libra").fadeIn();
+        $("#box_audio").hide();
+    });
+});
+
+// FIBROSE CÍSTICA
+$(document).ready(function(){
+    $("#audios1").click(function(event){
+        event.preventDefault();
+        $("#box_audio1").fadeIn();
+        $("#box_libra1").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras1").click(function(event){
+        event.preventDefault();
+        $("#box_libra1").fadeIn();
+        $("#box_audio1").hide();
     });
 });
