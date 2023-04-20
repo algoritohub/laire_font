@@ -199,7 +199,9 @@
         {{-- ELIMINAR ESSE CAMPO --}}
 
         {{-- SUBSTITUIR PELO TEXTO DO OBJETIVO AQUI --}}
-        <p id="metodo" class="mb-[20px] text-[{{ $numb_font }}px] text-justify"></p>
+        <p id="metodo" class="mb-[20px] text-[{{ $numb_font }}px] text-justify">
+            Comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.
+            </p>
     </div>
     {{--  --}}
     <div id="cx_azul_solucao" class="w-[20%] inline-block float-left h-[700px] bg-[#5CD1FF]">
