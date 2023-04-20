@@ -43,7 +43,7 @@
                     <div class="mt-[40px]" style="display: none;" id="box_libra" class="w-[780px] inline-block absolute h-[450px]">
                         {{-- AQUI VAI O VÍDEO DE ASMA --}}
                         <video id="video_missao" class="w-[780px]" controls="controls">
-                            <source src="/img/" type="video/mp4">
+                            <source src="/img/Asma - Vídeo Em Líbras.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <div class="mt-[40px]" style="display: none;" id="box_libra2" class="w-[780px] inline-block absolute h-[450px]">
                         {{-- AQUI VAI O VÍDEO DE DPOC--}}
                         <video id="video_missao" class="w-[780px]" controls="controls">
-                            <source src="/img/" type="video/mp4">
+                            <source src="/img/Dpoc - Vídeo Em Líbras.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                     <div class="mt-[40px]" style="display: none;" id="box_libra3" class="w-[780px] inline-block absolute h-[450px]">
                         {{-- AQUI VAI O VÍDEO DE BRONQUIECTASIA --}}
                         <video id="video_missao" class="w-[780px]" controls="controls">
-                            <source src="/img/VIDEO_AQUI" type="video/mp4">
+                            <source src="/img/Bronquiectasia - Vídeo Em Líbras(1).mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                     <div class="mt-[40px]" style="display: none;" id="box_libra4" class="w-[780px] inline-block absolute h-[450px]">
                         {{-- AQUI VAI O VÍDEO DE FIBROSE PULMONAR--}}
                         <video id="video_missao" class="w-[780px]" controls="controls">
-                            <source src="/img/VIDEO_AQUI" type="video/mp4">
+                            <source src="/img/Fibrose Pulmonar - Vídeo Em Líbras.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
