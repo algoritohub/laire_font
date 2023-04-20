@@ -38,13 +38,7 @@ body{
     z-index: 1;
 }
 
-#barra_de_acessibilidade_laire{
-    z-index: 2;
-}
 
-#barra_superior_fixa_laire{
-    z-index: 2;
-}
 
 ul#barca li a strong{
     color: #ffffff;
@@ -488,6 +482,19 @@ ul.logos_carrossel li img{
 
 
 /* LAIRE */
+
+
+#barra_de_acessibilidade_laire{
+    z-index: 2;
+    margin-top: 0px;
+}
+
+#barra_superior_fixa_laire{
+    z-index: 2;
+    margin-top: 40px;
+}
+
+
 #botao_instagram{
 background-image:linear-gradient(#A146C5,#FD4164,#FE7F4A)
 }
@@ -1206,8 +1213,50 @@ button#bt2-1:hover{
         margin-left: -30px;
     }
 
-     /* LAIRE */
-     #botao_instagram{
+    /* LAIRE */
+
+    #barra_de_acessibilidade_laire{
+        z-index: 2;
+        margin-top: 0px;
+        height: 0px;
+        visibility: hidden;
+
+    }
+
+    #barra_superior_fixa_laire{
+        z-index: 2;
+        margin-top: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    #modal_pesq_laire{
+        width: 90%;
+        height: auto;
+        margin: 20% 5% 0px 5%;
+        display: inline-block;
+    }
+
+    #imagem_pesq_mob{
+        margin-top: 40px;
+    }
+
+    ul#links_pesq_mob{
+        margin-top: 20px;
+    }
+
+    ul#links_pesq_mob li{
+        margin: 0px 0px 10px 0px;
+    }
+
+    #modal_pesq_respira{
+        width: 50%;
+        height: auto;
+        margin: 30% 5% 0px 5%;
+        display: inline-block;
+    }
+
+    #botao_instagram{
         width: 98%;
         margin-top: 20px;
         display: inline-block;
@@ -1225,7 +1274,12 @@ button#bt2-1:hover{
         display: inline-block;
         background-image:linear-gradient(#B41102,#F81A07,#6C0700)
     }
-    
+
+
+
+    #menu_lai{
+        display: inline-block;
+    }
 
 
     /* CARROSSEL */

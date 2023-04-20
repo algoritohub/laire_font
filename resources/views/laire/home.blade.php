@@ -302,14 +302,14 @@
     {{--  --}}
     <div class="modal_info_pesquisadores">
         {{--  --}}
-        <div class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
+        <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
             {{-- Amanda Quirino --}}
             @if ($info_pesquisador == "amanda")
                 <div class="w-[100%] inline-block">
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]">Amanda Quirino</p>
+                        <p class="font-bold leading-[23px] text-[20px]">Amanda Quirino</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -320,7 +320,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Amanda Quirino.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Amanda Quirino.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-center mt-[30px]">
 
@@ -337,7 +337,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/9863112397601600"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href="ttps://orcid.org/0000-0002-9034-0812"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
@@ -350,7 +350,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]">Karla Morganna</p>
+                        <p class="font-bold leading-[23px] text-[20px]">Karla Morganna</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -361,7 +361,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte. Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória, desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em saúde.
                     </p>
@@ -371,7 +371,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
@@ -384,7 +384,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]">Ivan Daniel</p>
+                        <p class="font-bold leading-[23px] text-[20px]">Ivan Daniel</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -395,7 +395,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Ivan Daniel.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Ivan Daniel.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte (1994-1999), Especialização em Fisioterapia Respiratória pela Universidade Federal de São Paulo (2000-2001), Especialização em Fisiologia do Exercício pela Universidade Federal de São Paulo (2003), Especialista em Terapia Intensiva Adulto pela ASSOBRAFIR/COFFITO (2015), Mestrado em Ciências pelo Programa da Cardiologia da Universidade Federal de São Paulo (2008-2009) e Doutorado em Fisioterapia pelo Programa de Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte (2014-2017). Foi Professor da Especialização em Fisioterapia Respiratória da Universidade Federal de São Paulo (2001-2008), Professor Assistente do Centro Universitário São Camilo (2003-2008) e Professor Assistente do Centro Universitário de João Pessoa (2008). Atualmente é Professor Adjunto do Departamento de Fisioterapia da Universidade Federal do Rio Grande do Norte. Tem experiência na área de Fisioterapia, com ênfase em Fisioterapia Cardiorrespiratória, atuando principalmente nos seguintes temas: treinamento físico, capacidade funcional, qualidade de vida e suporte ventilatório.
                     </p>
@@ -405,7 +405,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href=""><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
@@ -418,7 +418,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]"> Joubert Vitor de Souto Barbosa</p>
+                        <p class="font-bold leading-[23px] text-[20px]"> Joubert Vitor de Souto Barbosa</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -429,7 +429,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Joubert Vitor .JPG'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Joubert Vitor .JPG'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Joubert Vitor de Souto Barbosa, Fisioterapeuta pelo Centro Universitário Unifacisa, Possui
                         pós-graduação em Fisioterapia em terapia intensiva adulto e pediátrica pelo Centro
@@ -445,7 +445,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href=" http://lattes.cnpq.br/3554788662850733"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <!--<li class="mr-[20px] inline-block"><a href="LINKORCID"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>-->
                     </ul>
@@ -458,7 +458,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]"> Válbny Júlia Fernandes de Morais</p>
+                        <p class="font-bold leading-[23px] text-[20px]"> Válbny Júlia Fernandes de Morais</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -469,7 +469,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Válbny Morais.jpeg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Válbny Morais.jpeg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Válbny Júlia é aluna da graduação de Fisioterapia na UFRN, atualmente irá começar o 6°
                         período. Participa como bolsista de projetos de pesquisa na área de Avaliação e
@@ -483,7 +483,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href="https://lattes.cnpq.br/6418810116793515"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-6785-2369"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
@@ -496,7 +496,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]"> Gabriela Chaves</p>
+                        <p class="font-bold leading-[23px] text-[20px]"> Gabriela Chaves</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -507,7 +507,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Gabriela Chaves.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Gabriela Chaves.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Gabriela Chaves, fisioterapeuta formada pela UFRN. Mestrado em Fisioterapia pela UFRN,
                         Doutorado em Ciências da Reabilitação pela UFMG. Pós doutorado em dor e
@@ -521,7 +521,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7725252810522161"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-7737-8015"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
@@ -534,7 +534,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]"> Vitória Jéssica Teixeira Dantas Brito</p>
+                        <p class="font-bold leading-[23px] text-[20px]"> Vitória Jéssica Teixeira Dantas Brito</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -545,7 +545,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Vitória Jéssica.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Vitória Jéssica.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Vitória Jéssica é Fisioterapeuta formada pela Universidade Federal do Rio Grande do Norte
                         e aluna de mestrado do Programa de Pós-Graduação em Fisioterapia da Universidade
@@ -564,7 +564,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href=" http://lattes.cnpq.br/6942533313733956"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-7593-4807"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
@@ -577,7 +577,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]"> Sabrina da Silva Teixeira</p>
+                        <p class="font-bold leading-[23px] text-[20px]"> Sabrina da Silva Teixeira</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -588,7 +588,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Sabrina.jpeg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Sabrina.jpeg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Sabrina da Silva Teixeira é graduanda em Fisioterapia pela Universidade Federal do Rio
                         Grande do Norte. É técnica em eletrotécnica formada pelo Instituto Federal de Educação,
@@ -599,7 +599,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/4590004464040950"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href=" https://orcid.org/0000-0003-2815-5891
                             "><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
@@ -613,7 +613,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]">  Luana Beatriz de Moura Freitas</p>
+                        <p class="font-bold leading-[23px] text-[20px]">Luana Beatriz de Moura Freitas</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -624,7 +624,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Luana Moura.JPG'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Luana Moura.JPG'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Luana Moura é discente de Fisioterapia na Universidade Federal do Rio Grande do Norte. É
                         técnica em Logística formada pelo Instituto Federal de Educação, Ciência e Tecnologia do
@@ -638,7 +638,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href=" http://lattes.cnpq.br/4658310550097283"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href=" https://orcid.org/0000-0003-2815-5891
                             "><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
@@ -652,7 +652,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]">  Thayla Amorim Santino</p>
+                        <p class="font-bold leading-[23px] text-[20px]">Thayla Amorim Santino</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -663,7 +663,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Thayla Santino.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Thayla Santino.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Thayla Amorim Santino é fisioterapeuta formada pela Universidade Estadual da Paraíba,
                         especialista em Fisioterapia Respiratória (ASSOBRAFIR/COFFITO) e em Informática em
@@ -681,7 +681,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7500827180804952"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href=" https://orcid.org/0000-0002-5514-762X"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
@@ -694,7 +694,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[20px]">Juliana Souza</p>
+                        <p class="font-bold leading-[23px] text-[20px]">Juliana Souza</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -705,7 +705,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div style="background-image: url('/img/Juliana Souza.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    <div id="imagem_pesq_mob" style="background-image: url('/img/Juliana Souza.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                     {{--  --}}
                     <p class="leading-[17px] text-[14px] text-justify mt-[30px]">Juliana Souza é Fisioterapeuta formada pela Universidade Federal do Rio Grande do Norte
                         e aluna de mestrado do Programa de Pós-Graduação em Fisioterapia da Universidade
@@ -721,7 +721,7 @@
                     {{--  --}}
                     <center>
                     {{--  --}}
-                    <ul class="mt-[20px]">
+                    <ul id="links_pesq_mob" class="mt-[20px]">
                         <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3215502613957548"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
                         <li class="mr-[20px] inline-block"><a href=" https://orcid.org/0000-0001-6486-2329"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>

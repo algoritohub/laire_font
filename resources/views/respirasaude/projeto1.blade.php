@@ -356,160 +356,118 @@
             {{-- MODAL --}}
             @if(isset($pesquisador) AND !empty($pesquisador))
             {{--  --}}
-            <div class="modal_pesquisadores">
+            <div class="modal_info_pesquisadores">
                 {{--  --}}
-                <div class="w-[1000px] h-[500px] mt-[10%] mx-auto bg-[#ffffff] p-[40px]">
-                    
+                <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
                     {{-- CONTEÚDO SARAH --}}
                     @if($pesquisador == "sarah")
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
+                        <div class="w-[100%] inline-block">
                             {{--  --}}
-                            <p class="font-bold text-[20px]">Sarah Leite</p>
-                            {{--  --}}
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[80%] mx-[10%] inline-block">
-                        <center>
-                            {{--  --}}
-                            <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-50px] rounded-[100px] bg-[silver]"></div>
-                        </center>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[170px]">
-                            {{--  --}}
-                            <p class="text-center leading-[17px] text-justify mt-[20px]">Fisioterapeuta graduada pela Universidade Federal do Rio Grande do Norte (UFRN) (2017), possui residência em Terapia Intensiva pelo Hospital Dom Helder Câmara (HDH) (2019), Mestrado acadêmico em Fisioterapia (UFRN) (2021) e Título de Especialista Profissional em Fisioterapia em Terapia Intensiva (ASSOBRAFIR/COFFITO) (2022). Atualmente cursa Doutorado em Fisioterapia pela UFRN, integrante do Laboratório de Avaliação e Intervenção Respiratória (LAIRE), ocupa o cargo público de fisioterapeuta no Hospital Barão de Lucena (HBL) - Secretaria Estadual de Saúde de Pernambuco (SES-PE), ocupa cargo de gestão como Coordenadora da equipe de Fisioterapia do Hospital Dom Helder Câmara. Tem experiência em pesquisas de tradução, adaptação transcultural e avaliação psicométrica de instrumentos em saúde; e revisões sistemáticas em saúde.</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[60px]">
-                            <center>
+                            <div class="w-[80%] inline-block float-left">
                                 {{--  --}}
-                                <ul class="mt-[30px] ml-[20px]">
-                                    <li class="inline-block mr-[20px]"><a href="http://lattes.cnpq.br/3312691654735238" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Currículo Lattes</button></a></li>
-                                    <li class="inline-block mr-[20px]"><a href="0000-0002-2908-8187" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Link ORCID</button></a></li>
-                                </ul>
+                                <p class="font-bold leading-[23px] text-[20px]">Sarah Leite</p>
+                                <p class="text-[13px] uppercase">{{ $categoria }}</p>
+                            </div>
+                            {{--  --}}
+                            <div class="w-[20%] inline-block float-left">
+                                {{--  --}}
+                                <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            </div>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                            {{--  --}}
+                            <p class="leading-[17px] text-[14px] text-center mt-[30px]">
+                                Fisioterapeuta graduada pela Universidade Federal do Rio Grande do Norte (UFRN) (2017), possui residência em Terapia Intensiva pelo Hospital Dom Helder Câmara (HDH) (2019), Mestrado acadêmico em Fisioterapia (UFRN) (2021) e Título de Especialista Profissional em Fisioterapia em Terapia Intensiva (ASSOBRAFIR/COFFITO) (2022). Atualmente cursa Doutorado em Fisioterapia pela UFRN, integrante do Laboratório de Avaliação e Intervenção Respiratória (LAIRE), ocupa o cargo público de fisioterapeuta no Hospital Barão de Lucena (HBL) - Secretaria Estadual de Saúde de Pernambuco (SES-PE), ocupa cargo de gestão como Coordenadora da equipe de Fisioterapia do Hospital Dom Helder Câmara. Tem experiência em pesquisas de tradução, adaptação transcultural e avaliação psicométrica de instrumentos em saúde; e revisões sistemáticas em saúde.
+                            </p>
+                        </div>
+                         {{--  --}}
+                         <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <center>
+                            {{--  --}}
+                            <ul id="links_pesq_mob" class="mt-[20px]">
+                                <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3312691654735238" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                                <li class="mr-[20px] inline-block"><a href="ttps://orcid.org/0000-0002-2908-8187"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                            </ul>
                             </center>
                         </div>
-                    </div>
                     @endif
 
                     {{-- CONTEÚDO THAYLA --}}
                     @if($pesquisador == "thayla")
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
+                        <div class="w-[100%] inline-block">
                             {{--  --}}
-                            <p class="font-bold text-[20px]">Thayla Amorim Santino</p>
-                            {{--  --}}
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[80%] mx-[10%] inline-block">
-                        <center>
-                            {{--  --}}
-                            <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-50px] rounded-[100px] bg-[silver]"></div>
-                        </center>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[170px]">
-                            {{--  --}}
-                            <p class="text-center leading-[17px] text-justify mt-[20px]">Thayla Amorim Santino é fisioterapeuta formada pela Universidade Estadual da Paraíba, especialista em Fisioterapia Respiratória (ASSOBRAFIR/COFFITO) e em Informática em Saúde pela Universidade Federal de São Paulo, mestre e doutora pelo Programa de Pós-Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte. Atualmente é professora do Departamento de Fisioterapia da Universidade Estadual da Paraíba e pesquisadora do Instituto de Pesquisa Professor Joaquim Amorim Neto. Participa como colaboradora de projetos de pesquisa e extensão na área de Avaliação e Intervenção em Fisioterapia Respiratória, desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades psicométricas de instrumentos de medida em saúde. Além disso, é pesquisadora colaboradora no Person-Centred Health Informatics Research Lab vinculado à McGill University (Montreal, Canadá).</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[60px]">
-                            <center>
+                            <div class="w-[80%] inline-block float-left">
                                 {{--  --}}
-                                <ul class="mt-[30px] ml-[20px]">
-                                    <li class="inline-block mr-[20px]"><a href="http://lattes.cnpq.br/7500827180804952" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Currículo Lattes</button></a></li>
-                                    <li class="inline-block mr-[20px]"><a href="https://orcid.org/0000-0002-5514-762X" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Link ORCID</button></a></li>
-                                </ul>
+                                <p class="font-bold leading-[23px] text-[20px]">Thayla Amorim Santino</p>
+                                <p class="text-[13px] uppercase">{{ $categoria }}</p>
+                            </div>
+                            {{--  --}}
+                            <div class="w-[20%] inline-block float-left">
+                                {{--  --}}
+                                <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            </div>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                            {{--  --}}
+                            <p class="leading-[17px] text-[14px] text-center mt-[30px]">
+                                Thayla Amorim Santino é fisioterapeuta formada pela Universidade Estadual da Paraíba, especialista em Fisioterapia Respiratória (ASSOBRAFIR/COFFITO) e em Informática em Saúde pela Universidade Federal de São Paulo, mestre e doutora pelo Programa de Pós-Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte. Atualmente é professora do Departamento de Fisioterapia da Universidade Estadual da Paraíba e pesquisadora do Instituto de Pesquisa Professor Joaquim Amorim Neto. Participa como colaboradora de projetos de pesquisa e extensão na área de Avaliação e Intervenção em Fisioterapia Respiratória, desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades psicométricas de instrumentos de medida em saúde. Além disso, é pesquisadora colaboradora no Person-Centred Health Informatics Research Lab vinculado à McGill University (Montreal, Canadá).
+                            </p>
+                        </div>
+                         {{--  --}}
+                         <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <center>
+                            {{--  --}}
+                            <ul id="links_pesq_mob" class="mt-[20px]">
+                                <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7500827180804952" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                                <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-5514-762X" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                            </ul>
                             </center>
                         </div>
-                    </div>
                     @endif
 
                     {{-- CONTEÚDO THAYLA --}}
                     @if($pesquisador == "gabriela")
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
+                        <div class="w-[100%] inline-block">
                             {{--  --}}
-                            <p class="font-bold text-[20px]">Gabriela Chaves</p>
-                            {{--  --}}
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[80%] mx-[10%] inline-block">
-                        <center>
-                            {{--  --}}
-                            <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-50px] rounded-[100px] bg-[silver]"></div>
-                        </center>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[170px]">
-                            {{--  --}}
-                            <p class="text-center leading-[17px] text-justify mt-[20px]">Gabriela Chaves, fisioterapeuta formada pela UFRN. Mestrado em Fisioterapia pela UFRN, Doutorado em Ciências da Reabilitação pela UFMG. Pós doutorado em dor e envelhecimento pela York University (Toronto/Canadá). Atualmente trabalha como pesquisadora na empresa Myant Inc. (Toronto/Canadá). Colaboradora nas Revisões Sistemáticas e metanálises na área de avaliação e intervenção em Fisioterapia respiratória.</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[60px]">
-                            <center>
+                            <div class="w-[80%] inline-block float-left">
                                 {{--  --}}
-                                <ul class="mt-[30px] ml-[20px]">
-                                    <li class="inline-block mr-[20px]"><a href="http://lattes.cnpq.br/7725252810522161" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Currículo Lattes</button></a></li>
-                                    <li class="inline-block mr-[20px]"><a href="https://orcid.org/0000-0002-7737-8015" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Link ORCID</button></a></li>
-                                </ul>
+                                <p class="font-bold leading-[23px] text-[20px]">Gabriela Chaves</p>
+                                <p class="text-[13px] uppercase">{{ $categoria }}</p>
+                            </div>
+                            {{--  --}}
+                            <div class="w-[20%] inline-block float-left">
+                                {{--  --}}
+                                <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            </div>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                            {{--  --}}
+                            <p class="leading-[17px] text-[14px] text-center mt-[30px]">
+                                Gabriela Chaves, fisioterapeuta formada pela UFRN. Mestrado em Fisioterapia pela UFRN, Doutorado em Ciências da Reabilitação pela UFMG. Pós doutorado em dor e envelhecimento pela York University (Toronto/Canadá). Atualmente trabalha como pesquisadora na empresa Myant Inc. (Toronto/Canadá). Colaboradora nas Revisões Sistemáticas e metanálises na área de avaliação e intervenção em Fisioterapia respiratória.
+                            </p>
+                        </div>
+                         {{--  --}}
+                         <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <center>
+                            {{--  --}}
+                            <ul id="links_pesq_mob" class="mt-[20px]">
+                                <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7500827180804952" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                                <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-5514-762X" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                            </ul>
                             </center>
                         </div>
-                    </div>
-                    @endif
-
-                    {{-- CONTEÚDO THAYLA --}}
-                    @if($pesquisador == "nome_pesquisador_aqui")
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold text-[20px]">Nome Pesquisador Aqui</p>
-                            {{--  --}}
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[80%] mx-[10%] inline-block">
-                        <center>
-                            {{--  --}}
-                            <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-50px] rounded-[100px] bg-[silver]"></div>
-                        </center>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[170px]">
-                            {{--  --}}
-                            <p class="text-center leading-[17px] text-justify mt-[20px]">DESCRIÇÃO DO PESQUISADOR AQUI.</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block h-[60px]">
-                            <center>
-                                {{--  --}}
-                                <ul class="mt-[30px] ml-[20px]">
-                                    <li class="inline-block mr-[20px]"><a href="LINK1" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Currículo Lattes</button></a></li>
-                                    <li class="inline-block mr-[20px]"><a href="LINK2" target="blank_"><button class="px-[30px] h-[40px] rounded-[100px] text-[13px] text-[#080E45] bg-[#00FF8C]">Link ORCID</button></a></li>
-                                </ul>
-                            </center>
-                        </div>
-                    </div>
                     @endif
                 </div>
             </div>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RespiraSaúde | Pesquisas</title>
-    
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,8 +57,8 @@
         <div class="w-[25%] float-left inline-block h-[40px]">
             {{--  --}}
             <ul class="mt-[5px] mr-[10px] float-right">
-                <li class="inline-block ml-[10px]"><a href="{{ route('idioma_portugues') }}"><img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                <li class="inline-block ml-[10px]"><a href="{{ route('idioma_ingles') }}"><img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
             </ul>
         </div>
     </header>
@@ -74,7 +74,6 @@
                     <p class="text-[20px] mt-[32px] text-[#ffffff]"><b>Respira</b>Saúde</p>
                 </a>
             </div>
-
             {{--  --}}
             <div class="w-[30%] inline-block float-left">
                 {{--  --}}
