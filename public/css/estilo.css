@@ -847,6 +847,23 @@ button#bt2-1:hover{
 .tox-tinymce-aux{
     display: none;
 }
+#img_projeto_extensao{
+background-image: url("/img/Slide 3 (laire) – Projeto de extensão do Instagram (2).png");
+background-size: cover;
+}
+
+#img_projeto_extensao2{
+background-image: url("/img/5 e 6) Notícias futuras.png");
+    background-size: cover;
+}
+#img_projeto_extensao3{
+background-image: url("/img/5 e 6) Notícias futuras (2).png");
+        background-size:cover;
+}
+#img_projeto_extensao4{
+    background-image: url("/img/5 e 6) Notícias futuras.png");
+    background-size: cover;
+    }
 
 
 /* RESPONSIVIDADE */

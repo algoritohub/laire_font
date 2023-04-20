@@ -100,7 +100,10 @@
             {{--  --}}
             <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
-                <div  class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                <div  class="w-[100%] h-[150px] bg-[gray] mx-auto">
+
+
+                </div>
                 {{--  --}}
                 <div class="w-[100%] h-[200px] p-[20px] inline-block">
                     {{--  --}}
@@ -185,11 +188,32 @@
             {{--  --}}
             <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                <div id="img_projeto_extensao" class="w-[100%] h-[150px] bg-[gray] mx-auto">
+
+                </div>
                 {{--  --}}
                 <div class="w-[100%] h-[200px] p-[20px] inline-block">
                     {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
+                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">No nosso Istagram, você encontra conteudos relacionados ao nosso projeto de extensão. </p>
+                </div>
+                {{--  --}}
+            </div>
+            {{--  --}}
+            <div class="w-[100%] inline-block h-[150px]">
+                {{--  --}}
+                <a href="https://www.instagram.com/laire_ufrn/" target="_blanck" ><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS➜</p></a>
+            </div>
+        </div>
+        {{--  --}}
+        <div id="eventos1" class="w-[20%] mx-[2.5%] float-left">
+            {{--  --}}
+            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
+                {{--  --}}
+                <div id="img_projeto_extensao2" class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                {{--  --}}
+                <div class="w-[100%] h-[200px] p-[20px] inline-block">
+                    {{--  --}}
+                    <p class="text-center mt-[20px] mb-[8px] text-[15px]text-[{{ $numb_font }}px]"><!--Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit--></p>
                 </div>
                 {{--  --}}
             </div>
@@ -204,11 +228,11 @@
             {{--  --}}
             <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                <div id="img_projeto_extensao3" class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
                 {{--  --}}
                 <div class="w-[100%] h-[200px] p-[20px] inline-block">
                     {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px]text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
+                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]"><!--Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit--></p>
                 </div>
                 {{--  --}}
             </div>
@@ -223,30 +247,11 @@
             {{--  --}}
             <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                <div id="img_projeto_extensao4" class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
                 {{--  --}}
                 <div class="w-[100%] h-[200px] p-[20px] inline-block">
                     {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS➜</p></a>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="eventos1" class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
+                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]"><!--Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit--></p>
                 </div>
                 {{--  --}}
             </div>
