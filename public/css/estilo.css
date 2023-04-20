@@ -478,6 +478,23 @@ ul.logos_carrossel{
 ul.logos_carrossel li img{
     width: 110px;
 }
+#img_projeto_extensao{
+    background-image: url("/img/Slide 3 (laire) – Projeto de extensão do Instagram (2).png");
+    background-size: cover;
+    }
+
+    #img_projeto_extensao2{
+    background-image: url("/img/5 e 6) Notícias futuras.png");
+        background-size: cover;
+    }
+    #img_projeto_extensao3{
+    background-image: url("/img/5 e 6) Notícias futuras (2).png");
+            background-size:cover;
+    }
+    #img_projeto_extensao4{
+        background-image: url("/img/5 e 6) Notícias futuras.png");
+        background-size: cover;
+        }
 
 
 
@@ -847,23 +864,28 @@ button#bt2-1:hover{
 .tox-tinymce-aux{
     display: none;
 }
-#img_projeto_extensao{
-background-image: url("/img/Slide 3 (laire) – Projeto de extensão do Instagram (2).png");
-background-size: cover;
+#img_eventos_1{
+    background-image: url("/img/5.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#img_eventos_2{
+    background-image: url("/img/10-1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#img_eventos_3{
+    background-image: url("/img/8- (2).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#img_eventos_4{
+    background-image: url("/img/8- (3).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-#img_projeto_extensao2{
-background-image: url("/img/5 e 6) Notícias futuras.png");
-    background-size: cover;
-}
-#img_projeto_extensao3{
-background-image: url("/img/5 e 6) Notícias futuras (2).png");
-        background-size:cover;
-}
-#img_projeto_extensao4{
-    background-image: url("/img/5 e 6) Notícias futuras.png");
-    background-size: cover;
-    }
+
 
 
 /* RESPONSIVIDADE */
