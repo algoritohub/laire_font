@@ -836,13 +836,16 @@
         </div>
     </div>
 </section>
+
 {{-- BLOCO DE INFORMATIVO --}}
+<div id="bk-" ></div>
 <section id="resultado" class="w-[100%] inline-block">
     {{--  --}}
     <center id="eventos.">
         <p  class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Eventos</p>
     </center>
     {{--  --}}
+
     <div style="display: none;" class="w-[94%] mx-[3%] my-[10px] inline-block">
         {{--  --}}
         <ul class="float-right mr-[30px]">
@@ -912,6 +915,7 @@
             </div>
         </div>
         {{--  --}}
+
         <div id="bk1" id="bk1." class="w-[20%] mx-[2.5%] float-left">
             {{--  --}}
             <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
@@ -926,6 +930,7 @@
                 {{--  --}}
             </div>
             {{--  --}}
+
             <div class="w-[100%] inline-block h-[150px]">
                 {{--  --}}
                 <a href="https://www.youtube.com/watch?v=mpR7Fm32ZvQ" target="_blanck"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
