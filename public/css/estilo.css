@@ -34,6 +34,11 @@ body{
     visibility: hidden;
 }
 
+#barra_superior_menu_mobile{
+    z-index: 1;
+    visibility: hidden;
+}
+
 #barra_de_acessibilidade{
     z-index: 1;
 }
@@ -752,7 +757,7 @@ button#bt2-1:hover{
 
 #carrossel_prox3{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 140px;
     display: inline-block;
     background-image: url(../img/fundo2.jpg);
     background-size: 100%;
@@ -900,6 +905,64 @@ button#bt2-1:hover{
         margin: 0 auto;
     }
 
+    .menu{
+        list-style:none;
+        float: right;
+        margin-top: 0px;
+        margin-left: -10px;
+    }
+
+    .menu li a{
+        color: #080E45;
+        text-decoration: none;
+        padding: 5px 10px;
+        display: block;
+        font-size: 13px;
+        transition: 1s;
+    }
+
+    .menu li a:hover{
+        color: #080E45;
+        text-decoration: none;
+        padding: 5px 10px;
+        display: block;
+        font-size: 13px;
+        transition: 1s;
+    }
+
+    .menu2 li a:hover{
+        color: #080E45;
+        text-decoration: none;
+        padding: 5px 10px;
+        display: block;
+        font-size: 13px;
+        transition: 1s;
+    }
+
+    #carrossel_prox1{
+        width: 100%;
+        margin-top: 150px;
+        display: inline-block;
+        background-image: url(../img/imagem_rs_1.png);
+        background-size: 100%;
+    }
+
+    #carrossel_prox2{
+        width: 100%;
+        margin-top: 150px;
+        display: inline-block;
+        background-image: url(../img/imagem_rs_2.png);
+        background-size: 100%;
+    }
+
+    #carrossel_prox3{
+        width: 100%;
+        margin-top: 150px;
+        display: inline-block;
+        background-image: url(../img/fundo2.jpg);
+        background-size: 100%;
+    }
+
     /*RESPONSIVO RESPIRASAÚDE*/
     #barra_superior_fixa{
         z-index: 1;
@@ -911,6 +974,12 @@ button#bt2-1:hover{
     #barra_superior_fixa_mobile{
         z-index: 1;
         visibility: visible;
+    }
+
+    #barra_superior_menu_mobile{
+        z-index: 1;
+        visibility: visible;
+        scrollbar-width: none;
     }
 
     #barra_superior_acessibilidade_mobile{

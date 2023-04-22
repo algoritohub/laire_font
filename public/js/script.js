@@ -503,3 +503,47 @@ $(document).ready(function(){
 
 });
 
+// MOBILE MENU
+$(document).ready(function(){
+    $("#cronicas_doencas").click(function(event){
+        event.preventDefault();
+        $("#menu_cronicas_doencas").fadeIn();
+        $("#menu_agudas_doencas").hide();
+        $("#menu_principal").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#cronicas_agudas").click(function(event){
+        event.preventDefault();
+        $("#menu_agudas_doencas").fadeIn();
+        $("#menu_cronicas_doencas").hide();
+        $("#menu_principal").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#voltar_menu").click(function(event){
+        event.preventDefault();
+        $("#menu_principal").fadeIn();
+        $("#menu_cronicas_doencas").hide();
+        $("#menu_agudas_doencas").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#voltar_menu1").click(function(event){
+        event.preventDefault();
+        $("#menu_principal").fadeIn();
+        $("#menu_cronicas_doencas").hide();
+        $("#menu_agudas_doencas").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#busca_mobile").click(function(event){
+        event.preventDefault();
+        $("#busca_mobile_menu").toggle('500');
+        $("#menu_principal").toggle('500');
+    });
+});
