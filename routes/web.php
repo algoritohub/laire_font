@@ -95,7 +95,7 @@ Route::get('/blog', function () {
 })->name('blog');
 
 // BLOG POSTAGEM
-Route::get('/blog/postagem/{id}', [BlogController::class, "PostagemBlog"])->name('postagem_blog');
+Route::get('/blog/postagem/', [BlogController::class, "PostagemBlog"])->name('postagem_blog');
 
 //FEED CATEGORIA
 Route::get('/blog/feed_categorias', function () {

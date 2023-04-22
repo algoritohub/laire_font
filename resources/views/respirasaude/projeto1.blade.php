@@ -244,7 +244,6 @@
         <div id="cx_cinza_solucao" class="w-[800px] h-[440px] ml-[-570px] bg-[silver] absolute mt-[10%]"></div>
     </div>
 </section>
-
 {{--  --}}
 <section class="w-[90%] inline-block mx-[5%]">
     {{-- CAIXA DE INFORMAÇÕES COM 4 BOTÕES --}}

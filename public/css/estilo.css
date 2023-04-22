@@ -886,6 +886,32 @@ button#bt2-1:hover{
         font-weight: 30px;
     }
 
+    #novidades{
+        padding: 40px 20px;
+    }
+    #spacex{
+        width: 90%;
+        margin: 0px 5%;
+    }
+    #text_model{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #footer_blog_1{
+        padding-top: 10px;
+        width: 50%;
+    }
+
+    #footer_blog_2{
+        display: none;
+    }
+
+    #footer_blog_3{
+        padding-top: 10px;
+        width: 50%;
+    }
+
     #contato{
         width: 100%;
         padding: 0px;
