@@ -45,7 +45,7 @@
     {{--  --}}
     <div  class="w-[100%] bg-[#eeeeee] inline-block">
         {{--  --}}
-        <div   id="caixa_cinza_projeto2" class="w-[50%] pl-[5%] h-[600px] inline-block float-left">
+        <div   id="caixa_cinza_projeto2" class="w-[50%] pl-[5%] h-[700px] inline-block float-left">
             {{--  --}}
             <div id="caixa_cinza_projeto2" class="w-[750px] mt-[80px] inline-block bg-[silver] absolute h-[420px]">
 
@@ -62,8 +62,19 @@
                         <ul class="">
                             <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
                             <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+
                         </ul>
                     </div>
+            </div>
+            <div class="w-[100%] inline-block mt-[495px]">
+                {{--  --}}
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/6.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[140px]" src="/img/7.png" alt=""></li>
+                <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/9.png" alt=""></li>
+
+
             </div>
         </div>
         {{--  --}}
@@ -279,7 +290,7 @@
             <div class="modal_pesquisadores">
                 {{--  --}}
                 <div class="w-[1000px] h-[500px] mt-[10%] mx-auto bg-[#ffffff] p-[40px]">
-                    
+
                     {{-- CONTEÚDO SARAH --}}
                     @if($pesquisador == "tacito")
                     {{--  --}}

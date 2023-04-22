@@ -57,8 +57,13 @@
             {{--  --}}
             <div class="w-[100%] inline-block mt-[480px]">
                 {{--  --}}
-                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[120px] " src="/img/4.png" alt=""></li>
-                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[120px]" src="/img/6.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/6.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/4.png" alt=""></li>
+                <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/9.png" alt=""></li>
+                <li class="inline-block mr-[40px] my-[10px]"><img class="w-[250px] " src="/img/10.png" alt=""></li>
+
             </div>
         </div>
         {{--  --}}
@@ -199,7 +204,9 @@
         {{-- ELIMINAR ESSE CAMPO --}}
 
         {{-- SUBSTITUIR PELO TEXTO DO OBJETIVO AQUI --}}
-        <p id="metodo" class="mb-[20px] text-[{{ $numb_font }}px] text-justify"></p>
+        <p id="metodo" class="mb-[20px] text-[{{ $numb_font }}px] text-justify">
+            Comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.
+            </p>
     </div>
     {{--  --}}
     <div id="cx_azul_solucao" class="w-[20%] inline-block float-left h-[700px] bg-[#5CD1FF]">
