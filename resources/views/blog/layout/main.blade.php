@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
     {{-- ICONES --}}
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <!-- CSS -->
     <link rel="stylesheet" href="/css/estilo.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,16 +30,53 @@
     else{
         $numb_font = 13;
     }
-
-    // RESGATE DE DOENÇAS CRÔNICAS
-    $doencas_info  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 2");
-
-    // RESGATE DE DOENÇAS AGUDAS
-    $doencas_agds  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 1");
-
 @endphp
 {{--  --}}
 <body>
+    {{-- MOBILE HEADER --}}
+    <header id="barra_superior_acessibilidade_mobile" class="w-[100%] bg-[#212121] inline-block fixed">
+        {{--  --}}
+        <div class="w-[55%] float-left inline-block h-[40px]">
+            {{--  --}}
+            <ul id="button_font" class="float-right mt-[5px]">
+                <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
+                <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
+            </ul>
+        </div>
+        {{--  --}}
+        <div class="w-[20%] float-left inline-block h-[40px]">
+            {{--  --}}
+            <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
+        </div>
+        {{--  --}}
+        <div class="w-[25%] float-left inline-block h-[40px]">
+            {{--  --}}
+            <ul class="mt-[5px] mr-[10px] float-right">
+                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+    {{-- BARRA SUPERIOR MOBILE --}}
+    <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#ffffff] inline-block fixed">
+        {{--  --}}
+        <div class="w-[90%] mx-[5%] h-[100px] inline-block">
+            {{--  --}}
+            <div class="w-[70%] inline-block float-left">
+                {{--  --}}
+                <a href="{{ route('blog') }}">
+                    <img class="float-left mt-[22px] w-[60px] mr-[10px]" src="/img/rs_logo.png" alt=""/>
+                    <p class="text-[18px] mt-[34px] text-[#080E45]"><b>Respira</b>Saúde | <b>Blog</b></p>
+                </a>
+            </div>
+            {{--  --}}
+            <div class="w-[30%] inline-block float-left">
+                {{--  --}}
+                {{-- <img id="menu_bt" src="/img/menu-hamburguer.png" onclick="menu()" class="w-[20px] float-right mt-[35px]"> --}}
+                <p class="text-[#080E45] text-[20px] float-right mt-[35px]"><i class="fi fi-br-menu-burger"></i></p>
+            </div>
+        </div>
+    </header>
     {{-- HEADER --}}
     <header id="barra_superior_fixa" class="w-[100%] bg-[#ffffff] shadow-lg inline-block fixed">
         {{--  --}}
@@ -101,11 +139,11 @@
         {{--  --}}
         <div class="w-[90%] mx-[5%] my-[50px] inline-block">
             {{--  --}}
-            <div class="w-[25%] inline-block float-left">
+            <div id="footer_blog_1" class="w-[25%] inline-block float-left">
                 <p class="text-[#ffffff] text-[12px]">laire@ccs.ufrn.br</p>
             </div>
             {{--  --}}
-            <div id="p_respira_blog" class="w-[50%] inline-block float-left">
+            <div id="footer_blog_2" id="p_respira_blog" class="w-[50%] inline-block float-left">
                 {{--  --}}
                 <p class="text-[20px] text-center text-[#ffffff]"><b>Respira</b>Saúde | <b class="text-[#ffffff]">Blog</b></p>
                 {{--  --}}
@@ -120,7 +158,7 @@
                 </center>
             </div>
             {{--  --}}
-            <div class="w-[25%] inline-block float-left">
+            <div id="footer_blog_3" class="w-[25%] inline-block float-left">
                 {{--  --}}
                 <ul class="float-right">
                     <li class="inline-block ml-[25px] w-[20px]"><a href="https://www.facebook.com/laire.lab" target="_blanck" ><img class="text-[#ffffff] text-[20px]" src="/img/facebook.png" alt="Facebook"></a></li>

@@ -27,9 +27,9 @@ class BlogController extends Controller
         return redirect()->route('admin.painel_blog');
     }
 
-    public function PostagemBlog($id)
+    public function PostagemBlog()
     {
-        return view('blog.postagens', ['post' => $id]);
+        return view('blog.postagens');
     }
 
     // DELETAR POSTAGEM
