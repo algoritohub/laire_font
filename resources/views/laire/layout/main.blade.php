@@ -80,9 +80,36 @@
             {{--  --}}
             <div class="w-[30%] inline-block float-left">
                 {{--  --}}
-                <img id="menu_bt" src="/img/menu-hamburguer.png" onclick="menu()" class="w-[20px] float-right mt-[45px]">
+                {{-- <img id="menu_bt" src="/img/menu-hamburguer.png" onclick="menu()" class="w-[20px] float-right mt-[45px]"> --}}
+                {{--  --}}
+                <p id="busca_mobile1" class="text-[#ffffff] cursor-pointer text-[18px] mt-[40px] float-right"><i class="fi fi-bs-search"></i></p>
             </div>
         </div>
+    </header>
+    {{--  --}}
+    <header id="barra_superior_menu_mobile" class="w-[100%] mt-[140px] bg-[#5CD1FF] overflow-scroll inline-block fixed">
+        {{--  --}}
+        <div id="menu_principal" class="w-[880px] py-[10px] inline-block">
+            {{--  --}}
+            <ul class="menu">
+                <li class="inline-block ml-[30px]"><a href="#laboratorio" class="text-[#ffffff] text-[14px] font-bold"><strong>Laboratório</strong></a></li>
+                <li class="inline-block ml-[30px]"><a href="#pesquisadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Equipe</strong></a></li>
+                <li class="inline-block ml-[30px]"><a href="#patrocinadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Parceiros</strong></a></li>
+                <li class="inline-block ml-[30px]"><a href="#pesquisas." class="text-[#ffffff] text-[14px] font-bold"><strong>Pesquisas</strong>
+                <li class="inline-block ml-[30px]"><a href="#bk-" class="text-[#ffffff] text-[14px] font-bold"><strong>Eventos</strong></a></li>
+                <li class="inline-block ml-[30px]"><a href="#noticias_slide" class="text-[#ffffff] text-[14px] font-bold"><strong>Notícias</strong></a></li>
+                <li class="inline-block ml-[30px]"><a href="#contatos." class="text-[#ffffff] text-[14px] font-bold"><strong>Contatos</strong></a></li>
+                <li class="inline-block ml-[30px]"><a href="#social" class="text-[#ffffff] text-[14px] font-bold"><strong>Redes Sociais</strong></a></li>
+            </ul>
+        </div>
+        {{--  --}}
+        <div style="display: none;" id="busca_mobile_menu" class="w-[90%] mx-[5%] inline-block">
+            {{--  --}}
+            <form class="m-[0px]" action="" method="POST">
+                @csrf
+                <input class="w-[100%] h-[30px] bg-[#ffffff] outline-none pl-[10px] my-[10px] rounded-[5px]" type="text" placeholder="Busque por algo!">
+            </form>
+        </div> 
     </header>
     {{-- BARRA DE ACESSIBILIDADE --}}
     <div id="barra_de_acessibilidade_laire" class="w-[100%] inline-block bg-[#212121] fixed">

@@ -547,3 +547,11 @@ $(document).ready(function(){
         $("#menu_principal").toggle('500');
     });
 });
+
+$(document).ready(function(){
+    $("#busca_mobile1").click(function(event){
+        event.preventDefault();
+        $("#busca_mobile_menu").toggle();
+        $("#menu_principal").toggle();
+    });
+});
