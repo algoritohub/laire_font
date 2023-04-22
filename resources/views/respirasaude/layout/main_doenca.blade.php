@@ -90,11 +90,11 @@
         </div>
     </header>
     {{--  --}}
-    <div class="menu_mobile_cascata">
+    <div  class="menu_mobile_cascata">
         {{--  --}}
-        <div class="cont_principal">
+        <div   class="cont_principal">
             <div class="cont_icon_trg disable">
-                <div class="cont_drobpdown_menu disable">
+                <div  class="cont_drobpdown_menu disable">
                     <ul class="">
                         <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Missão</a></li>
                         <hr class="my-[10px]">
@@ -251,7 +251,7 @@
                                         <li><a href="#">Barreiras para prevenção</a></li>
                                         <li><a href="#">Facilitadores para prevenção</a></li>
                                     </ul>
-                                </li> 
+                                </li>
                                 @endif
                                 {{--  --}}
                                 <li><b><a href="#text_missao_RS">Definição</a></b></li>

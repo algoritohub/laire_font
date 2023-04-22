@@ -251,9 +251,9 @@
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
-                        <p class="font-bold text-center text-[15px]">Thayla Amorim Santino</p>
+                        <p class="font-bold text-center text-[15px]">Baldomero Silva </p>
                         {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">ASSOBRAFIR/COFFITO</p>
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
                     </div>
                 </div>
                 {{--  --}}
@@ -281,6 +281,208 @@
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
                     <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'colaboradora_externa', 'nome' => 'gabriela']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{-- CARD PESQUISADOR --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Sarah Leite</p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'aluno_de_doutorado', 'nome' => 'sarah']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+
+            {{-- CARD PESQUISADOR --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">João  Alchieri </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+
+            {{-- CARD PESQUISADOR --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Cecilia Patino </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'colaboradora_externa', 'nome' => 'gabriela']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Kleber  Luz </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Ricardo  Guerra </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Tito Penha </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">ASSOBRAFIR/COFFITO</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]"Gabriel Silva </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Ada Jácome </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Karolinne Monteiro </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">-	Karla Morganna  Mendonça </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
 

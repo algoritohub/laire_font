@@ -237,9 +237,9 @@
 
 <section id="cronicas" class="w-[100%] mb-[40px] inline-block">
     {{--  --}}
-    <div id="objetivo" id="text_solucoes"  class="w-[80%] pr-[650px] pl-[75px] inline-block float-left h-[700px] bg-[#ffffff]">
+    <div id="objetivo" id="text_solucoes"   class="w-[80%] pr-[650px] pl-[75px] inline-block float-left h-[700px] bg-[#ffffff]">
         {{--  --}}
-        <p class="text-[25px] font-bold mb-[40px] mt-[180px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Resultados</p>
+        <p  class="text-[25px] font-bold mb-[40px] mt-[180px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Resultados</p>
 
         <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">A revisão incluiu <b>13 estudos </b>presentando 1.056 pacientes com <b>asma, doença pulmonar obstrutiva crônica (DPOC) e fibrose cística.</b> As intervenções de atenção domiciliar avaliadas nos estudos foram: <b>consulta domiciliar</b>,<b> tratamento domiciliar de exacerbações, alta precoce, hospital em casa, antibioticoterapia domiciliar e programa de reabilitação domiciliar.</b></p>
         <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Não encontramos evidências suficientes para recomendar a atenção domiciliar para adultos com doenças respiratórias crônicas. Entretanto, foi possível observar que os estudos, na sua maioria, <b>observaram que os pacientes tratados com atenção domiciliar tiveram menor taxa de readmissão no hospital, menos eventos adversos, menor mortalidade  e melhor estado funcional.</b></p>
@@ -298,11 +298,11 @@
         <div class="w-[100%] mt-[70px] inline-block">
 
             {{-- CARD PESQUISADOR --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+            <div id="pesquisador1" id="sarah" class="w-[20%] mx-[2.5%] float-left">
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -319,11 +319,11 @@
             </div>
 
             {{-- CARD PESQUISADOR --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+            <div id="pesquisador1" id="thaylaThayla Santino.jpg" class="w-[20%] mx-[2.5%] float-left">
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Thayla Santino.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -344,7 +344,7 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Gabriela Chaves.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -359,6 +359,127 @@
                     <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'colaboradora_externa', 'nome' => 'gabriela']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" id="joubert" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/Joubert Vitor .JPG'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Joubert Barbosa</p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Tácito Zaildo</p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN-UEPB-CEFAPP</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Cleia Amaral</p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Sara Ahmed</p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Zenewton Gama </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+              {{-- CARD PESQUISADOR --}}
+              <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                        {{--  --}}
+                        <p class="font-bold text-center text-[15px]">Karla Morganna  Mendonça </p>
+                        {{--  --}}
+                        <p class="text-[#212121] text-center text-[16px]">FACISA/UFRN, UEPB, ASSOBRAFIR</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+
 
             {{-- MODAL --}}
             @if(isset($pesquisador) AND !empty($pesquisador))
@@ -440,7 +561,8 @@
                         </div>
                     @endif
 
-                    {{-- CONTEÚDO THAYLA --}}
+
+                     {{-- CONTEÚDO gabriela --}}
                     @if($pesquisador == "gabriela")
                         <div class="w-[100%] inline-block">
                             {{--  --}}
@@ -475,6 +597,45 @@
                             </ul>
                             </center>
                         </div>
+
+
+                        {{-- CONTEÚDO SARAH --}}
+                    @if($pesquisador == "sarah")
+                        <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <div class="w-[80%] inline-block float-left">
+                                {{--  --}}
+                                <p class="font-bold leading-[23px] text-[20px]">Sarah Leite</p>
+                                <p class="text-[13px] uppercase">{{ $categoria }}</p>
+                            </div>
+                            {{--  --}}
+                            <div class="w-[20%] inline-block float-left">
+                                {{--  --}}
+                                <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            </div>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                            {{--  --}}
+                            <p class="leading-[17px] text-[14px] text-center mt-[30px]">
+                                Fisioterapeuta graduada pela Universidade Federal do Rio Grande do Norte (UFRN) (2017), possui residência em Terapia Intensiva pelo Hospital Dom Helder Câmara (HDH) (2019), Mestrado acadêmico em Fisioterapia (UFRN) (2021) e Título de Especialista Profissional em Fisioterapia em Terapia Intensiva (ASSOBRAFIR/COFFITO) (2022). Atualmente cursa Doutorado em Fisioterapia pela UFRN, integrante do Laboratório de Avaliação e Intervenção Respiratória (LAIRE), ocupa o cargo público de fisioterapeuta no Hospital Barão de Lucena (HBL) - Secretaria Estadual de Saúde de Pernambuco (SES-PE), ocupa cargo de gestão como Coordenadora da equipe de Fisioterapia do Hospital Dom Helder Câmara. Tem experiência em pesquisas de tradução, adaptação transcultural e avaliação psicométrica de instrumentos em saúde; e revisões sistemáticas em saúde.
+                            </p>
+                        </div>
+                         {{--  --}}
+                         <div class="w-[100%] inline-block">
+                            {{--  --}}
+                            <center>
+                            {{--  --}}
+                            <ul id="links_pesq_mob" class="mt-[20px]">
+                                <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3312691654735238" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                                <li class="mr-[20px] inline-block"><a href="ttps://orcid.org/0000-0002-2908-8187"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                            </ul>
+                            </center>
+                        </div>
+                    @endif
+
                     @endif
                 </div>
             </div>
