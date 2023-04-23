@@ -62,6 +62,11 @@ Route::get('/respira-saude/projeto/3', function () {
     return view('respirasaude.projeto3');
 })->name('projeto3');
 
+// PROJETO4
+Route::get('/respira-saude/projeto/4', function () {
+    return view('respirasaude.projeto4');
+})->name('projeto4');
+
 
 // PÁGINA DE DOENÇAS
 Route::get('/respira-saude/doencas/{tipo}/{doenca}', [ConteudoController::class, "PagDoencas"])->name('pag_doencas');

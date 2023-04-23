@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -895,6 +896,7 @@ button#bt2-1:hover{
 
 /* RESPONSIVIDADE */
 @media all and (min-width:2px) and (max-width:800px) {
+
     body{
         width: 100%;
         display: inline;
@@ -1880,6 +1882,7 @@ button#bt2-1:hover{
 
 /*---------------------------------------------------------------------------*/
     /*respira saude projeto 1*/
+
     #pesquisador1{
         width: 48%;
         margin: 0px 1%;
@@ -1891,6 +1894,7 @@ button#bt2-1:hover{
         padding-top: 1rem;
         height: auto;
     }
+
 
     #cx_cinza_barreira{
         display: none;
@@ -1910,9 +1914,10 @@ button#bt2-1:hover{
     #text_projeto_0{
 
         height: auto;
-        width: 80%;
+        width: auto;
         text-align: left;
-        margin: 10px;
+        margin-left: 10%;
+        float: left;
 
 
 
@@ -1950,26 +1955,28 @@ button#bt2-1:hover{
         background-repeat: no-repeat;
     }
     #cx_azul_text{
-        margin-left: 7%;
+        margin-left: 5%;
         height: auto;
-        width: 400px;
+        width: 90%;
         margin-bottom: 10%;
     }
 
 
-    #barra_secundaria-{
-        width: 90%;
+    #barra_secundaria{
+        width: 60%;
     }
     #botoes_bandeiras{
         width: 35%;
     }
-    #barra_superior_fixa_mobile-{
-        width: 100%;
-    }
-    #barra_superior_acessibilidade_mobile-{
-        width: 100%;
 
+    #cx_cinza{
+        display: none;
     }
+
+
+
+
+
     /*---------------------------------------------------------------------------*/
     /*respira saude projeto 2*/
     #text_projeto_resultado{

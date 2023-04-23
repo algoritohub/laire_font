@@ -331,7 +331,7 @@
         document.getElementById("radio"+count).checked = true;
     }
 
-    </script>
+    <!--</script>
     {{-- VLIBRAS --}}
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
