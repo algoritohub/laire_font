@@ -26,6 +26,9 @@
 
 @endphp
 
+
+
+
 {{-- SECTION --}}
 <section class="w-[100%] inline-block mt-[100px]">
     {{--  --}}
@@ -254,7 +257,7 @@
 {{--  --}}
 <section class="w-[90%] inline-block mx-[5%]">
     {{-- CAIXA DE INFORMAÇÕES COM 4 BOTÕES --}}
-    <div id="caixa_info" style="background: url('/img/banner.png'); background-size: 100%;" class="w-[100%] h-[420px] inline-block px-[20px] py-[80px] bg-[#00FF8C] mb-[60px] rounded-[10px] mt-[80px]">
+    <div id="caixa_info" style="background: url('/img/banner.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] h-[420px] inline-block px-[20px] py-[80px] bg-[#00FF8C] mb-[60px] rounded-[10px] mt-[80px]">
         {{--  --}}
         <div class="w-[90%] mx-[5%] mt-[20px]">
             {{--  --}}

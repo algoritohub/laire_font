@@ -67,7 +67,7 @@
     {{-- MOBILE HEADER --}}
     <header id="barra_superior_acessibilidade_mobile" class="w-[100%] bg-[#212121] inline-block fixed">
         {{--  --}}
-        <div class="w-[55%] float-left inline-block h-[40px]">
+        <div  id="botoes_bandeiras"  class="w-[55%] float-left inline-block h-[40px]">
             {{--  --}}
             <ul id="button_font" class="float-right mt-[5px]">
                 <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
@@ -80,7 +80,7 @@
             <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
         </div>
         {{--  --}}
-        <div class="w-[25%] float-left inline-block h-[40px]">
+        <div  class="w-[25%] float-left inline-block h-[40px]">
             {{--  --}}
             <ul class="mt-[5px] mr-[10px] float-right">
                 <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
@@ -91,7 +91,7 @@
     {{-- BARRA SUPERIOR MOBILE --}}
     <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
         {{--  --}}
-        <div class="w-[90%] mx-[5%] h-[100px] inline-block">
+        <div id="barra_secundaria"  class="w-[90%] mx-[5%] h-[100px] inline-block">
             {{--  --}}
             <div class="w-[70%] inline-block float-left">
                 {{--  --}}
@@ -157,7 +157,7 @@
                 @csrf
                 <input class="w-[100%] h-[30px] bg-[#ffffff] outline-none pl-[10px] my-[10px] rounded-[5px]" type="text" placeholder="Busque por algo!">
             </form>
-        </div> 
+        </div>
     </header>
     {{-- NOVO HEADER --}}
     <header style="background: url(/img/background_header.png); background-size: 100%; background-repeat: no-repeat;" id="barra_superior_fixa" class="w-[100%] inline-block fixed">

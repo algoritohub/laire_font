@@ -37,11 +37,11 @@
     }
 @endphp
 {{--  --}}
-<body>
+<body id="pagina">
     {{-- MOBILE HEADER --}}
-    <header id="barra_superior_acessibilidade_mobile" class="w-[100%] bg-[#212121] inline-block fixed">
+    <header id="barra_superior_acessibilidade_mobile-" class="w-[100%] bg-[#212121] inline-block fixed">
         {{--  --}}
-        <div class="w-[55%] float-left inline-block h-[40px]">
+        <div  id="botoes_bandeiras"  class="w-[55%] float-left inline-block h-[40px]">
             {{--  --}}
             <ul id="button_font" class="float-right mt-[5px]">
                 <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
@@ -54,7 +54,7 @@
             <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
         </div>
         {{--  --}}
-        <div class="w-[25%] float-left inline-block h-[40px]">
+        <div  class="w-[25%] float-left inline-block h-[40px]">
             {{--  --}}
             <ul class="mt-[5px] mr-[10px] float-right">
                 <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
@@ -63,9 +63,9 @@
         </div>
     </header>
     {{-- BARRA SUPERIOR MOBILE --}}
-    <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
+    <header id="barra_superior_fixa_mobile-" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
         {{--  --}}
-        <div class="w-[90%] mx-[5%] h-[100px] inline-block">
+        <div id="barra_secundaria"  class="w-[90%] mx-[5%] h-[100px] inline-block">
             {{--  --}}
             <div class="w-[70%] inline-block float-left">
                 {{--  --}}
@@ -77,7 +77,7 @@
             {{--  --}}
             <div class="w-[30%] inline-block float-left">
                 {{--  --}}
-                <img id="menu_bt" src="/img/menu-hamburguer.png" onclick="menu()" class="w-[20px] float-right mt-[35px]">
+                <p id="busca_mobile" class="text-[#ffffff] cursor-pointer text-[18px] mt-[40px] float-right"><i class="fi fi-bs-search"></i></p>
             </div>
         </div>
     </header>

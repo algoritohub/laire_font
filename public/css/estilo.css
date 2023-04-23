@@ -1141,6 +1141,14 @@ button#bt2-1:hover{
     #footer{
         margin-top: 20px;
     }
+    #caixa_cinza_projeto2-1{
+        display: none;
+    }
+    #importacncia_projeto2{
+        display: none;
+    }
+
+
 
     /* RESPOSNSIVO LAIRE */
     #maxbos{
@@ -1900,14 +1908,20 @@ button#bt2-1:hover{
         display: none;
     }
     #text_projeto_0{
-        padding-left: 50px;
+
         height: auto;
+        width: 80%;
+        text-align: left;
+        margin: 10px;
+
 
 
     }
     #text_projeto_1{
         padding-left: 50px;
         height: auto;
+        width: auto;
+        text-align: left;
 
     }
     #text_barreira{
@@ -1916,6 +1930,7 @@ button#bt2-1:hover{
         width: auto;
     }
     #text_solucoes{
+
         padding-right: 50px;
         height: auto;
         width: auto;
@@ -1925,6 +1940,68 @@ button#bt2-1:hover{
         height: auto;
         width: auto;
     }
+    #objetivo{
+
+        width: auto;
+        height: auto;
+        padding-right: 7%;
+    }
+    #caixa_info{
+        background-repeat: no-repeat;
+    }
+    #cx_azul_text{
+        margin-left: 7%;
+        height: auto;
+        width: 400px;
+        margin-bottom: 10%;
+    }
+
+
+    #barra_secundaria-{
+        width: 90%;
+    }
+    #botoes_bandeiras{
+        width: 35%;
+    }
+    #barra_superior_fixa_mobile-{
+        width: 100%;
+    }
+    #barra_superior_acessibilidade_mobile-{
+        width: 100%;
+
+    }
+    /*---------------------------------------------------------------------------*/
+    /*respira saude projeto 2*/
+    #text_projeto_resultado{
+        width: auto;
+        height: auto;
+        padding-left: 10%;
+    }
+    #text_projeto2_0{
+        background-color: #00FF8C;
+    }
+    #caixa_cinza_projeto2{
+        background-color: transparent;
+    }
+    .menu_mobile_cascata{
+        background-color: transparent;
+    }
+    #box_audio{
+        width: 90%;
+    }
+    #video_missao{
+        width: 87%;
+    }
+    #cx_azul_text_projeto2{
+        display: none;
+    }
+    #caixa_projeto2{
+        background-color: #00FF8C;
+    }
+    .menu_mobile_cascata{
+        display: none;
+    }
+    #cx1{}
 
 
 

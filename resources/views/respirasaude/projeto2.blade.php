@@ -43,7 +43,7 @@
 {{-- SECTION --}}
 <section class="w-[100%] inline-block mt-[100px]">
     {{--  --}}
-    <div  class="w-[100%] bg-[#eeeeee] inline-block">
+    <div id="cx1"  class="w-[100%] bg-[#eeeeee] inline-block">
         {{--  --}}
         <div   id="caixa_cinza_projeto2" class="w-[50%] pl-[5%] h-[700px] inline-block float-left">
             {{--  --}}
@@ -115,21 +115,20 @@
     </div>
     {{--  --}}
 </section>
-
-{{-- OBJETIVO --}}
-<section id="cronicas" class="w-[100%] mb-[40px] inline-block">
+<section id="metodos" class="w-[100%] inline-block">
     {{--  --}}
-    <div id="objetivo"  id="text_solucoes"  class="w-[80%] pr-[650px] pl-[75px] inline-block float-left h-[700px] bg-[#ffffff]">
+    <div id="caixa_cinza_facilidade" class="w-[20%] inline-block float-left h-[700px] bg-[#fafafa]">
         {{--  --}}
-        <p class="text-[25px] font-bold mb-[20px] mt-[310px] pl-[20px] border-l-[3px] border-l-[#00FF8C]"> Objetivo da pesquisa</p>
-
-        <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Propor soluções para que a população seja capaz de aumentar a sua adesão às medidas de prevenção e controle da COVID-19 e outras doenças respiratórias contagiosas.</p>
-
+        <div id="caixa_cinza_facilidade" class="w-[800px] h-[440px] bg-[silver] absolute mt-[10%]"></div>
     </div>
     {{--  --}}
-    <div id="cx_azul_solucao" class="w-[20%] inline-block float-left h-[700px] bg-[#5CD1FF]">
+    <div id="text_resultado_facilidade" class="w-[80%] pl-[600px] pr-[60px] inline-block float-left h-[700px] bg-[#ffffff]">
         {{--  --}}
-        <div id="cx_cinza_solucao" class="w-[800px] h-[440px] ml-[-570px] bg-[silver] absolute mt-[10%]"></div>
+        <p  class="text-[25px] font-bold mb-[20px] mt-[90px] pl-[20px] mb-[20px] border-l-[3px] border-l-[#00FF8C]">Objetivo da Pesquisa </p>
+
+        <p id="metodo" class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Propor soluções para que a população seja capaz de aumentar a sua adesão às medidas de prevenção </b>.</p>
+        <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">e controle da COVID-19 e outras doenças respiratórias contagiosas. </p>
+
     </div>
 </section>
 
@@ -654,7 +653,7 @@
 {{--  --}}
 <section class="w-[90%] inline-block mx-[5%]">
     {{-- CAIXA DE INFORMAÇÕES COM 4 BOTÕES --}}
-    <div id="caixa_info" style="background: url('/img/banner.png'); background-size: 100%;" class="w-[100%] h-[420px] inline-block px-[20px] py-[80px] bg-[#00FF8C] mb-[60px] rounded-[10px] mt-[80px]">
+    <div id="caixa_info" style="background: url('/img/banner.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] h-[420px] inline-block px-[20px] py-[80px] bg-[#00FF8C] mb-[60px] rounded-[10px] mt-[80px]">
         {{--  --}}
         <div class="w-[90%] mx-[5%] mt-[20px]">
             {{--  --}}
