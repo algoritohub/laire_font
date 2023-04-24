@@ -63,7 +63,7 @@
         </div>
     </header>
     {{-- BARRA SUPERIOR MOBILE --}}
-    <header id="barra_superior_fixa_mobile-" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
+    <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
         {{--  --}}
         <div id="barra_secundaria"  class="w-[90%] mx-[5%] h-[100px] inline-block">
             {{--  --}}

@@ -1923,11 +1923,10 @@ button#bt2-1:hover{
 
     }
     #text_projeto_1{
-        padding-left: 50px;
+        padding-left: 30px;
         height: auto;
         width: auto;
-        text-align: left;
-
+        text-align: justify;
     }
     #text_barreira{
         padding-left: 50px;
@@ -2008,8 +2007,62 @@ button#bt2-1:hover{
     .menu_mobile_cascata{
         display: none;
     }
-    #cx1{}
+    /* #cx1{} */
 
+
+    /* RESPONSIVO ADPTATIVO PROJETO TESTE */
+    #lado_a_projeto{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    #container_a{
+        width: 90%;
+        display: inline-block;
+        margin: 100px 5% 0px 5%;
+        padding-left: 0px;
+    }
+    #base_imagem{
+        width: 100%;
+        height: auto;
+    }
+    #imagem_countainer{
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+    #base_logos{
+        width: 100%;
+        height: auto;
+    }
+    ul#list_logos li img{
+        width: 100px;
+    }
+    #lado_b_projeto{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        background: #080E45;
+        padding: 0px;
+    }
+    #container_b{
+        width: 80%;
+        padding-bottom: 20px;
+        margin: 0px 10%;
+        display: inline-block;
+    }
+    p#texto_titulo_projeto{
+        font-size: 25px;
+        line-height: 25px;
+        margin: 40px 0px 20px 0px;
+        color: #ffffff;
+    }
+    p#texto_projeto{
+        font-size: 15px;
+        line-height: 15px;
+        margin: 20px 0px 20px 0px;
+        color: #ffffff;
+    }
 
 
 
