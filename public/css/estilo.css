@@ -1068,10 +1068,6 @@ button#bt2-1:hover{
         font-size:9px;
     }
 
-    #box_audio{
-        display: none;
-    }
-
     #texto{
         display: none;
         background-color: #080E45;
@@ -1992,9 +1988,6 @@ button#bt2-1:hover{
     .menu_mobile_cascata{
         background-color: transparent;
     }
-    #box_audio{
-        width: 90%;
-    }
     #video_missao{
         width: 87%;
     }
@@ -2026,10 +2019,13 @@ button#bt2-1:hover{
         width: 100%;
         height: auto;
     }
-    #imagem_countainer{
+    #box_libra{
         width: 100%;
         height: 200px;
-        position: relative;
+    }
+    #box_audio{
+        width: 100%;
+        height: 200px;
     }
     #base_logos{
         width: 100%;
@@ -2064,6 +2060,77 @@ button#bt2-1:hover{
         color: #ffffff;
     }
 
+    /* RESPONSIVO DO PROJETO BLOCO 2 */
+    #container_bloco1{
+        width: 100%;
+        height: auto;
+    }
+    #lado_a_bloco1{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    #container_inner_bloco1{
+        width: 80%;
+        height: auto;
+        margin: 0px 10%;
+    }
+    #imagem_bloco1{
+        width: 100%;
+        height: 200px;
+        margin-top: 40px;
+    }
+    #container_inner_bloco1{
+        width: 80%;
+        height: auto;
+        margin: 0px 10% 30px 10%;
+    }
+    #lado_b_bloco1{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    #titulo_bloco1{
+        margin-top: 30px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    /* RESPONSIVO DO PROJETO BLOCO 2 */
+
+    #container_bloco2{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    #lado_a_bloco2{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        padding: 0px;
+    }
+    #container_inner_bloco2{
+        width: 80%;
+        margin: 0px 10%;
+        display: inline-block;
+    }
+    #texto_titulo_bloco2{
+        margin-top: 30px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+    #lado_b_bloco2{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        padding: 0px 0px 30px 0px;
+    }
+    #imagem_bloco2{
+        width: 100%;
+        height: 200px;
+        margin-top: 40px;
+    }
 
 
     /*responsivo para menores*/
