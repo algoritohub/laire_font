@@ -71,6 +71,15 @@ Route::get('/respira-saude/projeto/4', function () {
 Route::get('/respira-saude/projeto/teste', function () {
     return view('respirasaude.projeto5');
 })->name('projeto5');
+// PROJETO56-1
+Route::get('/respira-saude/projeto/teste2', function () {
+    return view('respirasaude.projeto6-1');
+})->name('projeto5');
+// PROJETO56-1
+Route::get('/respira-saude/projeto/teste3', function () {
+    return view('respirasaude.projeto7-2');
+})->name('projeto5');
+
 
 
 // PÁGINA DE DOENÇAS

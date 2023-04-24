@@ -101,7 +101,7 @@
                 {{--  --}}
                 <p id="texto_titulo_bloco2" class="text-[25px] font-bold mb-[20px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]"> Objetivo da pesquisa</p>
                 <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">desenvolvimento e validação de um sistema de avaliação e monitoramento do controle da asma e educação em saúde para crianças, adolescentes e adultos com asma (e-ASMA).</p>
-            </div> 
+            </div>
         </div>
         {{--  --}}
         <div id="lado_b_bloco2" style="background: linear-gradient(90deg, rgba(255,255,255,1) 75%, rgba(238,238,238,1) 75%);" class="w-[50%] h-[630px] inline-block float-left pr-[80px]">
@@ -111,6 +111,190 @@
                 <div id="imagem_bloco2" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
             </div>
         </div>
+    </div>
+</section>
+<section class="w-[100%] inline-block">
+    {{--  --}}
+    <div class="w-[95%] h-[600px] mx-[2.5%] my-[40px] inline-block">
+        {{--  --}}
+        <center>
+            <p id="pesquisadores" class="font-bold text-[#212121] text-[30px] border-b-[1px] w-[200px] pb-[20px]">Pesquisadores</p>
+        </center>
+        {{--  --}}
+        <div class="w-[100%] mt-[70px] inline-block">
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Sarah Joysi Almeida Leite</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/Thayla Santino.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Thayla Amorim Santino</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">UECG</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/Gabriela Chaves.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Gabriela Chaves</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">Myant Inc</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url('/img/Karoline Souza.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Karolinne Souza Monteiro</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">FACISA UFRN</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url(/img/); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Cleia teixeira Amaral</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">HUOL</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url(/img/); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Zenewton André da Silva Gama </p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url(/img/); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Sara Ahmed</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">McGill</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url(/img/); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Karla Morganna P.P. de Mendonça</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    {{--  --}}
+                    <div style="background: url(/img/); background-size: 150%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    {{--  --}}
+                    <p class="text-center font-bold mt-[20px] text-[15px]">Tácito Zaildo de Morais Santos</p>
+                    {{--  --}}
+                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block h-[150px]">
+                    {{--  --}}
+                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--patrocinadores-->
+<section class="w-[100%] h-[600px] inline-block bg-[#ffffff]">
+    {{--  --}}
+    <div class="w-[90%] mx-[5%] mt-[10%] inline-block">
+        {{--  --}}
+        <center>
+            {{--  --}}
+            <ul>
+                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/9.png" alt=""></li>
+                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
+                <!--<li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>-->
+                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
+                {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/2.png" alt=""></li> --}}
+                <!--<li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/4.png" alt=""></li>-->
+                {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
+            </ul>
+        </center>
     </div>
 </section>
 
