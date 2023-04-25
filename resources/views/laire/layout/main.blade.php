@@ -269,7 +269,7 @@
                 {{--  --}}
                 <div id="master2" class="float-left inline-block w-[33.3%]">
                     {{--  --}}
-                    <p class="text-[#ffffff] text-[16px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
+                    <p class="text-[#ffffff] text-[11px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
                 </div>
             </div>
         </div>

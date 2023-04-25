@@ -39,8 +39,17 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $("#modal_in_laire").click(function(event){
+        event.preventDefault();
+        $(".modal_laire").fadeIn();
+        $("#modal_in_laire").fadeOut();
+    });
+});
+
+$(document).ready(function(){
     $("#modal_laire").click(function(event){
         event.preventDefault();
+        $("#modal_in_laire").fadeIn();
         $(".modal_laire").fadeOut();
     });
 });

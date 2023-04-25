@@ -27,6 +27,19 @@
         {{--  --}}
         <div id="box_laire_b" class="w-[40%] float-left inline-block h-[600px] pl-[60px]">
             {{--  --}}
+            <div id="modal_in_laire" style="z-index: 1; border-radius: 20px 0px 0px 20px; display: none;" class="w-[100%] cursor-pointer shadow-lg h-[100px] fixed mt-[150px] inline-block bg-[#ffffff]">
+                {{--  --}}
+                <div class="w-[40%] inline-block float-left">
+                    {{--  --}}
+                    <img src="/img/ARLINDO.png" class="w-[400px] float-left mt-[-100px] ml-[-170px]">
+                    <div class="w-[270px] inline-block float">
+                        {{--  --}}
+                        <p class="text-[20px] text-[#212121] font-bold mt-[15px] ml-[-70px]">Já conhece o ARlindo? </p>
+                        <p class="text-[14px] text-[#212121] leading-[14px] mt-[5px] ml-[-70px]">Clique e saiba mais sobre nosso assistente de acessibilidade</p>
+                    </div>
+                </div>
+            </div>
+            {{--  --}}
             <p id="sub_text_box_a" class="text-[#080E45] text-[20px] leading-[24px] pl-[20px] border-l-[4px] text-justify border-l-[#080E45] mt-[350px]">Atividades de ensino, pesquisa e extensão relacionadas às doenças respiratórias agudas e crônicas que comprometem a qualidade de vida de crianças, adolescentes e adultos</p>
         </div>
     </div>
@@ -957,16 +970,16 @@
 
         {{--  --}}
 
-        <div id="botao_facebook"  class="w-[30.3%] h-[200px] mx-[1.5%] float-left bg-[silver]">
+        <div id="botao_facebook"  class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]">
             <center ><a  href="https://www.facebook.com/laire.lab" target="_blanck" ><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/facebook.png"/> <p class="text-[#ffffff] float-left">Facebook</p></button></a><center>
         </div>
         {{--  --}}
-        <div id="botao_instagram" class="w-[30.3%] h-[200px] mx-[1.5%] float-left bg-[silver]  ">
+        <div id="botao_instagram" class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]  ">
             <center><a href="https://www.instagram.com/laire_ufrn/?hl=pt" target="_blanck"><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/instagram.png"/> <p class="text-[#ffffff] float-left">Instagram</p></button></a>
             </center>
         </div>
         {{--  --}}
-        <div id="botao_youtube" class="w-[30.3%] h-[200px] mx-[1.5%] float-left bg-[silver]">
+        <div id="botao_youtube" class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]">
             <center><a href=" https://www.youtube.com/@laireufrn7670" target="_blank" ><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#080E45] font-bold text-[12px]"> <img class="w-[18px] float-left mr-[10px]" src="/img/youtube.png"/> <p class="text-[#ffffff] float-left">youtube</p></button></a></center>
         </div>
     </div>
@@ -993,7 +1006,7 @@
 {{--  --}}
 <div style="display: none;" class="modal_laire">
     {{--  --}}
-    <div class="w-[1000px] h-[500px] bg-[#ffffff] mx-auto mt-[10%] shadow-lg">
+    <div class="w-[800px] h-[550px] rounded-[20px] bg-[#ffffff] mx-auto mt-[6%] shadow-lg">
         {{--  --}}
         <div class="w-[100%] inline-block px-[30px]">
             {{--  --}}
@@ -1014,15 +1027,7 @@
             {{--  --}}
             <div class="w-[100%] mt-[40px] inline-block">
                 {{--  --}}
-                <div class="w-[60%] inline-block float-left">
-                    {{--  --}}
-                    <div class="w-[100%] h-[300px] bg-[#212121]"></div>
-                </div>
-                {{--  --}}
-                <div class="w-[40%] inline-block float-left">
-                    {{--  --}}
-                    <img class="w-[600px] absolute mt-[-40px] ml-[-120px]" src="/img/ARLINDO.png" alt="ARlindo">
-                </div>
+                <div class="w-[100%] h-[350px] bg-[#212121]"></div>
             </div>
         </div>
     </div>

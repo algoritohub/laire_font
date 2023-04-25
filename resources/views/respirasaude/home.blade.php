@@ -47,47 +47,38 @@
     </div>
 </div>
 
-{{--  --}}
-<div id="missao" class="w-[100%] h-[110px]"></div>
-{{--  --}}
-<section class="w-[100%] inline-block">
+{{-- NOVO BLOCO DE MISSÃO --}}
+<div id="missão" class="w-[100%] inline-block">
     {{--  --}}
-    <div id="caixa-cinza-1" class="w-[100%] bg-[#eeeeee] inline-block">
+    <div style="background: linear-gradient(90deg, rgba(250,250,250,1) 75%, rgba(92,209,255,1) 75%);" class="w-[50%] inline-block float-left h-[700px] bg-[green] pl-[80px]">
         {{--  --}}
-        <div id="texto" class="w-[50%] pl-[5%] h-[600px] inline-block float-left">
+        <div class="w-[100%] inline-block">
             {{--  --}}
-            <div id="box_audio" style="background: url('/img/img_missao.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[750px] mt-[140px] inline-block absolute h-[450px]"></div>
-            {{--  --}}
-            <div  style="display: none;" id="box_libra" class="w-[780px] inline-block absolute h-[450px]">
-                {{--  --}}
-                <video id="video_missao" class="w-[750px]" controls="controls">
-                    <source src="/img/menor.mp4" type="video/mp4">
-                </video>
-
-            </div>
-            {{--  --}}
-            <div class="w-[100%] h-[40px] mt-[50px]">
-                <ul class="">
-                    <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
-                    <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
-                </ul>
-            </div>
+            <ul class="mt-[100px]">
+                <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+            </ul>
         </div>
         {{--  --}}
-        <div id="caixa_text_missao" class="w-[50%] pr-[5%] h-[700px] pt-[70px] inline-block float-left bg-[#080E45]">
-            {{--  --}}
-            <p id="text_missao_RS" class="text-[30px] leading-[30px] float-right text-right w-[500px] font-bold text-[#ffffff]">MISSÃO</p>
-            {{--  --}}
-            <p id="text_missao_RS" class="text-right mt-[40px] text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#ffffff]">O RespiraSaúde é uma ponte entre o conhecimento produzido, através da ciência, e a comunicação com a sociedade. </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#ffffff]">A nossa missão é comunicar de forma simples e acessível, para todas as pessoas, os resultados de pesquisas importantes. Normalmente, os resultados de grandes pesquisas são publicados em jornais científicos e na grande maioria das vezes, em outros idiomas. Saiba aqui no RespiraSaúde como elas acontecem e compreenda os seus resultados. </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#ffffff]">Aqui, no RespiraSaúde estão disponíveis informações importantes e atualizadas sobre as principais doenças respiratórias agudas e crônicas. </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#ffffff]">Queremos que você entenda como elas acontecem no nosso corpo, e como podem ser prevenidas e tratadas.
-            Neste canal você terá ainda, informações sobre os eventos abertos para a comunidade, além das oportunidades para participar de projetos de pesquisa e projetos de extensão no Laboratório de Avaliação e Intervenção Respiratória!
-            </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#ffffff]">Nossa missão acima de tudo é promover educação em saúde e contribuir com a sua Saúde Respiratória!</p>
-        </div>
+        <div id="box_libra" style="display: none;" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[orange]"></div>
+        {{--  --}}
+        <div style="background-image: url(/img/img_missao.png); background-size: 110%;" id="box_audio" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[purple]"></div>
     </div>
-</section>
+    {{--  --}}
+    <div class="w-[50%] inline-block float-left h-[700px] bg-[#5CD1FF] px-[80px]">
+        {{--  --}}
+        <p id="text_missao_RS" class="text-[30px] leading-[30px] mt-[100px] float-right text-right w-[500px] font-bold text-[#080E45]">MISSÃO</p>
+        {{--  --}}
+        <p id="text_missao_RS" class="text-right mt-[40px] text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">O RespiraSaúde é uma ponte entre o conhecimento produzido, através da ciência, e a comunicação com a sociedade. </p>
+        <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">A nossa missão é comunicar de forma simples e acessível, para todas as pessoas, os resultados de pesquisas importantes. Normalmente, os resultados de grandes pesquisas são publicados em jornais científicos e na grande maioria das vezes, em outros idiomas. Saiba aqui no RespiraSaúde como elas acontecem e compreenda os seus resultados. </p>
+        <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">Aqui, no RespiraSaúde estão disponíveis informações importantes e atualizadas sobre as principais doenças respiratórias agudas e crônicas. </p>
+        <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">Queremos que você entenda como elas acontecem no nosso corpo, e como podem ser prevenidas e tratadas.
+        Neste canal você terá ainda, informações sobre os eventos abertos para a comunidade, além das oportunidades para participar de projetos de pesquisa e projetos de extensão no Laboratório de Avaliação e Intervenção Respiratória!
+        </p>
+        <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">Nossa missão acima de tudo é promover educação em saúde e contribuir com a sua Saúde Respiratória!</p>
+    </div>
+</div>
+
 {{-- BLOCO DE INFORMATIVO --}}
 <section style="display: none;" class="w-[100%] inline-block">
     {{--  --}}
@@ -180,7 +171,7 @@
 <section id="projeto_extensao" class="w-[100%] inline-block">
     {{--  --}}
     <center>
-        <p class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[300px] mt-[40px] pb-[20px]">Projetos de Extensão</p>
+        <p class="font-bold text-[#212121] text-[30px] border-b-[4px] leading-[35px] w-[300px] mt-[40px] pb-[20px]">Projetos de Extensão</p>
     </center>
     <div id="caixa_evt" class="w-[94%] mx-[3%] mt-[70px] inline-block">
         {{--  --}}

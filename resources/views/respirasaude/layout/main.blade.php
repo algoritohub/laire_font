@@ -200,7 +200,7 @@
                 {{--  --}}
                 <div class="w-[100%] h-[60px] inline-block">
                     {{--  --}}
-                    <div class="w-[85%] inline-block float-left">
+                    <div class="w-[90%] inline-block float-left">
                         {{--  --}}
                         <nav id="menu_prime" class="mt-[5px]">
                             <ul class="menu">
@@ -330,7 +330,7 @@
                         <p id="busca_search" class="text-[#ffffff] text-center text-[18px] mt-[22px] cursor-pointer"><i class="fi fi-bs-search"></i></p>
                     </div>
                     {{--  --}}
-                    <div class="w-[10%] inline-block float-left">
+                    <div class="w-[5%] inline-block float-left">
                         {{--  --}}
                         <a href="{{ route('home.laire') }}"><img src="/img/avt_laire.png" id="mascot" class="w-[50px] ml-[40px] mt-[5px] cursor-pointer float-right"></a>
                     </div>
