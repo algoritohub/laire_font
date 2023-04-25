@@ -889,6 +889,61 @@ button#bt2-1:hover{
     background-image: url("/img/8- (3).png");
     background-size: 100%;
     background-repeat: no-repeat;
+
+
+/*imagens do projeto 1 */
+
+}
+#box_audio-1{
+    background-image: url("/img/imagem_rs_1.png");
+    background-size: cover;
+    width: 800px;
+    height: 400px;
+}
+#imagem_bloco1-pj1{
+    background-image: url("/img/examinando-a-amostra-com-microscopio.jpg");
+    background-size: cover;
+}
+#imagem_bloco2-pj1{
+    background-image: url("/img/mulher-de-negocios-de-meia-idade-confiante-escrevendo-em-um-adesivo-com-lapis-e-brainstorming.jpg");
+    background-size: cover;
+}
+#imagem_bloco1{
+    background-image: url("/img/chemist-doctor-explaining-coworker-vaccine-development-dna-mutations-working-equipped-laboratory.jpg");
+    background-size: cover;
+
+}
+/*imagens do projeto 2 */
+
+
+#box_audio-2{
+    background-image: url("/img/fundo3.jpg");
+    background-size: cover;
+    width: 800px;
+    height: 400px;
+}
+#imagem_bloco1-pj2{
+    background-image: url("/img/examinando-a-amostra-com-microscopio.jpg");
+    background-size: cover;
+}
+#imagem_bloco1-pj2a{
+    background-image: url("/img/mulher-de-negocios-de-meia-idade-confiante-escrevendo-em-um-adesivo-com-lapis-e-brainstorming.jpg");
+    background-size: cover;
+}
+#imagem_bloco1-pj2b{
+    background-image: url("/img/medical-biologist-team-working-microbiology-hospital-laboratory.jpg");
+    background-size: cover;
+
+}
+#imagem_bloco2{
+    background-image: url("/img/biochemist-working-microscope-cell-illustration-computer-screen-chemical-laboratory-scientist-woman-analyzing-virus-dna-cell-tissue-diagram-plasma-hemoglobin-nucleus.jpg");
+    background-size: cover;
+
+}
+#box_audio{
+    background-image: url("/img/fundo2.jpg");
+    background-size: cover;
+
 }
 
 
