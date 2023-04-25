@@ -60,9 +60,9 @@
             </ul>
         </div>
         {{--  --}}
-        <div id="box_libra" style="display: none;" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[orange]"></div>
+        <div id="box_libra" style="display: none;" class="w-[100%] h-[330px] mt-[20px] inline-block bg-[orange]"><video id="video-missão" src="/img/menor.mp4" controls="controls" ></video></div>
         {{--  --}}
-        <div style="background-image: url(/img/img_missao.png); background-size: 110%;" id="box_audio" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[purple]"></div>
+        <div style="background-image: url(/img/img_missao.png); background-size: 110%;" id="box_audio" class="w-[100%] h-[350px] mt-[20px] inline-block bg-[purple]"></div>
     </div>
     {{--  --}}
     <div class="w-[50%] inline-block float-left h-[700px] bg-[#5CD1FF] px-[80px]">

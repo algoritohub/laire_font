@@ -886,12 +886,14 @@ button#bt2-1:hover{
 #img_eventos_4{
     background-image: url("/img/8- (3).png");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; }
+
+#video-missão{
+    height: auto;
+}
 
 
 /*imagens do projeto 1 */
-
-}
 #box_audio-1{
     background-image: url("/img/imagem_rs_1.png");
     background-size: cover;
