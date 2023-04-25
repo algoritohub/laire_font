@@ -298,11 +298,11 @@
                                 </li>
                                 <li><b><a href="#">Projetos</a></b>
                                     <ul>
-                                        <li class="ma"><a href="#">Efeitos da atenção domiciliar para adultos...</a>
+                                        <li class="ma"><a href="/respira-saude/projeto/1">Efeitos da atenção domiciliar para adultos...</a>
                                         </li>
-                                        <li class="ma"><a href="#">Soluções para aumentar a aceitabilidade, adesão...</a>
+                                        <li class="ma"><a href="/respira-saude/projeto/2">Soluções para aumentar a aceitabilidade, adesão...</a>
                                         </li>
-                                        <li class="ma"><a href="#">Desenvolvimento e validação de um sistema eletrônico...</a>
+                                        <li class="ma"><a href="/respira-saude/projeto/3">Desenvolvimento e validação de um sistema eletrônico...</a>
                                         </li>
                                     </ul>
                                 </li>

@@ -308,7 +308,7 @@
                 <div class="mt-[40px]" style="display: none;" id="box_libra7" class="w-[780px] inline-block absolute h-[450px]">
                     {{-- AQUI VAI O VÍDEO DE SINDROME POS COVID 19 --}}
                     <video id="video_missao" class="w-[780px]" controls="controls">
-                        <source src="/img/VIDEO_AQUI" type="video/mp4">
+                        <source src="/img/Tuberculose - Vídeo Em Líbras.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>

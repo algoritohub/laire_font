@@ -57,28 +57,15 @@ Route::get('/respira-saude/projeto/2', function () {
 Route::get('/respira-saude/projeto/2/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto2"])->name('pesquisadores_projeto_2');
 
 
+
 // PROJETO3
 Route::get('/respira-saude/projeto/3', function () {
     return view('respirasaude.projeto3');
 })->name('projeto3');
 
-// PROJETO4
-Route::get('/respira-saude/projeto/4', function () {
-    return view('respirasaude.projeto4');
-})->name('projeto4');
 
-// PROJETO5
-Route::get('/respira-saude/projeto/teste', function () {
-    return view('respirasaude.projeto5');
-})->name('projeto5');
-// PROJETO56-1
-Route::get('/respira-saude/projeto/teste2', function () {
-    return view('respirasaude.projeto6-1');
-})->name('projeto5');
-// PROJETO56-1
-Route::get('/respira-saude/projeto/teste3', function () {
-    return view('respirasaude.projeto7-2');
-})->name('projeto5');
+
+
 
 
 

@@ -34,7 +34,7 @@
                         </ul>
                     </div>
                     {{-- IMAGEM --}}
-                    <div id="box_audio" class="w-[800px] bg-[yellow] h-[400px]"></div>
+                    <div id="box_audio-2" class="w-[800px] bg-[yellow] h-[400px]"></div>
                     {{-- VÍDEO --}}
                     <div id="box_libra" style="display: none;" id="imagem_countainer" class="w-[800px] bg-[orange] h-[400px]"></div>
                 </div>
@@ -74,7 +74,7 @@
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco1" class="w-[100%] h-[600px] bg-[purple] mt-[100px]"></div>
+                <div id="imagem_bloco1-pj2" class="w-[100%] h-[600px] bg-[purple] mt-[100px]"></div>
             </div>
         </div>
         {{--  --}}
@@ -133,7 +133,7 @@
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco1" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                <div id="imagem_bloco1-pj2a" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
             </div>
         </div>
         {{--  --}}
@@ -169,7 +169,7 @@
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco1" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                <div id="imagem_bloco1-pj2b" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
             </div>
         </div>
         {{--  --}}
