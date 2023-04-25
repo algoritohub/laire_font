@@ -18,6 +18,7 @@ body{
     color: #212121;
     background: #FFFFFF;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #barra_superior_fixa{
@@ -541,9 +542,7 @@ button#bt2-1:hover{
     color: #054c69;
     transition: 1s;
 }
-#pesquisadores_bloco{
-    margin-top: 40vh;
-}
+
 #amanda{
     background-color: #00FF8C;
     background-image: url('/img/Amanda Quirino.jpg');
@@ -853,10 +852,9 @@ button#bt2-1:hover{
     opacity: 1;
 }
 
-#fundo_lai{
+#topo_laire_mobile{
     background: url('/img/arrival.jpg');
     background-size: 100%;
-
 }
 
 .tox{
@@ -1233,26 +1231,28 @@ button#bt2-1:hover{
 
     #box_laire_a{
         width: 90%;
-        margin: 0px 5% 0px 5%;
+        height: auto;
+        margin: 0px 5% 40px 5%;
         display: inline-block;
     }
-
     #box_laire_b{
         width: 90%;
-        margin: 0px 5% 0px 5%;
-        height: 200px;
+        margin: 0px 5% 60px 5%;
+        height: auto;
         display: inline-block;
         padding-left: 0px;
     }
 
     #text_box_a{
-        font-size: 40px;
-        line-height: 45px;
+        font-size: 35px;
+        line-height: 40px;
         font-weight: bold;
         white-space: normal;
     }
 
     #sub_text_box_a{
+        font-size: 16px;
+        line-height: 18px;
         margin-top: 10px;
         margin-left: 0px;
     }
@@ -1281,11 +1281,10 @@ button#bt2-1:hover{
     }
 
     #pesquisadores_bloco{
-        margin-top: 300px;
+        margin-top: 40px;
         width: 100%;
         height: auto;
         display: inline-block;
-
     }
 
     .sub_bloco_pesq{
@@ -1318,8 +1317,8 @@ button#bt2-1:hover{
     }
 
     #box_pesq{
-        width: 48%;
-        margin: 0px 1%;
+        width: 45%;
+        margin: 0px 2.5%;
         box-sizing: border-box;
         display: block;
         justify-content: center;
@@ -1414,10 +1413,6 @@ button#bt2-1:hover{
 
     #barra_de_acessibilidade_laire{
         z-index: 2;
-        margin-top: 0px;
-        height: 0px;
-        visibility: hidden;
-
     }
 
     #barra_superior_fixa_laire{
@@ -1429,8 +1424,17 @@ button#bt2-1:hover{
 
     #modal_pesq_laire{
         width: 90%;
-        height: auto;
-        margin: 20% 5% 0px 5%;
+        height: 620px;
+        margin: 25% 5% 0px 5%;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    #caixa_descricao{
+        width: 100%;
+        height: 160px;
+        margin-top: 20px;
+        overflow: scroll;
         display: inline-block;
     }
 
@@ -1482,7 +1486,7 @@ button#bt2-1:hover{
     /* CARROSSEL */
     #carrossel_pro1{
         width: 100%;
-        margin-top: 100px;
+        margin-top: 0px;
         display: inline-block;
         background-image: url(../img/imagem_rs_2.png);
         background-size: 500%;
@@ -1507,7 +1511,7 @@ button#bt2-1:hover{
     #base_geral1{
         width: 100%;
         display: inline-block;
-        height: 1000px;
+        height: 600px;
     }
 
     p#max_box1{
@@ -1527,7 +1531,7 @@ button#bt2-1:hover{
 
     #carrossel_pro2{
         width: 100%;
-        margin-top: 100px;
+        margin-top: 0px;
         display: inline-block;
         background-image: url(../img/imagem_rs_2.png);
         background-size: 500%;
@@ -1559,12 +1563,12 @@ button#bt2-1:hover{
     #base_geral2{
         width: 100%;
         display: inline-block;
-        height: 1000px;
+        height: 600px;
     }
 
     #carrossel_pro3{
         width: 100%;
-        margin-top: 100px;
+        margin-top: 0px;
         display: inline-block;
         background-image: url(../img/fundo2.jpg);
         background-size: 500%;
@@ -1596,19 +1600,19 @@ button#bt2-1:hover{
     #base_geral3{
         width: 100%;
         display: inline-block;
-        height: 1000px;
+        height: 600px;
     }
 
     .slider{
         margin: 0 auto;
         width: 100%;
-        height: 1000px;
+        height: 600px;
         overflow: hidden;
     }
 
     .slides{
         width: 400%;
-        height: 1000px;
+        height: 600px;
         display: flex;
     }
 
@@ -1635,7 +1639,7 @@ button#bt2-1:hover{
     }
 
     .manual-btn{
-        border: 1px solid #00FF8C;
+        border: 1px solid #080E45;
         padding: 5px;
         border-radius: 10px;
         cursor: pointer;
@@ -1647,7 +1651,7 @@ button#bt2-1:hover{
     }
 
     .manual-btn:hover{
-        background-color: #00FF8C;
+        background-color: #080E45;
     }
 
     #radio1:checked ~ .first{
@@ -1663,7 +1667,7 @@ button#bt2-1:hover{
     }
 
     .navigation-auto div{
-        border: 1px solid #00FF8C;
+        border: 1px solid #080E45;
         padding: 5px;
         border-radius: 10px;
         cursor: pointer;
@@ -1672,9 +1676,13 @@ button#bt2-1:hover{
     .navigation-auto{
         position: absolute;
         width: 100%;
-        margin-top: 960px;
+        margin-top: 560px;
         display: flex;
         justify-content: center;
+    }
+
+    #bt_feed{
+        margin-top: 20px;
     }
 
     .navigation-auto div:not(:last-child){
@@ -1682,15 +1690,15 @@ button#bt2-1:hover{
     }
 
     #radio1:checked ~ .navigation-auto .auto-btn1{
-        background-color: #00FF8C;
+        background-color: #080E45;
     }
 
     #radio2:checked ~ .navigation-auto .auto-btn2{
-        background-color: #00FF8C;
+        background-color: #080E45;
     }
 
     #radio3:checked ~ .navigation-auto .auto-btn3{
-        background-color: #00FF8C;
+        background-color: #080E45;
     }
 
     ul.logos_carrossel{
@@ -1736,11 +1744,6 @@ button#bt2-1:hover{
         width: 20px;
         float: right;
         margin-top: 35px;
-    }
-    #pesquisadores_bloco{
-        margin-top: 30vh;
-
-
     }
 
     /* RESPONSIVO BLOG */
@@ -1923,9 +1926,10 @@ button#bt2-1:hover{
         margin-top: 80px;
     }
 
-    #fundo_lai{
+    #topo_laire_mobile{
         background: url('/img/arrival.jpg');
-        background-size: 300%;
+        height: auto;
+        background-size: 350%;
     }
 
 
@@ -2187,32 +2191,77 @@ button#bt2-1:hover{
         margin-top: 40px;
     }
 
+    /* NOVO BLOCO MOBILE ACESSIBILIDADE */
+    #barra_acessibilidade_azul{
+        width: 0px;
+        display: none;
+    }
+    #barra_acessibilidade_roxa{
+        width: 100%;
+        display: inline-block;
+    }
+    #sub_barra_acessibilidade_verde{
+        width: 33.3%;
+        display: inline-block;
+    }
+    #sub_barra_acessibilidade_vermelho{
+        width: 33.3%;
+        display: inline-block;
+    }
+    #sub_barra_acessibilidade_cinza{
+        width: 33.3%;
+        display: inline-block;
+    }
+
+    /* BLOCO LAIRE */
+    #bloco_laire_a{
+        width: 100%;
+        padding: 0px;
+        height: auto;
+        display: inline-block;
+    }
+    #container_inner_laire{
+        width: 80%;
+        margin: 0px 10%;
+        display: inline-block;
+    }
+    #bloco_laire_b{
+        width: 100%;
+        padding: 0px;
+        height: auto;
+        display: inline-block;
+    }
+
+
+    #titulo_pesquisas{
+        margin-top: 50px;
+    }
 
     /*responsivo para menores*/
     @media all and (min-width:360px) and (max-width:740px){
         /*laire*/
-        #pesquisadores_bloco{
+        /* #pesquisadores_bloco{
             margin-top: 90vh;
-        }
+        } */
     }
     @media all and (min-width:393px) and (max-width:786px){
         /*laire*/
-        #pesquisadores_bloco{
+        /* #pesquisadores_bloco{
             margin-top: 10vh;
-        }
+        } */
     }
     @media all and (min-width:360px) and (max-width:640px){
         /*laire*/
-        #pesquisadores_bloco{
+        /* #pesquisadores_bloco{
             margin-top: 120vh;
-        }
+        } */
     }
 }
     @media all and (min-width:414px) and (max-width:896px){
     /*laire*/
-    #pesquisadores_bloco{
+    /* #pesquisadores_bloco{
         margin-top: 40vh;
-    }
+    } */
 }
 
 

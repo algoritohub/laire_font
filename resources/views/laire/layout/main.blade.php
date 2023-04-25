@@ -9,26 +9,22 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     {{-- ICONES --}}
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
-
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <!-- CSS -->
     <link rel="stylesheet" href="/css/estilo.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
     <script src="/js/script.js"></script>
-
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
     <link rel="apple-touch-icon" href="{{ asset('logo.PNG') }}">
     <link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
-{{--  --}}
 @php
     // FUNÇÃO FONT
     $session_font = session('font');
@@ -38,34 +34,44 @@
     else{
         $numb_font = 15;
     }
-
 @endphp
 {{--  --}}
 <body>
-    {{-- MOBILE HEADER --}}
-    <header id="barra_superior_acessibilidade_mobile" class="w-[100%] bg-[#212121] inline-block fixed">
+    {{-- NOVO ACESSIBILIDADE DESKTOP MOBILE --}}
+    <div id="barra_de_acessibilidade_laire" class="w-[100%] inline_block bg-[#212121] fixed">
         {{--  --}}
-        <div class="w-[55%] float-left inline-block h-[40px]">
+        <div class="w-[90%] mx-[5%] inline-block">
             {{--  --}}
-            <ul id="button_font" class="float-right mt-[5px]">
-                <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-            </ul>
-        </div>
-        {{--  --}}
-        <div class="w-[20%] float-left inline-block h-[40px]">
+            <div id="barra_acessibilidade_azul" class="w-[70%] inline-block h-[40px] float-left"></div>
             {{--  --}}
-            <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
+            <div id="barra_acessibilidade_roxa" class="w-[30%] inline-block h-[40px] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_verde" class="w-[53.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <ul id="button_font" class="float-right mt-[5px]">
+                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
+                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
+                        </ul>
+                    </div>
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_vermelho" class="w-[23.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <a href="{{ route('mapa_site') }}"><p class="text-[9px] mt-[14px] float-right text-[#ffffff] font-bold uppercase">Mapa do Site</p></a>
+                    </div>
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_cinza" class="w-[23.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <ul class="mt-[10px] float-right">
+                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        {{--  --}}
-        <div class="w-[25%] float-left inline-block h-[40px]">
-            {{--  --}}
-            <ul class="mt-[5px] mr-[10px] float-right">
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-            </ul>
-        </div>
-    </header>
+    </div>
     {{-- BARRA SUPERIOR MOBILE --}}
     <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
         {{--  --}}
@@ -80,27 +86,24 @@
             {{--  --}}
             <div class="w-[30%] inline-block float-left">
                 {{--  --}}
-                {{-- <img id="menu_bt" src="/img/menu-hamburguer.png" onclick="menu()" class="w-[20px] float-right mt-[45px]"> --}}
-                {{--  --}}
                 <p id="busca_mobile1" class="text-[#ffffff] cursor-pointer text-[18px] mt-[40px] float-right"><i class="fi fi-bs-search"></i></p>
             </div>
         </div>
     </header>
-    {{--  --}}
-    <header id="barra_superior_menu_mobile" class="w-[100%] mt-[140px] bg-[#5CD1FF] overflow-scroll inline-block fixed">
+    {{-- BARRA DE MENU --}}
+    <header id="barra_superior_menu_mobile" class="w-[100%] mt-[140px] shadow-lg bg-[#5CD1FF] overflow-scroll inline-block fixed">
         {{--  --}}
-        <div id="menu_principal" class="w-[880px] py-[10px] inline-block">
+        <div id="menu_principal" class="w-[890px] py-[10px] inline-block">
             {{--  --}}
-            <ul class="menu">
-                <li class="inline-block ml-[30px]"><a href="#laboratorio" class="text-[#ffffff] text-[14px] font-bold"><strong>Laboratório</strong></a></li>
-                <li class="inline-block ml-[30px]"><a href="#pesquisadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Equipe</strong></a></li>
-                <li class="inline-block ml-[30px]"><a href="#patrocinadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Parceiros</strong></a></li>
-                <li class="inline-block ml-[30px]"><a href="#pesquisas." class="text-[#ffffff] text-[14px] font-bold"><strong>Pesquisas</strong>
-                <li class="inline-block ml-[30px]"><a href="#bk-" class="text-[#ffffff] text-[14px] font-bold"><strong>Eventos</strong></a></li>
-                <li class="inline-block ml-[30px]"><a href="#noticias_slide" class="text-[#ffffff] text-[14px] font-bold"><strong>Notícias</strong></a></li>
-                <li class="inline-block ml-[30px]"><a href="#contatos." class="text-[#ffffff] text-[14px] font-bold"><strong>Contatos</strong></a></li>
-                <li class="inline-block ml-[30px]"><a href="#social" class="text-[#ffffff] text-[14px] font-bold"><strong>Redes Sociais</strong></a></li>
-            </ul>
+            <button class="w-[40px] h-[30px] text-[#080E45] font-bold">></button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Laboratório</button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Equipe</button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Parceiros</button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Pesquisas</button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Eventos</button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Notícias</button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Contatos</button>
+            <button class="w-[100px] h-[30px] text-[#080E45] font-bold">Redes Sociais</button>
         </div>
         {{--  --}}
         <div style="display: none;" id="busca_mobile_menu" class="w-[90%] mx-[5%] inline-block">
@@ -109,36 +112,9 @@
                 @csrf
                 <input class="w-[100%] h-[30px] bg-[#ffffff] outline-none pl-[10px] my-[10px] rounded-[5px]" type="text" placeholder="Busque por algo!">
             </form>
-        </div> 
-    </header>
-    {{-- BARRA DE ACESSIBILIDADE --}}
-    <div id="barra_de_acessibilidade_laire" class="w-[100%] inline-block bg-[#212121] fixed">
-        {{--  --}}
-        <div id="jot" class="w-[90%] mx-[5%] inline-block">
-            {{--  --}}
-            <div id="espaco_bt" class="w-[70%] float-left inline-block h-[40px]">
-                {{--  --}}
-                <ul id="button_font" class="float-right mt-[5px]">
-                    <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                    <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-                </ul>
-            </div>
-            {{--  --}}
-            <div id="mapa_site" class="w-[15%] float-left inline-block h-[40px]">
-                {{--  --}}
-                <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
-            </div>
-            {{--  --}}
-            <div id="bandeiras" class="w-[15%] float-left inline-block h-[40px]">
-                {{--  --}}
-                <ul class="mt-[10px] float-right">
-                    <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                    <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-                </ul>
-            </div>
         </div>
-    </div>
-    {{-- HEADER --}}
+    </header>
+    {{-- HEADER DESKTOP --}}
     <header id="barra_superior_fixa_laire" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
         {{--  --}}
         <div id="jot" class="w-[90%] mx-[5%] inline-block">
