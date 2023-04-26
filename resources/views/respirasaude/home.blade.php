@@ -60,14 +60,11 @@
             </ul>
         </div>
         {{--  --}}
-<<<<<<< HEAD
         <div id="box_libra" style="display: none;" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[orange]">
             {{--  --}}
             {{-- VÍDEO AQUI --}}
         </div>
-=======
         <div id="box_libra" style="display: none;" class="w-[100%] h-[330px] mt-[20px] inline-block bg-[orange]"><video id="video-missão" src="/img/menor.mp4" controls="controls" ></video></div>
->>>>>>> 40a2bff4ecfc49427d5775b2e37ea7b8c6d57277
         {{--  --}}
         <div style="background-image: url(/img/img_missao.png); background-size: 110%;" id="box_audio" class="w-[100%] h-[350px] mt-[20px] inline-block bg-[purple]"></div>
     </div>
@@ -342,7 +339,7 @@
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/3.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/7.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/mcti.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[610px]" src="/img/10.png" alt=""></li>
             </ul>
