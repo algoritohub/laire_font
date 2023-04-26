@@ -112,14 +112,14 @@
             {{--  --}}
             <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco2-pj1" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                <div id="imagem_bloco2-pj1b" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
             </div>
         </div>
     </div>
 </section>
 
-{{-- BLOCO EXEMPLO 4 --}}
 
+{{-- BLOCO EXEMPLO metodo --}}
 <section class="w-[100%] mt-[-5px] inline-block">
     {{--  --}}
     <div id="container_bloco1" class="w-[100%] inline-block">
@@ -128,23 +128,55 @@
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco1" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                <div id="imagem_bloco1-pj1a" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
             </div>
         </div>
         {{--  --}}
-        <div id="lado_b_bloco1" class="w-[50%] h-[630px] px-[80px] bg-[#fafafa] float-left inline-block">
+        <div id="lado_b_bloco1" class="w-[50%] h-[830px] px-[80px] bg-[#fafafa] float-left inline-block">
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Resultado</p>
+                <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Método</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Primeiro, nós identificamos os estudos que compararam os efeitos destes dois tipos de tratamento nos resultados de mortalidade, qualidade de vida, satisfação do paciente, custos do tratamento, eventos adversos[o], tempo de permanência no hospital, entre outros. Esses estudos poderiam ter sido publicados em qualquer ano e em qualquer país do mundo.</b>.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Depois que reunimos os estudos que tinham as características necessárias para entrar na revisão, nós realizamos uma análise estatística chamada metanálise[p]. Assim, foi possível juntar os resultados de vários estudos que avaliaram as mesmas coisas que nós tínhamos interesse (mortalidade, qualidade de vida, satisfação, custos, eventos adversos...). Dessa forma, dá para comparar melhor os efeitos do tratamento recebido em casa com o recebido no hospital.(MS).</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entendeu como a revisão sistemática é legal? Assim, ao invés de termos os resultados de apenas um estudo com poucos pacientes, nós conseguimos reunir os resultados de vários estudos e muitos pacientes! Mas isso não é simples, é necessário seguir uma metodologia muito rigorosa! E tem mais... </p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">É necessário avaliar muito bem esse conjunto de resultados, de vários estudos, para entendermos o quanto nós podemos confiar neles!
+
+                    Agora que você já sabe o objetivo da pesquisa, já conhece melhor as principais doenças respiratórias crônicas e, também como essa revisão sistemática foi feita, vamos saber quais foram os resultados! Estão curiosos?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- BLOCO resultado --}}
+
+<section class="w-[100%] mt-[-5px] inline-block">
+    {{--  --}}
+    <div id="container_bloco2" class="w-[100%] inline-block">
+        {{--  --}}
+        <div id="lado_b_bloco1"  class="w-[50%] h-[630px] px-[80px] inline-block float-left">
+            {{--  --}}
+            <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                {{--  --}}
+                <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Resultados</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">A revisão incluiu <b>13 estudos </b>presentando 1.056 pacientes com <b>asma, doença pulmonar obstrutiva crônica (DPOC) e fibrose cística.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"></b> As intervenções de atenção domiciliar avaliadas nos estudos foram: <b>consulta domiciliar</b>,<b> tratamento domiciliar de exacerbações, alta precoce, hospital em casa, antibioticoterapia domiciliar e programa de reabilitação domiciliar.</b></p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Não encontramos evidências suficientes para recomendar a atenção domiciliar para adultos com doenças respiratórias crônicas. </p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entretanto, foi possível observar que os estudos, na sua maioria, <b>observaram que os pacientes tratados com atenção domiciliar tiveram menor taxa de readmissão no hospital, menos eventos adversos, menor mortalidade  e melhor estado funcional.</b></p>
             </div>
         </div>
+        {{--  --}}
+        <div id="lado_b_bloco2" style="background: linear-gradient(90deg, rgba(255,255,255,1) 75%, rgba(238,238,238,1) 75%);" class="w-[50%] h-[630px] inline-block float-left pr-[80px]">
+            {{--  --}}
+            <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="imagem_bloco2-pj1" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+            </div>
+        </div>
     </div>
 </section>
+
+
 
 
 {{-- PESQUISADORES--}}
