@@ -757,7 +757,7 @@ button#bt2-1:hover{
     width: 100%;
     margin-top: 0px;
     display: inline-block;
-    background-image: url(../img/imagem_rs_1.png);
+    background-image: url(../img/carrossel1.png);
     background-size: 100%;
 }
 
@@ -765,7 +765,7 @@ button#bt2-1:hover{
     width: 100%;
     margin-top: 0px;
     display: inline-block;
-    background-image: url(../img/imagem_rs_2.png);
+    background-image: url(../img/carrossel2.png);
     background-size: 100%;
 }
 
@@ -773,7 +773,7 @@ button#bt2-1:hover{
     width: 100%;
     margin-top: 0px;
     display: inline-block;
-    background-image: url(../img/fundo2.jpg);
+    background-image: url(../img/carrossel3.png);
     background-size: 100%;
 }
 
