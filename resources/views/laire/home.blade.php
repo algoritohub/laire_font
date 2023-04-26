@@ -933,7 +933,7 @@
                 <p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p>
             </div>
         </div>
-        
+
         {{-- BANNER CONVIVENDO --}}
         @if (isset($banner_conviv) AND !empty($banner_conviv))
         {{--  --}}
@@ -957,7 +957,7 @@
 
         {{--  --}}
 
-        <div id="botao_facebook"  class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]">
+        <div id="botao_facebook-"  class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]">
             <center ><a  href="https://www.facebook.com/laire.lab" target="_blanck" ><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/facebook.png"/> <p class="text-[#ffffff] float-left">Facebook</p></button></a><center>
         </div>
         {{--  --}}
@@ -983,9 +983,10 @@
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/3.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/7.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/img/mcti.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[610px]" src="/img/10.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[310px]" src="/img/logomarcaproex_oficial.jpg" alt=""></li>
             </ul>
         </center>
     </div>

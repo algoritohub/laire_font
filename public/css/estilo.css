@@ -550,13 +550,21 @@ ul.logos_carrossel li img{
 
 
 #botao_instagram{
-background-image:linear-gradient(#A146C5,#FD4164,#FE7F4A)
+/*background-image:linear-gradient(#A146C5,#FD4164,#FE7F4A)*/
+background-image: url('/img/Instagram laire.png');
+    background-size: cover;
 }
-#botao_facebook{
-    background-image:linear-gradient(#3F70B5,#2A5B9D,#0C3D7F)
+#botao_facebook-{
+   /* background-image:linear-gradient(#3F70B5,#2A5B9D,#0C3D7F)*/
+    background-image: url('/img/Facebook laire.png');
+    background-size: cover;
+
+
 }
 #botao_youtube{
-    background-image:linear-gradient(#B41102,#F81A07,#6C0700)
+    /*background-image:linear-gradient(#B41102,#F81A07,#6C0700)*/
+    background-image: url('/img/YouTube laire.png');
+    background-size: cover;
 }
 
 
