@@ -916,28 +916,30 @@ button#bt2-1:hover{
 #img_eventos_4{
     background-image: url("/img/8- (3).png");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; }
+
+#video-missão{
+    height: auto;
+}
 
 
 /*imagens do projeto 1 */
-
-}
 #box_audio-1{
-    background-image: url("/img/imagem_rs_1.png");
+    background-image: url("/img/Pesquisa 1/Pesquisa 1 - imagem 1.png");
     background-size: cover;
     width: 800px;
     height: 400px;
 }
 #imagem_bloco1-pj1{
-    background-image: url("/img/examinando-a-amostra-com-microscopio.jpg");
+    background-image: url("/img/Pesquisa 1/Pesquisa 1 - imagem 2.png");
     background-size: cover;
 }
 #imagem_bloco2-pj1{
-    background-image: url("/img/mulher-de-negocios-de-meia-idade-confiante-escrevendo-em-um-adesivo-com-lapis-e-brainstorming.jpg");
+    background-image: url("/img/Pesquisa 1/Pesquisa 1 - imagem 3.png");
     background-size: cover;
 }
 #imagem_bloco1{
-    background-image: url("/img/chemist-doctor-explaining-coworker-vaccine-development-dna-mutations-working-equipped-laboratory.jpg");
+    background-image: url("/img/Pesquisa 1/Pesquisa 1 - imagem 4.png");
     background-size: cover;
 
 }
@@ -945,31 +947,60 @@ button#bt2-1:hover{
 
 
 #box_audio-2{
-    background-image: url("/img/fundo3.jpg");
+    background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 5.png");
     background-size: cover;
+
     width: 800px;
     height: 400px;
 }
 #imagem_bloco1-pj2{
-    background-image: url("/img/examinando-a-amostra-com-microscopio.jpg");
+    background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 1.png");
     background-size: cover;
 }
 #imagem_bloco1-pj2a{
-    background-image: url("/img/mulher-de-negocios-de-meia-idade-confiante-escrevendo-em-um-adesivo-com-lapis-e-brainstorming.jpg");
+    background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 3.png");
     background-size: cover;
 }
 #imagem_bloco1-pj2b{
-    background-image: url("/img/medical-biologist-team-working-microbiology-hospital-laboratory.jpg");
+    background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 4.png");
     background-size: cover;
 
 }
 #imagem_bloco2{
-    background-image: url("/img/biochemist-working-microscope-cell-illustration-computer-screen-chemical-laboratory-scientist-woman-analyzing-virus-dna-cell-tissue-diagram-plasma-hemoglobin-nucleus.jpg");
+    background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 2.png");
     background-size: cover;
 
 }
 #box_audio{
-    background-image: url("/img/fundo2.jpg");
+    background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 5.png");
+    background-size: cover;
+
+}
+
+/*  imagens do  projeto3*/
+#box_audio-pj3{
+    background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 1.png");
+    background-size: cover;
+
+
+}
+#imagem_bloco1-pj3{
+    background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 2.png");
+    background-size: cover;
+
+}
+#imagem_bloco2-pj3{
+    background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 3.png");
+    background-size: cover;
+
+}
+#imagem_bloco1-pj3a{
+    background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 4.png");
+    background-size: cover;
+
+}
+#imagem_bloco2-pj3c{
+    background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 5.png");
     background-size: cover;
 
 }

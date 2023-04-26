@@ -173,6 +173,7 @@
                 </div>
                 {{--  --}}
                 <p class="text-[16px] font-bold text-center">Amanda Quirino</p>
+
                 {{--  --}}
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
@@ -187,7 +188,7 @@
                 {{--  --}}
                 <p class="text-[16px] font-bold text-center">Karla Morganna</p>
                 {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
+                <p class="text-[13px] text-center">FACISA/UFRN,UEPB,CBI of Miami</p>
             </div>
             </a>
             {{--  --}}
@@ -239,7 +240,7 @@
                 {{--  --}}
                 <p class="text-[16px] font-bold text-center">Gabriela Chaves</p>
                 {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
+                <p class="text-[13px] text-center">UFR,UFMG</p>
             </div>
             </a>
             {{--  --}}
@@ -252,7 +253,7 @@
                 {{--  --}}
                 <p class="text-[16px] font-bold text-center">Vitória Jéssica</p>
                 {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
+                <p class="text-[13px] text-center">HUOL/UFRN,COFFITO/ASSOBRAFIR</p>
             </div>
             </a>
             {{--  --}}
@@ -291,7 +292,7 @@
                 {{--  --}}
                 <p class="text-[16px] font-bold text-center">Thayla Santino</p>
                 {{--  --}}
-                <p class="text-[13px] text-center">UFRN</p>
+                <p class="text-[13px] text-center">UFRN,ASSOBRAFIR/COFFITO</p>
             </div>
             </a>
             {{--  --}}
@@ -322,6 +323,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]">Amanda Quirino</p>
+                        <p class="font-bold leading-[13px] text-[13px]"> Colaboradora em projetos de pesquisa e extensão</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -366,6 +368,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]">Karla Morganna</p>
+                        <p class="font-bold leading-[13px] text-[13px]"></p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -403,6 +406,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]">Ivan Daniel</p>
+                        <p class="font-bold leading-[13px] text-[13px]">Professor colaborador</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -440,6 +444,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]"> Joubert Vitor de Souto Barbosa</p>
+                        <p class="font-bold leading-[13px] text-[13px]"> Aluno de doutorado</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -483,6 +488,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]"> Válbny Júlia Fernandes de Morais</p>
+                        <p class="font-bold leading-[13px] text-[13px]"> Bolsista de Projeto de pesquisa</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -524,6 +530,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]"> Gabriela Chaves</p>
+                        <p class="font-bold leading-[15px] text-[15px]"> Bolsista de IC</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -565,6 +572,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]"> Vitória Jéssica Teixeira Dantas Brito</p>
+                        <p class="font-bold leading-[13px] text-[13px]">Aluna de mestrado</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -611,6 +619,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]"> Sabrina da Silva Teixeira</p>
+                        <p class="font-bold leading-[13px] text-[13px]"> Aluna de IC</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -649,6 +658,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]">Luana Beatriz de Moura Freitas</p>
+                        <p class="font-bold leading-[13px] text-[13px]">bolsista de IC</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -691,6 +701,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]">Thayla Amorim Santino</p>
+                        <p class="font-bold leading-[13px] text-[13px]"> Colaboradora ou Professora Colaboradora</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
@@ -736,6 +747,7 @@
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]">Juliana Souza</p>
+                        <p class="font-bold leading-[13px] text-[13px]">Aluna de mestrado</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">

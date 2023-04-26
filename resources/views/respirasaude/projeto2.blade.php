@@ -250,7 +250,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'baldomero']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'baldomero.']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold ">ver bio ➜</p></a>
                 </div>
             </div>
 
@@ -291,7 +291,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'aluno_de_doutorado', 'nome' => 'sarah.']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'aluno_de_doutorado', 'nome' => 'sarah']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
 
@@ -486,7 +486,7 @@
             <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
 
                  {{-- CONTEÚDO SARAH --}}
-                 @if($pesquisador == "sarah.")
+                 @if($pesquisador == "sarah")
                  <div class="w-[100%] inline-block">
                      {{--  --}}
                      <div class="w-[80%] inline-block float-left">
