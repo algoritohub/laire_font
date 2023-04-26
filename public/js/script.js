@@ -42,14 +42,14 @@ $(document).ready(function(){
     $("#modal_in_laire").click(function(event){
         event.preventDefault();
         $(".modal_laire").fadeIn();
-        $("#modal_in_laire").fadeOut();
+        $("#elementoAEsconder").fadeOut();
     });
 });
 
 $(document).ready(function(){
     $("#modal_laire").click(function(event){
         event.preventDefault();
-        $("#modal_in_laire").fadeIn();
+        $("#elementoAEsconder").fadeIn();
         $(".modal_laire").fadeOut();
     });
 });
@@ -562,5 +562,70 @@ $(document).ready(function(){
         event.preventDefault();
         $("#busca_mobile_menu").toggle();
         $("#menu_principal").toggle();
+    });
+});
+
+// PROJETO 1
+
+$(document).ready(function(){
+    $("#audios").click(function(event){
+        event.preventDefault();
+        $("#box_audio-1").fadeIn();
+        $("#box_libra").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras").click(function(event){
+        event.preventDefault();
+        $("#box_libra").fadeIn();
+        $("#box_audio-1").hide();
+    });
+});
+
+// PROJETO 2
+
+$(document).ready(function(){
+    $("#audios").click(function(event){
+        event.preventDefault();
+        $("#box_audio-2").fadeIn();
+        $("#box_libra").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras").click(function(event){
+        event.preventDefault();
+        $("#box_libra").fadeIn();
+        $("#box_audio-2").hide();
+    });
+});
+
+//
+$(document).ready(function(){
+    $("#resumo_produto").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#podcst_produto").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos1").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_produto").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos").fadeOut();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_produto1").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos1").fadeOut();
     });
 });

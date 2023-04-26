@@ -1,4 +1,4 @@
-@extends('respirasaude.layout.main')
+@extends('respirasaude.layout.main_projeto2')
 @section('titulo', 'RespiraSaude | Home')
 @section('conteudo')
 
@@ -159,29 +159,30 @@
 </section>
 
 
-{{-- BLOCO EXEMPLO 5 --}}
+{{-- BLOCO EXEMPLO 3 --}}
 
 <section class="w-[100%] mt-[-5px] inline-block">
     {{--  --}}
-    <div id="container_bloco1" class="w-[100%] inline-block">
+    <div id="container_bloco2" class="w-[100%] inline-block">
         {{--  --}}
-        <div id="lado_a_bloco1" style="background: linear-gradient(90deg, rgba(238,238,238,1) 27%, rgba(250,250,250,1) 27%);" class="w-[50%] h-[630px] pl-[80px] float-left inline-block">
+        <div id="lado_a_bloco2" class="w-[50%] h-[630px] px-[80px] inline-block float-left">
             {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
-                {{--  --}}
-                <div id="imagem_bloco1-pj2b" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="lado_b_bloco1" class="w-[50%] h-[630px] px-[80px] bg-[#fafafa] float-left inline-block">
-            {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
+            <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}
                 <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Resultado</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">A revisão incluiu <b>13 estudos </b>presentando 1.056 pacientes com <b>asma, doença pulmonar obstrutiva crônica (DPOC) e fibrose cística.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"></b> As intervenções de atenção domiciliar avaliadas nos estudos foram: <b>consulta domiciliar</b>,<b> tratamento domiciliar de exacerbações, alta precoce, hospital em casa, antibioticoterapia domiciliar e programa de reabilitação domiciliar.</b></p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Não encontramos evidências suficientes para recomendar a atenção domiciliar para adultos com doenças respiratórias crônicas. </p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entretanto, foi possível observar que os estudos, na sua maioria, <b>observaram que os pacientes tratados com atenção domiciliar tiveram menor taxa de readmissão no hospital, menos eventos adversos, menor mortalidade  e melhor estado funcional.</b></p>
+
+            </div>
+        </div>
+        {{--  --}}
+        <div id="lado_b_bloco2" style="background: linear-gradient(90deg, rgba(255,255,255,1) 75%, rgba(238,238,238,1) 75%);" class="w-[50%] h-[630px] inline-block float-left pr-[80px]">
+            {{--  --}}
+            <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="imagem_bloco1-pj2b" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
             </div>
         </div>
     </div>

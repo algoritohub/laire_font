@@ -24,10 +24,10 @@
             {{--  --}}
             <p id="text_box_a" class="uppercase text-[#080E45] text-[65px] font-bold mt-[180px] leading-[72px]">Avaliação, Intervenção e Educação em Saúde Respiratória</p>
         </div>
-        {{--  --}}
+        {{-- MASCOTE --}}
         <div id="box_laire_b" class="w-[40%] float-left inline-block h-[600px] pl-[60px]">
             {{--  --}}
-            <div id="modal_in_laire" style="z-index: 1; border-radius: 20px 0px 0px 20px; display: none;" class="w-[100%] cursor-pointer shadow-lg h-[100px] fixed mt-[150px] inline-block bg-[#ffffff]">
+            <div id="elementoAEsconder" style="z-index: 1; border-radius: 20px 0px 0px 20px; display: show;" class="w-[100%] cursor-pointer shadow-lg h-[100px] fixed mt-[150px] inline-block bg-[#ffffff]">
                 {{--  --}}
                 <div class="w-[40%] inline-block float-left">
                     {{--  --}}
@@ -35,7 +35,7 @@
                     <div class="w-[270px] inline-block float">
                         {{--  --}}
                         <p class="text-[20px] text-[#212121] font-bold mt-[15px] ml-[-70px]">Já conhece o ARlindo? </p>
-                        <p class="text-[14px] text-[#212121] leading-[14px] mt-[5px] ml-[-70px]">Clique e saiba mais sobre nosso assistente de acessibilidade</p>
+                        <p id="modal_in_laire" class="text-[14px] text-[#212121] leading-[14px] mt-[5px] ml-[-70px]">Clique e saiba mais sobre nosso assistente de acessibilidade</p>
                     </div>
                 </div>
             </div>
@@ -707,7 +707,7 @@
                         {{--  --}}
                         <p class="leading-[17px] text-[14px] text-justify mt-[0px]">Thayla Amorim Santino é fisioterapeuta formada pela Universidade Estadual da Paraíba,
                         especialista em Fisioterapia Respiratória (ASSOBRAFIR/COFFITO) e em Informática em
-                        Saúde pela Universidade Federal de São Paulo, mestre e doutora pelo Programa de PósGraduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte. Atualmente
+                        Saúde pela Universidade Federal de São Paulo, mestre e doutora pelo Programa de Pós-Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte. Atualmente
                         é professora do Departamento de Fisioterapia da Universidade Estadual da Paraíba e
                         pesquisadora do Instituto de Pesquisa Professor Joaquim Amorim Neto. Participa como
                         colaboradora de projetos de pesquisa e extensão na área de Avaliação e Intervenção em
@@ -841,24 +841,6 @@
                 <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
             </div>
         </div>
-        <div id="bk1" class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -882,13 +864,13 @@
     {{--  --}}
     <div class="w-[94%] mx-[3%] mt-[70px] inline-block">
         {{--  --}}
-        <div id="bk1" class="w-[20%] rounded-[20px] mx-[2.5%] float-left">
+        <div id="bk1" class="w-[28%] rounded-[20px] mx-[2.5%] float-left">
             {{--  --}}
             <div style="border-radius: 0px 0px 20px 20px;" class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
-                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_1" class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_1" class="w-[100%] h-[220px] bg-[gray] mx-auto"></div>
                 {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
+                <div class="w-[100%] h-[130px] p-[20px] inline-block">
                     {{--  --}}
                     <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Relação entre a obesidade e a Asma</p>
                 </div>
@@ -897,17 +879,17 @@
             {{--  --}}
             <div class="w-[100%] inline-block h-[150px]">
                 {{--  --}}
-                <a href="https://www.youtube.com/watch?v=3wJlQvYEdf4" target="_blanck"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
+                <p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p>
             </div>
         </div>
         {{--  --}}
-        <div id="bk1" class="w-[20%] mx-[2.5%] float-left">
+        <div id="bk1" class="w-[28%] mx-[2.5%] float-left">
             {{--  --}}
             <div style="border-radius: 0px 0px 20px 20px;" class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
-                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_2"class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_2"class="w-[100%] h-[220px] bg-[gray] mx-auto"></div>
                 {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
+                <div class="w-[100%] h-[130px] p-[20px] inline-block">
                     {{--  --}}
                     <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Fisioterapia e Asma</p>
                 </div>
@@ -917,17 +899,17 @@
             {{--  --}}
             <div class="w-[100%] inline-block h-[150px]">
                 {{--  --}}
-                <a href="https://www.youtube.com/watch?v=5VjgO_nnJE4" target="_blanck"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
+                <p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p>
             </div>
         </div>
         {{--  --}}
-        <div id="bk1" class="w-[20%] mx-[2.5%] float-left">
+        <div id="bk1" class="w-[28%] mx-[2.5%] float-left">
             {{--  --}}
             <div style="border-radius: 0px 0px 20px 20px;" class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
                 {{--  --}}
-                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_3" class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
+                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_3" class="w-[100%] h-[220px] bg-[gray] mx-auto"></div>
                 {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
+                <div class="w-[100%] h-[130px] p-[20px] inline-block">
                     {{--  --}}
                     <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Adesão ao tratamento e sua repercussão no nível de controle da asma</p>
                 </div>
@@ -936,31 +918,24 @@
             {{--  --}}
             <div class="w-[100%] inline-block h-[150px]">
                 {{--  --}}
-                <a href="https://www.youtube.com/watch?v=gXkLtt2tHlw"target="_blanck"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
+                <p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p>
             </div>
         </div>
+        
+        {{-- BANNER CONVIVENDO --}}
+        @if (isset($banner_conviv) AND !empty($banner_conviv))
         {{--  --}}
-
-        <div id="bk1" id="bk1." class="w-[20%] mx-[2.5%] float-left">
+        <div class="banner_convivendo">
             {{--  --}}
-            <div style="border-radius: 0px 0px 20px 20px;" class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
+            <div class="w-[1000px] mx-auto h-[400px] mt-[12%] p-[30px] rounded-[20px] bg-[#ffffff]">
                 {{--  --}}
-                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_4" class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
+                <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Educação em asma nas escolas: o que é preciso saber?</p>
+                    <p class="float-right cursor-pointer">✕</p>
                 </div>
-                <div id="social" ></div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href="https://www.youtube.com/watch?v=mpR7Fm32ZvQ" target="_blanck"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
             </div>
         </div>
+        @endif
     </div>
 </section>
 {{--  --}}
@@ -1006,13 +981,13 @@
 {{--  --}}
 <div style="display: none;" class="modal_laire">
     {{--  --}}
-    <div class="w-[800px] h-[550px] rounded-[20px] bg-[#ffffff] mx-auto mt-[6%] shadow-lg">
+    <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[800px] h-[550px] rounded-[20px] bg-[#ffffff] mx-auto mt-[10%] shadow-lg">
         {{--  --}}
         <div class="w-[100%] inline-block px-[30px]">
             {{--  --}}
             <div class="float-left w-[100%]">
                 {{--  --}}
-                <p id="modal_laire" class="float-right text-[16px] mt-[30px] cursor-pointer">✕</p>
+                <p id="modal_laire" class="float-right text-[16px] text-[#ffffff] mt-[30px] cursor-pointer">✕</p>
             </div>
         </div>
         {{--  --}}
@@ -1020,9 +995,9 @@
             {{--  --}}
             <div class="w-[100%] inline-block">
                 {{--  --}}
-                <p class="text-[20px] text-center mt-[-30px] leading-[40px]">RespiraSaúde</p>
+                <p class="text-[20px] text-[#ffffff] text-center mt-[-30px] leading-[40px]">RespiraSaúde</p>
                 {{--  --}}
-                <p class="text-[30px] text-center leading-[40px] font-bold">O ARlindo pode te ajudar!</p>
+                <p class="text-[30px] text-[#ffffff] text-center leading-[40px] font-bold">O ARlindo pode te ajudar!</p>
             </div>
             {{--  --}}
             <div class="w-[100%] mt-[40px] inline-block">

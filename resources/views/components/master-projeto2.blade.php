@@ -21,9 +21,9 @@
             {{--  --}}
             <div id="base_geral2" class="w-[70%] h-[600px] pt-[80px] inline-block float-left">
                 {{--  --}}
-                <div id="base_text_home_rs" class="inline-block bg-[#ffffff] rounded-[6px] opacity-[0.9] p-[50px] shadow-lg">
+                <div id="base_text_home_rs" class="inline-block bg-[#ffffff] rounded-[20px] opacity-[0.9] p-[50px] shadow-lg">
                     {{--  --}}
-                    <div id="button_max2" class="w-[100px] rounded-[5px] h-[100px] bg-[#5CD1FF] ml-[-100px] absolute">
+                    <div id="button_max2" class="w-[100px] rounded-[100px] h-[100px] bg-[#5CD1FF] ml-[-100px] absolute">
                         {{--  --}}
                         <p class="text-[#080E45] text-[11px] text-center mt-[45%] uppercase font-bold">ver mais</p>
                     </div>

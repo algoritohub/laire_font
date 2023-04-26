@@ -1,4 +1,4 @@
-@extends('respirasaude.layout.main')
+@extends('respirasaude.layout.main_projeto3')
 @section('titulo', 'RespiraSaude | Home')
 @section('conteudo')
 

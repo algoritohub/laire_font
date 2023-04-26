@@ -229,6 +229,26 @@ button#bt2:hover{
     z-index: 10;
 }
 
+.banner_produtos{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 10; */
+}
+
+.banner_produtos1{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 10; */
+}
+
 .modal_add_conteudo{
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -313,6 +333,16 @@ button#bt2:hover{
 }
 
 .modal_pesquisadores{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.banner_convivendo{
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
@@ -665,7 +695,7 @@ button#bt2-1:hover{
     text-decoration: none;
     padding: 5px 10px;
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     transition: 1s;
 }
 
@@ -677,7 +707,7 @@ button#bt2-1:hover{
     text-decoration: none;
     padding: 5px 10px;
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     transition: 1s;
 }
 
@@ -757,7 +787,7 @@ button#bt2-1:hover{
 
 #carrossel_prox3{
     width: 100%;
-    margin-top: 140px;
+    margin-top: 100px;
     display: inline-block;
     background-image: url(../img/fundo2.jpg);
     background-size: 100%;

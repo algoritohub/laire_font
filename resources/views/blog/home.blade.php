@@ -13,7 +13,7 @@
                 {{-- CATEGORIA --}}
                 <p class="uppercase text-[14px] text-[#ffffff] pl-[10px] mb-[10px] font-bold border-l-[3px] border-l-[#5CD1FF]">Novidades</p>
                 {{--  --}}
-                <a href="{{ route('postagem_blog') }}"><p id="titulo_resumido" class="text-[#ffffff] mt-[20px] text-[40px] leading-[30px] font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a>
+                <a href="{{ route('postagem_blog') }}"><p id="titulo_resumido" class="text-[#ffffff] mt-[20px] text-[40px] leading-[40px] font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a>
             </div>
             {{--  --}}
             <div class="w-[30%] mt-[50px] pl-[30px] inline-block float-left">
@@ -65,7 +65,7 @@
             <p id="artigos_rescentes" class="text-center font-bold mt-[30px] text-[30px] mb-[50px]">Artigos Recentes</p>
 
             {{--  --}}
-            <div class="w-[47%] mx-[1.5%] inline-block float-left">
+            <div class="w-[20%] mx-[1.5%] inline-block float-left">
                 {{--  --}}
                 <div id="img-blog" style="" class="w-[120%] shadow-lg h-[200px] rounded-[5px] mb-[30px] border-[1px] border-[#cdcdcd] bg-[silver]"></div>
                 {{-- CATEGORIA --}}

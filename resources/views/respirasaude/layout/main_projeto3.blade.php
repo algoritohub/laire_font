@@ -142,7 +142,7 @@
                 {{--  --}}
                 <div class="w-[100%] h-[60px] inline-block">
                     {{--  --}}
-                    <div class="w-[90%] inline-block float-left">
+                    <div class="w-[95%] inline-block float-left">
                         <nav>
                             <ul class="menu">
                                 <li><b><a href="#">Doenças respiratórias crônicas</a></b>
@@ -194,7 +194,7 @@
                         </nav>
                     </div>
                     {{--  --}}
-                    <div class="w-[10%] inline-block float-left">
+                    <div class="w-[5%] inline-block float-left">
                         {{--  --}}
                         <a href="{{ route('home.laire') }}"><img src="/img/avt_laire.png" id="mascot" class="w-[50px] ml-[40px] mt-[0px] cursor-pointer float-right"></a>
                     </div>

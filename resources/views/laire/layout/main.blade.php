@@ -174,8 +174,9 @@
         @yield('conteudo')
     </article>
     {{-- FOOTER --}}
-    <div id="contatos." ></div>
-    <footer  class="w-[100%] inline-block bg-[#080E45]">
+    <div id="contatos"></div>
+    {{--  --}}
+    <footer class="w-[100%] inline-block bg-[#080E45]">
         {{--  --}}
         <div class="w-[90%] mx-[5%] mt-[5%] inline-block">
             {{--  --}}
@@ -273,8 +274,8 @@
                 </div>
             </div>
         </div>
-    </footer>
 
+    </footer>
 
     {{-- CARROSSEL --}}
     <script>
@@ -327,6 +328,23 @@
                 navegacao.style.display = 'none'
             } else ( navegacao.style.display = 'block')
         }
+    </script>
+
+    <script>
+        // Script jQuery para esconder um elemento na página quando a rolagem ultrapassar 200px
+        $(window).scroll(function(){
+
+                if($(document).scrollTop() > 600){// se a rolagem passar de 200px esconde o elemento
+
+                    $('#elementoAEsconder').fadeOut();
+
+                } else { // senão ele volta a ser visivel
+
+                    $('#elementoAEsconder').fadeIn();
+
+                }
+
+            });
     </script>
 
 </body>

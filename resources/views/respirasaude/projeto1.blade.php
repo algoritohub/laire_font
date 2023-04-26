@@ -1,4 +1,4 @@
-@extends('respirasaude.layout.main')
+@extends('respirasaude.layout.main_projeto1')
 @section('titulo', 'RespiraSaude | Home')
 @section('conteudo')
 
@@ -39,16 +39,16 @@
                     <div id="box_libra" style="display: none;" id="imagem_countainer" class="w-[800px] bg-[orange] h-[400px]"></div>
                 </div>
                 {{-- BASE LOGOS --}}
-                <div id="base_logos" class="w-[100%] h-[150px] inline-block">
+                <div id="base_logos" class="w-[100%] h-[170px] inline-block">
                     {{-- LOGOS --}}
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/4.png" alt=""></li>
-                        <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/9.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[250px] " src="/img/10.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[100px] " src="/img/6.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[80px]" src="/img/4.png" alt=""></li>
+                        {{-- <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li> --}}
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px] " src="/img/9.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[250px] " src="/img/10.png" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -412,7 +412,7 @@
                         {{--  --}}
                         <div class="w-[20%] inline-block float-left">
                             {{--  --}}
-                            <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                         </div>
                     </div>
                     {{--  --}}
@@ -449,7 +449,7 @@
                         {{--  --}}
                         <div class="w-[20%] inline-block float-left">
                             {{--  --}}
-                            <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                         </div>
                     </div>
                     {{--  --}}
@@ -484,9 +484,9 @@
                             <p class="text-[13px] uppercase">{{ $categoria }}</p>
                         </div>
                         {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
+                        < class="w-[20%] inline-block float-left">
                             {{--  --}}
-                            <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                         </div>
                     </div>
                     {{--  --}}
@@ -528,9 +528,9 @@
                             <p class="text-[13px] uppercase">{{ $categoria }}</p>
                         </div>
                         {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
+                        < class="w-[20%] inline-block float-left">
                             {{--  --}}
-                            <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                         </div>
                     </div>
                     {{--  --}}

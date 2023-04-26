@@ -60,7 +60,10 @@
             </ul>
         </div>
         {{--  --}}
-        <div id="box_libra" style="display: none;" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[orange]"></div>
+        <div id="box_libra" style="display: none;" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[orange]">
+            {{--  --}}
+            {{-- VÍDEO AQUI --}}
+        </div>
         {{--  --}}
         <div style="background-image: url(/img/img_missao.png); background-size: 110%;" id="box_audio" class="w-[100%] h-[400px] mt-[20px] inline-block bg-[purple]"></div>
     </div>
@@ -171,7 +174,7 @@
 <section id="projeto_extensao" class="w-[100%] inline-block">
     {{--  --}}
     <center>
-        <p class="font-bold text-[#212121] text-[30px] border-b-[4px] leading-[35px] w-[300px] mt-[40px] pb-[20px]">Projetos de Extensão</p>
+        <p class="font-bold text-[#212121] text-[30px] border-b-[4px] leading-[35px] w-[500px] mt-[40px] pb-[20px]">Projetos de Extensão</p>
     </center>
     <div id="caixa_evt" class="w-[94%] mx-[3%] mt-[70px] inline-block">
         {{--  --}}
@@ -250,6 +253,75 @@
             <div class="w-[100%] inline-block h-[150px]">
                 {{--  --}}
                 <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS➜</p></a>
+            </div>
+        </div>
+    </div>
+</section>
+{{-- BANNER PRODUTOS --}}
+<section class="w-[100%] inline-block">
+    {{--  --}}
+    <div class="w-[90%] mx-[5%] inline-block">
+        {{--  --}}
+        <div style="background-image: url(/img/banner.png); background-size: 100%;" class="w-[100%] rounded-[20px] h-[420px] bg-[blue] inline-block">
+            <ul class="mt-[300px] ml-[470px]">
+                <li id="video_produto"  class="inline-block mr-[60px]"><button class="bg-[transparent] w-[100px] h-[40px]"></button></li>
+                <li id="info_produto"   class="inline-block mr-[60px]"><button class="bg-[transparent] w-[160px] h-[40px]"></button></li>
+                <li id="podcst_produto" class="inline-block mr-[60px]"><button class="bg-[transparent] w-[150px] h-[40px]"></button></li>
+                <li id="resumo_produto" class="inline-block mr-[60px]"><button class="bg-[transparent] w-[200px] h-[40px]"></button></li>
+            </ul>
+        </div>
+    </div>
+    {{--  --}}
+    <div style="display: none;" class="banner_produtos">
+        {{--  --}}
+        <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[70%] inline-block float-left">
+                    {{--  --}}
+                    <p class="text-[#ffffff] uppercase font-bold">Nosso resumo executivo</p>
+                </div>
+                {{--  --}}
+                <div class="w-[30%] inline-block float-left">
+                    {{--  --}}
+                    <p id="fechar_produto" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                </div>
+            </div>
+            {{--  --}}
+            <div class="w-[100%] mt-[30px] inline-block">
+                {{--  --}}
+                <p class="text-[#ffffff] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate eos possimus aliquid sint. Beatae voluptatibus praesentium suscipit iste accusamus facilis. Fugit inventore, voluptatum aspernatur vero facilis dolor. Voluptatem, porro!</p>
+                {{--  --}}
+                <center>
+                    <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Resumo Executivo</button></a>
+                </center>
+            </div>
+        </div>
+    </div>
+    {{--  --}}
+    <div style="display: none;" class="banner_produtos1">
+        {{--  --}}
+        <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[70%] inline-block float-left">
+                    {{--  --}}
+                    <p class="text-[#ffffff] uppercase font-bold">Nosso podcast</p>
+                </div>
+                {{--  --}}
+                <div class="w-[30%] inline-block float-left">
+                    {{--  --}}
+                    <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                </div>
+            </div>
+            {{--  --}}
+            <div class="w-[100%] mt-[30px] inline-block">
+                {{--  --}}
+                <center>
+                    <div class="w-[700px] h-[350px] bg-[#212121] inline-block"></div>
+                </center>
             </div>
         </div>
     </div>
