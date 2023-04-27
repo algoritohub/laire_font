@@ -141,34 +141,78 @@ $(document).ready(function(){
 
 
 
+// ASMA
 $(document).ready(function(){
     $("#asma").mouseover(function(event){
         event.preventDefault();
         $(".mascote").fadeIn();
+        $(".balao").fadeIn();
     });
 });
 
+// ASMA
 $(document).ready(function(){
-    $("#yellow").mouseout(function(event){
+    $("#asma").mouseout(function(event){
         event.preventDefault();
         $(".mascote").fadeOut();
+        $(".balao").fadeOut();
     });
 });
 
 
 
-
+// FIBROSE
 $(document).ready(function(){
-    $("#asma").mouseover(function(event){
+    $("#fibrose").mouseover(function(event){
         event.preventDefault();
         $(".mascote").fadeIn();
+        $(".balao").fadeIn();
+    });
+});
+
+// FIBROSE
+$(document).ready(function(){
+    $("#fibrose").mouseout(function(event){
+        event.preventDefault();
+        $(".mascote").fadeOut();
+        $(".balao").fadeOut();
+    });
+});
+
+
+// FIBROSE PULMONAR
+$(document).ready(function(){
+    $("#pulmonar").mouseover(function(event){
+        event.preventDefault();
+        $(".mascote").fadeIn();
+        $(".balao").fadeIn();
+    });
+});
+
+// FIBROSE
+$(document).ready(function(){
+    $("#pulmonar").mouseout(function(event){
+        event.preventDefault();
+        $(".mascote").fadeOut();
+        $(".balao").fadeOut();
+    });
+});
+
+
+// bronquiectasia
+$(document).ready(function(){
+    $("#bronquiectasia").mouseover(function(event){
+        event.preventDefault();
+        $(".mascote").fadeIn();
+        $(".balao").fadeIn();
     });
 });
 
 $(document).ready(function(){
-    $("#purple").mouseout(function(event){
+    $("#bronquiectasia").mouseout(function(event){
         event.preventDefault();
         $(".mascote").fadeOut();
+        $(".balao").fadeOut();
     });
 });
 
