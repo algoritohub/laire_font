@@ -960,6 +960,7 @@ button#bt2-1:hover{
     background-image: url("/img/Pesquisa 1/Pesquisa 1 - imagem 5.png");
     background-size: cover;
 
+
 }
 /*imagens do projeto 2 */
 
@@ -2314,6 +2315,10 @@ button#bt2-1:hover{
 
     #titulo_pesquisas{
         margin-top: 50px;
+    }
+
+    #banner-produtos{
+        display: none;
     }
 
     /*responsivo para menores*/
