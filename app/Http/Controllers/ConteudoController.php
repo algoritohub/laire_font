@@ -164,4 +164,13 @@ class ConteudoController extends Controller
 
         return view('respirasaude.projeto2', ['pesquisador' => $pesquisador, 'categoria' => $categoria]);
     }
+
+    // PESQUISADORES PROJETO 3
+    public function PesquisadoresProjeto3($tipo, $nome)
+    {
+        $pesquisador = $nome;
+        $categoria   = $tipo;
+
+        return view('respirasaude.projeto3', ['pesquisador' => $pesquisador, 'categoria' => $categoria]);
+    }
 }
