@@ -336,7 +336,7 @@
                     </div>
                 </div>
                 {{-- MASCOTE --}}
-                {{-- <img id="mascote" style="diplay:none" src="/img/ARLINDO.png" class="w-[400px] absolute mt-[380px] ml-[780px]"> --}}
+                <img id="mascote" style="diplay:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[380px] ml-[780px]">
                 {{-- <div class="w-[200px] bg-[blue] h-[100px] rounded-[100px] absolute mt-[340px] ml-[740px]"></div> --}}
             </div>
         </div>

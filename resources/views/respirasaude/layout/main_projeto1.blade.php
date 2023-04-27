@@ -202,6 +202,19 @@
                         {{--  --}}
                         <a href="{{ route('home.laire') }}"><img src="/img/avt_laire.png" id="mascot" class="w-[50px] ml-[40px] mt-[1px] cursor-pointer float-right"></a>
                     </div>
+                    {{-- MASCOTE --}}
+                    <img id="mascote" style="display:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[430px] ml-[820px] mascote">
+                    <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[380px] ml-[775px] balao">
+                        {{--  --}}
+                        <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center">Esse conteúde tem acessibilidade</p>
+                        {{--  --}}
+                        <center>
+                            <ul class="mt-[5px]">
+                                <li class="mr-[2px] inline-block"><img class="w-[37px] cursor-pointer" src="/img/audio.png"></li>
+                                <li class="mr-[2px] inline-block"><img class="w-[38px] cursor-pointer" src="/img/libra.png"></li>
+                            </ul>
+                        </center>
+                    </div>
                 </div>
             </div>
         </div>
