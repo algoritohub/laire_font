@@ -263,7 +263,7 @@
     {{--  --}}
     <div class="w-[90%] mx-[5%] inline-block">
         {{--  --}}
-        <div style="background-image: url(/img/banner.png); background-size: 100%;" class="w-[100%] rounded-[20px] h-[420px] bg-[blue] inline-block">
+        <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[320px] bg-[blue] inline-block">
             <ul class="mt-[300px] ml-[470px]">
                 <li id="video_produto"  class="inline-block mr-[60px]"><button class="bg-[transparent] w-[100px] h-[40px]"></button></li>
                 <li id="info_produto"   class="inline-block mr-[60px]"><button class="bg-[transparent] w-[160px] h-[40px]"></button></li>
@@ -339,7 +339,7 @@
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/3.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/mcti.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/img/mcti.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[610px]" src="/img/10.png" alt=""></li>
             </ul>

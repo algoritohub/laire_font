@@ -406,8 +406,8 @@
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/8.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/6.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/3.png" alt=""></li>
-                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/7.png" alt=""></li>
-                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/ppgfis.png" alt=""></li>
+                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
+                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[200px]" src="/img/ppgfis.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/img/10.png" alt=""></li>
                         </ul>
                     </center>
@@ -467,7 +467,7 @@
     }
 
     </script>
-    
+
     {{-- VLIBRAS --}}
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
