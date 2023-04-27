@@ -76,6 +76,7 @@
         </div>
         {{--  --}}
         <div id="lado_b_bloco1" class="w-[50%] h-[800px] px-[80px] bg-[#fafafa] float-left inline-block">
+            <div id="importacncia_projeto2"></div>
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
@@ -94,6 +95,7 @@
 {{-- BLOCO EXEMPLO 3 --}}
 
 <section class="w-[100%] mt-[-5px] inline-block">
+    <div id="objetivo"></div>
     {{--  --}}
     <div id="container_bloco2" class="w-[100%] inline-block">
         {{--  --}}
@@ -135,6 +137,7 @@
         </div>
         {{--  --}}
         <div id="lado_b_bloco1" class="w-[50%] h-[630px] px-[80px] bg-[#fafafa] float-left inline-block">
+            <div id="titulo_projeto2_pesquisa" ></div>
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
@@ -163,8 +166,10 @@
 <section class="w-[100%] mt-[-5px] inline-block">
     {{--  --}}
     <div id="container_bloco2" class="w-[100%] inline-block">
+        <div id="text_projeto_resultado" ></div>
         {{--  --}}
         <div id="lado_a_bloco2" class="w-[50%] h-[630px] px-[80px] inline-block float-left">
+            
             {{--  --}}
             <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}

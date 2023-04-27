@@ -82,6 +82,7 @@
         <div id="lado_b_bloco1" class="w-[50%] h-[630px] px-[80px] bg-[#fafafa] float-left inline-block">
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                <div id="import" ></div>
                 {{--  --}}
                 <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}"><b id="DPOC" class="text-[#080E45]">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}"><b id="asma" class="text-[#080E45]">asma</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}"><b id="fibrose" class="text-[#080E45]">fibrose cística</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}"><b id="bronquiectasia" class="text-[#080E45]">bronquiectasia</b></a> e a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}"><b id="pulmonar" class="text-[#080E45]">fibrose pulmonar</b></a>.</p>
@@ -96,6 +97,7 @@
 {{-- BLOCO EXEMPLO 3 --}}
 
 <section class="w-[100%] mt-[-5px] inline-block">
+    <div id="objeti" ></div>
     {{--  --}}
     <div id="container_bloco2" class="w-[100%] inline-block">
         {{--  --}}
@@ -121,6 +123,7 @@
 
 {{-- BLOCO EXEMPLO metodo --}}
 <section class="w-[100%] mt-[-5px] inline-block">
+    <div id="metod" ></div>
     {{--  --}}
     <div id="container_bloco1" class="w-[100%] inline-block">
         {{--  --}}
@@ -151,6 +154,7 @@
 {{-- BLOCO resultado --}}
 
 <section class="w-[100%] mt-[-5px] inline-block">
+    <div id="resul" ></div>
     {{--  --}}
     <div id="container_bloco2" class="w-[100%] inline-block">
         {{--  --}}

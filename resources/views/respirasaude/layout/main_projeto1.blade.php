@@ -232,10 +232,10 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><b><a href="#text_barreira">Importância</a></b></li>
-                                <li><b><a href="#objetivo">Objetivo</a></b></li>
-                                <li><b><a href="#objetivo.pesquisa">Métodos</a></b></li>
-                                <li><b><a href="#text_resultado_facilidade">Resultados</a></b></li>
+                                <li><b><a href="#import">Importância</a></b></li>
+                                <li><b><a href="#objeti">Objetivo</a></b></li>
+                                <li><b><a href="#metod">Métodos</a></b></li>
+                                <li><b><a href="#resul">Resultados</a></b></li>
                                 <li><b><a href="#pesquisadores">Pesquisadores</a></b></li>
                                 <li><b><a href="#caixa_info">Materiais de divulgação</a></b></li>
                             </ul>
