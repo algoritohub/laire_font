@@ -116,19 +116,25 @@ $(document).ready(function(){
     });
 });
 
+
+
+
+
 // DPOC
 $(document).ready(function(){
     $("#DPOC").mouseover(function(event){
         event.preventDefault();
-        $("#blue").fadeIn();
+        $(".mascote").fadeIn();
+        $(".balao").fadeIn();
     });
 });
 
 // DPOC
 $(document).ready(function(){
-    $("#blue").mouseout(function(event){
+    $("#DPOC").mouseout(function(event){
         event.preventDefault();
-        $("#blue").fadeOut();
+        $(".mascote").fadeOut();
+        $(".balao").fadeOut();
     });
 });
 
@@ -138,14 +144,14 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#asma").mouseover(function(event){
         event.preventDefault();
-        $("#yellow").fadeIn();
+        $(".mascote").fadeIn();
     });
 });
 
 $(document).ready(function(){
     $("#yellow").mouseout(function(event){
         event.preventDefault();
-        $("#yellow").fadeOut();
+        $(".mascote").fadeOut();
     });
 });
 
@@ -155,14 +161,14 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#asma").mouseover(function(event){
         event.preventDefault();
-        $("#purple").fadeIn();
+        $(".mascote").fadeIn();
     });
 });
 
 $(document).ready(function(){
     $("#purple").mouseout(function(event){
         event.preventDefault();
-        $("#purple").fadeOut();
+        $(".mascote").fadeOut();
     });
 });
 
