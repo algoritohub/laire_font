@@ -160,24 +160,7 @@
         </center>
         {{--  --}}
         <div class="w-[100%] mt-[70px] inline-block">
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url('/img/'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Sarah Joysi Almeida Leite</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            {{--  --}}
+            
             <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
                 {{--  --}}
                 <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">

@@ -53,8 +53,11 @@ Route::get('/respira-saude/projeto/2', function () {
     return view('respirasaude.projeto2');
 })->name('projeto2');
 
-// PÁGINA DE DOENÇAS
+// PESQUISADORES 2
 Route::get('/respira-saude/projeto/2/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto2"])->name('pesquisadores_projeto_2');
+
+// PESQUISADORES 3
+Route::get('/respira-saude/projeto/3/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto3"])->name('pesquisadores_projeto_3');
 
 
 

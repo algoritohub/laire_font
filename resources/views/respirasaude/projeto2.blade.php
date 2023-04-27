@@ -44,10 +44,7 @@
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
                         <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[140px]" src="/img/7.png" alt=""></li>
-                        <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/9.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[240px]" src="/img/mcti.png" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -240,7 +237,7 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Baldomero.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -252,7 +249,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'baldomero.']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold ">ver bio ➜</p></a>
+                   <p class="text-center uppercase text-[15px] mt-[25px] font-bold ">ver bio ➜</p>
                 </div>
             </div>
 
@@ -261,13 +258,13 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Gabriela Chaves.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
                         <p class="font-bold text-center text-[15px]">Gabriela Chaves</p>
                         {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                        <p class="text-[#212121] text-center text-[16px]">UFRN, UFMG</p>
                     </div>
                 </div>
                 {{--  --}}
@@ -281,7 +278,7 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Sarah Leite.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -293,7 +290,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'aluno_de_doutorado', 'nome' => 'sarah']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'aluno_de_doutorado', 'nome' => 'sarah']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
 
@@ -314,7 +311,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'joao']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
 
@@ -323,7 +320,7 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Cecilia.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -335,7 +332,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'colaboradora_externa', 'nome' => 'cecilia']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                   <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -355,7 +352,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'kleber']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -375,7 +372,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'ricardo']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                   <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -383,7 +380,7 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Tito Hugo.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -395,7 +392,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'tito']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -407,7 +404,7 @@
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
-                        <p class="font-bold text-center text-[15px]"Gabriel Silva </p>
+                        <p class="font-bold text-center text-[15px]"> Gabriel silva </p>
                         {{--  --}}
                         <p class="text-[#212121] text-center text-[16px]">UFRN</p>
                     </div>
@@ -415,7 +412,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'gabriela']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => ' Bolsista de IC', 'nome' => 'gabriel']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -435,7 +432,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'ada']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                   <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -455,7 +452,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'karoline']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -463,19 +460,19 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
                         <p class="font-bold text-center text-[15px]">-	Karla Morganna  Mendonça </p>
                         {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                        <p class="text-[#212121] text-center text-[16px]">FACISA/UFRN,UEPB,CBI of Miami</p>
                     </div>
                 </div>
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => 'professor', 'nome' => 'karla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <a href="{{ route('pesquisadores_projeto_2', ['tipo' => ' Coordenadora', 'nome' => 'karla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
         </section>
@@ -505,7 +502,7 @@
                  {{--  --}}
                  <div class="w-[100%] inline-block">
                      {{--  --}}
-                     <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                     <div id="imagem_pesq_mob" style="background-image: url('/img/Sarah Leite.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                      {{--  --}}
                      <p class="leading-[17px] text-[14px] text-center mt-[30px]">
                          Fisioterapeuta graduada pela Universidade Federal do Rio Grande do Norte (UFRN) (2017), possui residência em Terapia Intensiva pelo Hospital Dom Helder Câmara (HDH) (2019), Mestrado acadêmico em Fisioterapia (UFRN) (2021) e Título de Especialista Profissional em Fisioterapia em Terapia Intensiva (ASSOBRAFIR/COFFITO) (2022). Atualmente cursa Doutorado em Fisioterapia pela UFRN, integrante do Laboratório de Avaliação e Intervenção Respiratória (LAIRE), ocupa o cargo público de fisioterapeuta no Hospital Barão de Lucena (HBL) - Secretaria Estadual de Saúde de Pernambuco (SES-PE), ocupa cargo de gestão como Coordenadora da equipe de Fisioterapia do Hospital Dom Helder Câmara. Tem experiência em pesquisas de tradução, adaptação transcultural e avaliação psicométrica de instrumentos em saúde; e revisões sistemáticas em saúde.
@@ -694,6 +691,98 @@
                         </center>
                     </div>
                 @endif
+                {{-- CONTEÚDO joubert --}}
+                @if($pesquisador == "gabriel")
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[80%] inline-block float-left">
+                            {{--  --}}
+                            <p class="font-bold leading-[23px] text-[20px]">  Gabriel Rodrigues da Silva</p>
+                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[20%] inline-block float-left">
+                            {{--  --}}
+                            <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto2') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                        </div>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                        {{--  --}}
+                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
+                            Gabriel / Fisioterapia / Graduando / Inglês / Fisioterapia Cardiorrespiratória / Atividades de 
+                            ensino, pesquisa e extensão/ Gosto de estar por dentro das atualizações tecnológicas, toco 
+                            teclado na igreja, amo assistir uma série.
+                            Gabriel Silva está se formando em fisioterapia pela Universidade Federal do Rio Grande do 
+                            Norte e teve experiências em outras instituições até chegar na UFRN. É autodidata e 
+                            sempre está buscando conhecimentos que possam agregar para sua atuação profissional, 
+                            desde o uso de tecnologias de programação até conhecimentos em marketing digital e 
+                            infoprodutos. É estrategista e faz parte da equipe de projetos de uma empresa que oferece 
+                            preparatório para concursos e residências na área da fisioterapia. Aqui no LAIRE, Gabriel 
+                            está envolvido com o projeto de Implementação do RespiraSaúde, uma plataforma de 
+                            tradução do conhecimento em saúde respiratória. Gabriel é uma pessoa mais reservada, 
+                            caseira e é o “humano” de 2 gatinhas.
+                        </p>
+                    </div>
+                     {{--  --}}
+                     <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <center>
+                        {{--  --}}
+                        <ul id="links_pesq_mob" class="mt-[20px]">
+                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3554788662850733" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+
+                        </ul>
+                        </center>
+                    </div>
+                @endif
+                {{-- CONTEÚDO karla --}}
+                @if($pesquisador == "karla")
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[80%] inline-block float-left">
+                            {{--  --}}
+                            <p class="font-bold leading-[23px] text-[20px]"> Karla Morganna</p>
+                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[20%] inline-block float-left">
+                            {{--  --}}
+                            <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto2') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
+                        </div>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div id="imagem_pesq_mob" style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                        {{--  --}}
+                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
+                            Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de 
+                            Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui 
+                            títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte. 
+                            Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena 
+                            projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória, 
+                            desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades 
+                            psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em 
+                            colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em 
+                            saúde.
+
+                        </p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <center>
+                        {{--  --}}
+                        <ul id="links_pesq_mob" class="mt-[20px]">
+                            <li class="mr-[20px] inline-block"><a href=" http://lattes.cnpq.br/1736384836028397" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                            <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0001-5734-3707" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                        </ul>
+                        </center>
+                    </div>
+                @endif
 
             </div>
         </div>
@@ -722,13 +811,13 @@
                 <center>
                     {{--  --}}
                     <ul>
-                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/9.png" alt=""></li>
                          <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
-                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/7.png" alt=""></li>
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/2.png" alt=""></li> --}}
+                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
+                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/4.png" alt=""></li>
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
+                        <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/logomarcaproex_oficial.jpg" alt=""></li>
+                        <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
                     </ul>
                 </center>
             </div>

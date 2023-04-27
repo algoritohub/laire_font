@@ -207,13 +207,13 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Sarah Leite.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
                         <p class="font-bold text-center text-[15px]">Sarah Leite</p>
                         {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                        <p class="text-[#212121] text-center text-[16px]">UFRN,HDH, <br> ASSOBRAFIR/COFFITO</p>
                     </div>
                 </div>
                 {{--  --}}
@@ -255,7 +255,7 @@
                         {{--  --}}
                         <p class="font-bold text-center text-[15px]">Gabriela Chaves</p>
                         {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                        <p class="text-[#212121] text-center text-[16px]">UFRN,UFMG</p>
                     </div>
                 </div>
                 {{--  --}}
@@ -281,7 +281,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'joubert']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'Aluno de Doutorado', 'nome' => 'joubert']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -295,7 +295,7 @@
                         {{--  --}}
                         <p class="font-bold text-center text-[15px]">Tácito Zaildo</p>
                         {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">UFRN-UEPB-CEFAPP</p>
+                        <p class="text-[#212121] text-center text-[16px]">UFRN-UEPB-CEFAPP,FIP-PB</p>
                     </div>
                 </div>
                 {{--  --}}
@@ -329,7 +329,7 @@
                 {{--  --}}
                 <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                     {{--  --}}
-                    <div style="background: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div style="background: url('/img/Sara Ahmed.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                     {{--  --}}
                     <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                         {{--  --}}
@@ -341,7 +341,7 @@
                 {{--  --}}
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'professor', 'nome' => 'sara']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                    <p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
             </div>
               {{-- CARD PESQUISADOR --}}
@@ -413,7 +413,7 @@
                     {{--  --}}
                     <div class="w-[100%] inline-block">
                         {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                        <div id="imagem_pesq_mob" style="background-image: url('/img/Sarah Leite.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                         {{--  --}}
                         <p class="leading-[17px] text-[14px] text-center mt-[30px]">
                             Fisioterapeuta graduada pela Universidade Federal do Rio Grande do Norte (UFRN) (2017), possui residência em Terapia Intensiva pelo Hospital Dom Helder Câmara (HDH) (2019), Mestrado acadêmico em Fisioterapia (UFRN) (2021) e Título de Especialista Profissional em Fisioterapia em Terapia Intensiva (ASSOBRAFIR/COFFITO) (2022). Atualmente cursa Doutorado em Fisioterapia pela UFRN, integrante do Laboratório de Avaliação e Intervenção Respiratória (LAIRE), ocupa o cargo público de fisioterapeuta no Hospital Barão de Lucena (HBL) - Secretaria Estadual de Saúde de Pernambuco (SES-PE), ocupa cargo de gestão como Coordenadora da equipe de Fisioterapia do Hospital Dom Helder Câmara. Tem experiência em pesquisas de tradução, adaptação transcultural e avaliação psicométrica de instrumentos em saúde; e revisões sistemáticas em saúde.
@@ -516,7 +516,7 @@
                             <p class="text-[13px] uppercase">{{ $categoria }}</p>
                         </div>
                         {{--  --}}
-                        < class="w-[20%] inline-block float-left">
+                        <div class="w-[20%] inline-block float-left">
                             {{--  --}}
                             <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                         </div>
@@ -524,7 +524,7 @@
                     {{--  --}}
                     <div class="w-[100%] inline-block">
                         {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                        <div id="imagem_pesq_mob" style="background-image: url('/img/Joubert Vitor .JPG'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                         {{--  --}}
                         <p class="leading-[17px] text-[14px] text-center mt-[30px]">
                             Joubert Vitor de Souto Barbosa, Fisioterapeuta pelo Centro Universitário Unifacisa, Possui
@@ -560,7 +560,7 @@
                             <p class="text-[13px] uppercase">{{ $categoria }}</p>
                         </div>
                         {{--  --}}
-                        < class="w-[20%] inline-block float-left">
+                        <div class="w-[20%] inline-block float-left">
                             {{--  --}}
                             <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                         </div>
@@ -685,12 +685,12 @@
         <center >
             {{-- logos maiores --}}
             <ul  >
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/9.png" alt=""></li>
-                {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li> --}}
+                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
-               <!-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/3.png" alt=""></li>-->
-                {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/2.png" alt=""></li> --}}
-                {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/4.png" alt=""></li> --}}
+               <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/4.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px] "><img class="w-[210px]" src="/img/logomarcaproex_oficial.jpg" alt=""></li>
                 {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
             </ul>
         </center>
