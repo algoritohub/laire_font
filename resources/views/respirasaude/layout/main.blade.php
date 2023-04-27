@@ -64,30 +64,41 @@
 @endphp
 {{--  --}}
 <body id="pagina">
-    {{-- MOBILE HEADER --}}
-    <header id="barra_superior_acessibilidade_mobile" class="w-[100%] bg-[#212121] inline-block fixed">
+    {{-- NOVO ACESSIBILIDADE DESKTOP MOBILE --}}
+    <div id="barra_superior_acessibilidade_mobile" class="w-[100%] inline_block bg-[#212121] fixed">
         {{--  --}}
-        <div  id="botoes_bandeiras"  class="w-[55%] float-left inline-block h-[40px]">
+        <div class="w-[90%] mx-[5%] inline-block">
             {{--  --}}
-            <ul id="button_font" class="float-right mt-[5px]">
-                <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-            </ul>
-        </div>
-        {{--  --}}
-        <div class="w-[20%] float-left inline-block h-[40px]">
+            <div id="barra_acessibilidade_azul" class="w-[70%] inline-block h-[40px] float-left"></div>
             {{--  --}}
-            <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
+            <div id="barra_acessibilidade_roxa" class="w-[30%] inline-block h-[40px] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_verde" class="w-[53.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <ul id="button_font" class="float-right mt-[5px]">
+                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
+                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
+                        </ul>
+                    </div>
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_vermelho" class="w-[23.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <a href="{{ route('mapa_site') }}"><p class="text-[9px] mt-[14px] float-right text-[#ffffff] font-bold uppercase">Mapa do Site</p></a>
+                    </div>
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_cinza" class="w-[23.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <ul class="mt-[10px] float-right">
+                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        {{--  --}}
-        <div  class="w-[25%] float-left inline-block h-[40px]">
-            {{--  --}}
-            <ul class="mt-[5px] mr-[10px] float-right">
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-            </ul>
-        </div>
-    </header>
+    </div>
     {{-- BARRA SUPERIOR MOBILE --}}
     <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
         {{--  --}}
@@ -308,9 +319,12 @@
                                 </li>
                                 <li><b><a href="#">Eventos</a></b>
                                     <ul>
-                                        <li class="ma"><a href="#">Encerrados</a>
-                                        </li>
-                                        <li class="ma"><a href="#">Futuros</a>
+                                        <li class="ma"><a href="#">ConVivendo com a Asma</a>
+                                            <ul class="mx">
+                                                <li><a href="#">Vídeos</a></li>
+                                                <li><a href="#">E-books</a></li>
+                                                <li><a href="#">Infográficos</a></li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
@@ -336,7 +350,7 @@
                     </div>
                 </div>
                 {{-- MASCOTE --}}
-                <img id="mascote" style="diplay:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[380px] ml-[780px]">
+                {{-- <img id="mascote" style="diplay:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[380px] ml-[780px]"> --}}
                 {{-- <div class="w-[200px] bg-[blue] h-[100px] rounded-[100px] absolute mt-[340px] ml-[740px]"></div> --}}
             </div>
         </div>

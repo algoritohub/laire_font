@@ -243,19 +243,7 @@
                 <p class="text-[13px] text-center">UFR,UFMG</p>
             </div>
             </a>
-            {{--  --}}
-            <a href="?info=vitoria#pesquisadores">
-            <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left">
-                {{--  --}}
-                <div id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
-
-                </div>
-                {{--  --}}
-                <p class="text-[16px] font-bold text-center">Vitória Jéssica</p>
-                {{--  --}}
-                <p class="text-[13px] text-center">HUOL/UFRN,COFFITO/ASSOBRAFIR</p>
-            </div>
-            </a>
+            
             {{--  --}}
             <a href="?info=sabrina#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left">
@@ -308,6 +296,19 @@
                 <p class="text-[13px] text-center">UFRN</p>
             </div>
             </a>
+            {{--  --}}
+            <a href="?info=vitoria#pesquisadores">
+                <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left">
+                    {{--  --}}
+                    <div id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
+    
+                    </div>
+                    {{--  --}}
+                    <p class="text-[16px] font-bold text-center">Vitória Jéssica</p>
+                    {{--  --}}
+                    <p class="text-[13px] text-center">HUOL/UFRN,COFFITO/ASSOBRAFIR</p>
+                </div>
+                </a>
         </div>
     </div>
     {{-- MODAL INFO PESQUISADORES --}}
@@ -860,7 +861,7 @@
 <div id="bk-" ></div>
 <section id="resultado" class="w-[100%] inline-block">
     {{--  --}}
-    <center id="eventos.">
+    <center id="eventos_xa">
         <p  class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Eventos</p>
     </center>
     {{--  --}}
@@ -957,17 +958,17 @@
 
         {{--  --}}
 
-        <div id="botao_facebook-"  class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]">
-            <center ><a  href="https://www.facebook.com/laire.lab" target="_blanck" ><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/facebook.png"/> <p class="text-[#ffffff] float-left">Facebook</p></button></a><center>
+        <div id="botao_facebook"  class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]">
+            <center ><a  href="https://www.facebook.com/laire.lab" target="_blanck" ><button id="bt2-1" class="px-[40px] mt-[40%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/facebook.png"/> <p class="text-[#ffffff] float-left">Facebook</p></button></a><center>
         </div>
         {{--  --}}
         <div id="botao_instagram" class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]  ">
-            <center><a href="https://www.instagram.com/laire_ufrn/?hl=pt" target="_blanck"><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/instagram.png"/> <p class="text-[#ffffff] float-left">Instagram</p></button></a>
+            <center><a href="https://www.instagram.com/laire_ufrn/?hl=pt" target="_blanck"><button id="bt2-1" class="px-[40px] mt-[40%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#ffffff] font-bold text-[12px]"><img class="w-[18px] float-left mr-[10px]" src="/img/instagram.png"/> <p class="text-[#ffffff] float-left">Instagram</p></button></a>
             </center>
         </div>
         {{--  --}}
         <div id="botao_youtube" class="w-[30.3%] rounded-[20px] h-[200px] mx-[1.5%] float-left bg-[silver]">
-            <center><a href=" https://www.youtube.com/@laireufrn7670" target="_blank" ><button id="bt2-1" class="px-[40px] mt-[18%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#080E45] font-bold text-[12px]"> <img class="w-[18px] float-left mr-[10px]" src="/img/youtube.png"/> <p class="text-[#ffffff] float-left">youtube</p></button></a></center>
+            <center><a href=" https://www.youtube.com/@laireufrn7670" target="_blank" ><button id="bt2-1" class="px-[40px] mt-[40%] bg-[#00FF8C] rounded-[100px] h-[50px] text-[#080E45] font-bold text-[12px]"> <img class="w-[18px] float-left mr-[10px]" src="/img/youtube.png"/> <p class="text-[#ffffff] float-left">Youtube</p></button></a></center>
         </div>
     </div>
 </section>

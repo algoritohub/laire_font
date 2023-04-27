@@ -551,21 +551,22 @@ ul.logos_carrossel li img{
 
 #botao_instagram{
 /*background-image:linear-gradient(#A146C5,#FD4164,#FE7F4A)*/
-background-image: url('/img/Instagram laire.png');
+background-image: url('../img/Instagramlaire.png');
     background-size: cover;
 }
-#botao_facebook-{
+#botao_facebook{
    /* background-image:linear-gradient(#3F70B5,#2A5B9D,#0C3D7F)*/
-    background-image: url('/img/Facebook laire.png');
+    background-image: url('../img/Facebooklaire.png');
     background-size: cover;
 
 
 }
 #botao_youtube{
     /*background-image:linear-gradient(#B41102,#F81A07,#6C0700)*/
-    background-image: url('/img/YouTube laire.png');
+    background-image: url('../img/YouTubelaire.png');
     background-size: cover;
 }
+
 
 
 button#bt2-1{
@@ -891,7 +892,7 @@ button#bt2-1:hover{
 }
 
 #topo_laire_mobile{
-    background: url('/img/arrival.jpg');
+    background: url('/img/arrival.png');
     background-size: 100%;
 }
 
@@ -1079,7 +1080,7 @@ button#bt2-1:hover{
         margin-top: 150px;
         display: inline-block;
         background-image: url(../img/imagem_rs_1.png);
-        background-size: 100%;
+        background-size: 460%;
     }
 
     #carrossel_prox2{
@@ -1087,7 +1088,7 @@ button#bt2-1:hover{
         margin-top: 150px;
         display: inline-block;
         background-image: url(../img/imagem_rs_2.png);
-        background-size: 100%;
+        background-size: 460%;
     }
 
     #carrossel_prox3{
@@ -1095,7 +1096,7 @@ button#bt2-1:hover{
         margin-top: 150px;
         display: inline-block;
         background-image: url(../img/fundo2.jpg);
-        background-size: 100%;
+        background-size: 460%;
     }
 
     /*RESPONSIVO RESPIRASAÚDE*/
@@ -1229,6 +1230,15 @@ button#bt2-1:hover{
     #patrocinadores{
         height: 960px;
     }
+    #titulo_missa{
+        margin-top: 40px;
+    }
+
+    #pex{
+        font-size: 22px;
+        width: 100%;
+        border-bottom: 0px;
+    }
 
     #caixa_evt{
         width: 90%;
@@ -1243,20 +1253,17 @@ button#bt2-1:hover{
         width: 100%;
     }
 
-    #eventos1{
-        text-align: center;
-        float: left;
-        width: 46%;
-        margin: 0px 2% 0px 2%;
-    }
-
     #projeto_extensao{
-        height: 950px;
-        margin-top: 30%;
-        margin-bottom: 70%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
     #caixa_info{
         margin-top: 20vh;
+    }
+
+    #campo_nome_pex{
+        height: 20px;
     }
 
     #extensão1{
@@ -1537,24 +1544,6 @@ button#bt2-1:hover{
         display: inline-block;
     }
 
-    #botao_instagram{
-        width: 98%;
-        margin-top: 20px;
-        display: inline-block;
-        background-image:linear-gradient(#A146C5,#FD4164,#FE7F4A)
-    }
-    #botao_facebook{
-        width: 98%;
-        margin-top: 20px;
-        display: inline-block;
-        background-image:linear-gradient(#3F70B5,#2A5B9D,#0C3D7F)
-    }
-    #botao_youtube{
-        width: 98%;
-        margin-top: 20px;
-        display: inline-block;
-        background-image:linear-gradient(#B41102,#F81A07,#6C0700)
-    }
 
 
 
@@ -1591,7 +1580,7 @@ button#bt2-1:hover{
     #base_geral1{
         width: 100%;
         display: inline-block;
-        height: 600px;
+        height: 1150px;
     }
 
     p#max_box1{
@@ -1643,7 +1632,7 @@ button#bt2-1:hover{
     #base_geral2{
         width: 100%;
         display: inline-block;
-        height: 600px;
+        height: 1150px;
     }
 
     #carrossel_pro3{
@@ -1680,19 +1669,19 @@ button#bt2-1:hover{
     #base_geral3{
         width: 100%;
         display: inline-block;
-        height: 600px;
+        height: 1150px;
     }
 
     .slider{
         margin: 0 auto;
         width: 100%;
-        height: 600px;
+        height: 1150px;
         overflow: hidden;
     }
 
     .slides{
         width: 400%;
-        height: 600px;
+        height: 1150px;
         display: flex;
     }
 
@@ -1756,7 +1745,7 @@ button#bt2-1:hover{
     .navigation-auto{
         position: absolute;
         width: 100%;
-        margin-top: 560px;
+        margin-top: 1110px;
         display: flex;
         justify-content: center;
     }
@@ -2007,7 +1996,7 @@ button#bt2-1:hover{
     }
 
     #topo_laire_mobile{
-        background: url('/img/arrival.jpg');
+        background: url('/img/arrival.png');
         height: auto;
         background-size: 350%;
     }
@@ -2097,7 +2086,8 @@ button#bt2-1:hover{
 
 
     #barra_secundaria{
-        width: 60%;
+        width: 90%;
+        margin: 0px 5%;
     }
     #botoes_bandeiras{
         width: 35%;
@@ -2312,6 +2302,80 @@ button#bt2-1:hover{
         display: inline-block;
     }
 
+    #imagem_bloco1-pj1{
+        width: 100%;
+        height: 200px;
+    }
+    #imagem_bloco2-pj1b{
+        width: 100%;
+        height: 200px;
+        margin-top: 30px;
+    }
+    #imagem_bloco1-pj1a{
+        width: 100%;
+        height: 200px;
+    }
+    #imagem_bloco2-pj1{
+        width: 100%;
+        height: 200px;
+        margin-top: 30px;
+    }
+    #box_audio-2{
+        width: 100%;
+        height: 200px;
+    }
+    #imagem_bloco1-pj2{
+        width: 100%;
+        height: 200px;
+        margin-top: 30px;
+    }
+    #imagem_bloco1-pj2a{
+        width: 100%;
+        height: 200px;
+    }
+    #imagem_bloco1-pj2b{
+        width: 100%;
+        height: 200px;
+    }
+
+    #imagem_bloco1-pj3{
+        width: 100%;
+        height: 200px;
+    }
+
+    #imagem_bloco2-pj3c{
+        width: 100%;
+        height: 200px;
+    }
+
+    #imagem_bloco2-pj3{
+        width: 100%;
+        height: 200px;
+    }
+
+    #imagem_bloco1-pj3a{
+        width: 100%;
+        height: 200px;
+    }
+
+    #box_audio-pj3{
+        width: 100%;
+        height: 200px;
+    }
+
+    #eventos1{
+        width: 90%;
+        margin: 0px 5% 50px 5%;
+    }
+
+    #pilot{
+        margin-top: 60px;
+    }
+
+    #text_pilot{
+        font-size: 25px;
+    }
+
 
     #titulo_pesquisas{
         margin-top: 50px;
@@ -2320,6 +2384,61 @@ button#bt2-1:hover{
     #banner-produtos{
         display: none;
     }
+
+
+    #lado_a_respira{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+
+    #lado_b_respira{
+        width: 100%;
+        padding: 0px;
+        height: auto;
+    }
+
+    #eventos_xa{
+        margin-top: 40px;
+    }
+
+    ul#list_acess{
+        margin-top: 20px;
+    }
+
+    #container_respira_home{
+        width: 80%;
+        margin: 0px 10% 30px 10%;;
+        display: inline-block;
+    }
+
+    #botao_instagram{
+        width: 98%;
+        margin-top: 20px;
+        display: inline-block;
+        background-image: url(../img/Instagramlaire.png);
+        background-size: 130%;
+    }
+    #botao_facebook{
+        width: 98%;
+        margin-top: 20px;
+        display: inline-block;
+        background-image: url(../img/Facebooklaire.png);
+        background-size: 130%;
+    }
+    #botao_youtube{
+        width: 98%;
+        margin-top: 20px;
+        display: inline-block;
+        background-image: url(../img/YouTubelaire.png);
+        background-size: 130%;
+    }
+
+    #box_audio-1{
+        width: 100%;
+        height: 200px;
+    }
+
 
     /*responsivo para menores*/
     @media all and (min-width:360px) and (max-width:740px){

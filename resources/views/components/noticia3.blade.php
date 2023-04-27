@@ -36,9 +36,9 @@
                     {{--  --}}
                     <div class="w-[100%] float-right inline-block">
                         {{--  --}}
-                        <p id="max_box3" class="font-bold text-[#080E45] float-right w-[500px] text-[30px] leading-[34px] text-right">ConVivendo com a Asma</p>
+                        <p id="max_box3" class="font-bold text-[#080E45] float-right w-[500px] text-[30px] leading-[34px] text-right">Projeto de Extensão!</p>
                         {{--  --}}
-                        <p id="max_loc3" class="mt-[50px] w-[600px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right ">Evento periódico, acessível e idealizado para a comunidade! Para facilitar o controle dos sintomas da asma, acesse aqui conteúdos e materiais exclusivos do ConVivendo com a asma! </p>
+                        <p id="max_loc3" class="mt-[50px] w-[600px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right ">Acompanhe nossos projetos de extensões e fique por dentro de todos os resultados de nossa pesquisa! </p>
                     </div>
                 </div>
             </div>

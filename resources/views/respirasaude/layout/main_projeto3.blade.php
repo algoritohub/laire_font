@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
 
+    {{-- ICONES --}}
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
     <link rel="apple-touch-icon" href="{{ asset('/laire/laire/public/img/web_logo.png') }}">
@@ -35,34 +39,45 @@
 @endphp
 {{--  --}}
 <body>
-    {{-- MOBILE HEADER --}}
-    <header id="barra_superior_acessibilidade_mobile" class="w-[100%] bg-[#212121] inline-block fixed">
+    {{-- NOVO ACESSIBILIDADE DESKTOP MOBILE --}}
+    <div id="barra_superior_acessibilidade_mobile" class="w-[100%] inline_block bg-[#212121] fixed">
         {{--  --}}
-        <div class="w-[55%] float-left inline-block h-[40px]">
+        <div class="w-[90%] mx-[5%] inline-block">
             {{--  --}}
-            <ul id="button_font" class="float-right mt-[5px]">
-                <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-            </ul>
-        </div>
-        {{--  --}}
-        <div class="w-[20%] float-left inline-block h-[40px]">
+            <div id="barra_acessibilidade_azul" class="w-[70%] inline-block h-[40px] float-left"></div>
             {{--  --}}
-            <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
+            <div id="barra_acessibilidade_roxa" class="w-[30%] inline-block h-[40px] float-left">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_verde" class="w-[53.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <ul id="button_font" class="float-right mt-[5px]">
+                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
+                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
+                        </ul>
+                    </div>
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_vermelho" class="w-[23.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <a href="{{ route('mapa_site') }}"><p class="text-[9px] mt-[14px] float-right text-[#ffffff] font-bold uppercase">Mapa do Site</p></a>
+                    </div>
+                    {{--  --}}
+                    <div id="sub_barra_acessibilidade_cinza" class="w-[23.3%] h-[40px] inline-block float-left">
+                        {{--  --}}
+                        <ul class="mt-[10px] float-right">
+                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        {{--  --}}
-        <div class="w-[25%] float-left inline-block h-[40px]">
-            {{--  --}}
-            <ul class="mt-[5px] mr-[10px] float-right">
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-            </ul>
-        </div>
-    </header>
+    </div>
     {{-- BARRA SUPERIOR MOBILE --}}
     <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
         {{--  --}}
-        <div class="w-[90%] mx-[5%] h-[100px] inline-block">
+        <div id="barra_secundaria"  class="w-[90%] mx-[5%] h-[100px] inline-block">
             {{--  --}}
             <div class="w-[70%] inline-block float-left">
                 {{--  --}}
@@ -74,33 +89,62 @@
             {{--  --}}
             <div class="w-[30%] inline-block float-left">
                 {{--  --}}
-                <img id="menu_bt" src="/img/menu-hamburguer.png" onclick="menu()" class="w-[20px] float-right mt-[35px]">
+                <p id="busca_mobile" class="text-[#ffffff] cursor-pointer text-[18px] mt-[40px] float-right"><i class="fi fi-bs-search"></i></p>
             </div>
         </div>
     </header>
     {{--  --}}
-    <div class="menu_mobile_cascata">
+    <header id="barra_superior_menu_mobile" class="w-[100%] mt-[140px] bg-[#5CD1FF] overflow-scroll inline-block fixed">
         {{--  --}}
-        <div class="cont_principal">
-            <div class="cont_icon_trg disable">
-                <div class="cont_drobpdown_menu disable">
-                    <ul class="">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Missão</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Doenças respiratórias agudas</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Doenças respiratórias crônicas</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Eventos</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Projetos de Extensão</a></li>
-                    </ul>
-                    {{--  --}}
-                    <input class="w-[100%] mb-[10px] mt-[20px] outline-none h-[30px] rounded-[5px] bg-[#ffffff] pl-[10px]" type="text">
-                </div>
-            </div>
+        <div id="menu_principal" class="w-[1030px] py-[10px] inline-block">
+            {{--  --}}
+            <ul class="menu">
+                <li><b><a href="#text_missao_RS">Missão</a></b></li>
+                <li><b><a id="cronicas_doencas" href="#">Doenças respiratórias crônicas <i class="fi fi-rr-angle-small-down"></i></a></b></li>
+                <li><b><a id="cronicas_agudas" href="#">Doenças respiratórias agudas <i class="fi fi-rr-angle-small-down"></i></a></b></li>
+                <li><b><a href="#">Projetos</a></b></li>
+                <li><b><a href="#">Eventos</a></b><li>
+                <li><b><a href="#projeto_extensao">Projetos de Extensão</a></b></li>
+            </ul>
         </div>
-    </div>
+        {{--  --}}
+        <div style="display: none;" id="menu_cronicas_doencas" class="w-[1200px] py-[16px] inline-block">
+            {{--  --}}
+            <ul class="">
+                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu" href="">Menu Principal</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}">Asma</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}">Fibrose Cística</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}">DPOC</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}">Bronquiectasia</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}">Fibrose pulmonar</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}">Sinusite</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}">Hipertensão pulmonar</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}">Síndrome pós-COVID-19</a></b></li>
+            </ul>
+        </div>
+        {{--  --}}
+        <div style="display: none;" id="menu_agudas_doencas" class="w-[800px] py-[16px] inline-block">
+            {{--  --}}
+            <ul class="">
+                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu1" href="">Menu Principal</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'h1n1']) }}">H1N1</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'covid_19']) }}">COVID-19</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'tuberculose']) }}">Tuberculose</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'influenza']) }}">Influenza</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></b></li>
+            </ul>
+        </div>
+        {{--  --}}
+        <div style="display: none;" id="busca_mobile_menu" class="w-[90%] mx-[5%] inline-block">
+            {{--  --}}
+            <form class="m-[0px]" action="" method="POST">
+                @csrf
+                <input class="w-[100%] h-[30px] bg-[#ffffff] outline-none pl-[10px] my-[10px] rounded-[5px]" type="text" placeholder="Busque por algo!">
+            </form>
+        </div>
+    </header>
     {{-- NOVO HEADER --}}
     <header style="background: url(/img/background_header.png); background-size: 100%; background-repeat: no-repeat;" id="barra_superior_fixa" class="w-[100%] inline-block fixed">
         {{--  --}}

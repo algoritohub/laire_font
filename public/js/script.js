@@ -444,6 +444,23 @@ $(document).ready(function(){
     });
 });
 
+
+$(document).ready(function(){
+    $("#audios").click(function(event){
+        event.preventDefault();
+        $("#box_audio-pj3").fadeIn();
+        $("#box_libra").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras").click(function(event){
+        event.preventDefault();
+        $("#box_libra").fadeIn();
+        $("#box_audio-pj3").hide();
+    });
+});
+
 // FIBROSE CÍSTICA
 $(document).ready(function(){
     $("#audios1").click(function(event){

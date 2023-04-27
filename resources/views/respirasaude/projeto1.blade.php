@@ -46,9 +46,9 @@
                         <li class="inline-block mr-[40px] my-[8px]"><img class="w-[100px] " src="/img/6.png" alt=""></li>
                         <li class="inline-block mr-[40px] my-[8px]"><img class="w-[80px]" src="/img/4.png" alt=""></li>
                         {{-- <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li> --}}
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px] " src="/img/9.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[250px] " src="/img/10.png" alt=""></li>
+                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li> --}}
+                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px] " src="/img/9.png" alt=""></li> --}}
+                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[250px] " src="/img/10.png" alt=""></li> --}}
                     </ul>
                 </div>
             </div>
@@ -136,7 +136,7 @@
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Método</p>
+                <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Como a pesquisa foi feita</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Primeiro, nós identificamos os estudos que compararam os efeitos destes dois tipos de tratamento nos resultados de mortalidade, qualidade de vida, satisfação do paciente, custos do tratamento, eventos adversos[o], tempo de permanência no hospital, entre outros. Esses estudos poderiam ter sido publicados em qualquer ano e em qualquer país do mundo.</b>.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Depois que reunimos os estudos que tinham as características necessárias para entrar na revisão, nós realizamos uma análise estatística chamada metanálise[p]. Assim, foi possível juntar os resultados de vários estudos que avaliaram as mesmas coisas que nós tínhamos interesse (mortalidade, qualidade de vida, satisfação, custos, eventos adversos...). Dessa forma, dá para comparar melhor os efeitos do tratamento recebido em casa com o recebido no hospital.(MS).</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entendeu como a revisão sistemática é legal? Assim, ao invés de termos os resultados de apenas um estudo com poucos pacientes, nós conseguimos reunir os resultados de vários estudos e muitos pacientes! Mas isso não é simples, é necessário seguir uma metodologia muito rigorosa! E tem mais... </p>
@@ -606,6 +606,76 @@
             </div>
         </div>
         @endif
+
+        {{-- BANNER PRODUTOS --}}
+        <section class="w-[100%] inline-block">
+            {{--  --}}
+            <div class="w-[90%] mx-[5%] inline-block">
+                {{--  --}}
+                <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[420px] bg-[blue] inline-block">
+                    <ul class="mt-[300px] ml-[470px]">
+                        <li id="video_produto"  class="inline-block mr-[60px]"><button class="bg-[transparent] w-[100px] h-[40px]"></button></li>
+                        <li id="info_produto"   class="inline-block mr-[60px]"><button class="bg-[transparent] w-[160px] h-[40px]"></button></li>
+                        <li id="podcst_produto" class="inline-block mr-[60px]"><button class="bg-[transparent] w-[150px] h-[40px]"></button></li>
+                        <li id="resumo_produto" class="inline-block mr-[60px]"><button class="bg-[transparent] w-[200px] h-[40px]"></button></li>
+                    </ul>
+                </div>
+            </div>
+            {{--  --}}
+            <div style="display: none;" class="banner_produtos">
+                {{--  --}}
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Nosso resumo executivo</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_produto" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] mt-[30px] inline-block">
+                        {{--  --}}
+                        <p class="text-[#ffffff] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate eos possimus aliquid sint. Beatae voluptatibus praesentium suscipit iste accusamus facilis. Fugit inventore, voluptatum aspernatur vero facilis dolor. Voluptatem, porro!</p>
+                        {{--  --}}
+                        <center>
+                            <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Resumo Executivo</button></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            {{--  --}}
+            <div style="display: none;" class="banner_produtos1">
+                {{--  --}}
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Nosso podcast</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] mt-[30px] inline-block">
+                        {{--  --}}
+                        <center>
+                            <div class="w-[700px] h-[350px] bg-[#212121] inline-block"></div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--patrocinadores-->
         <section class="w-[100%] h-[650px]  inline-block bg-[#ffffff]">

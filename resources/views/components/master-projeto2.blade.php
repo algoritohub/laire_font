@@ -42,7 +42,7 @@
                      {{--  --}}
                      <ul class="logos_carrossel">
                         {{--  --}}
-                         <li class="inline-block mx-[30px] my-[10px]"><img src="/img/9.png" alt=""></li>
+                         {{-- <li class="inline-block mx-[30px] my-[10px]"><img src="/img/9.png" alt=""></li> --}}
                         {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li> --}}
                         <li class="inline-block ml-[30px] mt-[15px]"><img src="/img/6.png" alt=""></li>
                         <li class="inline-block ml-[30px] mt-[15px]"><img src="/img/7.png" alt=""></li>
