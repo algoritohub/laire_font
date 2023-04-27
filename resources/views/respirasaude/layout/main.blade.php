@@ -409,6 +409,8 @@
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[200px]" src="/img/ppgfis.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/img/10.png" alt=""></li>
+                        
+
                         </ul>
                     </center>
                 </div>
