@@ -612,7 +612,7 @@
             {{--  --}}
             <div class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
-                <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[420px] bg-[blue] inline-block">
+                <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[420px] inline-block">
                     <ul class="mt-[300px] ml-[470px]">
                         <li id="video_produto"  class="inline-block mr-[60px]"><button class="bg-[transparent] w-[100px] h-[40px]"></button></li>
                         <li id="info_produto"   class="inline-block mr-[60px]"><button class="bg-[transparent] w-[160px] h-[40px]"></button></li>
@@ -645,6 +645,34 @@
                         {{--  --}}
                         <center>
                             <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Resumo Executivo</button></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            {{--  --}}
+            <div style="display: none;" class="banner_produtos2">
+                {{--  --}}
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Nosso infografico</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_info" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] mt-[30px] inline-block">
+                        {{--  --}}
+                        <p class="text-[#ffffff] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate eos possimus aliquid sint. Beatae voluptatibus praesentium suscipit iste accusamus facilis. Fugit inventore, voluptatum aspernatur vero facilis dolor. Voluptatem, porro!</p>
+                        {{--  --}}
+                        <center>
+                            <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Infográfico</button></a>
                         </center>
                     </div>
                 </div>

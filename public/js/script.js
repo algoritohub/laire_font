@@ -683,6 +683,26 @@ $(document).ready(function(){
     });
 });
 
+
+
+
+$(document).ready(function(){
+    $("#info_produto").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos2").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_info").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos2").fadeOut();
+    });
+});
+
+
+
+
 $(document).ready(function(){
     $("#fechar_produto").click(function(event){
         event.preventDefault();

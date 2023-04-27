@@ -13,7 +13,7 @@
                 {{-- CATEGORIA --}}
                 <p class="uppercase text-[14px] text-[#212121] pl-[10px] mb-[10px] font-bold border-l-[3px] border-l-[#5CD1FF]">Novidades</p>
                 {{--  --}}
-                <a href=""><p class="text-[#212121] text-[40px] leading-[40px] font-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></a>
+                <a href=""><p class="text-[#212121] text-[40px] leading-[40px] font-bold">Semana Nacional de Mobilização e Luta Contra a Tuberculose.</p></a>
             </div>
             {{--  --}}
             <div class="w-[30%] mt-[50px] pl-[30px] inline-block float-left">
@@ -29,7 +29,7 @@
                         {{--  --}}
                         <p class="text-[#212121] ml-[10px] font-bold mt-[2px] text-[14px]">Laire</p>
                         {{--  --}}
-                        <p class="text-[#212121] ml-[10px] text-[12px]">20 de 04 de 2023</p>
+                        <p class="text-[#212121] ml-[10px] text-[12px]"></p>
                     </div>
                 </div>
                 {{--  --}}
@@ -44,12 +44,11 @@
 {{--  --}}
 <section class="mt-[10px] w-[60%] mx-[20%]">
     {{--  --}}
-    <img class="w-[100%] rounded-[5px]" src="">
+    <img class="w-[100%] rounded-[5px]" src="/img/337652415_1238057860420451_9019069562162149452_n.jpg">
     {{--  --}}
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eaque enim quis non cupiditate facilis facere natus consectetur suscipit accusamus aliquid eius error reiciendis, minus, rem doloribus numquam? Illo, sequi!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, voluptatum dolore at placeat error soluta quis numquam iste iusto, eum ut. Cumque praesentium fugiat voluptatibus repudiandae reprehenderit sed ipsa error?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam, sit voluptatem culpa inventore quibusdam ex, optio minus quidem fuga deserunt sapiente necessitatibus. Quia, doloremque iure consequatur quam maxime in!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas exercitationem pariatur porro odit dicta sint rem fugiat tempora eligendi, ratione consectetur laudantium molestiae adipisci facilis nostrum assumenda maxime nihil!</p>
+    <p class="mt-[40px]">Conscientizar a população sobre as devastadoras condições de saúde, sociais e econômicas da tuberculose (TB) e intensificar os esforços para acabar com a epidemia global de tuberculose, são os objetivos da data que marca o dia em que, em 1882, o Dr. Robert Koch anunciou que havia descoberto a bactéria que causa a tuberculose, abrindo caminho para o diagnóstico e a cura dessa doença.</p>
+    {{--  --}}
+    <p class="mt-[40px]">A partir de hoje vamos produzir um conteúdo especial para a Semana Nacional de Mobilização e Luta Contra a Tuberculose. Fique ligado nos próximos posts!</p>
 </section>
 {{--  --}}
 

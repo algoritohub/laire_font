@@ -13,7 +13,7 @@
                 {{-- CATEGORIA --}}
                 <p class="uppercase text-[14px] text-[#ffffff] pl-[10px] mb-[10px] font-bold border-l-[3px] border-l-[#5CD1FF]">Novidades</p>
                 {{--  --}}
-                <a href="{{ route('postagem_blog') }}"><p id="titulo_resumido" class="text-[#ffffff] mt-[20px] text-[40px] leading-[40px] font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a>
+                <a href="{{ route('postagem_blog') }}"><p id="titulo_resumido" class="text-[#ffffff] mt-[20px] text-[40px] leading-[40px] font-bold">Semana Nacional de Mobilização e Luta Contra a Tuberculose.</p></a>
             </div>
             {{--  --}}
             <div class="w-[30%] mt-[50px] pl-[30px] inline-block float-left">
@@ -49,9 +49,9 @@
         <img class="w-[100%] rounded-[5px]" src="">
     </div>
     {{--  --}}
-    <p class="mt-[40px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aspernatur, reprehenderit numquam, a, ipsam debitis mollitia unde quasi odio nemo natus illo distinctio laborum expedita saepe sequi iste praesentium minus.</p>
+    <p class="mt-[40px]">Conscientizar a população sobre as devastadoras condições de saúde, sociais e econômicas da tuberculose (TB) e intensificar os esforços para acabar com a epidemia global de tuberculose, são os objetivos da data que marca o dia em que, em 1882, o Dr. Robert Koch anunciou que havia descoberto a bactéria que causa a tuberculose, abrindo caminho para o diagnóstico e a cura dessa doença.</p>
     {{--  --}}
-    <p class="mt-[40px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quo tenetur, adipisci non consectetur perferendis, quasi recusandae quae consequuntur, cum numquam autem temporibus quas. Nulla alias error optio tempora. Accusamus!</p>
+    <p class="mt-[40px]">A partir de hoje vamos produzir um conteúdo especial para a Semana Nacional de Mobilização e Luta Contra a Tuberculose. Fique ligado nos próximos posts!</p>
     {{--  --}}
     <a href="{{ route('postagem_blog') }}"><button class="w-[100%] h-[40px] mt-[40px] bg-[#5CD1FF] text-[13px] text-[#212121] rounded-[100px] inline-block">Continuar lendo</button></a>
 </section>
@@ -67,13 +67,13 @@
             {{--  --}}
             <div class="w-[20%] mx-[1.5%] inline-block float-left">
                 {{--  --}}
-                <div id="img-blog" style="" class="w-[120%] shadow-lg h-[200px] rounded-[5px] mb-[30px] border-[1px] border-[#cdcdcd] bg-[silver]"></div>
+                <div id="img-blog" style="background: url(/img/337652415_1238057860420451_9019069562162149452_n.jpg); background-size: 100%;" class="w-[120%] shadow-lg h-[200px] rounded-[5px] mb-[30px] border-[1px] border-[#cdcdcd] bg-[silver]"></div>
                 {{-- CATEGORIA --}}
                 <p class="uppercase text-[14px] text-[#212121] pl-[10px] mb-[10px] font-bold border-l-[3px] border-l-[#5CD1FF]">Novidades</p>
                 {{--  --}}
                 {{-- <a  href=""><p id="text_caixaverde_blog" class="font-bold text-[25px] leading-[22px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a> --}}
                 {{--  --}}
-                <p class="mt-[30px] text-[14px] leading-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mt-[30px] text-[14px] leading-[16px]">Semana Nacional de Mobilização e Luta Contra a Tuberculose.</p>
                 {{--  --}}
                 <div class="inline-block mt-[30px]">
                     {{--  --}}
