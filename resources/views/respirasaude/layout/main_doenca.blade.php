@@ -162,7 +162,7 @@
                                 {{--  --}}
                                 <li><b><a href="#">Doenças respiratórias crônicas</a></b>
                                     <ul>
-                                        <li class="ma"><a href="#">Definição</a>
+                                        <li class="ma"><a href="#">Conheça as principais</a>
                                             <ul class="mx">
                                                 {{-- @foreach ($doencas_info as $doenca_definicao) --}}
                                                     {{--  --}}
@@ -253,8 +253,6 @@
                                     </ul>
                                 </li>
                                 @endif
-                                {{--  --}}
-                                <li><b><a href="#text_missao_RS">Definição</a></b></li>
                                 {{--  --}}
                                 {{-- @if(isset($info_doenca[0]->controle) AND !empty($info_doenca[0]->controle)) --}}
                                 <li><b><a href="#text_missao_RS">Como controlar os sintómas</a></b></li>

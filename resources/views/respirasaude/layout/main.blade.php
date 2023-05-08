@@ -218,7 +218,7 @@
                                 <li><b><a href="#text_missao_RS">Missão</a></b></li>
                                 <li><b><a href="#">Doenças respiratórias crônicas</a></b>
                                     <ul>
-                                        <li class="ma"><a href="#">Definição</a>
+                                        <li class="ma"><a href="#">Conheça as principais</a>
                                             <ul class="mx">
                                                 {{-- @foreach ($doencas_info as $doenca_definicao) --}}
                                                     {{--  --}}
