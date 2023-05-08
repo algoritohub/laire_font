@@ -36,7 +36,7 @@
                     {{-- IMAGEM --}}
                     <div id="box_audio-1" class="w-[800px] bg-[yellow] h-[400px]"></div>
                     {{-- VÍDEO --}}
-                    <div id="box_libra" style="display: none;" id="imagem_countainer" class="w-[800px] bg-[orange] h-[400px]"></div>
+                    <div id="box_libra" style="display: none;" id="imagem_countainer" class="w-[800px] bg-[black] h-[400px]"></div>
                 </div>
                 {{-- BASE LOGOS --}}
                 <div id="base_logos" class="w-[100%] h-[170px] inline-block">
@@ -44,7 +44,7 @@
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
                         <li class="inline-block mr-[40px] my-[8px]"><img class="w-[100px] " src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[80px]" src="/img/4.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[300px]" src="/img/10.png" alt=""></li>
                         {{-- <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li> --}}
                         {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li> --}}
                         {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px] " src="/img/9.png" alt=""></li> --}}
@@ -719,10 +719,10 @@
             <ul  >
                  <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
-               <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/4.png" alt=""></li>
+               <li class="inline-block mx-[30px] my-[10px]"><img class="w-[400px]" src="/img/10.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px] "><img class="w-[210px]" src="/img/logomarcaproex_oficial.jpg" alt=""></li>
+                {{-- <li class="inline-block mx-[30px] my-[10px] "><img class="w-[210px]" src="/img/logomarcaproex_oficial.jpg" alt=""></li> --}}
                 {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
             </ul>
         </center>
