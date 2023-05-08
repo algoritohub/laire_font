@@ -38,15 +38,13 @@
                         <p id="max_box3" class="font-bold text-[#080E45] float-right w-[500px] text-[30px] leading-[34px] text-right">Projeto de desenvolvimento do sistema e-asma</p>
                         {{--  --}}
                         <p id="max_loc3" class="mt-[50px] w-[600px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nihil hic nesciunt sequi explicabo, natus molestias voluptate tenetur. Aut odit sed odio quibusdam. Libero dolorum aut provident vel repellendus iusto?</p>
-                        <ul class="logos_carrossel">
-                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li>
-                            {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li> --}}
-                            <li class="inline-block ml-[30px] mt-[15px]"><img src="/img/6.png" alt=""></li>
-                            <!--<li class="inline-block ml-[30px] mt-[15px]"><img src="/img/3.png" alt=""></li>-->
-                            {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/2.png" alt=""></li> --}}
-                            {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/4.png" alt=""></li> --}}
-                            {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
-                        </ul>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] mt-[15px] inline-block">
+                        {{--  --}}
+                        <div class="w-[300px] float-right ml-[30px]"><img class="w-[300px]" src="/img/10.png"></div>
+                        {{--  --}}
+                        <div class="w-[100px] float-right ml-[30px]"><img class="w-[100px] mt-[10px]" src="/img/6.png"></div>
                     </div>
                 </div>
             </div>

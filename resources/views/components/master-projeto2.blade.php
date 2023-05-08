@@ -39,17 +39,15 @@
                         {{--  --}}
                         <p id="max_loc2" class="mt-[50px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right">Algumas doenças respiratórias infecciosas matam milhares de brasileiros todos os anos, pois elas são contagiosas e passam de uma pessoa para outra muito facilmente através da respiração, tosse, espirros e mãos contaminadas.</p>
                     </div>
-                     {{--  --}}
-                     <ul class="logos_carrossel">
+                    {{--  --}}
+                    <div class="w-[100%] mt-[15px] inline-block">
                         {{--  --}}
-                         {{-- <li class="inline-block mx-[30px] my-[10px]"><img src="/img/9.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li> --}}
-                        <li class="inline-block ml-[30px] mt-[15px]"><img src="/img/6.png" alt=""></li>
-                        {{-- <li class="inline-block ml-[30px] mt-[15px]"><img src="/img/7.png" alt=""></li> --}}
-                        <li class="inline-block mx-[30px] my-[10px]"><img src="/img/ppgfis.png" alt=""></li>
-                        <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li>
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
-                    </ul>
+                        <div class="w-[300px] float-right ml-[30px]"><img class="w-[300px]" src="/img/10.png"></div>
+                        {{--  --}}
+                        <div class="w-[120px] float-right ml-[30px]"><img class="w-[120px] mt-[10px]" src="/img/ppgfis.png"></div>
+                        {{--  --}}
+                        <div class="w-[100px] float-right ml-[30px]"><img class="w-[100px] mt-[10px]" src="/img/6.png"></div>
+                    </div>
                 </div>
             </div>
         </div>

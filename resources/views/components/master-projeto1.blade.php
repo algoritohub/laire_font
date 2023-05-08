@@ -41,15 +41,12 @@
                         <p id="max_loc1" class="mt-[30px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar.</p>
                     </div>
                     {{--  --}}
-                    <ul class="logos_carrossel">
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/9.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li> --}}
-                        <li class="inline-block ml-[30px] mt-[15px]"><img src="/img/6.png" alt=""></li>
-                        <li class="inline-block ml-[30px] mt-[15px]"><img class="w-[200px]" src="/img/10.png" alt=""></li>
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/2.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/4.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
-                    </ul>
+                    <div class="w-[100%] mt-[15px] inline-block">
+                        {{--  --}}
+                        <div class="w-[300px] float-right ml-[30px]"><img class="w-[300px]" src="/img/10.png"></div>
+                        {{--  --}}
+                        <div class="w-[100px] float-right ml-[30px]"><img class="w-[100px] mt-[10px]" src="/img/6.png"></div>
+                    </div>
                 </div>
             </div>
         </div>
