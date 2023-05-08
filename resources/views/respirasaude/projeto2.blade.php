@@ -169,7 +169,7 @@
         <div id="text_projeto_resultado" ></div>
         {{--  --}}
         <div id="lado_a_bloco2" class="w-[50%] h-[630px] px-[80px] inline-block float-left">
-            
+
             {{--  --}}
             <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}
@@ -717,17 +717,17 @@
                         <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                         {{--  --}}
                         <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Gabriel / Fisioterapia / Graduando / Inglês / Fisioterapia Cardiorrespiratória / Atividades de 
-                            ensino, pesquisa e extensão/ Gosto de estar por dentro das atualizações tecnológicas, toco 
+                            Gabriel / Fisioterapia / Graduando / Inglês / Fisioterapia Cardiorrespiratória / Atividades de
+                            ensino, pesquisa e extensão/ Gosto de estar por dentro das atualizações tecnológicas, toco
                             teclado na igreja, amo assistir uma série.
-                            Gabriel Silva está se formando em fisioterapia pela Universidade Federal do Rio Grande do 
-                            Norte e teve experiências em outras instituições até chegar na UFRN. É autodidata e 
-                            sempre está buscando conhecimentos que possam agregar para sua atuação profissional, 
-                            desde o uso de tecnologias de programação até conhecimentos em marketing digital e 
-                            infoprodutos. É estrategista e faz parte da equipe de projetos de uma empresa que oferece 
-                            preparatório para concursos e residências na área da fisioterapia. Aqui no LAIRE, Gabriel 
-                            está envolvido com o projeto de Implementação do RespiraSaúde, uma plataforma de 
-                            tradução do conhecimento em saúde respiratória. Gabriel é uma pessoa mais reservada, 
+                            Gabriel Silva está se formando em fisioterapia pela Universidade Federal do Rio Grande do
+                            Norte e teve experiências em outras instituições até chegar na UFRN. É autodidata e
+                            sempre está buscando conhecimentos que possam agregar para sua atuação profissional,
+                            desde o uso de tecnologias de programação até conhecimentos em marketing digital e
+                            infoprodutos. É estrategista e faz parte da equipe de projetos de uma empresa que oferece
+                            preparatório para concursos e residências na área da fisioterapia. Aqui no LAIRE, Gabriel
+                            está envolvido com o projeto de Implementação do RespiraSaúde, uma plataforma de
+                            tradução do conhecimento em saúde respiratória. Gabriel é uma pessoa mais reservada,
                             caseira e é o “humano” de 2 gatinhas.
                         </p>
                     </div>
@@ -764,14 +764,14 @@
                         <div id="imagem_pesq_mob" style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                         {{--  --}}
                         <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de 
-                            Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui 
-                            títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte. 
-                            Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena 
-                            projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória, 
-                            desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades 
-                            psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em 
-                            colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em 
+                            Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de
+                            Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui
+                            títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte.
+                            Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena
+                            projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória,
+                            desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades
+                            psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em
+                            colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em
                             saúde.
 
                         </p>
@@ -816,10 +816,10 @@
                 <center>
                     {{--  --}}
                     <ul>
-                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
+                        <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
-                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
-                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
+                        <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
+                        <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[400px]" src="/img/10.png" alt=""></li>
                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/logomarcaproex_oficial.jpg" alt=""></li>
                         <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>

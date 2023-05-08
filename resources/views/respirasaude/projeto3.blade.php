@@ -178,7 +178,7 @@
         </center>
         {{--  --}}
         <div class="w-[100%] mt-[70px] inline-block">
-          
+
             {{--  --}}
             <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
                 {{--  --}}
@@ -306,7 +306,7 @@
                 </div>
             </div>
 
-        
+
             {{--  --}}
             <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
                 {{--  --}}
@@ -356,7 +356,7 @@
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
                     <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>              
+                </div>
     </div>
                     {{--  --}}
             <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
@@ -373,7 +373,7 @@
                 <div class="w-[100%] inline-block h-[150px]">
                     {{--  --}}
                     <a href="{{ route('pesquisadores_projeto_3', ['tipo' => 'Cordenadora', 'nome' => 'karla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>  
+                </div>
 
 </section>
 
@@ -459,7 +459,7 @@
                         {{--  --}}
                         <ul id="links_pesq_mob" class="mt-[20px]">
                             <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3554788662850733" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            
+
                         </ul>
                         </center>
                     </div>
@@ -485,18 +485,18 @@
                         {{--  --}}
                         <div id="imagem_pesq_mob" style="background-image: url('/img/'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                         {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte 
-                            (1997-2001), Especialização em Fisioterapia Respiratória pela Universidade Federal de São 
-                            Paulo (2002-2003), Especialização em Fisiologia do Exercício pela Universidade Federal de 
-                            São Paulo (2003) e Doutorado em Ciências pelo programa de Pós-Graduação em Ciências 
-                            Aplicadas à Cardiologia pela Universidade Federal de São Paulo (2004-2006). Foi 
-                            professora Adjunta da Universidade Federal da Paraíba (05/08 - 01/09). Atualmente é 
-                            professora Associada da Universidade Federal do Rio Grande do Norte (UFRN) e 
-                            professora orientadora de mestrado e doutorado no programa de pós-graduação em 
-                            Fisioterapia da UFRN. Tem experiência na área de Fisioterapia, com ênfase em Fisioterapia 
-                            Respiratória, e atua principalmente nas seguintes linhas de pesquisa: 1. Avaliação e 
-                            intervenção fisioterapêutica cardiorrespiratória nas doenças agudas e crônicas, bem como 
-                            2.Tradução, adaptação transcultural e avaliação das propriedades psicométricas de 
+                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte
+                            (1997-2001), Especialização em Fisioterapia Respiratória pela Universidade Federal de São
+                            Paulo (2002-2003), Especialização em Fisiologia do Exercício pela Universidade Federal de
+                            São Paulo (2003) e Doutorado em Ciências pelo programa de Pós-Graduação em Ciências
+                            Aplicadas à Cardiologia pela Universidade Federal de São Paulo (2004-2006). Foi
+                            professora Adjunta da Universidade Federal da Paraíba (05/08 - 01/09). Atualmente é
+                            professora Associada da Universidade Federal do Rio Grande do Norte (UFRN) e
+                            professora orientadora de mestrado e doutorado no programa de pós-graduação em
+                            Fisioterapia da UFRN. Tem experiência na área de Fisioterapia, com ênfase em Fisioterapia
+                            Respiratória, e atua principalmente nas seguintes linhas de pesquisa: 1. Avaliação e
+                            intervenção fisioterapêutica cardiorrespiratória nas doenças agudas e crônicas, bem como
+                            2.Tradução, adaptação transcultural e avaliação das propriedades psicométricas de
                             instrumentos de medida em saúde.</p>
                     </div>
                      {{--  --}}
@@ -532,19 +532,19 @@
                         {{--  --}}
                         <div id="imagem_pesq_mob" style="background-image: url('/img/Ivan Daniel.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                         {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte 
-                            (1994-1999), Especialização em Fisioterapia Respiratória pela Universidade Federal de São 
-                            Paulo (2000-2001), Especialização em Fisiologia do Exercício pela Universidade Federal de 
-                            São Paulo (2003), Especialista em Terapia Intensiva Adulto pela ASSOBRAFIR/COFFITO 
-                            (2015), Mestrado em Ciências pelo Programa da Cardiologia da Universidade Federal de 
-                            São Paulo (2008-2009) e Doutorado em Fisioterapia pelo Programa de Pós-Graduação em 
-                            Fisioterapia da Universidade Federal do Rio Grande do Norte (2014-2017). Foi Professor da 
+                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte
+                            (1994-1999), Especialização em Fisioterapia Respiratória pela Universidade Federal de São
+                            Paulo (2000-2001), Especialização em Fisiologia do Exercício pela Universidade Federal de
+                            São Paulo (2003), Especialista em Terapia Intensiva Adulto pela ASSOBRAFIR/COFFITO
+                            (2015), Mestrado em Ciências pelo Programa da Cardiologia da Universidade Federal de
+                            São Paulo (2008-2009) e Doutorado em Fisioterapia pelo Programa de Pós-Graduação em
+                            Fisioterapia da Universidade Federal do Rio Grande do Norte (2014-2017). Foi Professor da
                             Especialização em Fisioterapia Respiratória da Universidade Federal de São Paulo (2001-
-                            2008), Professor Assistente do Centro Universitário São Camilo (2003-2008) e Professor 
-                            Assistente do Centro Universitário de João Pessoa (2008). Atualmente é Professor Adjunto 
-                            do Departamento de Fisioterapia da Universidade Federal do Rio Grande do Norte. Tem 
-                            experiência na área de Fisioterapia, com ênfase em Fisioterapia Cardiorrespiratória, 
-                            atuando principalmente nos seguintes temas: treinamento físico, capacidade funcional, 
+                            2008), Professor Assistente do Centro Universitário São Camilo (2003-2008) e Professor
+                            Assistente do Centro Universitário de João Pessoa (2008). Atualmente é Professor Adjunto
+                            do Departamento de Fisioterapia da Universidade Federal do Rio Grande do Norte. Tem
+                            experiência na área de Fisioterapia, com ênfase em Fisioterapia Cardiorrespiratória,
+                            atuando principalmente nos seguintes temas: treinamento físico, capacidade funcional,
                             qualidade de vida e suporte ventilatório.</p>
                     </div>
                      {{--  --}}
@@ -581,14 +581,14 @@
                      {{--  --}}
                      <div id="imagem_pesq_mob" style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
                      {{--  --}}
-                     <p class="leading-[17px] text-[14px] text-center mt-[30px]">Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de 
-                        Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui 
-                        títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte. 
-                        Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena 
-                        projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória, 
-                        desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades 
-                        psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em 
-                        colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em 
+                     <p class="leading-[17px] text-[14px] text-center mt-[30px]">Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de
+                        Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui
+                        títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte.
+                        Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena
+                        projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória,
+                        desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades
+                        psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em
+                        colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em
                         saúde.</p>
                  </div>
                   {{--  --}}
@@ -603,9 +603,9 @@
                      </center>
                  </div>
              @endif
-             
-                
-                
+
+
+
 
 
 
@@ -618,13 +618,11 @@
         <center>
             {{--  --}}
             <ul>
-                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
-                <!--<li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>-->
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
-                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[280px]" src="/img/mcti.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[300px]" src="/img/mcti.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
-                {{-- <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/10.png" alt=""></li> --}}
             </ul>
         </center>
     </div>
