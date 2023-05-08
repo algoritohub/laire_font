@@ -44,7 +44,7 @@
                         {{--  --}}
                         <div class="w-[300px] float-right ml-[30px]"><img class="w-[300px]" src="/img/10.png"></div>
                         {{--  --}}
-                        <div class="w-[120px] float-right ml-[30px]"><img class="w-[120px] mt-[10px]" src="/img/ppgfis.png"></div>
+                        {{-- <div class="w-[120px] float-right ml-[30px]"><img class="w-[120px] mt-[10px]" src="/img/ppgfis.png"></div> --}}
                         {{--  --}}
                         <div class="w-[100px] float-right ml-[30px]"><img class="w-[100px] mt-[10px]" src="/img/6.png"></div>
                     </div>
