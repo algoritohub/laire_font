@@ -237,7 +237,7 @@
                                 <li><b><a href="#metod">Métodos</a></b></li>
                                 <li><b><a href="#resul">Resultados</a></b></li>
                                 <li><b><a href="#pesquisadores">Pesquisadores</a></b></li>
-                                <li><b><a href="#caixa_info">Materiais de divulgação</a></b></li>
+                                <li><b><a href="#banner-produtos">Materiais de divulgação</a></b></li>
                             </ul>
                         </nav>
                     </div>

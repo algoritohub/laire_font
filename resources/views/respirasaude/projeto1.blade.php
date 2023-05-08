@@ -59,7 +59,7 @@
             <div id="container_b" class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
                 <p id="texto_titulo_projeto" class="text-[30px] mt-[70px] leading-[30px] float-right text-right font-bold text-[#080E45]"> Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise</p>
-                <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a >fibrose cística, a bronquiectasia e a fibrose pulmonar. Aqui no RespiraSaúde vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS). Nesta pesquisa nós realizamos uma revisão sistemática com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
+                <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar. Aqui no RespiraSaúde vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS). Nesta pesquisa nós realizamos uma revisão sistemática com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
                 <p id="texto_projeto" class="mt-[20px] text-right float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]"> </p>
             </div>
         </div>
@@ -106,7 +106,8 @@
             <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}
                 <p id="texto_titulo_bloco2" class="text-[25px] font-bold mb-[20px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]"> Objetivo da pesquisa</p>
-                <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">desenvolvimento e validação de um sistema de avaliação e monitoramento do controle da asma e educação em saúde para crianças, adolescentes e adultos com asma (e-ASMA).</p>
+                <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">
+                    Comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
             </div>
         </div>
         {{--  --}}
@@ -625,6 +626,8 @@
                     </ul>
                 </div>
             </div>
+            
+
             {{--  --}}
             <div style="display: none;" class="banner_produtos">
                 {{--  --}}
@@ -645,7 +648,7 @@
                     {{--  --}}
                     <div class="w-[100%] mt-[30px] inline-block">
                         {{--  --}}
-                        <p class="text-[#ffffff] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate eos possimus aliquid sint. Beatae voluptatibus praesentium suscipit iste accusamus facilis. Fugit inventore, voluptatum aspernatur vero facilis dolor. Voluptatem, porro!</p>
+                        <p class="text-[#ffffff] text-[14px]">Resumo elaborado para que os profissionais da saúde, gestores a técnicos do Ministério da Saúde possam compreender os métodos, resultados e recomendações oriundas desta pesquisa. </p>
                         {{--  --}}
                         <center>
                             <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Resumo Executivo</button></a>
@@ -673,7 +676,7 @@
                     {{--  --}}
                     <div class="w-[100%] mt-[30px] inline-block">
                         {{--  --}}
-                        <p class="text-[#ffffff] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate eos possimus aliquid sint. Beatae voluptatibus praesentium suscipit iste accusamus facilis. Fugit inventore, voluptatum aspernatur vero facilis dolor. Voluptatem, porro!</p>
+                        <p class="text-[#ffffff] text-[14px]">Este documento utiliza uma linguagem e formato acessível para resumir em uma única página os aspectos mais importantes da pesquisa. Este infográfico foi elaborado para que a comunidade entenda a pesquisa de forma rápida e simples. </p>
                         {{--  --}}
                         <center>
                             <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Infográfico</button></a>
@@ -699,10 +702,13 @@
                         </div>
                     </div>
                     {{--  --}}
-                    <div class="w-[100%] mt-[30px] inline-block">
+                     {{--  --}}
+                     <div class="w-[100%] mt-[30px] inline-block">
+                        {{--  --}}
+                        <p class="text-[#ffffff] text-[14px]">Aqui temos um bate papo descontraído, com uma linguagem muito simples. Ao ouvir esse podcast será possível entender como esta pesquisa foi feita e compreender melhor seus resultados. Esse podcast dispõe também de um vídeo com janela em libras para torná-lo ainda mais acessível.   </p>
                         {{--  --}}
                         <center>
-                            <div class="w-[700px] h-[350px] bg-[#212121] inline-block"></div>
+                            <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Podcast</button></a>
                         </center>
                     </div>
                 </div>
