@@ -412,7 +412,7 @@
                     </ul>
                 </div>
                 {{--  --}}
-                <div id="pat.footer" class="w-[100%] rounded-[10px] mt-[30px] inline-block bg-[#ffffff] p-[20px]">
+                <div style="display: none;" id="pat.footer" class="w-[100%] rounded-[10px] mt-[30px] inline-block bg-[#ffffff] p-[20px]">
                     <center>
                         {{--  --}}
                         <ul>
@@ -456,7 +456,7 @@
                 {{--  --}}
                 <div id="master2" class="float-left inline-block w-[33.3%]">
                     {{--  --}}
-                    <p class="text-[#ffffff] text-[16px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
+                    <p class="text-[#ffffff] text-[13px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
                 </div>
             </div>
         </div>
