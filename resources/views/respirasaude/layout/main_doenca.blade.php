@@ -255,7 +255,7 @@
                                 @endif
                                 {{--  --}}
                                 {{-- @if(isset($info_doenca[0]->controle) AND !empty($info_doenca[0]->controle)) --}}
-                                <li><b><a href="#text_missao_RS">Como controlar os sintómas</a></b></li>
+                                <li><b><a href="#text_missao_RS">Como controlar os sintomas</a></b></li>
                                 {{-- @endif --}}
                                 {{--  --}}
                                 {{-- @if(isset($info_doenca[0]->tratamento) AND !empty($info_doenca[0]->tratamento)) --}}
