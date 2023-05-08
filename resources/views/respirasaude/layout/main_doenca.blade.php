@@ -162,7 +162,7 @@
                                 {{--  --}}
                                 <li><b><a href="#">Doenças respiratórias crônicas</a></b>
                                     <ul>
-                                        <li class="ma"><a href="#">Definição</a>
+                                        <li class="ma"><a href="#">Conheça as principais</a>
                                             <ul class="mx">
                                                 {{-- @foreach ($doencas_info as $doenca_definicao) --}}
                                                     {{--  --}}
@@ -254,10 +254,8 @@
                                 </li>
                                 @endif
                                 {{--  --}}
-                                <li><b><a href="#text_missao_RS">Definição</a></b></li>
-                                {{--  --}}
                                 {{-- @if(isset($info_doenca[0]->controle) AND !empty($info_doenca[0]->controle)) --}}
-                                <li><b><a href="#text_missao_RS">Como controlar os sintómas</a></b></li>
+                                <li><b><a href="#text_missao_RS">Como controlar os sintomas</a></b></li>
                                 {{-- @endif --}}
                                 {{--  --}}
                                 {{-- @if(isset($info_doenca[0]->tratamento) AND !empty($info_doenca[0]->tratamento)) --}}
@@ -345,7 +343,7 @@
                     </ul>
                 </div>
                 {{--  --}}
-                <div id="pat.footer" class="w-[100%] rounded-[10px] mt-[30px] inline-block bg-[#ffffff] p-[20px]">
+                <div style="display: none;" id="pat.footer" class="w-[100%] rounded-[10px] mt-[30px] inline-block bg-[#ffffff] p-[20px]">
                     <center>
                         {{--  --}}
                         <ul>
@@ -387,7 +385,7 @@
                 {{--  --}}
                 <div id="master2" class="float-left inline-block w-[33.3%]">
                     {{--  --}}
-                    <p class="text-[#ffffff] text-[16px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
+                    <p class="text-[#ffffff] text-[13px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
                 </div>
             </div>
         </div>

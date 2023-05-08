@@ -599,7 +599,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#voltar_menu").click(function(event){
+    $("#voltar_menu2").click(function(event){
         event.preventDefault();
         $("#menu_principal").fadeIn();
         $("#menu_cronicas_doencas").hide();

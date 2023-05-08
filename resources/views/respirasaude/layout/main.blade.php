@@ -121,44 +121,44 @@
     {{--  --}}
     <header id="barra_superior_menu_mobile" class="w-[100%] mt-[140px] bg-[#5CD1FF] overflow-scroll inline-block fixed">
         {{--  --}}
-        <div id="menu_principal" class="w-[1030px] py-[10px] inline-block">
+        <div id="menu_principal" class="w-[950px] py-[16px] inline-block">
             {{--  --}}
-            <ul class="menu">
-                <li><b><a href="#text_missao_RS">Missão</a></b></li>
-                <li><b><a id="cronicas_doencas" href="#">Doenças respiratórias crônicas <i class="fi fi-rr-angle-small-down"></i></a></b></li>
-                <li><b><a id="cronicas_agudas" href="#">Doenças respiratórias agudas <i class="fi fi-rr-angle-small-down"></i></a></b></li>
-                <li><b><a href="#">Projetos</a></b></li>
-                <li><b><a href="#">Eventos</a></b><li>
-                <li><b><a href="#projeto_extensao">Projetos de Extensão</a></b></li>
+            <ul class="">
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="voltar_menu" href="#text_missao_RS">Missão</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="cronicas_doencas" href="">Doenças respiratórias crônicas</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="cronicas_agudas" href="">Doenças respiratórias agudas</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Projetos</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Eventos</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Projetos de Extensão</a></b></li>
             </ul>
         </div>
         {{--  --}}
-        <div style="display: none;" id="menu_cronicas_doencas" class="w-[1200px] py-[16px] inline-block">
+        <div style="display: none;" id="menu_cronicas_doencas" class="w-[1150px] py-[16px] inline-block">
             {{--  --}}
             <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}">Asma</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}">Fibrose Cística</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}">DPOC</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}">Bronquiectasia</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff] text-[13px]" id="voltar_menu2" href="">Menu Principal</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}">Asma</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}">Fibrose Cística</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}">DPOC</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}">Bronquiectasia</a></b></li>
                 <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}">Fibrose pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}">Sinusite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}">Hipertensão pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}">Síndrome pós-COVID-19</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}">Sinusite</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}">Hipertensão pulmonar</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}">Síndrome pós-COVID-19</a></b></li>
             </ul>
         </div>
         {{--  --}}
-        <div style="display: none;" id="menu_agudas_doencas" class="w-[800px] py-[16px] inline-block">
+        <div style="display: none;" id="menu_agudas_doencas" class="w-[850px] py-[16px] inline-block">
             {{--  --}}
             <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu1" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'h1n1']) }}">H1N1</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'covid_19']) }}">COVID-19</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'tuberculose']) }}">Tuberculose</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'influenza']) }}">Influenza</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff] text-[13px]" id="voltar_menu1" href="">Menu Principal</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'h1n1']) }}">H1N1</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'covid_19']) }}">COVID-19</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'tuberculose']) }}">Tuberculose</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'influenza']) }}">Influenza</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></b></li>
             </ul>
         </div>
         {{--  --}}
@@ -218,7 +218,7 @@
                                 <li><b><a href="#text_missao_RS">Missão</a></b></li>
                                 <li><b><a href="#">Doenças respiratórias crônicas</a></b>
                                     <ul>
-                                        <li class="ma"><a href="#">Definição</a>
+                                        <li class="ma"><a href="#">Conheça as principais</a>
                                             <ul class="mx">
                                                 {{-- @foreach ($doencas_info as $doenca_definicao) --}}
                                                     {{--  --}}
@@ -412,7 +412,7 @@
                     </ul>
                 </div>
                 {{--  --}}
-                <div id="pat.footer" class="w-[100%] rounded-[10px] mt-[30px] inline-block bg-[#ffffff] p-[20px]">
+                <div style="display: none;" id="pat.footer" class="w-[100%] rounded-[10px] mt-[30px] inline-block bg-[#ffffff] p-[20px]">
                     <center>
                         {{--  --}}
                         <ul>
@@ -456,7 +456,7 @@
                 {{--  --}}
                 <div id="master2" class="float-left inline-block w-[33.3%]">
                     {{--  --}}
-                    <p class="text-[#ffffff] text-[16px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
+                    <p class="text-[#ffffff] text-[13px]">Todos os direitos reservados a Laire | UFRN &copy; 2023</p>
                 </div>
             </div>
         </div>
