@@ -395,7 +395,7 @@
                     <p class="font-bold text-[#ffffff] text-[16px]">Endereço</p>
                     {{--  --}}
                     <ul class="mt-[20px]">
-                        <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Departamento de Fisioterapia <br> Da UFRN</p></li>
+                        <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Departamento de Fisioterapia <br> Da Universidade federal do Rio Grande do Norte</p></li>
                         <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Natal/Rn</p></li>
                         <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Brasil</p></li>
                     </ul>
@@ -423,7 +423,7 @@
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[200px]" src="/img/ppgfis.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/img/10.png" alt=""></li>
-                        
+
 
                         </ul>
                     </center>
