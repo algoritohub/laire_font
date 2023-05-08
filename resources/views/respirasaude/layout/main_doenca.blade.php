@@ -364,11 +364,12 @@
                 <div id="master1" class="float-left inline-block w-[33.3%]">
                     {{--  --}}
                     <ul id="lrb" class="float-right">
-                        <li class="inline-block mr-[50px]"><a href=""><p class="text-[#ffffff] text-[16px]">Laire</p></a></li>
                         {{--  --}}
-                        <li class="inline-block mr-[50px]"><a href=""><p class="text-[#ffffff] text-[16px]">RespiraSaúde</p></a></li>
+                        <li class="inline-block mr-[50px]"><a href="{{ route('home.laire') }}"><p class="text-[#ffffff] text-[13px]">Laire</p></a></li>
                         {{--  --}}
-                        <li class="inline-block mr-[50px]"><a href=""><p class="text-[#ffffff] text-[16px]">Blog</p></a></li>
+                        <li class="inline-block mr-[50px]"><a href="{{ route('home.respira_saude') }}"><p class="text-[#ffffff] text-[13px]">RespiraSaúde</p></a></li>
+                        {{--  --}}
+                        <li class="inline-block mr-[50px]"><a href="{{ route('blog') }}"><p class="text-[#ffffff] text-[13px]">Blog</p></a></li>
                     </ul>
                 </div>
                 {{--  --}}
