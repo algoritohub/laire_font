@@ -191,7 +191,7 @@
                 {{--  --}}
                 <div class="w-[100%] h-[150px] p-[20px] inline-block">
                     {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">No nosso Istagram, você encontra conteudos relacionados ao nosso projeto de extensão. </p>
+                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">No nosso Instagram, você encontra conteudos relacionados ao nosso projeto de extensão. </p>
                 </div>
                 {{--  --}}
             </div>
@@ -226,7 +226,7 @@
         <center>
             {{--  --}}
             <ul>
-               
+
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/3.png" alt=""></li>
