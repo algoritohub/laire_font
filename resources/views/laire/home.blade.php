@@ -870,15 +870,32 @@
                     {{--  --}}
                     <div class="w-[100%] bg-[#ffffff] overflow-scroll pt-[30px] px-[15px] rounded-[20px] mt-[30px] h-[300px] inline-block">
                         {{--  --}}
-                        <a href="" target="_blank"><div style="background-image: url('/img/8- (3).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        <a href="https://www.youtube.com/watch?v=mpR7Fm32ZvQ&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=14" target="_blank"><div style="background-image: url('/img/8- (3).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
                         {{--  --}}
-                        <a href="" target="_blank"><div style="background-image: url('/img/5.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        <a href="https://www.youtube.com/watch?v=3wJlQvYEdf4&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=8" target="_blank"><div style="background-image: url('/img/5.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
                         {{--  --}}
-                        <a href="" target="_blank"><div style="background-image: url('/img/8- (1).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        <a href="https://www.youtube.com/watch?v=88udAKuAheM&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=9" target="_blank"><div style="background-image: url('/img/8- (1).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
                         {{--  --}}
-                        <a href="" target="_blank"><div style="background-image: url('/img/8- (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        <a href="https://www.youtube.com/watch?v=gXkLtt2tHlw&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=12" target="_blank"><div style="background-image: url('/img/8- (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
                         {{--  --}}
-                        <a href="" target="_blank"><div style="background-image: url('/img/10-1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        <a href="https://www.youtube.com/watch?v=5VjgO_nnJE4&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=11" target="_blank"><div style="background-image: url('/img/10-1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=bMoK0r7Civo&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=5" target="_blank"><div style="background-image: url('/img/3 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=LDCoCah3wTI&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=6" target="_blank"><div style="background-image: url('/img/4 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=cSkDbXbWi4I&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=7" target="_blank"><div style="background-image: url('/img/6 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=ok92HQosYsw&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=15" target="_blank"><div style="background-image: url('/img/7.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=YrN_qAF-OO0&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=13" target="_blank"><div style="background-image: url('/img/12.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=hddSibrnSrM&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=10" target="_blank"><div style="background-image: url('/img/9 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=GzcvhjbWHLU&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=1" target="_blank"><div style="background-image: url('/img/1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=oSfq8CsvKJs&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=4" target="_blank"><div style="background-image: url('/img/2 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+
                     </div>
                 </div>
                 @endif
