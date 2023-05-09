@@ -243,7 +243,7 @@
                 <p class="text-[13px] text-center">UFR,UFMG</p>
             </div>
             </a>
-            
+
             {{--  --}}
             <a href="?info=sabrina#pesquisadores">
             <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left">
@@ -301,7 +301,7 @@
                 <div id="box_pesq" class="w-[18%] mx-[1%] mb-[30px] float-left">
                     {{--  --}}
                     <div id="vitoria" class="w-[150px] h-[150px] mb-[10px] bg-[#212121] mx-auto rounded-[100px] transform hover:scale-110 transition duration-500">
-    
+
                     </div>
                     {{--  --}}
                     <p class="text-[16px] font-bold text-center">Vitória Jéssica</p>
@@ -790,167 +790,118 @@
     </div>
     @endif
 </section>
-{{-- BLOCO DE INFORMATIVO --}}
-<section style="display: none;" id="resultado" class="w-[100%] inline-block">
-    {{--  --}}
-    <center id="pesquisas">
-        <p id="titulo_pesquisas" class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Pesquisas</p>
-    </center>
-    <div id="boll" class="w-[94%] mx-[3%] mt-[70px] inline-block">
-        {{--  --}}
-        <div id="bk1" class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="bk1" class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="bk1" class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p></a>
-            </div>
-        </div>
-    </div>
-</section>
 
-{{-- BLOCO DE INFORMATIVO --}}
-<div id="bk-" ></div>
-<section id="resultado" class="w-[100%] inline-block">
-    {{--  --}}
-    <center id="eventos_xa">
-        <p  class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Eventos</p>
-    </center>
-    {{--  --}}
 
-    <div style="display: none;" class="w-[94%] mx-[3%] my-[10px] inline-block">
-        {{--  --}}
-        <ul class="float-right mr-[30px]">
-            <li class="inline-block ml-[20px]"><button class="w-[120px] h-[40px] text-[#ffffff] bg-[blue]">Encerrados</button></li>
-            <li class="inline-block ml-[20px]"><button class="w-[120px] h-[40px] text-[#ffffff] bg-[blue]">Futuros</button></li>
-        </ul>
-        <div id="bk."></div>
-    </div>
+{{-- BLOCO DE EVENTOS --}}
+<section class="w-[100%] my-[10%] inline-block">
     {{--  --}}
-    <div class="w-[94%] mx-[3%] mt-[70px] inline-block">
+    <div class="w-[90%] mx-[5%] inline-block">
         {{--  --}}
-        <div id="bk1" class="w-[28%] rounded-[20px] mx-[2.5%] float-left">
+        <p class="text-center font-bold text-[30px]">Eventos</p>
+        {{--  --}}
+        <div class="w-[100%] inline-block">
             {{--  --}}
-            <div style="border-radius: 0px 0px 20px 20px;" class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_1" class="w-[100%] h-[220px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[130px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Relação entre a obesidade e a Asma</p>
-                </div>
-                {{--  --}}
-            </div>
+            <ul style="display: none;" class="float-right">
+                <li class="inline-block ml-[10px]"><button class="px-[30px] rounded-[100px] h-[40px] bg-[blue] text-[#ffffff] font-bold text-[12px]">Encerrrados</button></li>
+                <li class="inline-block ml-[10px]"><button class="px-[30px] rounded-[100px] h-[40px] bg-[blue] text-[#ffffff] font-bold text-[12px]">Futuros</button></li>
+            </ul>
             {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p>
-            </div>
         </div>
         {{--  --}}
-        <div id="bk1" class="w-[28%] mx-[2.5%] float-left">
+        <div class="w-[100%] mt-[30px] inline-block">
             {{--  --}}
-            <div style="border-radius: 0px 0px 20px 20px;" class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
+            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
                 {{--  --}}
-                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_2"class="w-[100%] h-[220px] bg-[gray] mx-auto"></div>
+                <div style="background-image: url('/img/E-book.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
                 {{--  --}}
-                <div class="w-[100%] h-[130px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Fisioterapia e Asma</p>
-                </div>
-                {{--  --}}
-            </div>
-
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="bk1" class="w-[28%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div style="border-radius: 0px 0px 20px 20px;" class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div style="border-radius: 20px 20px 0px 0px;" id="img_eventos_3" class="w-[100%] h-[220px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[130px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Adesão ao tratamento e sua repercussão no nível de controle da asma</p>
-                </div>
-                {{--  --}}
+                <a href="{{ route('banner_ebook', ['tipo' => 'ebook' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
             </div>
             {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
+            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
                 {{--  --}}
-                <p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS ➜</p>
+                <div style="background-image: url('/img/Palestras.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
+                {{--  --}}
+                <a href="{{ route('banner_ebook', ['tipo' => 'palestras' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
+            </div>
+            {{--  --}}
+            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
+                {{--  --}}
+                <div style="background-image: url('/img/Plano_de_acao.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
+                {{--  --}}
+                <a href="{{ route('banner_ebook', ['tipo' => 'plano' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
             </div>
         </div>
-
-        {{-- BANNER CONVIVENDO --}}
-        @if (isset($banner_conviv) AND !empty($banner_conviv))
+        {{-- MODAL MASTER --}}
+        @if (isset($evento_cat) AND !empty($evento_cat))
         {{--  --}}
-        <div class="banner_convivendo">
+        <div class="modal_master_eventos">
             {{--  --}}
-            <div class="w-[1000px] mx-auto h-[400px] mt-[12%] p-[30px] rounded-[20px] bg-[#ffffff]">
+            <div style="background-image: url('/img/fundo_ARlindo.png'); background-size: 100%;" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] p-[40px] h-[500px] rounded-[20px] mx-auto">
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <p class="float-right cursor-pointer">✕</p>
+                    <div class="w-[50%] inline-block float-left">
+                        {{--  --}}
+                        <p class="text-[15px] text-[#ffffff] font-bold uppercase">convivendo com a asma</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[50%] inline-block float-left">
+                        {{--  --}}
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[#ffffff]">✕</p></a>
+                    </div>
                 </div>
+                {{-- CONTEÚDO E-BOOK --}}
+                @if ($evento_cat == "ebook")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">e-book</p>
+                    {{--  --}}
+                    <center>
+                        {{--  --}}
+                        <button class="px-[40px] h-[40px] rounded-[100px] mt-[15%] bg-[#00FF8C] text-[#080E45] text-[12px] font-bold">Baixar e-book do evento</button>
+                    </center>
+                </div>
+                @endif
+                {{-- CONTEÚDO PALESTRA --}}
+                @if ($evento_cat == "palestras")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">palestras</p>
+                    {{--  --}}
+                    <div class="w-[100%] bg-[#ffffff] overflow-scroll pt-[30px] px-[15px] rounded-[20px] mt-[30px] h-[300px] inline-block">
+                        {{--  --}}
+                        <a href="" target="_blank"><div style="background-image: url('/img/8- (3).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="" target="_blank"><div style="background-image: url('/img/5.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="" target="_blank"><div style="background-image: url('/img/8- (1).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="" target="_blank"><div style="background-image: url('/img/8- (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="" target="_blank"><div style="background-image: url('/img/10-1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                    </div>
+                </div>
+                @endif
+                {{-- CONTEÚDO PLANO DE AÇÃO --}}
+                @if ($evento_cat == "plano")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">plano de ação</p>
+                    {{--  --}}
+                    <center>
+                        {{--  --}}
+                        <button class="px-[40px] h-[40px] rounded-[100px] mt-[15%] bg-[#00FF8C] text-[#080E45] text-[12px] font-bold">Baixar nosso plano de ação</button>
+                    </center>
+                </div>
+                @endif
             </div>
         </div>
         @endif
     </div>
 </section>
+
+
+
 {{--  --}}
 <section  class="w-[92%] inline-block mx-[4%] mb-[60px]">
     {{--  --}}

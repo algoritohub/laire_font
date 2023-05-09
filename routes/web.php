@@ -68,6 +68,8 @@ Route::get('/respira-saude/projeto/3', function () {
 
 
 
+// CONVIVENDO COM A ASMA E-BOOK
+Route::get('/banner/evento/material/{tipo}', [ConteudoController::class, "BannerEbook"])->name('banner_ebook');
 
 
 
