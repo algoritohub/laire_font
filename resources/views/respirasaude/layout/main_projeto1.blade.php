@@ -248,6 +248,7 @@
                     </div>
                     {{-- MASCOTE --}}
                     <img id="mascote" style="display:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[430px] ml-[820px] mascote">
+                    {{-- BALÃO --}}
                     <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[380px] ml-[775px] balao">
                         {{--  --}}
                         <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center">Esse conteúde tem acessibilidade</p>
@@ -258,6 +259,15 @@
                                 <li class="mr-[2px] inline-block"><img class="w-[38px] cursor-pointer" src="/img/libra.png"></li>
                             </ul>
                         </center>
+                    </div>
+                    {{-- MASCOTE RESUMO --}}
+                    <img id="mascote_resumo" style="display:none" src="/img/mascote7.png" class="w-[400px] absolute mt-[430px] ml-[820px] mascote_resumo">
+                    {{-- BALÃO RESUMO --}}
+                    <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[390px] ml-[775px] balao_resumo">
+                        {{--  --}}
+                        <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center">Confira nossa revisão sistemática</p>
+                        {{--  --}}
+                        <p class="mt-[15px] text-center text-[#ffffff] text-[12px]">É só clicar!</p>
                     </div>
                 </div>
             </div>

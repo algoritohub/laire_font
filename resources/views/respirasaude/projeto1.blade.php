@@ -87,7 +87,7 @@
                 <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}"><b id="DPOC" class="text-[#080E45]">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}"><b id="asma" class="text-[#080E45]">asma</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}"><b id="fibrose" class="text-[#080E45]">fibrose cística</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}"><b id="bronquiectasia" class="text-[#080E45]">bronquiectasia</b></a> e a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}"><b id="pulmonar" class="text-[#080E45]">fibrose pulmonar</b></a>.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Aqui no <b>RespiraSaúde</b> vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS).</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Nesta pesquisa nós realizamos uma <b class="text-[#080E45]">revisão sistemática</b></a> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Nesta pesquisa nós realizamos uma <a href=""><b id="revisao" class="text-[#080E45] cursor-pointer">revisão sistemática</b></a> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"><b>Isso mesmo, nós comparamos os resultados do tratamento recebido em casa com o recebido no hospital!</b></p>
             </div>
         </div>
@@ -120,8 +120,6 @@
         </div>
     </div>
 </section>
-
-
 {{-- BLOCO EXEMPLO metodo --}}
 <section class="w-[100%] mt-[-5px] inline-block">
     <div id="metod" ></div>
@@ -144,9 +142,7 @@
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Primeiro, nós identificamos os estudos que compararam os efeitos destes dois tipos de tratamento nos resultados de mortalidade, qualidade de vida, satisfação do paciente, custos do tratamento, eventos adversos[o], tempo de permanência no hospital, entre outros. Esses estudos poderiam ter sido publicados em qualquer ano e em qualquer país do mundo.</b>.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Depois que reunimos os estudos que tinham as características necessárias para entrar na revisão, nós realizamos uma análise estatística chamada metanálise[p]. Assim, foi possível juntar os resultados de vários estudos que avaliaram as mesmas coisas que nós tínhamos interesse (mortalidade, qualidade de vida, satisfação, custos, eventos adversos...). Dessa forma, dá para comparar melhor os efeitos do tratamento recebido em casa com o recebido no hospital.(MS).</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entendeu como a revisão sistemática é legal? Assim, ao invés de termos os resultados de apenas um estudo com poucos pacientes, nós conseguimos reunir os resultados de vários estudos e muitos pacientes! Mas isso não é simples, é necessário seguir uma metodologia muito rigorosa! E tem mais... </p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">É necessário avaliar muito bem esse conjunto de resultados, de vários estudos, para entendermos o quanto nós podemos confiar neles!
-
-                    Agora que você já sabe o objetivo da pesquisa, já conhece melhor as principais doenças respiratórias crônicas e, também como essa revisão sistemática foi feita, vamos saber quais foram os resultados! Estão curiosos?</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">É necessário avaliar muito bem esse conjunto de resultados, de vários estudos, para entendermos o quanto nós podemos confiar neles! Agora que você já sabe o objetivo da pesquisa, já conhece melhor as principais doenças respiratórias crônicas e, também como essa revisão sistemática foi feita, vamos saber quais foram os resultados! Estão curiosos?</p>
             </div>
         </div>
     </div>
@@ -626,8 +622,6 @@
                     </ul>
                 </div>
             </div>
-            
-
             {{--  --}}
             <div style="display: none;" class="banner_produtos">
                 {{--  --}}
@@ -713,8 +707,27 @@
                     </div>
                 </div>
             </div>
+            {{--  --}}
+            <div class="modal_resumo">
+                {{--  --}}
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Resumo Sistemático</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                </div>
+            </div>
         </section>
-
         <!--patrocinadores-->
         <section class="w-[100%] h-[650px]  inline-block bg-[#ffffff]">
         {{--  --}}

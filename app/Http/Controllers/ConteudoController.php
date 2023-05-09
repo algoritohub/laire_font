@@ -173,4 +173,12 @@ class ConteudoController extends Controller
 
         return view('respirasaude.projeto3', ['pesquisador' => $pesquisador, 'categoria' => $categoria]);
     }
+
+    // EBOOK EVENTO
+    public function BannerEbook($tipo)
+    {
+        $categoria = $tipo;
+
+        return view('laire.home', ['evento_cat' => $categoria]);
+    }
 }
