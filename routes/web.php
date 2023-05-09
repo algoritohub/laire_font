@@ -180,7 +180,7 @@ Route::get('/dashboard/painel/blog', [AdminController::class, "blog"])->name('ad
 // DELETAR POSTAGEM
 Route::get('/dashboard/painel/blog/delete/post/{id}', [BlogController::class, "deletePost"])->name('admin.deletar_post_blog');
 
-// EXIBIR MODAL DE EDIÇÃO
+// EXIBIR  DE EDIÇÃO
 Route::get('/dashboard/painel/blog/edit/post/{id}', [BlogController::class, "showEditPost"])->name('admin.show_edit_post_blog');
 
 // PAINEL CONFIGURAÇÕES
