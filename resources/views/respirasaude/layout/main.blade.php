@@ -124,8 +124,8 @@
         <div id="menu_principal" class="w-[950px] py-[16px] inline-block">
             {{--  --}}
             <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="voltar_menu" href="#text_missao_RS">Missão</a></b></li>
                 <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="cronicas_doencas" href="">Doenças respiratórias crônicas</a></b></li>
+                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="voltar_menu" href="#text_missao_RS">Missão</a></b></li>
                 <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="cronicas_agudas" href="">Doenças respiratórias agudas</a></b></li>
                 <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Projetos</a></b></li>
                 <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Eventos</a></b></li>
