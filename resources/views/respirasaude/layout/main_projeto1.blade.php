@@ -265,7 +265,7 @@
                     {{-- BALÃO RESUMO --}}
                     <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[390px] ml-[775px] balao_resumo">
                         {{--  --}}
-                        <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center">Confira nossa revisão sistemática</p>
+                        <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center"> Vamos entender o que é uma revisão sistemática?</p>
                         {{--  --}}
                         <p class="mt-[15px] text-center text-[#ffffff] text-[12px]">É só clicar!</p>
                     </div>
