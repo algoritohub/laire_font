@@ -329,7 +329,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -374,7 +374,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -412,7 +412,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -494,7 +494,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -536,7 +536,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -578,7 +578,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -625,7 +625,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -664,7 +664,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -707,7 +707,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
@@ -753,7 +753,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="http://localhost:8000/#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
