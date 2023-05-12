@@ -732,10 +732,9 @@ button#bt2-1:hover{
 .menu li a{
     color: #cdcdcd;
     text-decoration: none;
-    padding: 3px 3px;
+    padding: 5px 10px;
     color: #cdcdcd;
     text-decoration: none;
-    padding: 3px 3px;
     display: block;
     font-size: 12px;
     transition: 1s;
@@ -747,7 +746,6 @@ button#bt2-1:hover{
     padding: 5px 10px;
     color: #00FF8C;
     text-decoration: none;
-    padding: 5px 10px;
     display: block;
     font-size: 12px;
     transition: 1s;

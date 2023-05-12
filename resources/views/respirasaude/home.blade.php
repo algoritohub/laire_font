@@ -85,94 +85,132 @@
     </div>
 </div>
 
-{{-- BLOCO DE INFORMATIVO --}}
-<section style="display: none;" class="w-[100%] inline-block">
+
+{{-- BLOCO DE EVENTOS --}}
+<section class="w-[100%] my-[10%] inline-block">
     {{--  --}}
-    <center>
-        <p id="eventos." class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] mt-[20px] pb-[20px]">Eventos</p>
-    </center>
-    <div id="caixa_evt" class="w-[90%] mx-[5%] mt-[70px] inline-block">
+    <div class="w-[90%] mx-[5%] inline-block">
         {{--  --}}
-        <div id="eventos1" class="w-[20%] mx-[2.5%] float-left">
+        <p class="text-center font-bold text-[30px]">Eventos</p>
+        {{--  --}}
+        <div class="w-[100%] inline-block">
             {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
+            <ul style="display: none;" class="float-right">
+                <li class="inline-block ml-[10px]"><button class="px-[30px] rounded-[100px] h-[40px] bg-[blue] text-[#ffffff] font-bold text-[12px]">Encerrrados</button></li>
+                <li class="inline-block ml-[10px]"><button class="px-[30px] rounded-[100px] h-[40px] bg-[blue] text-[#ffffff] font-bold text-[12px]">Futuros</button></li>
+            </ul>
+            {{--  --}}
+        </div>
+        {{--  --}}
+        <div class="w-[100%] mt-[30px] inline-block">
+            {{--  --}}
+            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
                 {{--  --}}
-                <div  class="w-[100%] h-[150px] bg-[gray] mx-auto">
+                <div style="background-image: url('/img/E-book.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
+                {{--  --}}
+                <a href="{{ route('banner_evento', ['tipo' => 'ebook' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
+            </div>
+            {{--  --}}
+            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
+                {{--  --}}
+                <div style="background-image: url('/img/Palestras.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
+                {{--  --}}
+                <a href="{{ route('banner_evento', ['tipo' => 'palestras' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
+            </div>
+            {{--  --}}
+            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
+                {{--  --}}
+                <div style="background-image: url('/img/Plano_de_acao.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
+                {{--  --}}
+                <a href="{{ route('banner_evento', ['tipo' => 'plano' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
+            </div>
+        </div>
+        {{-- MODAL MASTER --}}
+        @if (isset($evento_cat) AND !empty($evento_cat))
+        {{--  --}}
+        <div class="modal_master_eventos">
+            {{--  --}}
+            <div style="background-image: url('/img/fundo_ARlindo.png'); background-size: 100%;" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] p-[40px] h-[500px] rounded-[20px] mx-auto">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[50%] inline-block float-left">
+                        {{--  --}}
+                        <p class="text-[15px] text-[#ffffff] font-bold uppercase">convivendo com a asma</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[50%] inline-block float-left">
+                        {{--  --}}
+                        <a href="{{ route('home.respira_saude') }}"><p class="float-right text-[#ffffff]">✕</p></a>
+                    </div>
+                </div>
+                {{-- CONTEÚDO E-BOOK --}}
+                @if ($evento_cat == "ebook")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">e-book</p>
+                    {{--  --}}
+                    <center>
+                        {{--  --}}
+                        <button class="px-[40px] h-[40px] rounded-[100px] mt-[15%] bg-[#00FF8C] text-[#080E45] text-[12px] font-bold">Baixar e-book do evento</button>
+                    </center>
+                </div>
+                @endif
+                {{-- CONTEÚDO PALESTRA --}}
+                @if ($evento_cat == "palestras")
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">palestras</p>
+                    {{--  --}}
+                    <div class="w-[100%] bg-[#ffffff] overflow-scroll pt-[30px] px-[15px] rounded-[20px] mt-[30px] h-[300px] inline-block">
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=mpR7Fm32ZvQ&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=14" target="_blank"><div style="background-image: url('/img/8- (3).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=3wJlQvYEdf4&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=8" target="_blank"><div style="background-image: url('/img/5.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=88udAKuAheM&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=9" target="_blank"><div style="background-image: url('/img/8- (1).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=gXkLtt2tHlw&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=12" target="_blank"><div style="background-image: url('/img/8- (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=5VjgO_nnJE4&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=11" target="_blank"><div style="background-image: url('/img/10-1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=bMoK0r7Civo&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=5" target="_blank"><div style="background-image: url('/img/3 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=LDCoCah3wTI&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=6" target="_blank"><div style="background-image: url('/img/4 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=cSkDbXbWi4I&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=7" target="_blank"><div style="background-image: url('/img/6 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=ok92HQosYsw&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=15" target="_blank"><div style="background-image: url('/img/7.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=YrN_qAF-OO0&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=13" target="_blank"><div style="background-image: url('/img/12.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=hddSibrnSrM&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=10" target="_blank"><div style="background-image: url('/img/9 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=GzcvhjbWHLU&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=1" target="_blank"><div style="background-image: url('/img/1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
+                        {{--  --}}
+                        <a href="https://www.youtube.com/watch?v=oSfq8CsvKJs&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=4" target="_blank"><div style="background-image: url('/img/2 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
 
-
+                    </div>
                 </div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
+                @endif
+                {{-- CONTEÚDO PLANO DE AÇÃO --}}
+                @if ($evento_cat == "plano")
+                <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
+                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">plano de ação</p>
+                    {{--  --}}
+                    <center>
+                        {{--  --}}
+                        <button class="px-[40px] h-[40px] rounded-[100px] mt-[15%] bg-[#00FF8C] text-[#080E45] text-[12px] font-bold">Baixar nosso plano de ação</button>
+                    </center>
                 </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS➜</p></a>
+                @endif
             </div>
         </div>
-        {{--  --}}
-        <div id="eventos1"   class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px]text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS➜</p></a>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="eventos1"  class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS➜</p></a>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="eventos1"  class="w-[20%] mx-[2.5%] float-left">
-            {{--  --}}
-            <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg inline-block ">
-                {{--  --}}
-                <div class="w-[100%] h-[150px] bg-[gray] mx-auto"></div>
-                {{--  --}}
-                <div class="w-[100%] h-[200px] p-[20px] inline-block">
-                    {{--  --}}
-                    <p class="text-center mt-[20px] mb-[8px] text-[15px] text-[{{ $numb_font }}px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit</p>
-                </div>
-                {{--  --}}
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block h-[150px]">
-                {{--  --}}
-                <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">VER MAIS➜</p></a>
-            </div>
-        </div>
+        @endif
     </div>
 </section>
+
 <!--BLOCO RESULTADOS-->
 <section id="projeto_extensao" class="w-[100%] inline-block">
     {{--  --}}

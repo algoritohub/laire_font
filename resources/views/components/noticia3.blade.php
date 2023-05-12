@@ -38,7 +38,7 @@
                         {{--  --}}
                         <p id="max_box3" class="font-bold text-[#080E45] float-right w-[500px] text-[30px] leading-[34px] text-right">Projeto de Extensão!</p>
                         {{--  --}}
-                        <p id="max_loc3" class="mt-[50px] w-[600px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right ">Acompanhe nossos projetos de extensões e fique por dentro de todos os resultados de nossa pesquisa! </p>
+                        <p id="max_loc3" class="mt-[50px] w-[600px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right ">Este projeto de extensão tem o objetivo de levar Educação Popular em Saúde Respiratória para todos! Aqui utilizamos formatos atrativos, linguagem simples, acessibilidade e informações de qualidade sobre a prevenção e controle das principais doenças respiratórias.</p>
                     </div>
                 </div>
             </div>

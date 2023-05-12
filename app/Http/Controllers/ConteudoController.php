@@ -181,4 +181,12 @@ class ConteudoController extends Controller
 
         return view('laire.home', ['evento_cat' => $categoria]);
     }
+
+    // EBOOK EVENTO RESPIRA
+    public function BannerEvento($tipo)
+    {
+        $categoria = $tipo;
+
+        return view('respirasaude.home', ['evento_cat' => $categoria]);
+    }
 }
