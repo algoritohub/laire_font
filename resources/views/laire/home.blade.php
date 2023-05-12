@@ -27,7 +27,9 @@
         {{-- MASCOTE --}}
         <div id="box_laire_b" class="w-[40%] float-left inline-block h-[600px] pl-[60px]">
             {{--  --}}
-            <div id="elementoAEsconder" style="z-index: 1; border-radius: 20px 0px 0px 20px; display: show;" class="w-[100%] cursor-pointer shadow-lg h-[100px] fixed mt-[150px] inline-block bg-[#ffffff]">
+            <div id="modal_in_laire" class="inline-block">
+                {{--  --}}
+                <div id="elementoAEsconder" style="z-index: 1; border-radius: 20px 0px 0px 20px; display: show;" class="w-[100%] cursor-pointer shadow-lg h-[100px] fixed mt-[150px] inline-block bg-[#ffffff]">
                 {{--  --}}
                 <div class="w-[40%] inline-block float-left">
                     {{--  --}}
@@ -35,9 +37,10 @@
                     <div class="w-[270px] inline-block float">
                         {{--  --}}
                         <p class="text-[20px] text-[#212121] font-bold mt-[15px] ml-[-70px]">Já conhece o ARlindo? </p>
-                        <p id="modal_in_laire" class="text-[14px] text-[#212121] leading-[14px] mt-[5px] ml-[-70px]">Clique e saiba mais sobre nosso assistente de acessibilidade</p>
+                        <p class="text-[14px] text-[#212121] leading-[14px] mt-[5px] ml-[-70px]">Clique e saiba mais sobre nosso assistente de acessibilidade</p>
                     </div>
                 </div>
+            </div>
             </div>
             {{--  --}}
             <p id="sub_text_box_a" class="text-[#080E45] text-[20px] leading-[24px] pl-[20px] border-l-[4px] text-justify border-l-[#080E45] mt-[350px]">Atividades de ensino, pesquisa e extensão relacionadas às doenças respiratórias agudas e crônicas que comprometem a qualidade de vida de crianças, adolescentes e adultos</p>
@@ -329,7 +332,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="{{ route('home.laire') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('home.laire') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}

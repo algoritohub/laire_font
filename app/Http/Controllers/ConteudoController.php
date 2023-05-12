@@ -147,6 +147,12 @@ class ConteudoController extends Controller
         return view('respirasaude.doencas', compact('doenca', 'tipo'));
     }
 
+    // PÁGINA DE REVISÃO SISTEMÁTICA
+    public function PagRevisaoSistematica()
+    {
+        return view('respirasaude.revisao_sistematica');
+    }
+
     // PESQUISADORES PROJETO 1
     public function PesquisadoresProjeto1($tipo, $nome)
     {

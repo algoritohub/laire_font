@@ -78,7 +78,8 @@ Route::get('/banner/evento/conteúdo/{tipo}', [ConteudoController::class, "Banne
 
 
 
-
+// PÁGINA DE REVISÃO SISTEMÁTICA
+Route::get('/respira-saude/revisao-sistematica', [ConteudoController::class, "PagRevisaoSistematica"])->name('pag_revisao_sistematica');
 
 // PÁGINA DE DOENÇAS
 Route::get('/respira-saude/doencas/{tipo}/{doenca}', [ConteudoController::class, "PagDoencas"])->name('pag_doencas');
