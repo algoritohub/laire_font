@@ -149,7 +149,7 @@
                                 <li class="inline-block ml-[30px]"><a href="#bk-" class="text-[#ffffff] text-[14px] font-bold"><strong>Eventos</strong></a></li>
                                 <li class="inline-block ml-[30px]"><a href="#noticias_slide" class="text-[#ffffff] text-[14px] font-bold"><strong>Notícias</strong></a></li>
                                 <li class="inline-block ml-[30px]"><a href="#contatos." class="text-[#ffffff] text-[14px] font-bold"><strong>Contatos</strong></a></li>
-                                <li class="inline-block ml-[30px]"><a href="#social" class="text-[#ffffff] text-[14px] font-bold"><strong>Redes Sociais</strong></a></li>
+                                <li class="inline-block ml-[30px]"><a href="#botao_youtube-" class="text-[#ffffff] text-[14px] font-bold"><strong>Redes Sociais</strong></a></li>
                             </ul>
                         </div>
                     </div>

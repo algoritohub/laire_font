@@ -659,7 +659,7 @@
                         {{--  --}}
                         <div class="w-[70%] inline-block float-left">
                             {{--  --}}
-                            <p class="text-[#ffffff] uppercase font-bold">Nosso infografico</p>
+                            <p class="text-[#ffffff] uppercase font-bold">Nosso infográfico</p>
                         </div>
                         {{--  --}}
                         <div class="w-[30%] inline-block float-left">

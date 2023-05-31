@@ -551,19 +551,23 @@ ul.logos_carrossel{
 #img_projeto_extensao{
     background-image: url("/img/Slide 3 (laire) – Projeto de extensão do Instagram (2).png");
     background-size: cover;
+    background-repeat: no-repeat;
     }
 
     #img_projeto_extensao2{
     background-image: url("/img/5 e 6) Notícias futuras.png");
         background-size: cover;
+        background-repeat: no-repeat;
     }
     #img_projeto_extensao3{
     background-image: url("/img/5 e 6) Notícias futuras (2).png");
             background-size:cover;
+            background-repeat: no-repeat;
     }
     #img_projeto_extensao4{
         background-image: url("/img/5 e 6) Notícias futuras.png");
         background-size: cover;
+        background-repeat: no-repeat;
         }
 
 
@@ -586,11 +590,13 @@ ul.logos_carrossel{
 /*background-image:linear-gradient(#A146C5,#FD4164,#FE7F4A)*/
 background-image: url('../img/Instagramlaire.png');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #botao_facebook{
    /* background-image:linear-gradient(#3F70B5,#2A5B9D,#0C3D7F)*/
     background-image: url('../img/Facebooklaire.png');
     background-size: cover;
+    background-repeat: no-repeat;
 
 
 }
@@ -598,6 +604,8 @@ background-image: url('../img/Instagramlaire.png');
     /*background-image:linear-gradient(#B41102,#F81A07,#6C0700)*/
     background-image: url('../img/YouTubelaire.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: ;
 }
 
 
@@ -793,6 +801,7 @@ button#bt2-1:hover{
     display: inline-block;
     background-image: url(../img/carrossel1.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #carrossel_pro2{
@@ -801,6 +810,7 @@ button#bt2-1:hover{
     display: inline-block;
     background-image: url(../img/carrossel2.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #carrossel_pro3{
@@ -809,6 +819,7 @@ button#bt2-1:hover{
     display: inline-block;
     background-image: url(../img/carrossel3.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #carrossel_prox1{
@@ -817,6 +828,7 @@ button#bt2-1:hover{
     display: inline-block;
     background-image: url(../img/imagem_rs_1.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #carrossel_prox2{
@@ -825,6 +837,7 @@ button#bt2-1:hover{
     display: inline-block;
     background-image: url(../img/imagem_rs_2.png);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #carrossel_prox3{
@@ -833,6 +846,7 @@ button#bt2-1:hover{
     display: inline-block;
     background-image: url(../img/fundo2.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .cont_menu {
@@ -975,24 +989,29 @@ button#bt2-1:hover{
 #imagem_bloco1-pj1{
     background-image: url("/img/Pesquisa 1 - imagem 1_20230510_073059_0000.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #imagem_bloco2-pj1{
     background-image: url("/img/Pesquisa 1 - imagem 2_20230510_073059_0001.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #imagem_bloco1{
     background-image: url("/img/Pesquisa 1 - imagem 3_20230510_073059_0002.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #imagem_bloco1-pj1a{
     background-image: url("/img/Pesquisa 1 - imagem 4_20230510_073059_0003.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #imagem_bloco2-pj1b{
     background-image: url("/img/Pesquisa 1 - imagem 5_20230510_073059_0004.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 
 }
@@ -1002,6 +1021,7 @@ button#bt2-1:hover{
 #box_audio-2{
     background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 5.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
     width: 800px;
     height: 400px;
@@ -1009,24 +1029,29 @@ button#bt2-1:hover{
 #imagem_bloco1-pj2{
     background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 1.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #imagem_bloco1-pj2a{
     background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 3.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #imagem_bloco1-pj2b{
     background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 4.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #imagem_bloco2{
     background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 2.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #box_audio{
     background-image: url("/img/Pesquisa 2/Pesquisa 2 - imagem 5.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -1034,27 +1059,32 @@ button#bt2-1:hover{
 #box_audio-pj3{
     background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 1.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 
 }
 #imagem_bloco1-pj3{
     background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 2.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #imagem_bloco2-pj3{
     background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 3.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #imagem_bloco1-pj3a{
     background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 4.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #imagem_bloco2-pj3c{
     background-image: url("/img/Pesquisa 3/Pesquisa 3 - imagem 5.png");
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -1122,6 +1152,7 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/imagem_rs_2.png);
         background-size: 460%;
+        background-repeat: no-repeat;
     }
 
     #carrossel_prox3{
@@ -1130,6 +1161,7 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/fundo2.jpg);
         background-size: 460%;
+        background-repeat: no-repeat;
     }
 
     /*RESPONSIVO RESPIRASAÚDE*/
@@ -1592,6 +1624,7 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/imagem_rs_2.png);
         background-size: 500%;
+        background-repeat: no-repeat;
     }
 
 
@@ -1637,6 +1670,7 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/imagem_rs_2.png);
         background-size: 500%;
+        background-repeat: no-repeat;
     }
 
     #button_max2{
@@ -1674,6 +1708,7 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/fundo2.jpg);
         background-size: 500%;
+        background-repeat: no-repeat;
     }
 
     #button_max3{
@@ -2451,6 +2486,7 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/Instagramlaire.png);
         background-size: 130%;
+        background-repeat: no-repeat;
     }
     #botao_facebook{
         width: 98%;
@@ -2458,6 +2494,7 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/Facebooklaire.png);
         background-size: 130%;
+        background-repeat: no-repeat;
     }
     #botao_youtube{
         width: 98%;
@@ -2465,40 +2502,14 @@ button#bt2-1:hover{
         display: inline-block;
         background-image: url(../img/YouTubelaire.png);
         background-size: 130%;
+        background-repeat: no-repeat;
     }
 
     #box_audio-1{
         width: 100%;
         height: 200px;
     }
+    #div-eventos{
+      
 
-
-    /*responsivo para menores*/
-    @media all and (min-width:360px) and (max-width:740px){
-        /*laire*/
-        /* #pesquisadores_bloco{
-            margin-top: 90vh;
-        } */
     }
-    @media all and (min-width:393px) and (max-width:786px){
-        /*laire*/
-        /* #pesquisadores_bloco{
-            margin-top: 10vh;
-        } */
-    }
-    @media all and (min-width:360px) and (max-width:640px){
-        /*laire*/
-        /* #pesquisadores_bloco{
-            margin-top: 120vh;
-        } */
-    }
-}
-    @media all and (min-width:414px) and (max-width:896px){
-    /*laire*/
-    /* #pesquisadores_bloco{
-        margin-top: 40vh;
-    } */
-}
-
-
-

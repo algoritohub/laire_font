@@ -106,7 +106,7 @@
             {{--  --}}
             <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
                 {{--  --}}
-                <div style="background-image: url('/img/E-book.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
+                <div style="background-image: url('/img/E-book.png'); background-size: 100%; " class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
                 {{--  --}}
                 <a href="{{ route('banner_evento', ['tipo' => 'ebook' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
             </div>

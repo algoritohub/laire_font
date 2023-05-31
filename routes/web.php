@@ -227,3 +227,35 @@ Route::get('/dashboard/master', [AdminController::class, "master"])->name('maste
 
 // GERAR UMA NOVA PESQUISA MANUALMENTE
 Route::get('/dashboard/new/pesquisa', [AdminController::class, "novaPesquisa"])->name('new.pesquisa');
+
+
+
+
+
+
+
+
+
+Route::get('/test-database', function () {
+    try {
+        // Código para manipulação do banco de dados aqui
+
+        // Exemplo de consulta
+        $users = DB::table('users')->get();
+
+        // Exemplo de inserção
+        DB::table('users')->insert([
+            'name' => 'John Doe',
+            'email' => 'johndoe@example.com',
+        ]);
+
+        // ... outras operações no banco de dados ...
+
+        return "Operações de banco de dados realizadas com sucesso!";
+    } catch (Exception $e) {
+        // Tratamento da exceção ocorrida
+
+        // Exemplo: exibindo a mensagem de erro
+        return "Ocorreu um erro: " . $e->getMessage();
+    }
+});
