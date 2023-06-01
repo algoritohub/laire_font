@@ -141,7 +141,7 @@
     // $conta_pesqs = $info_doenca;
 @endphp
 {{--  --}}
-<section id="pesquisadores_bloco" class="w-[100%] mt-[50px] inline-block">
+<!--<section id="pesquisadores_bloco" class="w-[100%] mt-[50px] inline-block">
     {{--  --}}
     <center>
         <p id="pesquisadores" class="font-bold text-[#212121] text-[30px] border-b-[4px] w-[200px] pb-[20px]">Equipe</p>
@@ -313,7 +313,82 @@
                 </div>
                 </a>
         </div>
-    </div>
+    </div>-->
+    <section id="pesquisadores_bloco" class="w-full mt-[20%]">
+        <center>
+            <p id="pesquisadores" class="font-bold text-[#212121] text-3xl border-b-4 w-44 pb-5">Equipe</p>
+        </center>
+
+        <div id="sub_bloco_pesq" class="w-[90%] mt-10 flex flex-wrap justify-left ml-[10%] ">
+            <a href="?info=amanda#pesquisadores" class="w-1/2 sm:w-auto px-1 mb-10 inline-block float-left ">
+                <div id="amanda" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Amanda Quirino</p>
+                <p class="text-sm text-center">UFRN</p>
+            </a>
+
+            <a href="?info=karla#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left ">
+                <div id="karla" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Karla Morganna</p>
+                <p class="text-sm text-center">FACISA/UFRN, UEPB, CBI of Miami</p>
+            </a>
+
+            <a href="?info=ivan#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="ivan" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Ivan Daniel</p>
+                <p class="text-sm text-center">UFRN</p>
+            </a>
+
+            <a href="?info=joubert#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="joubert" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Joubert Vitor</p>
+                <p class="text-sm text-center">UFRN</p>
+            </a>
+
+            <a href="?info=valbny#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="valbny" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Válbny Morais</p>
+                <p class="text-sm text-center">UFRN</p>
+            </a>
+
+            <a href="?info=gabriela#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="gabriela" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Gabriela Chaves</p>
+                <p class="text-sm text-center">UFR, UFMG</p>
+            </a>
+
+            <a href="?info=sabrina#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="sabrina" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Sabrina</p>
+                <p class="text-sm text-center">UFRN</p>
+            </a>
+
+            <a href="?info=luana#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="luana" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Luana Moura</p>
+                <p class="text-sm text-center">UFRN</p>
+            </a>
+
+            <a href="?info=thayla#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="thayla" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Thayla Santino</p>
+                <p class="text-sm text-center">UFRN, ASSOBRAFIR/COFFITO</p>
+            </a>
+
+            <a href="?info=juliana#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="juliana" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Juliana Souza</p>
+                <p class="text-sm text-center">UFRN</p>
+            </a>
+
+            <a href="?info=vitoria#pesquisadores" class="w-1/2 sm:w-auto px-5 mb-10 inline-block float-left">
+                <div id="vitoria" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
+                <p class="text-lg font-bold text-center">Vitória Jéssica</p>
+                <p class="text-sm text-center">HUOL/UFRN, COFFITO/ASSOBRAFIR</p>
+            </a>
+        </div>
+
+
+
     {{-- MODAL INFO PESQUISADORES --}}
     @if (isset($info_pesquisador) AND !empty($info_pesquisador))
     {{--  --}}
