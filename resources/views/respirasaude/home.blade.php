@@ -87,6 +87,7 @@
 
 
 {{-- BLOCO DE EVENTOS --}}
+{{-- BLOCO DE EVENTOS --}}
 <section class="w-[100%] my-[10%] inline-block">
     {{--  --}}
     <div class="w-[90%] mx-[5%] inline-block">
@@ -102,27 +103,25 @@
             {{--  --}}
         </div>
         {{--  --}}
-        <div class="w-[100%] mt-[30px] inline-block">
-            {{--  --}}
-            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
-                {{--  --}}
-                <div style="background-image: url('/img/E-book.png'); background-size: 100%; " class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
-                {{--  --}}
-                <a href="{{ route('banner_evento', ['tipo' => 'ebook' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
+        <div class="w-full mt-4 flex flex-wrap">
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div style="background-image: url('/img/E-book.png'); background-size: cover; background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
+                <a href="{{ route('banner_ebook', ['tipo' => 'ebook' ]) }}">
+                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
+                </a>
             </div>
-            {{--  --}}
-            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
-                {{--  --}}
-                <div style="background-image: url('/img/Palestras.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
-                {{--  --}}
-                <a href="{{ route('banner_evento', ['tipo' => 'palestras' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div style="background-image: url('/img/Palestras.png'); background-size: cover;background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
+                <a href="{{ route('banner_ebook', ['tipo' => 'palestras' ]) }}">
+                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
+                </a>
             </div>
-            {{--  --}}
-            <div class="w-[30.3%] mx-[1.5%] inline-block rounded-[20px] float-left">
-                {{--  --}}
-                <div style="background-image: url('/img/Plano_de_acao.png'); background-size: 100%;" class="w-[100%] rounded-[20px] h-[230px] bg-[#eeeeee] inline-block"></div>
-                {{--  --}}
-                <a href="{{ route('banner_evento', ['tipo' => 'plano' ]) }}"><p class="text-center uppercase text-[12px] font-bold mt-[15px]">Ver mais</p></a>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div style="background-image: url('/img/Plano_de_acao.png'); background-size: cover; background-position: center right;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300 mr-2"></div>
+                <a href="{{ route('banner_ebook', ['tipo' => 'plano' ]) }}">
+                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
+                </a>
+                <div id="botao_youtube-" ></div>
             </div>
         </div>
         {{-- MODAL MASTER --}}
