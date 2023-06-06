@@ -259,3 +259,4 @@ Route::get('/test-database', function () {
         return "Ocorreu um erro: " . $e->getMessage();
     }
 });
+
