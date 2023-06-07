@@ -174,7 +174,7 @@
         @yield('conteudo')
     </article>
     {{-- FOOTER --}}
-    <div id="contatos"></div>
+    <div id="contatos."></div>
     {{--  --}}
     <footer class="w-[100%] inline-block bg-[#080E45]">
         {{--  --}}
