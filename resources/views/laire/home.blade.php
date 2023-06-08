@@ -861,21 +861,25 @@
                         <li class="mr-[20px] inline-block"><a href=" https://orcid.org/0000-0001-6486-2329"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
                     </ul>
                     </center>
+
                 </div>
             @endif
             {{-- PRÓXIMO PESQUISADOR PESQUISADOR --}}
+
         </div>
     </div>
     @endif
 </section>
 
-
+<div id="bk-"></div>
 {{-- BLOCO DE EVENTOS --}}
-<section class="w-[100%] my-[10%] inline-block">
+<section  class="w-[100%] my-[10%] inline-block">
+
     {{--  --}}
     <div class="w-[90%] mx-[5%] inline-block">
         {{--  --}}
         <p class="text-center font-bold text-[30px]">Eventos</p>
+
         {{--  --}}
         <div class="w-[100%] inline-block">
             {{--  --}}
@@ -887,7 +891,7 @@
         </div>
         {{--  --}}
         <div class="w-full mt-4 flex flex-wrap">
-            <div class="w-full md:w-1/3 px-2 mb-4">
+            <div  class="w-full md:w-1/3 px-2 mb-4">
                 <div style="background-image: url('/img/E-book.png'); background-size: cover; background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
                 <a href="{{ route('banner_ebook', ['tipo' => 'ebook' ]) }}">
                     <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
