@@ -43,8 +43,8 @@
                     {{-- LOGOS --}}
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[270px]" src="/img/mcti.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[160px]" src="/img/6.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[370px]" src="/img/mcti.png" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -610,6 +610,22 @@
 
 
          @endif
+
+              {{-- BANNER PRODUTOS --}}
+        <section class="w-[100%] inline-block">
+            {{--  --}}
+            <div class="w-[90%] mx-[5%] inline-block">
+                {{--  --}}
+                <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[420px] inline-block">
+                    <ul class="mt-[300px] ml-[470px]">
+                        <li id="video_produto"  class="inline-block mr-[60px]"><button class="bg-[transparent] w-[100px] h-[40px]"></button></li>
+                        <li id="info_produto"   class="inline-block mr-[60px]"><button class="bg-[transparent] w-[160px] h-[40px]"></button></li>
+                        <li id="podcst_produto" class="inline-block mr-[60px]"><button class="bg-[transparent] w-[150px] h-[40px]"></button></li>
+                        <li id="resumo_produto" class="inline-block mr-[60px]"><button class="bg-[transparent] w-[200px] h-[40px]"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 <!--patrocinadores-->
 <section class="w-[100%] h-[600px] inline-block bg-[#ffffff]">
     {{--  --}}
