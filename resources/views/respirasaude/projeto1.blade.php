@@ -20,7 +20,7 @@
     {{--  --}}
     <div class="w-[100%] mt-[100px] inline-block">
         {{--  --}}
-        <div id="lado_a_projeto" style="background: linear-gradient(101deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(0,212,255,1) 70%);" class="w-[60%] float-left inline-block h-[650px]">
+        <div id="lado_a_projeto" style="background: linear-gradient(101deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(0,212,255,1) 70%);" class="w-[60%] float-left inline-block h-[660px]">
             {{--  --}}
             <div id="container_a" class="w-[100%] pl-[80px] pt-[20px] inline-block">
                 {{-- BASE IMAGEM/VIDEO --}}
@@ -43,8 +43,8 @@
                     {{-- LOGOS --}}
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[100px] " src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[300px]" src="/img/10.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[180px] " src="/img/6.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[2px]"><img class="w-[400px]" src="/img/10.png" alt=""></li>
                         {{-- <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li> --}}
                         {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li> --}}
                         {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px] " src="/img/9.png" alt=""></li> --}}
@@ -54,7 +54,7 @@
             </div>
         </div>
         {{--  --}}
-        <div id="lado_b_projeto" class="w-[40%] pr-[50px] float-left inline-block bg-[#00d4ff] h-[650px]">
+        <div id="lado_b_projeto" class="w-[40%] pr-[50px] float-left inline-block bg-[#00d4ff] h-[660px]">
             {{--  --}}
             <div id="container_b" class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
@@ -82,7 +82,7 @@
     {{--  --}}
     <div id="container_bloco1" class="w-[100%] inline-block">
         {{--  --}}
-        <div id="lado_a_bloco1" style="background: linear-gradient(90deg, rgba(238,238,238,1) 27%, rgba(250,250,250,1) 27%);" class="w-[50%] h-[630px] pl-[80px] float-left inline-block">
+        <div id="lado_a_bloco1" style="background: linear-gradient(90deg, rgba(238,238,238,1) 27%, rgba(250,250,250,1) 27%);" class="w-[50%] h-[660px] pl-[80px] float-left inline-block">
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}

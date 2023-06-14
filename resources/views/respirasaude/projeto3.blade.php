@@ -43,8 +43,8 @@
                     {{-- LOGOS --}}
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px]" src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[270px]" src="/img/mcti.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[160px]" src="/img/6.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[370px]" src="/img/mcti.png" alt=""></li>
                     </ul>
                 </div>
             </div>

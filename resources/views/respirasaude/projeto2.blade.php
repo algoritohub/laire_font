@@ -20,7 +20,7 @@
     {{--  --}}
     <div class="w-[100%] mt-[100px] inline-block">
         {{--  --}}
-        <div id="lado_a_projeto" style="background: linear-gradient(101deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(0,212,255,1) 70%);" class="w-[60%] float-left inline-block h-[650px]">
+        <div id="lado_a_projeto" style="background: linear-gradient(101deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(0,212,255,1) 70%);" class="w-[60%] float-left inline-block h-[640px]">
             {{--  --}}
             <div id="container_a" class="w-[100%] pl-[80px] pt-[20px] inline-block">
                 {{-- BASE IMAGEM/VIDEO --}}
@@ -43,14 +43,14 @@
                     {{-- LOGOS --}}
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[105px] " src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[240px]" src="/img/mcti.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[160px] " src="/img/6.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[370px]" src="/img/mcti.png" alt=""></li>
                     </ul>
                 </div>
             </div>
         </div>
         {{--  --}}
-        <div id="lado_b_projeto" class="w-[40%] pr-[50px] float-left inline-block bg-[#00d4ff] h-[650px]">
+        <div id="lado_b_projeto" class="w-[40%] pr-[50px] float-left inline-block bg-[#00d4ff] h-[640px]">
             {{--  --}}
             <div id="container_b" class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
@@ -804,6 +804,9 @@
         @endif
 
         {{-- BANNER PRODUTOS --}}
+        <section class="w-[100%] inline-block">
+            {{--  --}}
+           {{-- BANNER PRODUTOS --}}
         <section class="w-[100%] inline-block">
             {{--  --}}
             <div class="w-[90%] mx-[5%] inline-block">
