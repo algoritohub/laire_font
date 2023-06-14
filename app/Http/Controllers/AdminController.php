@@ -163,6 +163,13 @@ class AdminController extends Controller
         echo 'Pesquisa adicionado!';
     }
 
+    public function fecharBannerPWA()
+    {
+        session()->put('banner_pwa', 'closed');
+
+        return back();
+    }
+
     public function logout()
     {
         session()->forget('admin');

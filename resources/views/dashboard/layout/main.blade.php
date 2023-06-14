@@ -26,8 +26,8 @@
 </head>
 {{--  --}}
 @php
-    // $session_usuario = session('admin')['id'];
-    // $resgate_user    = Illuminate\Support\Facades\DB::select("SELECT * FROM admins WHERE id = '$session_usuario'");
+    $session_usuario = session('admin')['id'];
+    $resgate_user    = Illuminate\Support\Facades\DB::select("SELECT * FROM admins WHERE id = '$session_usuario'");
 
     session_start();
 
@@ -37,24 +37,6 @@
         header("Location: http://localhost:8000/dashboard");
         // header("Location: https://laire.ufrn.br/dashboard/");
     }
-
-    // PDO
-    $name_banco = "laire_temp";
-    $conectDB   = 'mysql:host=db4free.net;dbname='.$name_banco;
-    $name_user  = "laire_ufrn";
-    $pass_banco = "Laire@2023";
-
-    $conn       = new PDO($conectDB, $name_user, $pass_banco);
-
-    $user_email = $_SESSION['login'];
-    $user_senha = $_SESSION['senha'];
-
-    $stmt       = $conn->prepare('SELECT * FROM admins WHERE email = :email AND senha = :senha');
-    $stmt->execute(array('email' => $user_email, 'senha' => $user_senha));
-    $result     = $stmt->fetchAll();
-    $count_user = count($result);
-
-    foreach ($result as $user) {}
 
 @endphp
 {{--  --}}
@@ -100,7 +82,7 @@
                     {{--  --}}
                     <div style="background: url(/img/person.png); background-size: 100%;" class="w-[40px] float-right mt-[10px] border-[1px] border-[#00FF8C] h-[40px] rounded-[100px] bg-[#080E45] ml-[15px]"></div>
                     {{--  --}}
-                    <p class="mt-[21px] float-right text-[12px] text-[#080E45]">{{ $user['nome'] }}</p>
+                    <p class="mt-[21px] float-right text-[12px] text-[#080E45]">{{ $resgate_user[0]->nome }}</p>
                 </div>
             </div>
         </header>

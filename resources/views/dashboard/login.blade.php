@@ -18,8 +18,6 @@
     <script src="/js/script.js"></script>
 </head>
 
-
-
 {{--  --}}
 <body>
     {{--  --}}
@@ -73,7 +71,7 @@
                         {{--  --}}
                         <p class="text-[25px] text-[#080E45] text-center mt-[15px]"><b>Respira</b>Admin</p>
                         {{--  --}}
-                        <form class="mt-[20%]" action="/php/conect_db.php" method="POST">
+                        <form class="mt-[20%]" action="{{ route('admin.logar') }}" method="POST">
                             @csrf
                             <table class="w-[100%]">
                                 {{--  --}}

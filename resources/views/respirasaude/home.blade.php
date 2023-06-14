@@ -82,6 +82,17 @@
             </p>
             <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">Nossa missão acima de tudo é promover educação em saúde e contribuir com a sua Saúde Respiratória!</p>
         </div>
+        {{-- AUDIO --}}
+        <div class="w-[100%] inline-block">
+            {{--  --}}
+            <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
+                {{--  --}}
+                <audio autoplay="autoplay" controls="controls">
+                    <source src="sua_musica.mp3" type="audio/mp3" />
+                    seu navegador não suporta HTML5
+                </audio>
+            </div>
+        </div>
     </div>
 </div>
 

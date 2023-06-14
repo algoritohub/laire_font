@@ -37,6 +37,9 @@
         $numb_font = 15;
     }
 
+    // SESSION BANNER PWA
+    @$banner_pwa = session('banner_pwa');
+
     // RESGATE DE DOENÇAS CRÔNICAS
     // $doencas_info  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 2");
 
@@ -462,6 +465,40 @@
             </div>
         </div>
     </footer>
+
+    {{-- MODAL PWA --}}
+    <div class="modal_pwa">
+        {{--  --}}
+        <div class="w-[300px] mx-auto mt-[10%] rounded-[20px] bg-[#ffffff] p-[30px] shadow-lg">
+            <img src="/img/frame.png" alt="qr">
+            <p class="text-[13px]">Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
+            <a href="{{ route('banner.pwa') }}"><button class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">Ok, entendi</button></a>
+        </div>
+    </div>
+
+    {{-- BANNER FIXO --}}
+    @if (!isset($banner_pwa) AND empty($banner_pwa))
+    <div id="hide_banner" class="pelicula_banner">
+        <div class="w-[100%] h-[100vh] inline-block">
+            {{--  --}}
+            <div id="area_transparent" class="w-[100%] inline-block h-[85vh]"></div>
+            {{--  --}}
+            <div class="w-[100%] inline-block bg-[#cdcdcd] shadow-lg h-[15vh] px-[50px] py-[20px]">
+                {{--  --}}
+                <div class="w-[70%] inline-block float-left">
+                    <p class="leading-[17px] mt-[20px]">Oi Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minima totam ducimus maxime quos iste similique at iure, commodi laboriosam exercitationem. Dolor numquam perferendis illum impedit voluptas iure, eum placeat!</p>
+                </div>
+                {{--  --}}
+                <div class="w-[30%] inline-block float-left">
+                    <ul class="float-right mt-[15px]">
+                        <li class="inline-block ml-[10px]"><button id="como_instalar" class="w-[180px] h-[40px] rounded-[5px] border-[1px] border-[#cdcdcd] bg-[#212121] text-[12px] text-[#ffffff]">Como instalar?</button></li>
+                        <li class="inline-block ml-[10px]"><a href="{{ route('banner.pwa') }}"><button class="w-[180px] h-[40px] rounded-[5px] border-[1px] border-[#cdcdcd] bg-[#212121] text-[12px] text-[#ffffff]">Não exibir novamente</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endif
 
     {{-- CARROSSEL --}}
     <script>

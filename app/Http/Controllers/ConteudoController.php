@@ -5,9 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Conteudo;
 use App\Models\Doenca;
+use App\Models\Pesquisador;
+use Illuminate\Support\Facades\DB;
 
 class ConteudoController extends Controller
 {
+    // PROJETO1
+    public function Projeto1()
+    {
+        $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+
+        return view('respirasaude.projeto1', compact('pesquisadores'));
+    }
+
     public function novoConteudo(Request $request)
     {
         // VERIFICAR UMA FUNÇÃO AQUI!

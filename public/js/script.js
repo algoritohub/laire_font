@@ -458,6 +458,7 @@ $(document).ready(function(){
         event.preventDefault();
         $("#box_audio").fadeIn();
         $("#box_libra").hide();
+        $("#audio_libra").fadeIn();
     });
 });
 
@@ -466,6 +467,7 @@ $(document).ready(function(){
         event.preventDefault();
         $("#box_libra").fadeIn();
         $("#box_audio").hide();
+        $("#audio_libra").fadeOut();
     });
 });
 
@@ -741,3 +743,22 @@ $(document).ready(function(){
         $(".banner_produtos1").fadeOut();
     });
 });
+
+
+
+$(document).ready(function(){
+    $("#como_instalar").click(function(event){
+        event.preventDefault();
+        $(".modal_pwa").fadeIn();
+        $(".pelicula_banner").fadeOut();
+    });
+});
+
+// BANNER PWA
+$(document).ready(function(){
+    $("#area_transparent").click(function(event){
+        event.preventDefault();
+        $("#hide_banner").fadeOut();
+    });
+});
+

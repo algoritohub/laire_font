@@ -58,6 +58,17 @@
                 <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">A asma é uma doença respiratória crônica caracterizada pela elevada prevalência, mortalidade e custos para o SUS, sendo assim considerada um grave problema de saúde pública, especialmente em países em desenvolvimento como o Brasil. O desenvolvimento e validação de um sistema, com aplicabilidade para o SUS, que permita a avaliação, monitoração do controle e educação em asma para crianças, adolescentes e adultos poderá otimizar a assistência em diferentes níveis de complexibilidade.</p>
                 <p id="texto_projeto" class="mt-[20px] text-right float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Estes produtos de inovação científica e tecnológica poderão impactar ainda, no automanejo e autoeficácia em asma.
             </div>
+            {{-- AUDIO --}}
+            <div class="w-[90%] inline-block mx-[5%]">
+                {{--  --}}
+                <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
+                    {{--  --}}
+                    <audio autoplay="autoplay" controls="controls">
+                        <source src="sua_musica.mp3" type="audio/mp3" />
+                        seu navegador não suporta HTML5
+                    </audio>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -375,7 +386,7 @@
                     <a href="{{ route('pesquisadores_projeto_3', ['tipo' => 'Cordenadora', 'nome' => 'karla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                 </div>
 
-</section>
+        </section>
 
             {{-- MODAL --}}
         @if(isset($pesquisador) AND !empty($pesquisador))
@@ -603,29 +614,152 @@
                      </center>
                  </div>
              @endif
-
-
-
-
-
-
          @endif
-<!--patrocinadores-->
-<section class="w-[100%] h-[600px] inline-block bg-[#ffffff]">
-    {{--  --}}
-    <div class="w-[90%] mx-[5%] mt-[10%] inline-block">
+    </section>
+    {{-- BANNER PRODUTOS --}}
+    <section class="w-[100%] inline-block">
         {{--  --}}
-        <center>
+        <div class="w-[90%] mx-[5%] inline-block">
             {{--  --}}
-            <ul>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[300px]" src="/img/mcti.png" alt=""></li>
-                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
-            </ul>
-        </center>
-    </div>
-</section>
+            <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[420px] inline-block">
+                <div class="w-[100%] h-[420px] inline-block">
+                    <div class="w-[33%] h-[420px] inline-block float-left"></div>
+                    <div class="w-[67%] h-[420px] inline-block float-left">
+                        <div class="w-[100%] inline-block h-[300px]"></div>
+                        <div class="w-[100%] inline-block h-[120px] mt-[-10px]">
+                            <ul class="">
+                                <li class="inline-block mr-[20px]"><button id="video_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Vídeo</button></li>
+                                <li class="inline-block mr-[20px]"><button id="podcst_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Podcast</button></li>
+                                <li class="inline-block mr-[20px]"><button id="info_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Infográfico</button></li>
+                                <li class="inline-block mr-[20px]"><button id="resumo_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Resumo executivo</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{--  --}}
+        <div style="display: none;" class="banner_produtos">
+            {{--  --}}
+            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[70%] inline-block float-left">
+                        {{--  --}}
+                        <p class="text-[#ffffff] uppercase font-bold">Nosso resumo executivo</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[30%] inline-block float-left">
+                        {{--  --}}
+                        <p id="fechar_produto" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] mt-[30px] inline-block">
+                    {{--  --}}
+                    <p class="text-[#ffffff] text-[14px]">Resumo elaborado para que os profissionais da saúde, gestores a técnicos do Ministério da Saúde possam compreender os métodos, resultados e recomendações oriundas desta pesquisa. </p>
+                    {{--  --}}
+                    <center>
+                        <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Resumo Executivo</button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        {{--  --}}
+        <div style="display: none;" class="banner_produtos2">
+            {{--  --}}
+            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[70%] inline-block float-left">
+                        {{--  --}}
+                        <p class="text-[#ffffff] uppercase font-bold">Nosso infográfico</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[30%] inline-block float-left">
+                        {{--  --}}
+                        <p id="fechar_info" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] mt-[30px] inline-block">
+                    {{--  --}}
+                    <p class="text-[#ffffff] text-[14px]">Este documento utiliza uma linguagem e formato acessível para resumir em uma única página os aspectos mais importantes da pesquisa. Este infográfico foi elaborado para que a comunidade entenda a pesquisa de forma rápida e simples. </p>
+                    {{--  --}}
+                    <center>
+                        <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Infográfico</button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        {{--  --}}
+        <div style="display: none;" class="banner_produtos1">
+            {{--  --}}
+            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[70%] inline-block float-left">
+                        {{--  --}}
+                        <p class="text-[#ffffff] uppercase font-bold">Nosso podcast</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[30%] inline-block float-left">
+                        {{--  --}}
+                        <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                    </div>
+                </div>
+                {{--  --}}
+                 {{--  --}}
+                 <div class="w-[100%] mt-[30px] inline-block">
+                    {{--  --}}
+                    <p class="text-[#ffffff] text-[14px]">Aqui temos um bate papo descontraído, com uma linguagem muito simples. Ao ouvir esse podcast será possível entender como esta pesquisa foi feita e compreender melhor seus resultados. Esse podcast dispõe também de um vídeo com janela em libras para torná-lo ainda mais acessível.   </p>
+                    {{--  --}}
+                    <center>
+                        <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[500px] h-[350px] rounded-[100px]  text-[12px] bg-[] font-bold text-[#080E45]"><video src="/img/Videocast Versao Final Mesclado Menor780p - Libras.mp4" controls></video> </button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        {{--  --}}
+        <div class="modal_resumo">
+            {{--  --}}
+            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[70%] inline-block float-left">
+                        {{--  --}}
+                        <p class="text-[#ffffff] uppercase font-bold">Resumo Sistemático</p>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[30%] inline-block float-left">
+                        {{--  --}}
+                        <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                    </div>
+                </div>
+                {{--  --}}
+            </div>
+        </div>
+    </section>
+    <!--patrocinadores-->
+    <section class="w-[100%] h-[600px] inline-block bg-[#ffffff]">
+        {{--  --}}
+        <div class="w-[90%] mx-[5%] mt-[10%] inline-block">
+            {{--  --}}
+            <center>
+                {{--  --}}
+                <ul>
+                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
+                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
+                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
+                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[300px]" src="/img/mcti.png" alt=""></li>
+                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
+                </ul>
+            </center>
+        </div>
+    </section>
 
 @endsection
