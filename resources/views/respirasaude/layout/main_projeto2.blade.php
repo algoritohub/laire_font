@@ -195,13 +195,10 @@
                                     <ul>
                                         <li class="ma"><a href="#">Conheça as principais</a>
                                             <ul class="mx">
-                                                <li><a href="#">H1N1</a></li>
-                                                <li><a href="#">COVID-19</a></li>
-                                                <li><a href="#">Tuberculose</a></li>
-                                                <li><a href="#">Influenza</a></li>
-                                                <li><a href="#">Pneumonia</a></li>
-                                                <li><a href="#">Bronquiolite</a></li>
-                                                <li><a href="#">Coqueluxe</a></li>
+                                                @foreach ($doencas_agudas as $doenca_aguda)
+                                                    {{--  --}}
+                                                    <li><a href="{{ route('doenca_aguda', ['id' => $doenca_aguda->id]) }}">{{ $doenca_aguda->nome }}</a></li>
+                                                @endforeach
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Como prevenir?</a>

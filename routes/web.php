@@ -35,10 +35,8 @@ Route::get('/banner/respira/out', [AdminController::class, "BannerOut"])->name('
 // | RESPIRASAÚDE                                               |
 // +------------------------------------------------------------+
 
-// RESPIRA SAÚDE HOME
-Route::get('/respira-saude', function () {
-    return view('respirasaude.home');
-})->name('home.respira_saude');
+// RESPIRASAÚDE HOME
+Route::get('/respira-saude', [ConteudoController::class, "HomeRespira"])->name('home.respira_saude');
 
 // PROJETO1
 Route::get('/respira-saude/projeto/1', [ConteudoController::class, "Projeto1"])->name('projeto1');
@@ -51,16 +49,14 @@ Route::get('/respira-saude/projeto/1/pesquisador/{id}', [ConteudoController::cla
 Route::get('/respira-saude/projeto/2', [ConteudoController::class, "Projeto2"])->name('projeto2');
 
 // PESQUISADORES 2
-Route::get('/respira-saude/projeto/2/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto2"])->name('pesquisadores_projeto_2');
+Route::get('/respira-saude/projeto/2/pesquisadores/{id}', [ConteudoController::class, "PesquisadoresProjeto2"])->name('pesquisadores_projeto_2');
 
 
 // PROJETO3
-Route::get('/respira-saude/projeto/3', function () {
-    return view('respirasaude.projeto3');
-})->name('projeto3');
+Route::get('/respira-saude/projeto/3', [ConteudoController::class, "projeto3"])->name('projeto3');
 
 // PESQUISADORES 3
-Route::get('/respira-saude/projeto/3/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto3"])->name('pesquisadores_projeto_3');
+Route::get('/respira-saude/projeto/3/pesquisadores/{id}', [ConteudoController::class, "PesquisadoresProjeto3"])->name('pesquisadores_projeto_3');
 
 
 
@@ -76,9 +72,6 @@ Route::get('/banner/evento/conteúdo/{tipo}', [ConteudoController::class, "Banne
 
 // PÁGINA DE REVISÃO SISTEMÁTICA
 Route::get('/respira-saude/revisao-sistematica', [ConteudoController::class, "PagRevisaoSistematica"])->name('pag_revisao_sistematica');
-
-// PÁGINA DE DOENÇAS
-Route::get('/respira-saude/doencas/{tipo}/{doenca}', [ConteudoController::class, "PagDoencas"])->name('pag_doencas');
 
 // DOENÇAS CRÔNICAS
 Route::get('/respira-saude/doenca/cronica/{id}', [ConteudoController::class, "DoencaCronica"])->name('doenca_cronica');

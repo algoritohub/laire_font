@@ -193,37 +193,20 @@
                                     <ul>
                                         <li class="ma"><a href="#">Definição</a>
                                             <ul class="mx">
-                                                <li><a href="#">Asma</a></li>
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
+                                                @foreach ($doencas_cronicas as $doenca_cronica)
+                                                    {{--  --}}
+                                                    <li><a href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}">{{ $doenca_cronica->nome }}</a></li>
+                                                @endforeach
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Como controlar os sintomas</a>
                                             <ul class="mx">
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
+                                                {{-- DOENÇAS AQUI --}}
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Tratamento</a>
                                             <ul class="mx">
-                                                <li><a href="#">Asma</a></li>
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
+                                                {{-- DOENÇAS AQUI --}}
                                             </ul>
                                         </li>
                                     </ul>

@@ -89,7 +89,7 @@
                 </div>
             </div>
             {{--  --}}
-            <form action="{{ route('admin.doenca.add') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('admin.doenca.add') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 {{--  --}}
                 <div style="border-radius: 100px;" class="px-[10px] mt-[30px] h-[50px] w-[100%] bg-[#212121]">

@@ -11,20 +11,40 @@ use File;
 
 class ConteudoController extends Controller
 {
+    // HOME
+    public function HomeRespira()
+    {
+        $doencas_agudas   = DB::select("SELECT * FROM doencas WHERE tipo = 1 ORDER BY id DESC");
+        $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+
+        return view('respirasaude.home', compact('doencas_agudas', 'doencas_cronicas'));
+    }
+
     // PROJETO1
     public function Projeto1()
     {
-        $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+        $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+        $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
 
-        return view('respirasaude.projeto1', compact('pesquisadores'));
+        return view('respirasaude.projeto1', compact('pesquisadores', 'doencas_cronicas'));
     }
 
     // PROJETO2
     public function Projeto2()
     {
-        $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+        $pesquisadores  = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+        $doencas_agudas = DB::select("SELECT * FROM doencas WHERE tipo = 1 ORDER BY id DESC");
 
-        return view('respirasaude.projeto2', compact('pesquisadores'));
+        return view('respirasaude.projeto2', compact('pesquisadores', 'doencas_agudas'));
+    }
+
+    // PROJETO3
+    public function Projeto3()
+    {
+        $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+        $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+
+        return view('respirasaude.projeto3', compact('pesquisadores', 'doencas_cronicas'));
     }
 
     public function AddNewDoenca(Request $request)
@@ -241,22 +261,21 @@ class ConteudoController extends Controller
     // DOENÇAS CRÔNICAS
     public function DoencaCronica($id)
     {
-        return view('respirasaude.doencas', ['doenca' => $id]);
+        $doenca    = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+        $definicao = strip_tags($doenca[0]->definicao);
+        $definicao = mb_convert_encoding($definicao, 'UTF-8', 'HTML-ENTITIES');
+
+        return view('respirasaude.doencas', compact('doenca', 'definicao'));
     }
 
     // DOENÇAS AGUDAS
     public function DoencaAguda($id)
     {
-        return view('respirasaude.doencas', ['doenca' => $id]);
-    }
+        $doenca    = DB::select("SELECT * FROM doencas WHERE tipo = 1 ORDER BY id DESC");
+        $definicao = strip_tags($doenca[0]->definicao);
+        $definicao = mb_convert_encoding($definicao, 'UTF-8', 'HTML-ENTITIES');
 
-    // PÁGINA DE DOENÇA
-    public function PagDoencas($tipo, $doenca)
-    {
-        $doenca = $doenca;
-        $tipo   = $tipo;
-
-        return view('respirasaude.doencas', compact('doenca', 'tipo'));
+        return view('respirasaude.doencas', compact('doenca', 'definicao'));
     }
 
     // PÁGINA DE REVISÃO SISTEMÁTICA

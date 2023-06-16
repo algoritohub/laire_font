@@ -34,15 +34,6 @@
         $numb_font = 15;
     }
 
-    // RESGATE DE DOENÇAS CRÔNICAS
-    // $doencas_info  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 2");
-
-    // RESGATE DE DOENÇAS CRÔNICAS
-    // $doencas_agds  = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE tipo = 1");
-
-    // RESGATE DE INFOMAÇÃO DA DOENÇA
-    // $info_doenca   = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE id = '$doenca'");
-
 @endphp
 {{--  --}}
 <body>
