@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests\LogRequest;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Pesquisa;
+use App\Models\ConteudoRespira;
 use App\Models\Admin;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -61,24 +63,69 @@ class AdminController extends Controller
     // CRIE UM NOVO USUÁRIO ADMIN
     public function publicacao()
     {
-        // if(session()->has('admin')){
-        //     return view('dashboard.publicacao');
-        // }
-        // else{
-        //     return redirect()->route('dashboard');
-        // }
-        return view('dashboard.publicacao');
+        if(session()->has('admin')){
+
+            $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY id DESC");
+            $doencas       = DB::select("SELECT * FROM doencas ORDER BY id DESC");
+            $conteudos     = DB::select("SELECT * FROM conteudos ORDER BY id DESC");
+
+            return view('dashboard.publicacao', compact('pesquisadores', 'doencas', 'conteudos'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
     }
 
     public function blog()
     {
-        // if(session()->has('admin')){
-        //     return view('dashboard.blog');
-        // }
-        // else{
-        //     return redirect()->route('dashboard');
-        // }
-        return view('dashboard.blog');
+        if(session()->has('admin')){
+
+            $posts = DB::select("SELECT * FROM blogs ORDER BY id DESC");
+
+            return view('dashboard.blog', compact('posts'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
+    }
+
+    public function PagPesquisadores()
+    {
+        if(session()->has('admin')){
+
+            $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY id DESC");
+
+            return view('dashboard.pesquisadores', compact('pesquisadores'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
+    }
+
+    public function PagRespiraSaude()
+    {
+        if(session()->has('admin')){
+
+            $respira = DB::select("SELECT * FROM conteudo_respiras ORDER BY id DESC");
+
+            return view('dashboard.respira_saude', compact('respira'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
+    }
+
+    public function PagDoencas()
+    {
+        if(session()->has('admin')){
+
+            $doencas = DB::select("SELECT * FROM doencas ORDER BY id DESC");
+
+            return view('dashboard.doencas', compact('doencas'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
     }
 
     public function config()

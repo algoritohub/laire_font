@@ -85,6 +85,22 @@ $(document).ready(function(){
 });
 
 
+// ADD NOVO CONTEÚDO RESPIRA
+$(document).ready(function(){
+    $("#btn_content_respira").click(function(event){
+        event.preventDefault();
+        $(".modal_add_respira_admin").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_modal_cont_respira").click(function(event){
+        event.preventDefault();
+        $(".modal_add_respira_admin").fadeOut();
+    });
+});
+
+
 // ADD NOVA DOENÇA
 $(document).ready(function(){
     $("#btn_doenca").click(function(event){

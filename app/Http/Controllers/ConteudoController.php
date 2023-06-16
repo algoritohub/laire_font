@@ -7,6 +7,7 @@ use App\Models\Conteudo;
 use App\Models\Doenca;
 use App\Models\Pesquisador;
 use Illuminate\Support\Facades\DB;
+use File;
 
 class ConteudoController extends Controller
 {
@@ -18,15 +19,72 @@ class ConteudoController extends Controller
         return view('respirasaude.projeto1', compact('pesquisadores'));
     }
 
-    public function novoConteudo(Request $request)
+    // PROJETO2
+    public function Projeto2()
     {
-        // VERIFICAR UMA FUNÇÃO AQUI!
+        $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+
+        return view('respirasaude.projeto2', compact('pesquisadores'));
+    }
+
+    public function AddNewDoenca(Request $request)
+    {
+        $doenca = new Doenca;
+        $doenca->nome       = trim($request->nome);
+        $doenca->definicao  = $request->definicao;
+        $doenca->controle   = $request->controle;
+        $doenca->tratamento = $request->tratamento;
+
+        if ($request->hasFile('imagem1') && $request->file('imagem1')->isValid()) {
+
+            $requestImage = $request->imagem1;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/doencas'), $imageName);
+
+            $doenca->imagem1 = $imageName;
+        }
+
+        if ($request->hasFile('imagem2') && $request->file('imagem2')->isValid()) {
+
+            $requestImage = $request->imagem2;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/doencas'), $imageName);
+
+            $doenca->imagem2 = $imageName;
+        }
+
+        if ($request->hasFile('imagem3') && $request->file('imagem3')->isValid()) {
+
+            $requestImage = $request->imagem3;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/doencas'), $imageName);
+
+            $doenca->imagem3 = $imageName;
+        }
+
+        $doenca->tipo = $request->tipo;
+
+        $doenca->save();
+
+        return redirect()->route('admin.doencas.pag');
     }
 
     // EXIBIR MODAL DE EDIÇÃO DOENÇA
     public function editDoenca($id)
     {
-        return view('dashboard.publicacao', ['editar_doenca' => $id]);
+        if(session()->has('admin')){
+
+            $doencas    = DB::select("SELECT * FROM doencas ORDER BY id DESC");
+            $doenca_edt = Doenca::where('id', $id)->first();
+
+            return view('dashboard.doencas', compact('doenca_edt', 'doencas'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
     }
 
     // EXIBIR MODAL DE EDIÇÃO DOENÇA
@@ -34,24 +92,57 @@ class ConteudoController extends Controller
     {
         $doenca = Doenca::findOrFail($id);
 
-        $texto1 = strip_tags($request->definicao);
-        $texto1 = mb_convert_encoding($texto1, 'UTF-8', 'HTML-ENTITIES');
-
-        $texto2 = strip_tags($request->controle);
-        $texto2 = mb_convert_encoding($texto2, 'UTF-8', 'HTML-ENTITIES');
-
-        $texto3 = strip_tags($request->tratamento);
-        $texto3 = mb_convert_encoding($texto3, 'UTF-8', 'HTML-ENTITIES');
-
         $doenca->update([
             'nome'       => $request->nome,
-            'definicao'  => $texto1,
-            'controle'   => $texto2,
-            'tratamento' => $texto3,
+            'definicao'  => $request->definicao,
+            'controle'   => $request->controle,
+            'tratamento' => $request->tratamento,
             'tipo'       => $request->tipo,
         ]);
 
-        return redirect()->route('admin.painel_publicacao');
+        if ($request->hasFile('imagem1') && $request->file('imagem1')->isValid()) {
+
+            File::delete('img/doencas/'.$doenca->imagem1);
+
+            $requestImage = $request->imagem1;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/doencas'), $imageName);
+
+            $doenca->update([
+                'imagem1' => $imageName,
+            ]);
+        }
+
+        if ($request->hasFile('imagem2') && $request->file('imagem2')->isValid()) {
+
+            File::delete('img/doencas/'.$doenca->imagem2);
+
+            $requestImage = $request->imagem2;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/doencas'), $imageName);
+
+            $doenca->update([
+                'imagem2' => $imageName,
+            ]);
+        }
+
+        if ($request->hasFile('imagem3') && $request->file('imagem3')->isValid()) {
+
+            File::delete('img/doencas/'.$doenca->imagem3);
+
+            $requestImage = $request->imagem3;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/doencas'), $imageName);
+
+            $doenca->update([
+                'imagem3' => $imageName,
+            ]);
+        }
+
+        return redirect()->route('admin.doencas.pag');
     }
 
     // DELETAR PUBLICAÇÃO DE DOENÇA
@@ -59,7 +150,7 @@ class ConteudoController extends Controller
     {
         Doenca::findOrFail($id)->delete();
 
-        return redirect()->route('admin.painel_publicacao');
+        return redirect()->route('admin.doencas.pag');
     }
 
 
@@ -67,7 +158,18 @@ class ConteudoController extends Controller
     // EXIBIR MODAL DE EDIÇÃO DOENÇA
     public function editConteudo($id)
     {
-        return view('dashboard.publicacao', ['editar_conteudo' => $id]);
+        if(session()->has('admin')){
+
+            $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY id DESC");
+            $doencas       = DB::select("SELECT * FROM doencas ORDER BY id DESC");
+            $conteudos     = DB::select("SELECT * FROM conteudos ORDER BY id DESC");
+            $conteudo      = Conteudo::where('id', $id)->first();
+
+            return view('dashboard.publicacao', compact('conteudo', 'pesquisadores', 'doencas', 'conteudos'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
     }
 
     // EXIBIR MODAL DE EDIÇÃO DOENÇA
@@ -164,21 +266,23 @@ class ConteudoController extends Controller
     }
 
     // PESQUISADORES PROJETO 1
-    public function PesquisadoresProjeto1($tipo, $nome)
+    public function PesquisadoresProjeto1($id)
     {
-        $pesquisador = $nome;
-        $categoria   = $tipo;
+        $pesquisador_info = Pesquisador::where('id', $id)->first();
+        $descricao_info   = strip_tags($pesquisador_info->descricao);
+        $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
 
-        return view('respirasaude.projeto1', ['pesquisador' => $pesquisador, 'categoria' => $categoria]);
+        return view('respirasaude.projeto1', compact('pesquisador_info', 'pesquisadores', 'descricao_info'));
     }
 
     // PESQUISADORES PROJETO 1
-    public function PesquisadoresProjeto2($tipo, $nome)
+    public function PesquisadoresProjeto2($id)
     {
-        $pesquisador = $nome;
-        $categoria   = $tipo;
+        $pesquisador_info = Pesquisador::where('id', $id)->first();
+        $descricao_info   = strip_tags($pesquisador_info->descricao);
+        $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
 
-        return view('respirasaude.projeto2', ['pesquisador' => $pesquisador, 'categoria' => $categoria]);
+        return view('respirasaude.projeto1', compact('pesquisador_info', 'pesquisadores', 'descricao_info'));
     }
 
     // PESQUISADORES PROJETO 3

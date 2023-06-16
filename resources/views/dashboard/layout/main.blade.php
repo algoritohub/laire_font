@@ -28,16 +28,6 @@
 @php
     $session_usuario = session('admin')['id'];
     $resgate_user    = Illuminate\Support\Facades\DB::select("SELECT * FROM admins WHERE id = '$session_usuario'");
-
-    session_start();
-
-    // BLOQUEIO DE ACESSO
-    if (!isset($_SESSION['login']) || !isset($_SESSION['senha'])) {
-
-        header("Location: http://localhost:8000/dashboard");
-        // header("Location: https://laire.ufrn.br/dashboard/");
-    }
-
 @endphp
 {{--  --}}
 <body class="w-[100%] h-[99vh] inline-block">
@@ -46,27 +36,33 @@
         {{--  --}}
         <div class="w-[100%] p-[40px] inline-block">
             {{-- LOGO --}}
-            <img class="w-[60%] mx-[20%]" src="/img/rs_logo.png" alt="">
+            <img class="w-[30%] mx-[35%]" src="/img/rs_logo.png" alt="">
             {{--  --}}
-            <p class="text-[25px] text-[#ffffff] text-center mt-[15px]"><b>Respira</b>Admin</p>
+            <p class="text-[18px] text-[#ffffff] text-center mt-[15px]"><b>Respira</b>Admin</p>
             {{--  --}}
-            <ul id="menu_adm" class="mt-[50px]">
-                <li><a href="{{ route('admin.painel_geral') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/home.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] float-left">Informações</p></button></a></li>
+            <ul id="menu_adm" class="mt-[30px]">
+                <li><a href="{{ route('admin.painel_geral') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/home.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Geral</p></button></a></li>
 
-                <li><a href="{{ route('admin.painel_publicacao') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/public.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] float-left">Publicações</p></button></a></li>
+                <li><a href="{{ route('admin.painel_publicacao') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/public.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Laire</p></button></a></li>
 
-                <li><a href="{{ route('admin.painel_blog') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/spot.png" class="w-[20px] mt-[3px] float-left"> <p class="text-[#99E2FF] ml-[10px] float-left">Blog</p></button></a></li>
+                <li><a href="{{ route('admin.respirasaude.pag') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/public.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">RespiraSaúde</p></button></a></li>
 
-                <li><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/user.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] float-left">Eventos</p></button></li>
+                <li><a href="{{ route('admin.painel_blog') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/spot.png" class="w-[20px] mt-[2px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Blog</p></button></a></li>
+
+                <li><a href="{{ route('admin.doencas.pag') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/public.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Doenças</p></button></a></li>
+
+                <li><a href="{{ route('admin.pesquisadores.pag') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/user.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] text-[13px] float-left">Perquisadores</p></a></button></li>
+
+                <li><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/user.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] text-[13px] float-left">Eventos</p></button></li>
             </ul>
             {{--  --}}
-            <ul id="menu_adm" class="mt-[40px]">
-                <li><a href="{{ route('admin.painel_config') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/config.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] float-left">Configurações</p></button></a></li>
+            <ul id="menu_adm" class="mt-[0px]">
+                <li><a href="{{ route('admin.painel_config') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/config.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Configurações</p></button></a></li>
 
-                <li><a href="{{ route('admin.logout') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/quit.png" class="w-[17px] float-left"> <p class="text-[#99E2FF] ml-[10px] float-left">Sair</p></button></a></li>
+                <li><a href="{{ route('admin.logout') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/quit.png" class="w-[17px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Sair</p></button></a></li>
             </ul>
             {{--  --}}
-            <p class="mt-[30px] text-[13px] text-[#ffffff] ml-[20px]">Versão 1.0.1</p>
+            {{-- <p class="mt-[20px] text-[13px] text-[#ffffff] ml-[20px]">Versão 1.0.1</p> --}}
         </div>
     </aside>
     {{-- CORPO --}}
