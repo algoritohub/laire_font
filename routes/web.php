@@ -167,7 +167,7 @@ Route::get('/dashboard/painel/edit/modal/respirasaude/{id}', [ConteudoRespiraCon
 Route::post('/dashboard/painel/edit/conteudo/respirasaude/{id}', [ConteudoRespiraController::class, "EditConteudoRespira"])->name('admin.respirasaude.edit');
 
 // EDITAR RESPIRASAÚDE
-Route::post('/dashboard/painel/edit/conteudo/respirasaude', [ConteudoRespiraController::class, "DeleteConteudoRespira"])->name('admin.respirasaude.delete');
+Route::get('/dashboard/painel/edit/conteudo/respirasaude/{id}', [ConteudoRespiraController::class, "DeleteConteudoRespira"])->name('admin.respirasaude.delete');
 
 // PAINEL POSTAGEM
 Route::get('/dashboard/painel/publicacao', [AdminController::class, "publicacao"])->name('admin.painel_publicacao');

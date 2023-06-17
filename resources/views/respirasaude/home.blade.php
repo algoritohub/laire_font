@@ -47,8 +47,61 @@
     </div>
 </div>
 
+{{-- BLOCO 2 --}}
+@if ($conteudo)
+<section class="w-[100%] mt-[-5px] inline-block">
+    {{--  --}}
+    <div id="container_bloco1" class="w-[100%] bg-[#fafafa] inline-block">
+        {{--  --}}
+        <div id="lado_a_bloco1" class="w-[50%] pl-[80px] pb-[50px] float-left inline-block">
+            {{--  --}}
+            <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <ul id="list_acess" class="mt-[100px]">
+                        <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                    </ul>
+                </div>
+                {{--  --}}
+                <div id="box_libra" style="display: none;" class="w-[100%] h-[330px] mt-[20px] inline-block bg-[orange]"><video id="video-missão" src="/img/menor.mp4" controls="controls" ></video></div>
+                {{--  --}}
+                <div style="background-image: url('/img/conteudo/{{ $conteudo[0]->imagem }}'); background-size: 110%;" id="box_audio" class="w-[100%] h-[350px] mt-[20px] inline-block bg-[purple]"></div>
+            </div>
+        </div>
+        {{--  --}}
+        <div id="lado_b_bloco1" class="w-[50%] pb-[50px] px-[80px] float-left inline-block">
+            {{--  --}}
+            <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                <div id="import" ></div>
+                {{--  --}}
+                <p id="titulo_bloco1" class="text-[30px] font-bold mb-[30px] mt-[170px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $conteudo[0]->titulo }}</p>
+
+                @foreach ($descricao_blocos as $paragrafo)
+                <p id="text_projeto3" class="mb-[10px] text-justify text-[{{ $numb_font }}px]">{{ $paragrafo }}.</p>
+                @endforeach
+
+                {{-- AUDIO --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
+                        {{--  --}}
+                        <audio autoplay="autoplay" controls="controls">
+                            <source src="sua_musica.mp3" type="audio/mp3" />
+                            seu navegador não suporta HTML5
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+@endif
+
 {{-- NOVO BLOCO DE MISSÃO --}}
-<div id="missão" class="w-[100%] inline-block">
+<div id="missão" style="display: none;" class="w-[100%]  inline-block">
     {{--  --}}
     <div id="lado_a_respira" style="background: linear-gradient(90deg, rgba(250,250,250,1) 75%, rgba(92,209,255,1) 75%);" class="w-[50%] inline-block float-left h-[700px] bg-[green] pl-[80px]">
         {{--  --}}
@@ -96,8 +149,6 @@
     </div>
 </div>
 
-
-{{-- BLOCO DE EVENTOS --}}
 {{-- BLOCO DE EVENTOS --}}
 <section class="w-[100%] my-[10%] inline-block">
     {{--  --}}
@@ -274,7 +325,6 @@
         <center>
             {{--  --}}
             <ul>
-
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/3.png" alt=""></li>

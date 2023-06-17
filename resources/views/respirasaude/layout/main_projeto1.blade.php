@@ -118,29 +118,14 @@
         <div style="display: none;" id="menu_cronicas_doencas" class="w-[1200px] py-[16px] inline-block">
             {{--  --}}
             <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}">Asma</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}">Fibrose Cística</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}">DPOC</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}">Bronquiectasia</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}">Fibrose pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}">Sinusite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}">Hipertensão pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}">Síndrome pós-COVID-19</a></b></li>
+
             </ul>
         </div>
         {{--  --}}
         <div style="display: none;" id="menu_agudas_doencas" class="w-[800px] py-[16px] inline-block">
             {{--  --}}
             <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu1" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'h1n1']) }}">H1N1</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'covid_19']) }}">COVID-19</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'tuberculose']) }}">Tuberculose</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'influenza']) }}">Influenza</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></b></li>
+
             </ul>
         </div>
         {{--  --}}
@@ -378,7 +363,7 @@
 
     {{-- BANNER FIXO --}}
     @if (!isset($banner_pwa) AND empty($banner_pwa))
-    <div id="hide_banner" class="pelicula_banner">
+    <div style="display: none;" id="hide_banner" class="pelicula_banner">
         <div class="w-[100%] h-[100vh] inline-block">
             {{--  --}}
             <div id="area_transparent" class="w-[100%] inline-block h-[85vh]"></div>

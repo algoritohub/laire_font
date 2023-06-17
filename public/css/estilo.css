@@ -1022,8 +1022,6 @@ button#bt2-1:hover{
 
 /*imagens do projeto 1 */
 #box_audio-1{
-    background-image: url("/img/imagem_rs_1.png");
-    background-size: cover;
     width: 800px;
     height: 400px;
 }

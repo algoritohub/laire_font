@@ -16,6 +16,7 @@
 @endphp
 
 {{-- SECTION --}}
+@if ($bloco_principal)
 <div class="w-[100%] inline-block">
     {{--  --}}
     <div class="w-[100%] mt-[100px] inline-block">
@@ -34,7 +35,7 @@
                         </ul>
                     </div>
                     {{-- IMAGEM --}}
-                    <div id="box_audio-1" class="w-[800px] bg-[yellow] h-[400px]"></div>
+                    <div id="box_audio-1" style="background-image: url('/img/conteudo/{{ $bloco_principal[0]->imagem }}'); background-size: 100%;" class="w-[800px] h-[400px]"></div>
                     {{-- VÍDEO --}}
                     <div id="box_libra" style="display: none;" id="imagem_countainer" class="w-[800px] bg-[black] h-[400px]"></div>
                 </div>
@@ -43,12 +44,8 @@
                     {{-- LOGOS --}}
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[180px] " src="/img/6.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[180px]" src="/img/6.png" alt=""></li>
                         <li class="inline-block mr-[40px] my-[2px]"><img class="w-[400px]" src="/img/10.png" alt=""></li>
-                        {{-- <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px] " src="/img/9.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[250px] " src="/img/10.png" alt=""></li> --}}
                     </ul>
                 </div>
             </div>
@@ -58,9 +55,10 @@
             {{--  --}}
             <div id="container_b" class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
-                <p id="texto_titulo_projeto" class="text-[30px] mt-[70px] leading-[30px] float-right text-right font-bold text-[#080E45]"> Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise</p>
-                <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar. Aqui no RespiraSaúde vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS). Nesta pesquisa nós realizamos uma revisão sistemática com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
-                <p id="texto_projeto" class="mt-[20px] text-right float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]"> </p>
+
+                <p id="texto_titulo_projeto" class="text-[30px] mt-[70px] leading-[30px] float-right text-right font-bold text-[#080E45]">{{ $bloco_principal[0]->titulo }}</p>
+                <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">{{ $descricao_prime }}</p>
+
             </div>
             {{-- AUDIO --}}
             <div class="w-[90%] inline-block mx-[5%]">
@@ -76,6 +74,7 @@
         </div>
     </div>
 </div>
+@endif
 
 {{-- BLOCO EXEMPLO 2 --}}
 <section class="w-[100%] mt-[-5px] inline-block">
@@ -96,18 +95,99 @@
                 <div id="import" ></div>
                 {{--  --}}
                 <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}"><b id="DPOC" class="text-[#2B98AD]">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}"><b id="asma" class="text-[#2B98AD]">asma</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}"><b id="fibrose" class="text-[#2B98AD]">fibrose cística</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}"><b id="bronquiectasia" class="text-[#2B98AD]">bronquiectasia</b></a> e a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}"><b id="pulmonar" class="text-[#2B98AD]">fibrose pulmonar</b></a>.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href=""><b id="DPOC" class="text-[#2B98AD]">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href=""><b id="asma" class="text-[#2B98AD]">asma</b></a>, a <a href=""><b id="fibrose" class="text-[#2B98AD]">fibrose cística</b></a>, a <a href=""><b id="bronquiectasia" class="text-[#2B98AD]">bronquiectasia</b></a> e a <a href=""><b id="pulmonar" class="text-[#2B98AD]">fibrose pulmonar</b></a>.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Aqui no <b>RespiraSaúde</b> vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS).</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Nesta pesquisa nós realizamos uma <a href="{{ route('pag_revisao_sistematica') }}"><b id="revisao" class="text-[#2B98AD] cursor-pointer">revisão sistemática</b></a> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Nesta pesquisa nós realizamos uma <a href=""><b id="revisao" class="text-[#2B98AD] cursor-pointer">revisão sistemática</b></a> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"><b>Isso mesmo, nós comparamos os resultados do tratamento recebido em casa com o recebido no hospital!</b></p>
             </div>
         </div>
     </div>
 </section>
 
-{{-- BLOCO EXEMPLO 3 --}}
 
-<section class="w-[100%] mt-[-5px] inline-block">
+
+
+{{-- BLOCO DINAMICOS AQUI --}}
+
+@if ($bloco_conteudo)
+
+    @foreach ($bloco_conteudo as $bloco)
+
+        @php
+            $descricao_contt = strip_tags($bloco->descricao);
+            $descricao_contt = mb_convert_encoding($descricao_contt, 'UTF-8', 'HTML-ENTITIES');
+            $descricao_contb = explode('.', $descricao_contt);
+        @endphp
+
+        @if ($bloco->posicao == 1)
+        {{-- BLOCO TIPO 1 --}}
+        <section class="w-[100%] mt-[-5px] inline-block">
+            <div id="objeti" ></div>
+            {{--  --}}
+            <div id="container_bloco2" class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="lado_a_bloco2" class="w-[50%] h-[630px] px-[80px] inline-block float-left">
+                    {{--  --}}
+                    <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <p id="texto_titulo_bloco2" class="text-[25px] font-bold mb-[20px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $bloco->titulo }}</p>
+
+                        @foreach ($descricao_contb as $texto_paragrafo)
+                        <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">{{ $texto_paragrafo }}.</p>
+                        @endforeach
+
+                    </div>
+                </div>
+                {{--  --}}
+                <div id="lado_b_bloco2" style="background: linear-gradient(90deg, rgba(255,255,255,1) 75%, rgba(238,238,238,1) 75%);" class="w-[50%] h-[630px] inline-block float-left pr-[80px]">
+                    {{--  --}}
+                    <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div style="background-image: url('/img/conteudo/{{ $bloco->imagem }}'); background-size: 110%;" class="w-[100%] h-[400px] mt-[100px]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @elseif($bloco->posicao == 2)
+        {{-- BLOCO EXEMPLO metodo --}}
+        <section class="w-[100%] mt-[-5px] inline-block">
+            <div id="metod" ></div>
+            {{--  --}}
+            <div id="container_bloco1" class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="lado_a_bloco1" style="background: linear-gradient(90deg, rgba(238,238,238,1) 27%, rgba(250,250,250,1) 27%);" class="w-[50%] h-[630px] pl-[80px] float-left inline-block">
+                    {{--  --}}
+                    <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div style="background-image: url('/img/conteudo/{{ $bloco->imagem }}'); background-size: 110%;" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                    </div>
+                </div>
+                {{--  --}}
+                <div id="lado_b_bloco1" class="w-[50%] h-[830px] px-[80px] bg-[#fafafa] float-left inline-block">
+                    {{--  --}}
+                    <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $bloco->titulo }}</p>
+
+                        @foreach($descricao_contb as $texto_paragrafo)
+                        <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">{{ $texto_paragrafo }}.</p>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </section>
+        @endif
+
+    @endforeach
+@endif
+
+{{-- BLOCO DINAMICOS AQUI --}}
+
+
+
+
+{{-- BLOCO TIPO 1 --}}
+<section style="display: none;" class="w-[100%] mt-[-5px] inline-block">
     <div id="objeti" ></div>
     {{--  --}}
     <div id="container_bloco2" class="w-[100%] inline-block">
@@ -131,8 +211,9 @@
         </div>
     </div>
 </section>
+
 {{-- BLOCO EXEMPLO metodo --}}
-<section class="w-[100%] mt-[-5px] inline-block">
+<section style="display: none;" class="w-[100%] mt-[-5px] inline-block">
     <div id="metod" ></div>
     {{--  --}}
     <div id="container_bloco1" class="w-[100%] inline-block">

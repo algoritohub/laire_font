@@ -33,7 +33,7 @@
                     <tr>
                         <td class="w-[6%]"><p class="text-[#ffffff] text-[12px] font-bold">ID</p></td>
                         <td class="w-[34%]"><p class="text-[#ffffff] text-[12px] font-bold">Projeto</p></td>
-                        <td class="w-[20%]"><p class="text-[#ffffff] text-[12px] font-bold">Posicao</p></td>
+                        <td class="w-[20%]"><p class="text-[#ffffff] text-[12px] font-bold">Posição</p></td>
                         <td class="w-[20%]"><p class="text-[#ffffff] text-[12px] font-bold">Título</p></td>
                         <td class="w-[20%]"><p class="text-[#ffffff] text-[12px] font-bold"></td>
                     </tr>
@@ -45,6 +45,9 @@
             {{--  --}}
             @if ($respira)
             @foreach ($respira as $conteudo)
+            @php
+            $titulo_resumido = mb_strimwidth($conteudo->titulo, 0, 30, "...");
+            @endphp
             <div class="w-[100%] inline-block px-[40px] py-[10px] rounded-[100px]">
                 <table class="w-[100%]">
                     <tr>
@@ -69,7 +72,7 @@
                             <p class="text-[#212121] text-[12px] font-bold">Bloco principal</p>
                             @endif
                         </td>
-                        <td class="w-[20%]"><p class="text-[#212121] text-[12px]">{{ $conteudo->titulo }}</p></td>
+                        <td class="w-[20%]"><p class="text-[#212121] text-[12px]">{{ $titulo_resumido }}</p></td>
                         <td class="w-[20%]"><p class="text-[#212121] text-[12px]">
                             <ul class="float-right">
                                 <li class="inline-block ml-[10px]"><a href="{{ route('admin.respirasaude.modal', ['id' => $conteudo->id]) }}"><button class="bg-[orange] rounded-[100px] text-[#ffffff] px-[20px] h-[30px] text-[10px] font-bold">Editar</button></a></li>

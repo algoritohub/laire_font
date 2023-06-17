@@ -45,11 +45,14 @@
             {{--  --}}
             @if ($posts)
             @foreach ($posts as $post)
+            @php
+            $titulo_resumo = mb_strimwidth($post->titulo, 0, 30, "...");
+            @endphp
             <div class="w-[100%] inline-block px-[40px] py-[10px] rounded-[100px]">
                 <table class="w-[100%]">
                     <tr>
                         <td class="w-[6%]"><p class="text-[#212121] text-[12px]">{{ $post->id }}</p></td>
-                        <td class="w-[34%]"><p class="text-[#212121] text-[12px]">{{ $post->titulo }}</p></td>
+                        <td class="w-[34%]"><p class="text-[#212121] text-[12px]">{{ $titulo_resumo }}</p></td>
                         <td class="w-[20%]">
                             @if ($post->categoria == 1)
                             <p class="text-[#212121] text-[12px]">Novidades</p>
