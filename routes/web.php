@@ -8,6 +8,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ConteudoController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EventosController;
+use App\Http\Controllers\EventoController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\ConteudoRespiraController;
 
@@ -178,7 +179,20 @@ Route::post('/dashboard/painel/publicacao/new/pesquisador', [PesquisadorControll
 // POSTAR NOVO CONTEÚDO
 Route::post('/dashboard/painel/publicacao/new/conteudo', [ConteudoController::class, "newPesquisador"])->name('admin.new_conteudo');
 
+// PÁGINA DE EVENTOS
+Route::get('/dashboard/painel/eventos', [AdminController::class, "PagEventos"])->name('admin.eventos.pag');
 
+// ADICIONAR EVENTOS
+Route::post('/dashboard/painel/add/eventos', [EventoController::class, "AddNewEventos"])->name('add.mew_evento');
+
+// EXIBIR MODAL EDITAR EVENTO
+Route::get('/dashboard/painel/edit/evento/{id}', [EventoController::class, "ShowEditEvento"])->name('edit.modal_evento');
+
+// EDITAR EVENTO
+Route::post('/dashboard/painel/editar/evento/{id}', [EventoController::class, "EditEvento"])->name('editar.evento');
+
+// DELETAR EVENTO
+Route::get('/dashboard/painel/delete/evento/{id}', [EventoController::class, "DeleteEvento"])->name('delete.evento');
 
 
 

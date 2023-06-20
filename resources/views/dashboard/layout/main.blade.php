@@ -22,6 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tinymce/tinymce-jquery@1/dist/tinymce-jquery.min.js"></script>
     {{-- <script src="https://code.jquery.com/jquery-3.0.0.js"></script> --}}
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+    <script src="/js/function-mask.js" defer></script>
     <script src="/js/script.js"></script>
 </head>
 {{--  --}}
@@ -53,7 +54,7 @@
 
                 <li><a href="{{ route('admin.pesquisadores.pag') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/user.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] text-[13px] float-left">Perquisadores</p></a></button></li>
 
-                <li><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/user.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] text-[13px] float-left">Eventos</p></button></li>
+                <li><a href="{{ route('admin.eventos.pag') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/user.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] ml-[10px] text-[13px] float-left">Notícias e Eventos</p></button></a></li>
             </ul>
             {{--  --}}
             <ul id="menu_adm" class="mt-[0px]">

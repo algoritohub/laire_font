@@ -128,6 +128,20 @@ class AdminController extends Controller
         }
     }
 
+    public function PagEventos()
+    {
+        if(session()->has('admin')){
+
+            $eventos  = DB::select("SELECT * FROM eventos ORDER BY id DESC");
+            $noticias = DB::select("SELECT * FROM noticias ORDER BY id DESC");
+
+            return view('dashboard.eventos', compact('eventos', 'noticias'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
+    }
+
     public function config()
     {
         if(session()->has('admin')){

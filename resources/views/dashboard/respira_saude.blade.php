@@ -7,13 +7,14 @@
     @$erro_msn = $_GET["erro"];
 @endphp
 
+{{--  --}}
 <section class="w-[100%] p-[30px] inline-block">
     {{--  --}}
     <div class="w-[100%] inline-block">
         {{--  --}}
         <div class="w-[50%] inline-block float-left">
             {{--  --}}
-            <p class="text-[30px] font-bold">Conteúdo do RespiraSaúde</p>
+            <p class="text-[30px] font-bold">Publicações</p>
         </div>
         {{--  --}}
         <div class="w-[50%] inline-block float-left">
@@ -41,7 +42,7 @@
             </div>
         </div>
         {{--  --}}
-        <div class="w-[100%] inline-block">
+        <div class="w-[100%] h-[400px] overflow-scroll inline-block">
             {{--  --}}
             @if ($respira)
             @foreach ($respira as $conteudo)
@@ -106,6 +107,8 @@
                 </div>
             </div>
             {{--  --}}
+            <p class="my-[15px] text-[13px] text-[#212121] leading-[16px]"><b>Atenção:</b> Ao incluir as imagens para esta postagem, escolha arquivos com tamanho menores que 3mb no formato JPG, JPEG ou PNG, aquivos no tamanho e formato correto evitam erros de visualização e carregamento.</p>
+            {{--  --}}
             <form action="{{ route('admin.respirasaude.add') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 {{--  --}}
@@ -139,7 +142,7 @@
                     </div>
                 </div>
                 {{--  --}}
-                <div class="w-[100%] mt-[10px] h-[290px] overflow-scroll inline-block">
+                <div class="w-[100%] mt-[10px] h-[250px] overflow-scroll inline-block">
                     {{--  --}}
                     <input class="w-[100%] float-left outline-none mt-[10px] p-[20px] bg-[#ffffff] rounded-[10px] border-[2px] border-[#eeeeee] text-[14px] h-[40px] mb-[10px]" type="text" name="titulo" placeholder="Título do bloco">
                     {{--  --}}
