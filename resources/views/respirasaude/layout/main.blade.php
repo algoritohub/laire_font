@@ -415,7 +415,8 @@
             <div class="w-[100%] inline-block bg-[#cdcdcd] shadow-lg h-[15vh] px-[50px] py-[20px]">
                 {{--  --}}
                 <div class="w-[70%] inline-block float-left">
-                    <p class="leading-[17px] mt-[20px]">Oi Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minima totam ducimus maxime quos iste similique at iure, commodi laboriosam exercitationem. Dolor numquam perferendis illum impedit voluptas iure, eum placeat!</p>
+                    <img src="/img/ARLINDO.png" class="w-[300px] mt-[-100px] ml-[-50px] absolute">
+                    <p class="leading-[17px] ml-[200px] mt-[10px]">Oi Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minima totam ducimus maxime quos iste similique at iure, commodi laboriosam exercitationem. Dolor numquam perferendis illum impedit voluptas iure, eum placeat!</p>
                 </div>
                 {{--  --}}
                 <div class="w-[30%] inline-block float-left">
@@ -486,6 +487,23 @@
         c++;
         }
         }
+    </script>
+
+    <script>
+        // Script jQuery para esconder um elemento na página quando a rolagem ultrapassar 200px
+        $(window).scroll(function(){
+
+                if($(document).scrollTop() > 600){// se a rolagem passar de 200px esconde o elemento
+
+                    $('#elementoAEsconder').fadeOut();
+
+                } else { // senão ele volta a ser visivel
+
+                    $('#elementoAEsconder').fadeIn();
+
+                }
+
+            });
     </script>
 
 </body>

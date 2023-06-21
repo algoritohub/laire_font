@@ -16,12 +16,13 @@ class ConteudoController extends Controller
     {
         $doencas_agudas   = DB::select("SELECT * FROM doencas WHERE tipo = 1 ORDER BY id DESC");
         $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+        $eventos          = DB::select("SELECT * FROM eventos");
         $conteudo         = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 4");
         $descricao        = strip_tags($conteudo[0]->descricao);
         $descricao        = mb_convert_encoding($descricao, 'UTF-8', 'HTML-ENTITIES');
         $descricao_blocos = explode('.', $descricao);
 
-        return view('respirasaude.home', compact('doencas_agudas', 'doencas_cronicas', 'conteudo', 'descricao_blocos'));
+        return view('respirasaude.home', compact('doencas_agudas', 'doencas_cronicas', 'conteudo', 'descricao_blocos', 'eventos'));
     }
 
     // PROJETO1

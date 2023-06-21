@@ -13,6 +13,7 @@
         $numb_font = 15;
     }
 @endphp
+
 {{-- SLIDE --}}
 <div class="slider">
     {{--  --}}
@@ -149,6 +150,7 @@
     </div>
 </div>
 
+@if ($eventos)
 {{-- BLOCO DE EVENTOS --}}
 <section class="w-[100%] my-[10%] inline-block">
     {{--  --}}
@@ -165,27 +167,18 @@
             {{--  --}}
         </div>
         {{--  --}}
+        @foreach ($eventos as $evento)
+        {{--  --}}
         <div class="w-full mt-4 flex flex-wrap">
             <div class="w-full md:w-1/3 px-2 mb-4">
-                <div style="background-image: url('/img/E-book.png'); background-size: cover; background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
-                <a href="{{ route('banner_ebook', ['tipo' => 'ebook' ]) }}">
-                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
+                <div style="background-image: url('/img/eventos/{{ $evento->imagem }}'); background-size: cover; background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
+                {{-- <center><p class="uppercase text-[17px]">{{ $evento->titulo }}</p></center> --}}
+                <a href="">
+                    <p class="text-center uppercase text-sm font-bold mt-[10px]">Ver mais</p>
                 </a>
-            </div>
-            <div class="w-full md:w-1/3 px-2 mb-4">
-                <div style="background-image: url('/img/Palestras.png'); background-size: cover;background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
-                <a href="{{ route('banner_ebook', ['tipo' => 'palestras' ]) }}">
-                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
-                </a>
-            </div>
-            <div class="w-full md:w-1/3 px-2 mb-4">
-                <div style="background-image: url('/img/Plano_de_acao.png'); background-size: cover; background-position: center right;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300 mr-2"></div>
-                <a href="{{ route('banner_ebook', ['tipo' => 'plano' ]) }}">
-                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
-                </a>
-                <div id="botao_youtube-" ></div>
             </div>
         </div>
+        @endforeach
         {{-- MODAL MASTER --}}
         @if (isset($evento_cat) AND !empty($evento_cat))
         {{--  --}}
@@ -271,6 +264,7 @@
         @endif
     </div>
 </section>
+@endif
 
 <!--BLOCO RESULTADOS-->
 <section id="projeto_extensao" class="w-[100%] inline-block">
@@ -336,6 +330,36 @@
         </center>
     </div>
 </section>
+
+{{--  --}}
+<div style="display: none;" class="modal_laire">
+    {{--  --}}
+    <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[800px] h-[550px] rounded-[20px] bg-[#ffffff] mx-auto mt-[10%] shadow-lg">
+        {{--  --}}
+        <div class="w-[100%] inline-block px-[30px]">
+            {{--  --}}
+            <div class="float-left w-[100%]">
+                {{--  --}}
+                <p id="modal_laire" class="float-right text-[16px] text-[#ffffff] mt-[30px] cursor-pointer">✕</p>
+            </div>
+        </div>
+        {{--  --}}
+        <div class="w-[100%] px-[40px] inline-block">
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <p class="text-[20px] text-[#ffffff] text-center mt-[-30px] leading-[40px]">RespiraSaúde</p>
+                {{--  --}}
+                <p class="text-[30px] text-[#ffffff] text-center leading-[40px] font-bold">O ARlindo pode te ajudar!</p>
+            </div>
+            {{--  --}}
+            <div class="w-[100%] mt-[40px] inline-block">
+                {{--  --}}
+                <div class="w-[100%] h-[350px] bg-[#212121]"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 @endsection
