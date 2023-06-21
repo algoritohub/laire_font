@@ -13,6 +13,7 @@
         $numb_font = 15;
     }
 @endphp
+
 {{-- SLIDE --}}
 <div class="slider">
     {{--  --}}
@@ -47,8 +48,61 @@
     </div>
 </div>
 
+{{-- BLOCO 2 --}}
+@if ($conteudo)
+<section class="w-[100%] mt-[-5px] inline-block">
+    {{--  --}}
+    <div id="container_bloco1" class="w-[100%] bg-[#fafafa] inline-block">
+        {{--  --}}
+        <div id="lado_a_bloco1" class="w-[50%] pl-[80px] pb-[50px] float-left inline-block">
+            {{--  --}}
+            <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <ul id="list_acess" class="mt-[100px]">
+                        <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                    </ul>
+                </div>
+                {{--  --}}
+                <div id="box_libra" style="display: none;" class="w-[100%] h-[330px] mt-[20px] inline-block bg-[orange]"><video id="video-missão" src="/img/menor.mp4" controls="controls" ></video></div>
+                {{--  --}}
+                <div style="background-image: url('/img/conteudo/{{ $conteudo[0]->imagem }}'); background-size: 110%;" id="box_audio" class="w-[100%] h-[350px] mt-[20px] inline-block bg-[purple]"></div>
+            </div>
+        </div>
+        {{--  --}}
+        <div id="lado_b_bloco1" class="w-[50%] pb-[50px] px-[80px] float-left inline-block">
+            {{--  --}}
+            <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                <div id="import" ></div>
+                {{--  --}}
+                <p id="titulo_bloco1" class="text-[30px] font-bold mb-[30px] mt-[170px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $conteudo[0]->titulo }}</p>
+
+                @foreach ($descricao_blocos as $paragrafo)
+                <p id="text_projeto3" class="mb-[10px] text-justify text-[{{ $numb_font }}px]">{{ $paragrafo }}.</p>
+                @endforeach
+
+                {{-- AUDIO --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
+                        {{--  --}}
+                        <audio autoplay="autoplay" controls="controls">
+                            <source src="sua_musica.mp3" type="audio/mp3" />
+                            seu navegador não suporta HTML5
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+@endif
+
 {{-- NOVO BLOCO DE MISSÃO --}}
-<div id="missão" class="w-[100%] inline-block">
+<div id="missão" style="display: none;" class="w-[100%]  inline-block">
     {{--  --}}
     <div id="lado_a_respira" style="background: linear-gradient(90deg, rgba(250,250,250,1) 75%, rgb(249, 250, 250) 75%);" class="w-[50%] inline-block float-left h-[700px]  pl-[80px]">
         {{--  --}}
@@ -111,8 +165,7 @@
             </div>
     </div>
 
-
-{{-- BLOCO DE EVENTOS --}}
+@if ($eventos)
 {{-- BLOCO DE EVENTOS --}}
 <section class="w-[100%] my-[10%] inline-block">
     {{--  --}}
@@ -129,27 +182,18 @@
             {{--  --}}
         </div>
         {{--  --}}
+        @foreach ($eventos as $evento)
+        {{--  --}}
         <div class="w-full mt-4 flex flex-wrap">
             <div class="w-full md:w-1/3 px-2 mb-4">
-                <div style="background-image: url('/img/E-book.png'); background-size: cover; background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
-                <a href="{{ route('banner_ebook', ['tipo' => 'ebook' ]) }}">
-                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
+                <div style="background-image: url('/img/eventos/{{ $evento->imagem }}'); background-size: cover; background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
+                {{-- <center><p class="uppercase text-[17px]">{{ $evento->titulo }}</p></center> --}}
+                <a href="">
+                    <p class="text-center uppercase text-sm font-bold mt-[10px]">Ver mais</p>
                 </a>
-            </div>
-            <div class="w-full md:w-1/3 px-2 mb-4">
-                <div style="background-image: url('/img/Palestras.png'); background-size: cover;background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
-                <a href="{{ route('banner_ebook', ['tipo' => 'palestras' ]) }}">
-                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
-                </a>
-            </div>
-            <div class="w-full md:w-1/3 px-2 mb-4">
-                <div style="background-image: url('/img/Plano_de_acao.png'); background-size: cover; background-position: center right;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300 mr-2"></div>
-                <a href="{{ route('banner_ebook', ['tipo' => 'plano' ]) }}">
-                    <p class="text-center uppercase text-sm font-bold mt-2">Ver mais</p>
-                </a>
-                <div id="botao_youtube-" ></div>
             </div>
         </div>
+        @endforeach
         {{-- MODAL MASTER --}}
         @if (isset($evento_cat) AND !empty($evento_cat))
         {{--  --}}
@@ -235,6 +279,7 @@
         @endif
     </div>
 </section>
+@endif
 
 <!--BLOCO RESULTADOS-->
 <section id="projeto_extensao" class="w-[100%] inline-block">
@@ -289,7 +334,6 @@
         <center>
             {{--  --}}
             <ul>
-
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/8.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
                 <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/3.png" alt=""></li>
@@ -301,6 +345,36 @@
         </center>
     </div>
 </section>
+
+{{--  --}}
+<div style="display: none;" class="modal_laire">
+    {{--  --}}
+    <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[800px] h-[550px] rounded-[20px] bg-[#ffffff] mx-auto mt-[10%] shadow-lg">
+        {{--  --}}
+        <div class="w-[100%] inline-block px-[30px]">
+            {{--  --}}
+            <div class="float-left w-[100%]">
+                {{--  --}}
+                <p id="modal_laire" class="float-right text-[16px] text-[#ffffff] mt-[30px] cursor-pointer">✕</p>
+            </div>
+        </div>
+        {{--  --}}
+        <div class="w-[100%] px-[40px] inline-block">
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <p class="text-[20px] text-[#ffffff] text-center mt-[-30px] leading-[40px]">RespiraSaúde</p>
+                {{--  --}}
+                <p class="text-[30px] text-[#ffffff] text-center leading-[40px] font-bold">O ARlindo pode te ajudar!</p>
+            </div>
+            {{--  --}}
+            <div class="w-[100%] mt-[40px] inline-block">
+                {{--  --}}
+                <div class="w-[100%] h-[350px] bg-[#212121]"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 @endsection

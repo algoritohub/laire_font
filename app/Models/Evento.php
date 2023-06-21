@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Evento extends Model
 {
-    protected $fillable = ['titulo', 'subtitulo', 'imagem', 'texto', 'data', 'views', 'stts'];
+    protected $fillable = ['titulo', 'subtitulo', 'imagem', 'texto', 'stts', 'inicio', 'final'];
 }

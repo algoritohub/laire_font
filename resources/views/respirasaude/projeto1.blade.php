@@ -16,6 +16,7 @@
 @endphp
 
 {{-- SECTION --}}
+@if ($bloco_principal)
 <div class="w-[100%] inline-block">
     {{--  --}}
     <div class="w-[100%] mt-[100px] inline-block">
@@ -34,7 +35,7 @@
                         </ul>
                     </div>
                     {{-- IMAGEM --}}
-                    <div id="box_audio-1" class="w-[800px] bg-[yellow] h-[400px]"></div>
+                    <div id="box_audio-1" style="background-image: url('/img/conteudo/{{ $bloco_principal[0]->imagem }}'); background-size: 100%;" class="w-[800px] h-[400px]"></div>
                     {{-- VÍDEO --}}
                     <div id="box_libra" style="display: none;" id="imagem_countainer" class="w-[800px] bg-[black] h-[400px]"></div>
                 </div>
@@ -43,12 +44,8 @@
                     {{-- LOGOS --}}
                     <ul id="list_logos" class="my-[20px]">
                         {{--  --}}
-                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[180px] " src="/img/6.png" alt=""></li>
+                        <li class="inline-block mr-[40px] my-[8px]"><img class="w-[180px]" src="/img/6.png" alt=""></li>
                         <li class="inline-block mr-[40px] my-[2px]"><img class="w-[400px]" src="/img/10.png" alt=""></li>
-                        {{-- <li class="inline-block mr-[80px] my-[10px]"><img class="w-[140px] " src="/img/LAIRE para fundo claro.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px]" src="/img/ppgfis.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[105px] " src="/img/9.png" alt=""></li> --}}
-                        {{-- <li class="inline-block mr-[40px] my-[8px]"><img class="w-[250px] " src="/img/10.png" alt=""></li> --}}
                     </ul>
                 </div>
             </div>
@@ -58,9 +55,10 @@
             {{--  --}}
             <div id="container_b" class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
-                <p id="texto_titulo_projeto" class="text-[30px] mt-[70px] leading-[30px] float-right text-right font-bold text-[#080E45]"> Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise</p>
-                <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar. Aqui no RespiraSaúde vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS). Nesta pesquisa nós realizamos uma revisão sistemática com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
-                <p id="texto_projeto" class="mt-[20px] text-right float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]"> </p>
+
+                <p id="texto_titulo_projeto" class="text-[30px] mt-[70px] leading-[30px] float-right text-right font-bold text-[#080E45]">{{ $bloco_principal[0]->titulo }}</p>
+                <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">{{ $descricao_prime }}</p>
+
             </div>
             {{-- AUDIO --}}
             <div class="w-[90%] inline-block mx-[5%]">
@@ -76,6 +74,7 @@
         </div>
     </div>
 </div>
+@endif
 
 {{-- BLOCO EXEMPLO 2 --}}
 <section class="w-[100%] mt-[-5px] inline-block">
@@ -96,18 +95,99 @@
                 <div id="import" ></div>
                 {{--  --}}
                 <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}"><b id="DPOC" class="text-[#2B98AD]">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}"><b id="asma" class="text-[#2B98AD]">asma</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}"><b id="fibrose" class="text-[#2B98AD]">fibrose cística</b></a>, a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}"><b id="bronquiectasia" class="text-[#2B98AD]">bronquiectasia</b></a> e a <a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}"><b id="pulmonar" class="text-[#2B98AD]">fibrose pulmonar</b></a>.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href=""><b id="DPOC" class="text-[#2B98AD]">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href=""><b id="asma" class="text-[#2B98AD]">asma</b></a>, a <a href=""><b id="fibrose" class="text-[#2B98AD]">fibrose cística</b></a>, a <a href=""><b id="bronquiectasia" class="text-[#2B98AD]">bronquiectasia</b></a> e a <a href=""><b id="pulmonar" class="text-[#2B98AD]">fibrose pulmonar</b></a>.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Aqui no <b>RespiraSaúde</b> vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS).</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Nesta pesquisa nós realizamos uma <a href="{{ route('pag_revisao_sistematica') }}"><b id="revisao" class="text-[#2B98AD] cursor-pointer">revisão sistemática</b></a> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Nesta pesquisa nós realizamos uma <a href=""><b id="revisao" class="text-[#2B98AD] cursor-pointer">revisão sistemática</b></a> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"><b>Isso mesmo, nós comparamos os resultados do tratamento recebido em casa com o recebido no hospital!</b></p>
             </div>
         </div>
     </div>
 </section>
 
-{{-- BLOCO EXEMPLO 3 --}}
 
-<section class="w-[100%] mt-[-5px] inline-block">
+
+
+{{-- BLOCO DINAMICOS AQUI --}}
+
+@if ($bloco_conteudo)
+
+    @foreach ($bloco_conteudo as $bloco)
+
+        @php
+            $descricao_contt = strip_tags($bloco->descricao);
+            $descricao_contt = mb_convert_encoding($descricao_contt, 'UTF-8', 'HTML-ENTITIES');
+            $descricao_contb = explode('.', $descricao_contt);
+        @endphp
+
+        @if ($bloco->posicao == 1)
+        {{-- BLOCO TIPO 1 --}}
+        <section class="w-[100%] mt-[-5px] inline-block">
+            <div id="objeti" ></div>
+            {{--  --}}
+            <div id="container_bloco2" class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="lado_a_bloco2" class="w-[50%] h-[630px] px-[80px] inline-block float-left">
+                    {{--  --}}
+                    <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <p id="texto_titulo_bloco2" class="text-[25px] font-bold mb-[20px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $bloco->titulo }}</p>
+
+                        @foreach ($descricao_contb as $texto_paragrafo)
+                        <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">{{ $texto_paragrafo }}.</p>
+                        @endforeach
+
+                    </div>
+                </div>
+                {{--  --}}
+                <div id="lado_b_bloco2" style="background: linear-gradient(90deg, rgba(255,255,255,1) 75%, rgba(238,238,238,1) 75%);" class="w-[50%] h-[630px] inline-block float-left pr-[80px]">
+                    {{--  --}}
+                    <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div style="background-image: url('/img/conteudo/{{ $bloco->imagem }}'); background-size: 110%;" class="w-[100%] h-[400px] mt-[100px]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @elseif($bloco->posicao == 2)
+        {{-- BLOCO EXEMPLO metodo --}}
+        <section class="w-[100%] mt-[-5px] inline-block">
+            <div id="metod" ></div>
+            {{--  --}}
+            <div id="container_bloco1" class="w-[100%] inline-block">
+                {{--  --}}
+                <div id="lado_a_bloco1" style="background: linear-gradient(90deg, rgba(238,238,238,1) 27%, rgba(250,250,250,1) 27%);" class="w-[50%] h-[630px] pl-[80px] float-left inline-block">
+                    {{--  --}}
+                    <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div style="background-image: url('/img/conteudo/{{ $bloco->imagem }}'); background-size: 110%;" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                    </div>
+                </div>
+                {{--  --}}
+                <div id="lado_b_bloco1" class="w-[50%] h-[830px] px-[80px] bg-[#fafafa] float-left inline-block">
+                    {{--  --}}
+                    <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $bloco->titulo }}</p>
+
+                        @foreach($descricao_contb as $texto_paragrafo)
+                        <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">{{ $texto_paragrafo }}.</p>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </section>
+        @endif
+
+    @endforeach
+@endif
+
+{{-- BLOCO DINAMICOS AQUI --}}
+
+
+
+
+{{-- BLOCO TIPO 1 --}}
+<section style="display: none;" class="w-[100%] mt-[-5px] inline-block">
     <div id="objeti" ></div>
     {{--  --}}
     <div id="container_bloco2" class="w-[100%] inline-block">
@@ -131,8 +211,9 @@
         </div>
     </div>
 </section>
+
 {{-- BLOCO EXEMPLO metodo --}}
-<section class="w-[100%] mt-[-5px] inline-block">
+<section style="display: none;" class="w-[100%] mt-[-5px] inline-block">
     <div id="metod" ></div>
     {{--  --}}
     <div id="container_bloco1" class="w-[100%] inline-block">
@@ -197,7 +278,7 @@
     <div class="w-[95%] h-[600px] mx-[2.5%] my-[40px] inline-block">
         {{--  --}}
         <center>
-            <p id="pesquisadores" class="font-bold text-[#212121] text-[30px] border-b-[1px] w-[200px] pb-[20px]">Pesquisadores</p>
+            <p id="pesquisadores" class="font-bold text-[#212121] text-center text-[30px] border-b-[1px] pb-[20px]">Pesquisadores</p>
             {{--  --}}
             <div style="display: none;" class="w-[100%] inline-block">
                 {{--  --}}
@@ -213,248 +294,90 @@
         </center>
         {{--  --}}
         <div class="w-[100%] mt-[70px] inline-block">
+            @if($pesquisadores)
+                @foreach ($pesquisadores as $pessoa)
 
-            @foreach ($pesquisadores as $pessoa)
-            {{-- CARD PESQUISADOR --}}
-            <div id="pesquisador1" id="sarah" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                @php
+                $id_pesqs = $pessoa->id;
+                $pesquisa = Illuminate\Support\Facades\DB::select("SELECT * FROM conect_pesquisas WHERE pesquisa = 1 AND pesquisador = '$id_pesqs'");
+                @endphp
+
+                @if($pesquisa)
+                {{-- CARD PESQUISADOR --}}
+                <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
                     {{--  --}}
-                    <div style="background: url('/img/Sarah Leite.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                    <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                        {{--  --}}
+                        <div style="background: url('/img/pesquisadores/{{ $pessoa->imagem }}'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                        {{--  --}}
+                        <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                            {{--  --}}
+                            <p class="font-bold text-center text-[15px]">{{ $pessoa->nome }}</p>
+                            {{--  --}}
+                            <p class="text-[#212121] text-center text-[16px]">{{ $pessoa->referencia }}</p>
+                        </div>
+                    </div>
                     {{--  --}}
-                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                    <div class="w-[100%] inline-block h-[150px]">
                         {{--  --}}
-                        <p class="font-bold text-center text-[15px]">{{ $pessoa->nome }}</p>
-                        {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">{{ $pessoa->referencia }}</p>
+                        <a href="{{ route('pesquisadores_projeto_1', ['id' => $pessoa->id]) }}"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                     </div>
                 </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'aluno_de_doutorado', 'nome' => 'sarah']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            @endforeach
+                @endif
+                @endforeach
+            @else
+            <p class="text-center text-[20px] font-bold mt-[30px]">Sem pesquisadores para esse projeto!</p>
+            @endif
         </section>
 
-
-
         {{-- MODAL --}}
-        @if(isset($pesquisador) AND !empty($pesquisador))
+        @if(isset($pesquisador_info) AND !empty($pesquisador_info))
         {{--  --}}
         <div class="modal_info_pesquisadores">
             {{--  --}}
             <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
-
-                {{-- CONTEÚDO SARAH --}}
-                @if($pesquisador == "sarah")
-                    <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]">Sarah Leite</p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <div class="w-[20%] inline-block float-left"><a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a></div>
-                        </div>
+                        <p class="font-bold leading-[23px] text-[20px]">{{ $pesquisador_info->nome }}</p>
+                        <p class="text-[13px] uppercase">{{ $pesquisador_info->categoria }}</p>
                     </div>
                     {{--  --}}
-                    <div class="w-[100%] inline-block">
+                    <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/Sarah Leite.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Fisioterapeuta graduada pela Universidade Federal do Rio Grande do Norte (UFRN) (2017), possui residência em Terapia Intensiva pelo Hospital Dom Helder Câmara (HDH) (2019), Mestrado acadêmico em Fisioterapia (UFRN) (2021) e Título de Especialista Profissional em Fisioterapia em Terapia Intensiva (ASSOBRAFIR/COFFITO) (2022). Atualmente cursa Doutorado em Fisioterapia pela UFRN, integrante do Laboratório de Avaliação e Intervenção Respiratória (LAIRE), ocupa o cargo público de fisioterapeuta no Hospital Barão de Lucena (HBL) - Secretaria Estadual de Saúde de Pernambuco (SES-PE), ocupa cargo de gestão como Coordenadora da equipe de Fisioterapia do Hospital Dom Helder Câmara. Tem experiência em pesquisas de tradução, adaptação transcultural e avaliação psicométrica de instrumentos em saúde; e revisões sistemáticas em saúde.
-                        </p>
+                        <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
-                     {{--  --}}
-                     <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3312691654735238" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            <li class="mr-[20px] inline-block"><a href="ttps://orcid.org/0000-0002-2908-8187"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                        </ul>
-                        </center>
-                    </div>
+                </div>
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div style="background-image: url('/img/pesquisadores/{{ $pesquisador_info->imagem }}'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    {{--  --}}
+                    <p class="leading-[17px] text-[14px] text-center mt-[30px]">{{ $descricao_info }}</p>
+                </div>
+                {{--  --}}
+                @if(!empty($pesquisador_info->link_lattes) OR !empty($pesquisador_info->link_orcid))
+                {{--  --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <center>
+                    {{--  --}}
+                    <ul id="links_pesq_mob" class="mt-[20px]">
+
+                        @if(!empty($pesquisador_info->link_lattes))
+                        <li class="mr-[20px] inline-block"><a href="{{ $pesquisador_info->link_lattes }}" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                        @endif
+
+                        @if(!empty($pesquisador_info->link_orcid))
+                        <li class="mr-[20px] inline-block"><a href="{{ $pesquisador_info->link_orcid }}"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                        @endif
+
+                    </ul>
+                    </center>
+                </div>
                 @endif
-
-                {{-- CONTEÚDO THAYLA --}}
-                @if($pesquisador == "thayla")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]">Thayla Amorim Santino</p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/Thayla Santino.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Thayla Amorim Santino é fisioterapeuta formada pela Universidade Estadual da Paraíba, especialista em Fisioterapia Respiratória (ASSOBRAFIR/COFFITO) e em Informática em Saúde pela Universidade Federal de São Paulo, mestre e doutora pelo Programa de Pós-Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte. Atualmente é professora do Departamento de Fisioterapia da Universidade Estadual da Paraíba e pesquisadora do Instituto de Pesquisa Professor Joaquim Amorim Neto. Participa como colaboradora de projetos de pesquisa e extensão na área de Avaliação e Intervenção em Fisioterapia Respiratória, desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades psicométricas de instrumentos de medida em saúde. Além disso, é pesquisadora colaboradora no Person-Centred Health Informatics Research Lab vinculado à McGill University (Montreal, Canadá).
-                        </p>
-                    </div>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7500827180804952" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-5514-762X" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-
-                {{-- CONTEÚDO gabriela --}}
-                @if($pesquisador == "gabriela")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]">Gabriela Chaves</p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/Gabriela Chaves.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Gabriela Chaves, fisioterapeuta formada pela UFRN. Mestrado em Fisioterapia pela UFRN, Doutorado em Ciências da Reabilitação pela UFMG. Pós doutorado em dor e envelhecimento pela York University (Toronto/Canadá). Atualmente trabalha como pesquisadora na empresa Myant Inc. (Toronto/Canadá). Colaboradora nas Revisões Sistemáticas e metanálises na área de avaliação e intervenção em Fisioterapia respiratória.
-                        </p>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7500827180804952" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-5514-762X" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-
-                {{-- CONTEÚDO joubert --}}
-                @if($pesquisador == "joubert")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]"> Joubert Vitor de Souto Barbosa</p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/Joubert Vitor .JPG'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Joubert Vitor de Souto Barbosa, Fisioterapeuta pelo Centro Universitário Unifacisa, Possui
-                            pós-graduação em Fisioterapia em terapia intensiva adulto e pediátrica pelo Centro
-                            Universitário Unifacisa, Mestre em Fisioterapia pela Universidade Federal do Rio Grande do
-                            Norte e atualmente é doutorando no Programa de Pós-graduação em Fisioterapia também
-                            pela Universidade Federal do Rio Grande do Norte. Desenvolve atividades de pesquisa e
-                            extensão no Laboratório de Avaliação e Intervenção em Fisioterapia Respiratória
-                            (LAIRE/UFRN), voltados à área de adaptação transcultural e avaliação das propriedades
-                            psicométricas de instrumentos de medida em saúde. Joubert é comunicativo, gosta de
-                            expressar sua arte e emoções através de fotografias, viagens e música.
-                        </p>
-                    </div>
-                     {{--  --}}
-                     <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3554788662850733" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-                {{-- CONTEÚDO tacito --}}
-                @if($pesquisador == "tacito")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]"> Tácito Zaildo de Morais Santos</p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/pesquisadores/imagem.png'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Tácito Santos é Fisioterapeuta graduado pela Universidade Estadual da Paraíba (UEPB),
-                            Mestre em Fisioterapia na área de Avaliação e Intervenção nos Sistemas Cardiovascular e
-                            Respiratório (UFRN), Doutorando em Fisioterapia pela UFRN. Possui pós-graduação lato-
-                            sensu em Saúde Coletiva (FIP-PB), pós-graduação lato sensu em Terapia Intensiva
-                            (CEFAPP-PE). Especialista profissional em Terapia Intensiva Neonatal e Pediátrica pelo
-                            COFFITO/ASSOBRAFIR. Servidor público estatutário no Hospital Pediátrico Maria Alice
-                            Fernandes SESAP/RN. Possui experiências adicionais como docente em educação superior
-                            pública e privada na área de avaliação e intervenção em Fisioterapia Cardiovascular e
-                            Respiratória/Terapia Intensiva, ministrando disciplinas teórico-práticas como: Terapia
-                            Intensiva, Respiratória, Cardiovascular, Ética e Deontologia em Fisioterapia na Atenção
-                            Primária. Linhas de interesse para pesquisa: avaliação cinético-funcional e intervenção não
-                            farmacológica em doenças cardiovasculares, neuromusculares e respiratórias pediátricas.
-                            Participa como colaborador de projetos de pesquisa e extensão na área de Avaliação e
-                            Intervenção em Fisioterapia Respiratória, desenvolvimento, tradução, adaptação
-                            transcultural e avaliação das propriedades psicométricas de instrumentos de medida em
-                            saúde. Em momentos de lazer, gosta de viajar, nadar, ir à praia e estar junto de amigos e
-                            familiares
-                        </p>
-                    </div>
-                     {{--  --}}
-                     <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/0614300074220357" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            <li class="mr-[20px] inline-block"><a href="https://orcid.org/my-orcid?orcid=0000-0002-9495-7078"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-
             </div>
         </div>
         @endif

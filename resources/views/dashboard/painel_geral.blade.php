@@ -6,7 +6,7 @@
     {{--  --}}
     <div class="w-[100%] mt-[10px] inline-block">
         {{--  --}}
-        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[5px] inline-block float-left mx-[1.5%]">
+        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[20px] inline-block float-left mx-[1.5%]">
             {{--  --}}
             <div class="w-[100%] inline-block">
                 {{--  --}}
@@ -14,19 +14,19 @@
                     {{--  --}}
                     <p class="text-[#080E45] font-bold text-[18px]">Visitas</p>
                     {{--  --}}
-                    <p class="text-bold text-[13px] text-[#080E45]">Total</p>
+                    <p class="text-bold text-[13px] text-[#080E45]">Blog</p>
                 </div>
                 {{--  --}}
                 <div class="w-[60%] float-left inline-block">
                     {{--  --}}
-                    <p class="text-[30px] float-right font-bold text-[#080E45]">45</p>
+                    <p class="text-[30px] float-right font-bold text-[#080E45]">0</p>
                 </div>
                 {{--  --}}
                 <button id="bt1_ds" class="w-[100%] text-[11px] h-[30px] bg-[#080E45] text-[#5CD1FF] mt-[40px] rounded-[100px]">Visitas por página</button>
             </div>
         </div>
         {{--  --}}
-        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[5px] inline-block float-left mx-[1.5%]">
+        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[20px] inline-block float-left mx-[1.5%]">
             {{--  --}}
             <div class="w-[100%] inline-block">
                 {{--  --}}
@@ -46,7 +46,7 @@
             </div>
         </div>
         {{--  --}}
-        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[5px] inline-block float-left mx-[1.5%]">
+        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[20px] inline-block float-left mx-[1.5%]">
             {{--  --}}
             <div class="w-[100%] inline-block">
                 {{--  --}}
@@ -66,7 +66,7 @@
             </div>
         </div>
         {{--  --}}
-        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[5px] inline-block float-left mx-[1.5%]">
+        <div class="w-[22%] h-[160px] bg-[#5CD1FF] p-[20px] rounded-[20px] inline-block float-left mx-[1.5%]">
             {{--  --}}
             <div class="w-[100%] inline-block">
                 {{--  --}}
@@ -79,7 +79,7 @@
                 {{--  --}}
                 <div class="w-[60%] float-left inline-block">
                     {{--  --}}
-                    <p class="text-[30px] float-right font-bold text-[#080E45]">45</p>
+                    <p class="text-[30px] float-right font-bold text-[#080E45]">0</p>
                 </div>
                 {{--  --}}
                 <button id="bt4_ds" class="w-[100%] text-[11px] h-[30px] bg-[#080E45] text-[#5CD1FF] mt-[40px] rounded-[100px]">Pesquisadores por projeto</button>

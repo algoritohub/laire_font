@@ -21,6 +21,27 @@ $(document).ready(function(){
     });
 });
 
+// MASCARAS
+jQuery(function($){
+	$("#date").mask("99/99/9999",{placeholder:"dd/mm/aaaa"});
+	$("#date0").mask("99/9999",{placeholder:"mm/aaaa"});
+	$("#datex").mask("99/9999",{placeholder:"mm/aaaa"});
+	$("#date01").mask("99/99/9999",{placeholder:"dd/mm/aaaa"});
+	$("#date02").mask("99/99/9999",{placeholder:"dd/mm/aaaa"});
+	$("#date1").mask("99/99/9999",{placeholder:"dd/mm/aaaa"});
+	$("#date2").mask("99/99/9999",{placeholder:"dd/mm/aaaa"});
+	$("#phone").mask("(99) 9999-9999");
+	$("#phone1").mask("(99) 99999-9999");
+	$("#phone2").mask("(99) 99999-9999");
+	$("#cpf").mask("999.999.999-99");
+	$("#cnpj").mask("99.999.999/9999-99");
+	$("#cep").mask("99999-999");
+	$("#hor1").mask("99:99");
+	$("#hor2").mask("99:99");
+	$("#real").mask("9,99");
+	$("#code").mask("999999");
+ });
+
 // MASCOTE
 $(document).ready(function(){
     $("#avatar_anime").click(function(event){
@@ -81,6 +102,22 @@ $(document).ready(function(){
     $("#fechar_modal_pesq").click(function(event){
         event.preventDefault();
         $(".modal_add_pesquisador").fadeOut();
+    });
+});
+
+
+// ADD NOVO CONTEÚDO RESPIRA
+$(document).ready(function(){
+    $("#btn_content_respira").click(function(event){
+        event.preventDefault();
+        $(".modal_add_respira_admin").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_modal_cont_respira").click(function(event){
+        event.preventDefault();
+        $(".modal_add_respira_admin").fadeOut();
     });
 });
 
@@ -754,6 +791,22 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#btn-noticias").click(function(event){
+        event.preventDefault();
+        $("#box-noticias").fadeIn();
+        $("#box-eventos").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#btn-eventos").click(function(event){
+        event.preventDefault();
+        $("#box-eventos").fadeIn();
+        $("#box-noticias").hide();
+    });
+});
+
 // BANNER PWA
 $(document).ready(function(){
     $("#area_transparent").click(function(event){
@@ -762,3 +815,18 @@ $(document).ready(function(){
     });
 });
 
+
+
+$(document).ready(function(){
+    $("#btn_add_evento").click(function(event){
+        event.preventDefault();
+        $(".modal_add_eventos_admin").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_add_evento").click(function(event){
+        event.preventDefault();
+        $(".modal_add_eventos_admin").fadeOut();
+    });
+});

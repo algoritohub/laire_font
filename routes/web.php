@@ -8,7 +8,9 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ConteudoController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EventosController;
+use App\Http\Controllers\EventoController;
 use App\Http\Controllers\NoticiaController;
+use App\Http\Controllers\ConteudoRespiraController;
 
 
 // +------------------------------------------------------------+
@@ -34,35 +36,28 @@ Route::get('/banner/respira/out', [AdminController::class, "BannerOut"])->name('
 // | RESPIRASAÚDE                                               |
 // +------------------------------------------------------------+
 
-// RESPIRA SAÚDE HOME
-Route::get('/respira-saude', function () {
-    return view('respirasaude.home');
-})->name('home.respira_saude');
+// RESPIRASAÚDE HOME
+Route::get('/respira-saude', [ConteudoController::class, "HomeRespira"])->name('home.respira_saude');
 
 // PROJETO1
 Route::get('/respira-saude/projeto/1', [ConteudoController::class, "Projeto1"])->name('projeto1');
 
-// PÁGINA DE DOENÇAS
-Route::get('/respira-saude/projeto/1/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto1"])->name('pesquisadores_projeto_1');
+// PESQUISADORES 1
+Route::get('/respira-saude/projeto/1/pesquisador/{id}', [ConteudoController::class, "PesquisadoresProjeto1"])->name('pesquisadores_projeto_1');
 
 
 // PROJETO2
-Route::get('/respira-saude/projeto/2', function () {
-    return view('respirasaude.projeto2');
-})->name('projeto2');
+Route::get('/respira-saude/projeto/2', [ConteudoController::class, "Projeto2"])->name('projeto2');
 
 // PESQUISADORES 2
-Route::get('/respira-saude/projeto/2/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto2"])->name('pesquisadores_projeto_2');
-
-// PESQUISADORES 3
-Route::get('/respira-saude/projeto/3/pesquisadores/{tipo}/{nome}', [ConteudoController::class, "PesquisadoresProjeto3"])->name('pesquisadores_projeto_3');
-
+Route::get('/respira-saude/projeto/2/pesquisadores/{id}', [ConteudoController::class, "PesquisadoresProjeto2"])->name('pesquisadores_projeto_2');
 
 
 // PROJETO3
-Route::get('/respira-saude/projeto/3', function () {
-    return view('respirasaude.projeto3');
-})->name('projeto3');
+Route::get('/respira-saude/projeto/3', [ConteudoController::class, "projeto3"])->name('projeto3');
+
+// PESQUISADORES 3
+Route::get('/respira-saude/projeto/3/pesquisadores/{id}', [ConteudoController::class, "PesquisadoresProjeto3"])->name('pesquisadores_projeto_3');
 
 
 
@@ -78,9 +73,6 @@ Route::get('/banner/evento/conteúdo/{tipo}', [ConteudoController::class, "Banne
 
 // PÁGINA DE REVISÃO SISTEMÁTICA
 Route::get('/respira-saude/revisao-sistematica', [ConteudoController::class, "PagRevisaoSistematica"])->name('pag_revisao_sistematica');
-
-// PÁGINA DE DOENÇAS
-Route::get('/respira-saude/doencas/{tipo}/{doenca}', [ConteudoController::class, "PagDoencas"])->name('pag_doencas');
 
 // DOENÇAS CRÔNICAS
 Route::get('/respira-saude/doenca/cronica/{id}', [ConteudoController::class, "DoencaCronica"])->name('doenca_cronica');
@@ -145,14 +137,20 @@ Route::get('/dashboard/painel/logout', [AdminController::class, "logout"])->name
 // PAINEL ADMINISTRATIVO GERAL
 Route::get('/dashboard/painel/geral', [AdminController::class, "geral"])->name('admin.painel_geral');
 
-// PAINEL POSTAGEM
-Route::get('/dashboard/painel/publicacao', [AdminController::class, "publicacao"])->name('admin.painel_publicacao');
+// PAINEL PESQUISADORES
+Route::get('/dashboard/painel/pesquisadores', [AdminController::class, "PagPesquisadores"])->name('admin.pesquisadores.pag');
 
-// POSTAR NOVO PESQUISADOR
-Route::post('/dashboard/painel/publicacao/new/pesquisador', [PesquisadorController::class, "newPesquisador"])->name('admin.new_pesquisador');
+// PÁGINA DE DOENÇAS
+Route::get('/dashboard/painel/doencas', [AdminController::class, "PagDoencas"])->name('admin.doencas.pag');
 
-// POSTAR NOVO CONTEÚDO
-Route::post('/dashboard/painel/publicacao/new/conteudo', [ConteudoController::class, "newPesquisador"])->name('admin.new_conteudo');
+// ADD DOENÇAS
+Route::post('/dashboard/painel/add/doenca', [ConteudoController::class, "AddNewDoenca"])->name('admin.doenca.add');
+
+// PAINEL RESPIRASAÚDE
+Route::get('/dashboard/painel/respirasaude', [AdminController::class, "PagRespiraSaude"])->name('admin.respirasaude.pag');
+
+// ADD CONTEÚDO RESPIRA
+Route::post('/dashboard/painel/add/conteudo/respirasaude', [ConteudoRespiraController::class, "AddConteudoRespira"])->name('admin.respirasaude.add');
 
 // EXIBIR EDITOR DE DOENÇA
 Route::get('/dashboard/painel/publicacao/edit/doenca/{id}', [ConteudoController::class, "editDoenca"])->name('admin.edit_doenca');
@@ -162,6 +160,41 @@ Route::post('/dashboard/painel/publicacao/editar/doenca/{id}', [ConteudoControll
 
 // DELETAR DOENÇA
 Route::get('/dashboard/painel/publicacao/delete/doenca/{id}', [ConteudoController::class, "deleteDoenca"])->name('admin.delete_doenca');
+
+// EXIBIR MODAL EDITAR RESPIRASAÚDE
+Route::get('/dashboard/painel/edit/modal/respirasaude/{id}', [ConteudoRespiraController::class, "ExibirModalEditConteudoRespira"])->name('admin.respirasaude.modal');
+
+// EDITAR RESPIRASAÚDE
+Route::post('/dashboard/painel/edit/conteudo/respirasaude/{id}', [ConteudoRespiraController::class, "EditConteudoRespira"])->name('admin.respirasaude.edit');
+
+// EDITAR RESPIRASAÚDE
+Route::get('/dashboard/painel/edit/conteudo/respirasaude/{id}', [ConteudoRespiraController::class, "DeleteConteudoRespira"])->name('admin.respirasaude.delete');
+
+// PAINEL POSTAGEM
+Route::get('/dashboard/painel/publicacao', [AdminController::class, "publicacao"])->name('admin.painel_publicacao');
+
+// POSTAR NOVO PESQUISADOR
+Route::post('/dashboard/painel/publicacao/new/pesquisador', [PesquisadorController::class, "newPesquisador"])->name('admin.new_pesquisador');
+
+// POSTAR NOVO CONTEÚDO
+Route::post('/dashboard/painel/publicacao/new/conteudo', [ConteudoController::class, "newPesquisador"])->name('admin.new_conteudo');
+
+// PÁGINA DE EVENTOS
+Route::get('/dashboard/painel/eventos', [AdminController::class, "PagEventos"])->name('admin.eventos.pag');
+
+// ADICIONAR EVENTOS
+Route::post('/dashboard/painel/add/eventos', [EventoController::class, "AddNewEventos"])->name('add.mew_evento');
+
+// EXIBIR MODAL EDITAR EVENTO
+Route::get('/dashboard/painel/edit/evento/{id}', [EventoController::class, "ShowEditEvento"])->name('edit.modal_evento');
+
+// EDITAR EVENTO
+Route::post('/dashboard/painel/editar/evento/{id}', [EventoController::class, "EditEvento"])->name('editar.evento');
+
+// DELETAR EVENTO
+Route::get('/dashboard/painel/delete/evento/{id}', [EventoController::class, "DeleteEvento"])->name('delete.evento');
+
+
 
 // EXIBIR EDITOR DE CONTEÚDO
 Route::get('/dashboard/painel/publicacao/edit/conteudo/{id}', [ConteudoController::class, "editConteudo"])->name('admin.edit_conteudo');
@@ -183,6 +216,11 @@ Route::get('/dashboard/painel/publicacao/delete/pesquisadores/{id}', [Pesquisado
 
 // PAINEL BLOG
 Route::get('/dashboard/painel/blog', [AdminController::class, "blog"])->name('admin.painel_blog');
+
+Route::post('/dashboard/painel/add/post', [BlogController::class, "AddPostBlog"])->name('admin.add_blog');
+
+// EDITAR POSTAGEM
+Route::get('/dashboard/painel/blog/editar/post/{id}', [BlogController::class, "editPost"])->name('admin.editar_post_blog');
 
 // DELETAR POSTAGEM
 Route::get('/dashboard/painel/blog/delete/post/{id}', [BlogController::class, "deletePost"])->name('admin.deletar_post_blog');

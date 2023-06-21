@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Doenca extends Model
 {
-    protected $fillable = ['nome', 'definicao', 'controle', 'tratamento', 'publicador', 'imagem1', 'imagem2', 'imagem3', 'registro', 'tipo'];
+    protected $fillable = ['nome', 'definicao', 'controle', 'tratamento', 'imagem1', 'imagem2', 'imagem3', 'tipo', 'video', 'audio'];
 }

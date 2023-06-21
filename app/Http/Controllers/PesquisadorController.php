@@ -7,6 +7,7 @@ use App\Models\Pesquisador;
 use App\Models\ConectPesquisa;
 use App\Models\Pesquisa;
 use Illuminate\Support\Facades\DB;
+use File;
 
 class PesquisadorController extends Controller
 {
@@ -21,6 +22,21 @@ class PesquisadorController extends Controller
         $pesquisador->link_orcid  = $request->link_orcid;
         $pesquisador->descricao   = $request->descricao;
         $pesquisador->imagem      = "person.png";
+
+        if ($request->hasFile('imagem') && $request->file('imagem')->isValid()) {
+
+            $requestImage = $request->imagem;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/pesquisadores'), $imageName);
+
+            $pesquisador->imagem = $imageName;
+        }
+
+        else{
+            $pesquisador->imagem = "person.png";
+        }
+
         $pesquisador->save();
 
         // LOCALIZAR ID DO PESQUISADOR
@@ -57,7 +73,11 @@ class PesquisadorController extends Controller
     // EXIBIR MODAL DE EDIÇÃO DE PESQUISADOR
     public function editPesquisador($id)
     {
-        return view('dashboard.publicacao', ['editar_pesquisador' => $id]);
+        $pesquisador_edit = Pesquisador::where('id', $id)->first();
+        $texto_descricao  = strip_tags($pesquisador_edit->descricao);
+        $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY id DESC");
+
+        return view('dashboard.pesquisadores', compact('pesquisador_edit', 'texto_descricao', 'pesquisadores'));
     }
 
     // EDITAR PESQUISADOR
@@ -73,7 +93,21 @@ class PesquisadorController extends Controller
             'descricao'   => $request->descricao,
         ]);
 
-        return redirect()->route('admin.painel_publicacao');
+        if ($request->hasFile('imagem') && $request->file('imagem')->isValid()) {
+
+            File::delete('img/pesquisadores/'.$pesquisador->imagem);
+
+            $requestImage = $request->imagem;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('img/pesquisadores'), $imageName);
+
+            $pesquisador->update([
+                'imagem'  => $imageName,
+            ]);
+        }
+
+        return redirect()->route('admin.pesquisadores.pag');
     }
 
     // EXIBIR MODAL DE INFORMAÇÃO
@@ -87,6 +121,6 @@ class PesquisadorController extends Controller
     {
         Pesquisador::findOrFail($id)->delete();
 
-        return redirect()->route('admin.painel_publicacao');
+        return redirect()->route('admin.pesquisadores.pag');
     }
 }

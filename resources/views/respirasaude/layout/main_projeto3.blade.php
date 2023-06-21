@@ -111,29 +111,14 @@
         <div style="display: none;" id="menu_cronicas_doencas" class="w-[1200px] py-[16px] inline-block">
             {{--  --}}
             <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}">Asma</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}">Fibrose Cística</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}">DPOC</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}">Bronquiectasia</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}">Fibrose pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}">Sinusite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}">Hipertensão pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}">Síndrome pós-COVID-19</a></b></li>
+
             </ul>
         </div>
         {{--  --}}
         <div style="display: none;" id="menu_agudas_doencas" class="w-[800px] py-[16px] inline-block">
             {{--  --}}
             <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff]" id="voltar_menu1" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'h1n1']) }}">H1N1</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'covid_19']) }}">COVID-19</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'tuberculose']) }}">Tuberculose</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'influenza']) }}">Influenza</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45]" href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></b></li>
+                
             </ul>
         </div>
         {{--  --}}
@@ -193,37 +178,20 @@
                                     <ul>
                                         <li class="ma"><a href="#">Definição</a>
                                             <ul class="mx">
-                                                <li><a href="#">Asma</a></li>
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
+                                                @foreach ($doencas_cronicas as $doenca_cronica)
+                                                    {{--  --}}
+                                                    <li><a href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}">{{ $doenca_cronica->nome }}</a></li>
+                                                @endforeach
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Como controlar os sintomas</a>
                                             <ul class="mx">
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
+                                                {{-- DOENÇAS AQUI --}}
                                             </ul>
                                         </li>
                                         <li class="ma"><a href="#">Tratamento</a>
                                             <ul class="mx">
-                                                <li><a href="#">Asma</a></li>
-                                                <li><a href="#">Fibrose Cística</a></li>
-                                                <li><a href="#">DPOC</a></li>
-                                                <li><a href="#">Bronquiectasia</a></li>
-                                                <li><a href="#">Fibrose pulmonar</a></li>
-                                                <li><a href="#">Sinusite</a></li>
-                                                <li><a href="#">Hipertensão pulmonar</a></li>
-                                                <li><a href="#">Síndrome pós-COVID-19</a></li>
+                                                {{-- DOENÇAS AQUI --}}
                                             </ul>
                                         </li>
                                     </ul>

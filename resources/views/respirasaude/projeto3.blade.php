@@ -180,586 +180,263 @@
         </div>
     </div>
 </section>
-<section class="w-[100%] inline-block">
+
+
+
+{{-- PESQUISADORES--}}
+<section  class="w-[100%] inline-block">
     {{--  --}}
     <div class="w-[95%] h-[600px] mx-[2.5%] my-[40px] inline-block">
         {{--  --}}
         <center>
-            <p id="pesquisadores" class="font-bold text-[#212121] text-[30px] border-b-[1px] w-[200px] pb-[20px]">Pesquisadores</p>
+            <p id="pesquisadores" class="font-bold text-[#212121] text-center text-[30px] border-b-[1px] pb-[20px]">Pesquisadores</p>
+            {{--  --}}
+            <div style="display: none;" class="w-[100%] inline-block">
+                {{--  --}}
+                <ul class="mt-[30px] ml-[20px]">
+                    {{--  --}}
+                    <li class="inline-block ml-[20px]"><button class="px-[30px] h-[40px] rounded-[100px] bg-[#05337c] text-[13px] text-[#ffffff]">Professor</button></li>
+                    <li class="inline-block ml-[20px]"><button class="px-[30px] h-[40px] rounded-[100px] bg-[#05337c] text-[13px] text-[#ffffff]">Pesquisador intenacional</button></li>
+                    <li class="inline-block ml-[20px]"><button class="px-[30px] h-[40px] rounded-[100px] bg-[#05337c] text-[13px] text-[#ffffff]">Aluno de iniciação científica</button></li>
+                    <li class="inline-block ml-[20px]"><button class="px-[30px] h-[40px] rounded-[100px] bg-[#05337c] text-[13px] text-[#ffffff]">Aluno de mestrado</button></li>
+                    <li class="inline-block ml-[20px]"><button class="px-[30px] h-[40px] rounded-[100px] bg-[#05337c] text-[13px] text-[#ffffff]">Aluno de doutorado</button></li>
+                </ul>
+            </div>
         </center>
         {{--  --}}
         <div class="w-[100%] mt-[70px] inline-block">
+            @if($pesquisadores)
+                @foreach ($pesquisadores as $pessoa)
 
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                @php
+                $id_pesqs = $pessoa->id;
+                $pesquisa = Illuminate\Support\Facades\DB::select("SELECT * FROM conect_pesquisas WHERE pesquisa = 1 AND pesquisador = '$id_pesqs'");
+                @endphp
+
+                @if($pesquisa)
+                {{-- CARD PESQUISADOR --}}
+                <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
                     {{--  --}}
-                    <div style="background: url('/img/Thayla Santino.jpg'); background-size: 100%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Thayla Amorim Santino</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN,ASSOBRAFIR/COFFITO</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_3', ['tipo' => 'professor', 'nome' => 'thayla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            {{--  --}}
-            {{-- CARD PESQUISADOR --}}
-            <div id="pesquisador1" id="joubert" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url('/img/Joubert Vitor .JPG'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                    <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                         {{--  --}}
-                        <p class="font-bold text-center text-[15px]">Joubert Barbosa</p>
+                        <div style="background: url('/img/pesquisadores/{{ $pessoa->imagem }}'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                         {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
+                        <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
+                            {{--  --}}
+                            <p class="font-bold text-center text-[15px]">{{ $pessoa->nome }}</p>
+                            {{--  --}}
+                            <p class="text-[#212121] text-center text-[16px]">{{ $pessoa->referencia }}</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] inline-block h-[150px]">
+                        {{--  --}}
+                        <a href="{{ route('pesquisadores_projeto_1', ['id' => $pessoa->id]) }}"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                     </div>
                 </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_3', ['tipo' => 'Aluno de Doutorado', 'nome' => 'joubert']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-             {{-- CARD PESQUISADOR --}}
-             <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url('/img/Sara Ahmed.jpg'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
-                        {{--  --}}
-                        <p class="font-bold text-center text-[15px]">Sara Ahmed</p>
-                        {{--  --}}
-                        <p class="text-[#212121] text-center text-[16px]">UFRN</p>
-                    </div>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_1', ['tipo' => 'Aluno de Doutorado', 'nome' => 'sara']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url(/img/); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Patrícia Angélica de Miranda Silva Nogueira</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN,USP</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_3', ['tipo' => ' Professora colaboradora', 'nome' => 'patricia']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url(/img/); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Karoline Monteiro</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url(/img/Alchieri.jpg); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">João Alchiere</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background-image: url('/img/Ivan Daniel.jpg'); background-size: 95%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Ivan Nogueira</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN, ASSOBRAFIR/COFFITO</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_3', ['tipo' => ' Professor', 'nome' => 'ivan']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-
-
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url(/img/); background-size: 150%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Cleia Amaral</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-            </div>
-            {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url(/img/Baldomero.jpg); background-size: 150%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Baldomero Silva </p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-        </div>
-                {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background: url(/img/); background-size: 150%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Ana Gisele </p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">UFRN</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href=""><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-    </div>
-                    {{--  --}}
-            <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
-                    {{--  --}}
-                    <div style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 150%; background-position: center;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
-                    {{--  --}}
-                    <p class="text-center font-bold mt-[20px] text-[15px]">Karla Morgana</p>
-                    {{--  --}}
-                    <p class="text-[#212121] text-center text-[16px]">FACISA/UFRN, UEPB, ASSOBRAFIR</p>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] inline-block h-[150px]">
-                    {{--  --}}
-                    <a href="{{ route('pesquisadores_projeto_3', ['tipo' => 'Cordenadora', 'nome' => 'karla']) }}#pesquisadores"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
-                </div>
-
+                @endif
+                @endforeach
+            @else
+            <p class="text-center text-[20px] font-bold mt-[30px]">Sem pesquisadores para esse projeto!</p>
+            @endif
         </section>
 
-            {{-- MODAL --}}
-        @if(isset($pesquisador) AND !empty($pesquisador))
+        {{-- MODAL --}}
+        @if(isset($pesquisador_info) AND !empty($pesquisador_info))
         {{--  --}}
         <div class="modal_info_pesquisadores">
             {{--  --}}
             <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
-
-                {{-- CONTEÚDO THAYLA --}}
-                @if($pesquisador == "thayla")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]">Thayla Amorim Santino</p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto3') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/Thayla Santino.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Thayla Amorim Santino é fisioterapeuta formada pela Universidade Estadual da Paraíba, especialista em Fisioterapia Respiratória (ASSOBRAFIR/COFFITO) e em Informática em Saúde pela Universidade Federal de São Paulo, mestre e doutora pelo Programa de Pós-Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte. Atualmente é professora do Departamento de Fisioterapia da Universidade Estadual da Paraíba e pesquisadora do Instituto de Pesquisa Professor Joaquim Amorim Neto. Participa como colaboradora de projetos de pesquisa e extensão na área de Avaliação e Intervenção em Fisioterapia Respiratória, desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades psicométricas de instrumentos de medida em saúde. Além disso, é pesquisadora colaboradora no Person-Centred Health Informatics Research Lab vinculado à McGill University (Montreal, Canadá).
-                        </p>
-                    </div>
-                        {{--  --}}
-                        <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7500827180804952" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0002-5514-762X" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-                {{-- CONTEÚDO joubert --}}
-                @if($pesquisador == "joubert")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]"> Joubert Vitor de Souto Barbosa</p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto3') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/Joubert Vitor .JPG'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">
-                            Joubert Vitor de Souto Barbosa, Fisioterapeuta pelo Centro Universitário Unifacisa, Possui
-                            pós-graduação em Fisioterapia em terapia intensiva adulto e pediátrica pelo Centro
-                            Universitário Unifacisa, Mestre em Fisioterapia pela Universidade Federal do Rio Grande do
-                            Norte e atualmente é doutorando no Programa de Pós-graduação em Fisioterapia também
-                            pela Universidade Federal do Rio Grande do Norte. Desenvolve atividades de pesquisa e
-                            extensão no Laboratório de Avaliação e Intervenção em Fisioterapia Respiratória
-                            (LAIRE/UFRN), voltados à área de adaptação transcultural e avaliação das propriedades
-                            psicométricas de instrumentos de medida em saúde. Joubert é comunicativo, gosta de
-                            expressar sua arte e emoções através de fotografias, viagens e música.
-                        </p>
-                    </div>
-                     {{--  --}}
-                     <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/3554788662850733" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-                {{-- CONTEÚDO patricia --}}
-                @if($pesquisador == "patricia")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]">  Patrícia Angélica de Miranda Silva Nogueira
-                            </p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto3') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte
-                            (1997-2001), Especialização em Fisioterapia Respiratória pela Universidade Federal de São
-                            Paulo (2002-2003), Especialização em Fisiologia do Exercício pela Universidade Federal de
-                            São Paulo (2003) e Doutorado em Ciências pelo programa de Pós-Graduação em Ciências
-                            Aplicadas à Cardiologia pela Universidade Federal de São Paulo (2004-2006). Foi
-                            professora Adjunta da Universidade Federal da Paraíba (05/08 - 01/09). Atualmente é
-                            professora Associada da Universidade Federal do Rio Grande do Norte (UFRN) e
-                            professora orientadora de mestrado e doutorado no programa de pós-graduação em
-                            Fisioterapia da UFRN. Tem experiência na área de Fisioterapia, com ênfase em Fisioterapia
-                            Respiratória, e atua principalmente nas seguintes linhas de pesquisa: 1. Avaliação e
-                            intervenção fisioterapêutica cardiorrespiratória nas doenças agudas e crônicas, bem como
-                            2.Tradução, adaptação transcultural e avaliação das propriedades psicométricas de
-                            instrumentos de medida em saúde.</p>
-                    </div>
-                     {{--  --}}
-                     <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href=" https://lattes.cnpq.br/1788918737416095" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            <li class="mr-[20px] inline-block"><a href=" https://orcid.org/0000-0002-3763-2410" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-                {{-- CONTEÚDO ivan --}}
-                @if($pesquisador == "ivan")
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div class="w-[80%] inline-block float-left">
-                            {{--  --}}
-                            <p class="font-bold leading-[23px] text-[20px]">  Ivan Daniel Bezerra Nogueira
-                            </p>
-                            <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                        </div>
-                        {{--  --}}
-                        <div class="w-[20%] inline-block float-left">
-                            {{--  --}}
-                            <a href="{{ route('projeto3') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                        </div>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <div id="imagem_pesq_mob" style="background-image: url('/img/Ivan Daniel.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[30px]">Possui Graduação em Fisioterapia pela Universidade Federal do Rio Grande do Norte
-                            (1994-1999), Especialização em Fisioterapia Respiratória pela Universidade Federal de São
-                            Paulo (2000-2001), Especialização em Fisiologia do Exercício pela Universidade Federal de
-                            São Paulo (2003), Especialista em Terapia Intensiva Adulto pela ASSOBRAFIR/COFFITO
-                            (2015), Mestrado em Ciências pelo Programa da Cardiologia da Universidade Federal de
-                            São Paulo (2008-2009) e Doutorado em Fisioterapia pelo Programa de Pós-Graduação em
-                            Fisioterapia da Universidade Federal do Rio Grande do Norte (2014-2017). Foi Professor da
-                            Especialização em Fisioterapia Respiratória da Universidade Federal de São Paulo (2001-
-                            2008), Professor Assistente do Centro Universitário São Camilo (2003-2008) e Professor
-                            Assistente do Centro Universitário de João Pessoa (2008). Atualmente é Professor Adjunto
-                            do Departamento de Fisioterapia da Universidade Federal do Rio Grande do Norte. Tem
-                            experiência na área de Fisioterapia, com ênfase em Fisioterapia Cardiorrespiratória,
-                            atuando principalmente nos seguintes temas: treinamento físico, capacidade funcional,
-                            qualidade de vida e suporte ventilatório.</p>
-                    </div>
-                     {{--  --}}
-                     <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <center>
-                        {{--  --}}
-                        <ul id="links_pesq_mob" class="mt-[20px]">
-                            <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/7500827180804952" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                            <li class="mr-[20px] inline-block"><a href=" https://orcid.org/0000-0002-5514-762X" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                        </ul>
-                        </center>
-                    </div>
-                @endif
-                 {{-- CONTEÚDO ivan --}}
-                 @if($pesquisador == "karla")
-                 <div class="w-[100%] inline-block">
-                     {{--  --}}
-                     <div class="w-[80%] inline-block float-left">
-                         {{--  --}}
-                         <p class="font-bold leading-[23px] text-[20px]">  Karla Morganna
-
-                         </p>
-                         <p class="text-[13px] uppercase">{{ $categoria }}</p>
-                     </div>
-                     {{--  --}}
-                     <div class="w-[20%] inline-block float-left">
-                         {{--  --}}
-                         <a href="{{ route('projeto3') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
-                     </div>
-                 </div>
-                 {{--  --}}
-                 <div class="w-[100%] inline-block">
-                     {{--  --}}
-                     <div id="imagem_pesq_mob" style="background-image: url('/img/Karla Morganna.jpeg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                     {{--  --}}
-                     <p class="leading-[17px] text-[14px] text-center mt-[30px]">Karla Morganna é Professora Titular do Departamento de Fisioterapia e do Programa de
-                        Pós-Graduação em Fisioterapia da Universidade Federal do Rio Grande do Norte. Possui
-                        títulos de Mestrado e Doutorado em Ciências da Saúde obtidos no Programa de Pós-Graduação em Ciências da Saúde pela Universidade Federal do Rio Grande do Norte.
-                        Realizou Pós-Doutorado na Universidade de Massachusetts-Lowell, MA - USA. Coordena
-                        projetos de pesquisa na área de Avaliação e Intervenção em Fisioterapia Respiratória,
-                        desenvolvimento, tradução, adaptação transcultural e avaliação das propriedades
-                        psicométricas de instrumentos de medida em saúde, desenvolve revisões sistemáticas em
-                        colaboração com a Cochrane e coordena projetos de inovação científica e tecnológica em
-                        saúde.</p>
-                 </div>
-                  {{--  --}}
-                  <div class="w-[100%] inline-block">
-                     {{--  --}}
-                     <center>
-                     {{--  --}}
-                     <ul id="links_pesq_mob" class="mt-[20px]">
-                         <li class="mr-[20px] inline-block"><a href=" http://lattes.cnpq.br/1736384836028397" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                         <li class="mr-[20px] inline-block"><a href="https://orcid.org/0000-0001-5734-3707" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                     </ul>
-                     </center>
-                 </div>
-             @endif
-         @endif
-    </section>
-    {{-- BANNER PRODUTOS --}}
-    <section class="w-[100%] inline-block">
-        {{--  --}}
-        <div class="w-[90%] mx-[5%] inline-block">
-            {{--  --}}
-            <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[420px] inline-block">
-                <div class="w-[100%] h-[420px] inline-block">
-                    <div class="w-[33%] h-[420px] inline-block float-left"></div>
-                    <div class="w-[67%] h-[420px] inline-block float-left">
-                        <div class="w-[100%] inline-block h-[300px]"></div>
-                        <div class="w-[100%] inline-block h-[120px] mt-[-10px]">
-                            <ul class="">
-                                <li class="inline-block mr-[20px]"><button id="video_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Vídeo</button></li>
-                                <li class="inline-block mr-[20px]"><button id="podcst_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Podcast</button></li>
-                                <li class="inline-block mr-[20px]"><button id="info_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Infográfico</button></li>
-                                <li class="inline-block mr-[20px]"><button id="resumo_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Resumo executivo</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{--  --}}
-        <div style="display: none;" class="banner_produtos">
-            {{--  --}}
-            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div class="w-[70%] inline-block float-left">
+                    <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="text-[#ffffff] uppercase font-bold">Nosso resumo executivo</p>
+                        <p class="font-bold leading-[23px] text-[20px]">{{ $pesquisador_info->nome }}</p>
+                        <p class="text-[13px] uppercase">{{ $pesquisador_info->categoria }}</p>
                     </div>
                     {{--  --}}
-                    <div class="w-[30%] inline-block float-left">
+                    <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <p id="fechar_produto" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}
-                <div class="w-[100%] mt-[30px] inline-block">
+                <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <p class="text-[#ffffff] text-[14px]">Resumo elaborado para que os profissionais da saúde, gestores a técnicos do Ministério da Saúde possam compreender os métodos, resultados e recomendações oriundas desta pesquisa. </p>
+                    <div style="background-image: url('/img/pesquisadores/{{ $pesquisador_info->imagem }}'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
+                    {{--  --}}
+                    <p class="leading-[17px] text-[14px] text-center mt-[30px]">{{ $descricao_info }}</p>
+                </div>
+                {{--  --}}
+                @if(!empty($pesquisador_info->link_lattes) OR !empty($pesquisador_info->link_orcid))
+                {{--  --}}
+                <div class="w-[100%] inline-block">
                     {{--  --}}
                     <center>
-                        <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Resumo Executivo</button></a>
+                    {{--  --}}
+                    <ul id="links_pesq_mob" class="mt-[20px]">
+
+                        @if(!empty($pesquisador_info->link_lattes))
+                        <li class="mr-[20px] inline-block"><a href="{{ $pesquisador_info->link_lattes }}" target="blank_"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
+                        @endif
+
+                        @if(!empty($pesquisador_info->link_orcid))
+                        <li class="mr-[20px] inline-block"><a href="{{ $pesquisador_info->link_orcid }}"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
+                        @endif
+
+                    </ul>
                     </center>
                 </div>
+                @endif
             </div>
         </div>
-        {{--  --}}
-        <div style="display: none;" class="banner_produtos2">
+        @endif
+
+        {{-- BANNER PRODUTOS --}}
+        <section class="w-[100%] inline-block">
             {{--  --}}
-            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+            <div class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div class="w-[70%] inline-block float-left">
-                        {{--  --}}
-                        <p class="text-[#ffffff] uppercase font-bold">Nosso infográfico</p>
+                <div id="banner-produtos" style="background-image: url(/img/banner.png); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] rounded-[20px] h-[420px] inline-block">
+                    <div class="w-[100%] h-[420px] inline-block">
+                        <div class="w-[33%] h-[420px] inline-block float-left"></div>
+                        <div class="w-[67%] h-[420px] inline-block float-left">
+                            <div class="w-[100%] inline-block h-[300px]"></div>
+                            <div class="w-[100%] inline-block h-[120px] mt-[-10px]">
+                                <ul class="">
+                                    <li class="inline-block mr-[20px]"><button id="video_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Vídeo</button></li>
+                                    <li class="inline-block mr-[20px]"><button id="podcst_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Podcast</button></li>
+                                    <li class="inline-block mr-[20px]"><button id="info_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Infográfico</button></li>
+                                    <li class="inline-block mr-[20px]"><button id="resumo_produto" class="px-[20px] h-[40px] rounded-[10px] bg-[#ffffff] text-[15px] font-bold uppercase">Resumo executivo</button></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    {{--  --}}
-                    <div class="w-[30%] inline-block float-left">
-                        {{--  --}}
-                        <p id="fechar_info" class="float-right text-[#ffffff] cursor-pointer">✕</p>
-                    </div>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] mt-[30px] inline-block">
-                    {{--  --}}
-                    <p class="text-[#ffffff] text-[14px]">Este documento utiliza uma linguagem e formato acessível para resumir em uma única página os aspectos mais importantes da pesquisa. Este infográfico foi elaborado para que a comunidade entenda a pesquisa de forma rápida e simples. </p>
-                    {{--  --}}
-                    <center>
-                        <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Infográfico</button></a>
-                    </center>
                 </div>
             </div>
-        </div>
-        {{--  --}}
-        <div style="display: none;" class="banner_produtos1">
             {{--  --}}
-            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+            <div style="display: none;" class="banner_produtos">
                 {{--  --}}
-                <div class="w-[100%] inline-block">
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
                     {{--  --}}
-                    <div class="w-[70%] inline-block float-left">
+                    <div class="w-[100%] inline-block">
                         {{--  --}}
-                        <p class="text-[#ffffff] uppercase font-bold">Nosso podcast</p>
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Nosso resumo executivo</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_produto" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
                     </div>
                     {{--  --}}
-                    <div class="w-[30%] inline-block float-left">
+                    <div class="w-[100%] mt-[30px] inline-block">
                         {{--  --}}
-                        <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        <p class="text-[#ffffff] text-[14px]">Resumo elaborado para que os profissionais da saúde, gestores a técnicos do Ministério da Saúde possam compreender os métodos, resultados e recomendações oriundas desta pesquisa. </p>
+                        {{--  --}}
+                        <center>
+                            <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Resumo Executivo</button></a>
+                        </center>
                     </div>
-                </div>
-                {{--  --}}
-                 {{--  --}}
-                 <div class="w-[100%] mt-[30px] inline-block">
-                    {{--  --}}
-                    <p class="text-[#ffffff] text-[14px]">Aqui temos um bate papo descontraído, com uma linguagem muito simples. Ao ouvir esse podcast será possível entender como esta pesquisa foi feita e compreender melhor seus resultados. Esse podcast dispõe também de um vídeo com janela em libras para torná-lo ainda mais acessível.   </p>
-                    {{--  --}}
-                    <center>
-                        <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[500px] h-[350px] rounded-[100px]  text-[12px] bg-[] font-bold text-[#080E45]"><video src="/img/Videocast Versao Final Mesclado Menor780p - Libras.mp4" controls></video> </button></a>
-                    </center>
                 </div>
             </div>
-        </div>
-        {{--  --}}
-        <div class="modal_resumo">
             {{--  --}}
-            <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+            <div style="display: none;" class="banner_produtos2">
                 {{--  --}}
-                <div class="w-[100%] inline-block">
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
                     {{--  --}}
-                    <div class="w-[70%] inline-block float-left">
+                    <div class="w-[100%] inline-block">
                         {{--  --}}
-                        <p class="text-[#ffffff] uppercase font-bold">Resumo Sistemático</p>
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Nosso infográfico</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_info" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
                     </div>
                     {{--  --}}
-                    <div class="w-[30%] inline-block float-left">
+                    <div class="w-[100%] mt-[30px] inline-block">
                         {{--  --}}
-                        <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        <p class="text-[#ffffff] text-[14px]">Este documento utiliza uma linguagem e formato acessível para resumir em uma única página os aspectos mais importantes da pesquisa. Este infográfico foi elaborado para que a comunidade entenda a pesquisa de forma rápida e simples. </p>
+                        {{--  --}}
+                        <center>
+                            <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[300px] h-[40px] rounded-[100px] mt-[30px] text-[12px] bg-[#00FF8C] font-bold text-[#080E45]">Baixar Infográfico</button></a>
+                        </center>
                     </div>
                 </div>
-                {{--  --}}
             </div>
-        </div>
-    </section>
-    <!--patrocinadores-->
-    <section class="w-[100%] h-[600px] inline-block bg-[#ffffff]">
-        {{--  --}}
-        <div class="w-[90%] mx-[5%] mt-[10%] inline-block">
             {{--  --}}
-            <center>
+            <div style="display: none;" class="banner_produtos1">
                 {{--  --}}
-                <ul>
-                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
-                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
-                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
-                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[300px]" src="/img/mcti.png" alt=""></li>
-                    <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
-                </ul>
-            </center>
-        </div>
-    </section>
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Nosso podcast</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                     {{--  --}}
+                     <div class="w-[100%] mt-[30px] inline-block">
+                        {{--  --}}
+                        <p class="text-[#ffffff] text-[14px]">Aqui temos um bate papo descontraído, com uma linguagem muito simples. Ao ouvir esse podcast será possível entender como esta pesquisa foi feita e compreender melhor seus resultados. Esse podcast dispõe também de um vídeo com janela em libras para torná-lo ainda mais acessível.   </p>
+                        {{--  --}}
+                        <center>
+                            <a href="/ResumoExecutivo-LAIRE-1.pdf" target="blank_"><button class="w-[500px] h-[350px] rounded-[100px]  text-[12px] bg-[] font-bold text-[#080E45]"><video src="/img/Videocast Versao Final Mesclado Menor780p - Libras.mp4" controls></video> </button></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            {{--  --}}
+            <div class="modal_resumo">
+                {{--  --}}
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Resumo Sistemático</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_produto1" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                </div>
+            </div>
+        </section>
+        <!--patrocinadores-->
+        <section class="w-[100%] h-[650px]  inline-block bg-[#ffffff]">
+        {{--  --}}
+        <div class="w-[90%] mx-[5%]  mt-[10%] inline-block">
+        {{--  --}}
+        <center>
+            {{--  --}}
+            <ul>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/ppgfis.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/6.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/LAIRE para fundo claro.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[300px]" src="/img/mcti.png" alt=""></li>
+                <li class="inline-block mx-[30px] my-[10px]"><img class="w-[210px]" src="/img/Logo UFRN.jpg" alt=""></li>
+            </ul>
+        </center>
+    </div>
+</section>
 
 @endsection

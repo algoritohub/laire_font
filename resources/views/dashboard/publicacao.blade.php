@@ -3,49 +3,8 @@
 @section('conteudo')
 
 @php
-    // RESGATE DE PROFISSIONAL
-    // $conteudos = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos");
-    // $contador1 = count($conteudos);
-
-    // RESGATE DE PESQUISADORES
-    // $pesquisadores = Illuminate\Support\Facades\DB::select("SELECT * FROM pesquisadors");
-    // RESGATE DE PESQUISAS
-    // $pesquisas     = Illuminate\Support\Facades\DB::select("SELECT * FROM pesquisas");
-    // RESGATE DE DOENÇA
-    // $doencas       = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas");
-
     // RESGATE DE GET
-    @$erro_msn     = $_GET["erro"];
-
-    // PDO
-    $name_banco    = "laire_temp";
-    $conectDB      = 'mysql:host=db4free.net;dbname='.$name_banco;
-    $name_user     = "laire_ufrn";
-    $pass_banco    = "Laire@2023";
-
-    $conn          = new PDO($conectDB, $name_user, $pass_banco);
-
-    // PDO RESGATE DE CONTEÚDO
-    $stmt          = $conn->prepare('SELECT * FROM conteudos');
-    $stmt->execute();
-    $conteudos     = $stmt->fetchAll();
-    $contador1     = count($conteudos);
-
-    // PDO RESGATE DE PESQUISADORES
-    $stmt          = $conn->prepare('SELECT * FROM pesquisadors');
-    $stmt->execute();
-    $pesquisadores = $stmt->fetchAll();
-
-    // PDO RESGATE DE PESQUISAS
-    $stmt          = $conn->prepare('SELECT * FROM pesquisas');
-    $stmt->execute();
-    $pesquisas     = $stmt->fetchAll();
-
-    // PDO RESGATE DE DOENÇA
-    $stmt          = $conn->prepare('SELECT * FROM doencas');
-    $stmt->execute();
-    $doencas       = $stmt->fetchAll();
-
+    @$erro_msn = $_GET["erro"];
 @endphp
 
 <section class="w-[100%] p-[30px] inline-block">
@@ -108,15 +67,15 @@
             @foreach ($conteudos as $content)
             <table class="w-[100%]">
                 <tr>
-                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content['id'] }}</p></td>
-                    <td class="w-[30%]"><p class="text-[#212121] text-center text-[11px]">{{ $content['pagina'] }}</p></td>
-                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content['bloco'] }}</p></td>
-                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content['posicao'] }}</p></td>
-                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content['publicador'] }}</p></td>
+                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content->id }}</p></td>
+                    <td class="w-[30%]"><p class="text-[#212121] text-center text-[11px]">{{ $content->pagina }}</p></td>
+                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content->bloco }}</p></td>
+                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content->posicao }}</p></td>
+                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $content->publicador }}</p></td>
                     <td class="w-[30%]">
                         <ul class="float-right">
-                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.edit_conteudo', ['id' => $content['id']]) }}"><button class="px-[20px] rounded-[100px] bg-[#FFC122] text-[11px] h-[30px] text-[#ffffff]">Editar</button></a></li>
-                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.delete_conteudo', ['id' => $content['id']]) }}"><button class="px-[20px] rounded-[100px] bg-[#00FF8C] text-[11px] h-[30px] text-[#080E45]">Delete</button></a></li>
+                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.edit_conteudo', ['id' => $content->id]) }}"><button class="px-[20px] rounded-[100px] bg-[#FFC122] text-[11px] h-[30px] text-[#ffffff]">Editar</button></a></li>
+                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.delete_conteudo', ['id' => $content->id]) }}"><button class="px-[20px] rounded-[100px] bg-[#00FF8C] text-[11px] h-[30px] text-[#080E45]">Delete</button></a></li>
                         </ul>
                     </td>
                 </tr>
@@ -291,20 +250,7 @@
         </div>
     </div>
     {{-- EDITAR CONTEUDO --}}
-    @if (isset($editar_conteudo) AND !empty($editar_conteudo))
-    {{--  --}}
-    @php
-        // $info_conteudo = Illuminate\Support\Facades\DB::select("SELECT * FROM conteudos WHERE id = '$editar_conteudo'");
-
-        // PDO RESGATE DE INFORMAÇÕES
-        $stmt = $conn->prepare('SELECT * FROM conteudos WHERE id = :id');
-        $stmt->execute(array('id' => $editar_conteudo));
-        $info_content = $stmt->fetchAll();
-        foreach ($info_content as $info_conteudo) {}
-
-
-
-    @endphp
+    @if (isset($conteudo) AND !empty($conteudo))
     {{--  --}}
     <div class="modal_edit_conteudo">
         {{--  --}}
@@ -342,7 +288,7 @@
                             </div>
                         </div>
                         {{--  --}}
-                        <input type="hidden" name="id" value="{{ $info_conteudo['id'] }}">
+                        <input type="hidden" name="id" value="{{ $conteudo->id }}">
                     </form>
                 </div>
             </div>
@@ -360,7 +306,7 @@
                 </div>
             </div>
             {{--  --}}
-            <form action="{{ route('admin.editar_conteudo', ['id' => $info_conteudo['id']]) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('admin.editar_conteudo', ['id' => $conteudo->id]) }}" method="post" enctype="multipart/form-data">
                 {{--  --}}
                 @csrf
                 {{--  --}}
@@ -368,17 +314,17 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <p class="text-[11px] mt-[15px] ml-[12px] font-bold uppercase">Página ({{ $info_conteudo['pagina'] }})</p>
+                        <p class="text-[11px] mt-[15px] ml-[12px] font-bold uppercase">Página ({{ $conteudo->pagina }})</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <p class="text-[11px] mt-[15px] font-bold uppercase">Bloco ({{ $info_conteudo['bloco'] }})</p>
+                        <p class="text-[11px] mt-[15px] font-bold uppercase">Bloco ({{$conteudo->bloco }})</p>
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <p class="text-[11px] mt-[15px] font-bold uppercase">Posição ({{ $info_conteudo['posicao'] }})</p>
+                        <p class="text-[11px] mt-[15px] font-bold uppercase">Posição ({{ $conteudo->posicao }})</p>
                     </div>
                     {{--  --}}
                     <div class="w-[40%] inline-block pl-[20px] float-left">
@@ -398,75 +344,75 @@
                     {{-- CAMPOS PORTUGUÊS --}}
                     <div id="campos_edit_pt" class="w-[100%] inline-block">
                         {{--  --}}
-                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="titulo" value="{{ $info_conteudo['titulo'] }}" placeholder="Titulo do bloco">
+                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="titulo" value="{{ $conteudo->titulo }}" placeholder="Titulo do bloco">
                         {{--  --}}
-                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="subtitulo" value="{{ $info_conteudo['subtitulo'] }}" placeholder="Subtitulo do bloco">
+                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="subtitulo" value="{{ $conteudo->subtitulo }}" placeholder="Subtitulo do bloco">
                         {{--  --}}
-                        <textarea id="tiny_cont6" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto" placeholder="Escreva um texto para essa sessão!">{{ $info_conteudo['texto'] }}</textarea>
+                        <textarea id="tiny_cont6" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto" placeholder="Escreva um texto para essa sessão!">{{ $conteudo->texto }}</textarea>
                         {{-- PARAGRAFO2 --}}
-                        @if (isset($info_conteudo['texto2']) AND !empty($info_conteudo['texto2']))
+                        @if (isset($conteudo->texto2) AND !empty($conteudo->texto2))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont7" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto2" placeholder="Escreva um texto para essa sessão!">{{ $info_conteudo['texto2'] }}</textarea>
+                            <textarea id="tiny_cont7" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto2" placeholder="Escreva um texto para essa sessão!">{{ $conteudo->texto2 }}</textarea>
                         @endif
                         {{-- PARAGRAFO3 --}}
-                        @if (isset($info_conteudo['texto3']) AND !empty($info_conteudo['texto3']))
+                        @if (isset($conteudo->texto3) AND !empty($conteudo->texto3))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont8" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto3" placeholder="Escreva um texto para essa sessão!">{{ $info_conteudo[0]->texto3 }}</textarea>
+                            <textarea id="tiny_cont8" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto3" placeholder="Escreva um texto para essa sessão!">{{ $conteudo->texto3 }}</textarea>
                         @endif
                         {{-- PARAGRAFO4 --}}
-                        @if (isset($info_conteudo['texto4']) AND !empty($info_conteudo['texto4']))
+                        @if (isset($conteudo->texto4) AND !empty($conteudo->texto4))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont9" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto4" placeholder="Escreva um texto para essa sessão!">{{ $info_conteudo['texto4'] }}</textarea>
+                            <textarea id="tiny_cont9" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto4" placeholder="Escreva um texto para essa sessão!">{{ $conteudo->texto4 }}</textarea>
                         @endif
                         {{-- PARAGRAFO5 --}}
-                        @if (isset($info_conteudo['texto5']) AND !empty($info_conteudo['texto5']))
+                        @if (isset($conteudo->texto5) AND !empty($conteudo->texto5))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont10" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto5" placeholder="Escreva um texto para essa sessão!">{{ $info_conteudo['texto5'] }}</textarea>
+                            <textarea id="tiny_cont10" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto5" placeholder="Escreva um texto para essa sessão!">{{ $conteudo->texto5 }}</textarea>
                         @endif
                     </div>
                     {{-- CAMPOS INGLÊS --}}
                     <div id="campos_edit_eng" style="display: none;" class="w-[100%] inline-block">
                         {{--  --}}
-                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="titulo_eng" value="{{ $info_conteudo['titulo_eng'] }}" placeholder="Block title">
+                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="titulo_eng" value="{{ $conteudo->titulo_eng }}" placeholder="Block title">
                         {{--  --}}
-                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="subtitulo_eng" value="{{ $info_conteudo['subtitulo_eng'] }}" placeholder="Block subtitle">
+                        <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="subtitulo_eng" value="{{ $conteudo->subtitulo_eng }}" placeholder="Block subtitle">
                         {{--  --}}
-                        <textarea id="tiny_cont_eng_6" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto_eng" placeholder="Write a text for this session!">{{ $info_conteudo['texto_eng'] }}</textarea>
+                        <textarea id="tiny_cont_eng_6" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto_eng" placeholder="Write a text for this session!">{{ $conteudo->texto_eng }}</textarea>
                         {{-- PARAGRAFO2 --}}
-                        @if (isset($info_conteudo['texto2_eng']) AND !empty($info_conteudo['texto2_eng']))
+                        @if (isset($conteudo->texto2_eng) AND !empty($conteudo->texto2_eng))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont_eng_7" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto2_eng" placeholder="Write a text for this session!">{{ $info_conteudo['texto2_eng'] }}</textarea>
+                            <textarea id="tiny_cont_eng_7" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto2_eng" placeholder="Write a text for this session!">{{ $conteudo->texto2_eng }}</textarea>
                         @endif
                         {{-- PARAGRAFO3 --}}
-                        @if (isset($info_conteudo['texto3_eng']) AND !empty($info_conteudo['texto3_eng']))
+                        @if (isset($conteudo->texto3_eng) AND !empty($conteudo->texto3_eng))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont_eng_8" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto3_eng" placeholder="Write a text for this session!">{{ $info_conteudo['texto3_eng'] }}</textarea>
+                            <textarea id="tiny_cont_eng_8" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto3_eng" placeholder="Write a text for this session!">{{ $conteudo->texto3_eng }}</textarea>
                         @endif
                         {{-- PARAGRAFO4 --}}
-                        @if (isset($info_conteudo['texto4_eng']) AND !empty($info_conteudo['texto4_eng']))
+                        @if (isset($conteudo->texto4_eng) AND !empty($conteudo->texto4_eng))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont_eng_9" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto4_eng" placeholder="Write a text for this session!">{{ $info_conteudo['texto4_eng'] }}</textarea>
+                            <textarea id="tiny_cont_eng_9" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto4_eng" placeholder="Write a text for this session!">{{ $conteudo->texto4_eng }}</textarea>
                         @endif
                         {{-- PARAGRAFO5 --}}
-                        @if (isset($info_conteudo['texto5_eng']) AND !empty($info_conteudo['texto5_eng']))
+                        @if (isset($conteudo->texto5_eng) AND !empty($conteudo->texto5_eng))
                             {{--  --}}
                             <div class="w-[100%] h-[10px]"></div>
                             {{--  --}}
-                            <textarea id="tiny_cont_eng_10" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto5_eng" placeholder="Write a text for this session!">{{ $info_conteudo['texto5_eng'] }}</textarea>
+                            <textarea id="tiny_cont_eng_10" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto5_eng" placeholder="Write a text for this session!">{{ $conteudo->texto5_eng }}</textarea>
                         @endif
                     </div>
                     {{--  --}}
@@ -515,14 +461,14 @@
             @foreach ($doencas as $doencas_cont)
             <table class="w-[100%]">
                 <tr>
-                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont['id'] }}</p></td>
-                    <td class="w-[30%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont['nome'] }}</p></td>
-                    <td class="w-[15%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont['tipo'] }}</p></td>
-                    <td class="w-[15%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont['registro'] }}</p></td>
+                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont->id }}</p></td>
+                    <td class="w-[30%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont->nome }}</p></td>
+                    <td class="w-[15%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont->tipo }}</p></td>
+                    <td class="w-[15%]"><p class="text-[#212121] text-center text-[11px]">{{ $doencas_cont->registro }}</p></td>
                     <td class="w-[30%]">
                         <ul class="float-right">
-                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.edit_doenca', ['id' => $doencas_cont['id']]) }}"><button class="px-[20px] rounded-[100px] bg-[#FFC122] text-[11px] h-[30px] text-[#ffffff]">Editar</button></a></li>
-                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.delete_doenca', ['id' => $doencas_cont['id']]) }}"><button class="px-[20px] rounded-[100px] bg-[#00FF8C] text-[11px] h-[30px] text-[#080E45]">Delete</button></a></li>
+                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.edit_doenca', ['id' => $doencas_cont->id]) }}"><button class="px-[20px] rounded-[100px] bg-[#FFC122] text-[11px] h-[30px] text-[#ffffff]">Editar</button></a></li>
+                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.delete_doenca', ['id' => $doencas_cont->id]) }}"><button class="px-[20px] rounded-[100px] bg-[#00FF8C] text-[11px] h-[30px] text-[#080E45]">Delete</button></a></li>
                         </ul>
                     </td>
                 </tr>
@@ -618,18 +564,7 @@
         </div>
     </div>
     {{-- EDITAR DOENÇA --}}
-    @if (isset($editar_doenca) AND !empty($editar_doenca))
-    {{--  --}}
-    @php
-        // $info_doenca = Illuminate\Support\Facades\DB::select("SELECT * FROM doencas WHERE id = '$editar_doenca'");
-
-        // PDO RESGATE DE INFORMAÇÕES
-        $stmt = $conn->prepare('SELECT * FROM doencas WHERE id = :id');
-        $stmt->execute(array('id' => $editar_doenca));
-        $info_doenca_cont = $stmt->fetchAll();
-        foreach ($info_doenca_cont as $info_doenca) {}
-
-    @endphp
+    @if (isset($doenca) AND !empty($doenca))
     {{--  --}}
     <div class="modal_edit_doenca">
         {{--  --}}
@@ -641,7 +576,7 @@
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
-                        <p class="font-bold text-[18px]">Editar imagens de {{ $info_doenca['nome'] }}</p>
+                        <p class="font-bold text-[18px]">Editar imagens de {{ $doenca->nome }}</p>
                     </div>
                     {{--  --}}
                     <div id="fechar_mini_modal_img" class="w-[20%] inline-block float-left"><p class="float-right text-[16px] cursor-pointer">✕</p></div>
@@ -667,7 +602,7 @@
                             </div>
                         </div>
                         {{--  --}}
-                        @if (!empty($info_doenca['imagem2']))
+                        @if (!empty($doenca->imagem2))
                         {{--  --}}
                         <div class="w-[100%] inline-block">
                             {{--  --}}
@@ -685,7 +620,7 @@
                         </div>
                         @endif
                         {{--  --}}
-                        @if (!empty($info_doenca['imagem3']))
+                        @if (!empty($doenca->imagem3))
                         {{--  --}}
                         <div class="w-[100%] inline-block">
                             {{--  --}}
@@ -703,7 +638,7 @@
                         </div>
                         @endif
                         {{--  --}}
-                        <input type="hidden" name="id" value="{{ $info_doenca['id'] }}">
+                        <input type="hidden" name="id" value="{{ $doenca->id }}">
                     </form>
                 </div>
             </div>
@@ -712,7 +647,7 @@
                 {{--  --}}
                 <div class="float-left w-[50%]">
                     {{--  --}}
-                    <p class="font-bold text-[20px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Editar {{ $info_doenca['nome'] }}</p>
+                    <p class="font-bold text-[20px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Editar {{ $doenca->nome }}</p>
                 </div>
                 {{--  --}}
                 <div class="float-left w-[50%]">
@@ -721,7 +656,7 @@
                 </div>
             </div>
             {{--  --}}
-            <form action="{{ route('admin.editar_doenca', ['id' => $info_doenca['id']]) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('admin.editar_doenca', ['id' => $doenca->id]) }}" method="post" enctype="multipart/form-data">
                 {{--  --}}
                 @csrf
                 {{--  --}}
@@ -730,7 +665,7 @@
                     <div class="w-[40%] inline-block float-left">
                         {{--  --}}
                         <select class="w-[100%] h-[30px] rounded-[5px] mt-[10px] text-[12px] p-[5px] border-[1px] bg-[#ffffff]" name="tipo">
-                            @if ($info_doenca['tipo'] == 1)
+                            @if ($doenca->tipo == 1)
                             <option value="1" selected="">Doenças respiratórias agudas</option>
                             <option value="2">Doenças respiratórias crônicas</option>
                             @else
@@ -754,17 +689,17 @@
                 {{--  --}}
                 <div class="w-[100%] mt-[10px] h-[290px] overflow-scroll inline-block">
                     {{--  --}}
-                    <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="nome" value="{{ $info_doenca['nome'] }}" placeholder="Nome da doença">
+                    <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] text-[14px] mb-[10px] rounded-[10px] border-[2px] border-[#eeeeee] h-[40px]" type="text" name="nome" value="{{ $doenca->nome }}" placeholder="Nome da doença">
                     {{--  --}}
-                    <textarea id="tiny4" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="definicao" placeholder="Escreva uma definição para a doença!">{{ $info_doenca['definicao'] }}</textarea>
-                    {{--  --}}
-                    <div class="w-[100%] h-[20px]"></div>
-                    {{--  --}}
-                    <textarea id="tiny5" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="controle" placeholder="Como controlar os sintomas da doença!">{{ $info_doenca['controle'] }}</textarea>
+                    <textarea id="tiny4" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="definicao" placeholder="Escreva uma definição para a doença!">{{ $doenca->definicao }}</textarea>
                     {{--  --}}
                     <div class="w-[100%] h-[20px]"></div>
                     {{--  --}}
-                    <textarea id="tiny6" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="tratamento" placeholder="Qual o tratamento para a doença!">{{ $info_doenca['tratamento'] }}</textarea>
+                    <textarea id="tiny5" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="controle" placeholder="Como controlar os sintomas da doença!">{{ $doenca->controle }}</textarea>
+                    {{--  --}}
+                    <div class="w-[100%] h-[20px]"></div>
+                    {{--  --}}
+                    <textarea id="tiny6" class="w-[100%] bg-[#ffffff] float-left outline-none p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="tratamento" placeholder="Qual o tratamento para a doença!">{{ $doenca->tratamento }}</textarea>
                     {{--  --}}
                     <div class="w-[100%] h-[20px]"></div>
                     {{--  --}}
@@ -811,14 +746,14 @@
             @foreach ($pesquisadores as $pesquisador)
             <table class="w-[100%]">
                 <tr>
-                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $pesquisador['id'] }}</p></td>
-                    <td class="w-[40%]"><p class="text-[#212121] text-center text-[11px]">{{ $pesquisador['nome'] }}</p></td>
-                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $pesquisador['referencia'] }}</p></td>
+                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $pesquisador->id }}</p></td>
+                    <td class="w-[40%]"><p class="text-[#212121] text-center text-[11px]">{{ $pesquisador->nome }}</p></td>
+                    <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">{{ $pesquisador->referencia }}</p></td>
                     <td class="w-[10%]"><p class="text-[#212121] text-center text-[11px]">OK</p></td>
                     <td class="w-[30%]">
                         <ul class="float-right">
-                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.edit_pesquisadores', ['id' => $pesquisador['id']]) }}"><button class="px-[20px] rounded-[100px] bg-[#FFC122] text-[11px] h-[30px] text-[#ffffff]">Editar</button></a></li>
-                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.delete_pesquisadores', ['id' => $pesquisador['id']]) }}"><button class="px-[20px] rounded-[100px] bg-[#00FF8C] text-[11px] h-[30px] text-[#080E45]">Delete</button></a></li>
+                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.edit_pesquisadores', ['id' => $pesquisador->id]) }}"><button class="px-[20px] rounded-[100px] bg-[#FFC122] text-[11px] h-[30px] text-[#ffffff]">Editar</button></a></li>
+                            <li class="inline-block ml-[10px]"><a href="{{ route('admin.delete_pesquisadores', ['id' => $pesquisador->id]) }}"><button class="px-[20px] rounded-[100px] bg-[#00FF8C] text-[11px] h-[30px] text-[#080E45]">Delete</button></a></li>
                         </ul>
                     </td>
                 </tr>
@@ -846,7 +781,7 @@
                 </div>
             </div>
             {{--  --}}
-            <form action="/php/add_new_pesquisador.php" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('admin.new_pesquisador') }}" method="POST" enctype="multipart/form-data">
                 {{--  --}}
                 @csrf
                 {{--  --}}

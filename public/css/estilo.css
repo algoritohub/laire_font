@@ -291,6 +291,17 @@ button#bt2:hover{
     display: none;
 }
 
+.modal_add_eventos_admin{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
 .modal_add_conteudo_blog{
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -345,6 +356,16 @@ button#bt2:hover{
 }
 
 .modal_edit_pesquisador{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.modal_edit_respira_cont{
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
@@ -424,6 +445,17 @@ button#bt2:hover{
 }
 
 .modal_add_pesquisador{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.modal_add_respira_admin{
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
@@ -1001,8 +1033,6 @@ button#bt2-1:hover{
 
 /*imagens do projeto 1 */
 #box_audio-1{
-    background-image: url("/img/imagem_rs_1.png");
-    background-size: cover;
     width: 800px;
     height: 400px;
 }
