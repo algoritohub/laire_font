@@ -58,6 +58,15 @@ class ConteudoController extends Controller
         return view('respirasaude.projeto3', compact('pesquisadores', 'doencas_cronicas'));
     }
 
+    // PROJETO4
+    public function Projeto4()
+    {
+        $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
+        $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+
+        return view('respirasaude.responsivo_templete', compact('pesquisadores', 'doencas_cronicas'));
+    }
+
     public function AddNewDoenca(Request $request)
     {
         $doenca = new Doenca;

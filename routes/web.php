@@ -60,7 +60,8 @@ Route::get('/respira-saude/projeto/3', [ConteudoController::class, "projeto3"])-
 Route::get('/respira-saude/projeto/3/pesquisadores/{id}', [ConteudoController::class, "PesquisadoresProjeto3"])->name('pesquisadores_projeto_3');
 
 
-
+// PROJETO RESPONSIVO
+Route::get('/respira-saude/projeto/4', [ConteudoController::class, "projeto4"])->name('projeto4');
 
 
 // CONVIVENDO COM A ASMA E-BOOK
