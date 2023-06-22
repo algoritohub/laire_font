@@ -830,3 +830,27 @@ $(document).ready(function(){
         $(".modal_add_eventos_admin").fadeOut();
     });
 });
+
+//  MOBILE SEARCH
+$(document).ready(function(){
+    $("#active-search").click(function(event){
+        event.preventDefault();
+        $("#hidden-search-desk").toggle();
+        $("#block_acessibility").toggle();
+    });
+});
+
+//  SUBMENU
+$(document).ready(function(){
+    $("#cronicas").mouseover(function(event){
+        event.preventDefault();
+        $("#sub_cronicas").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#sub_cronicas, #lock").mouseout(function(event){
+        event.preventDefault();
+        $("#sub_cronicas").fadeOut();
+    });
+});
