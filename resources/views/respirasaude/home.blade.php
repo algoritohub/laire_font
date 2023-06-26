@@ -15,78 +15,66 @@
 @endphp
 
 {{-- SLIDE --}}
-<div class="slider">
-    {{--  --}}
-    <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        {{-- COMPONENTES --}}
-        <div class="slide first">
-            <a href="{{ route('projeto1') }}"><x-master-projeto1/></a>
-        </div>
+<div class="w-[100%] inline-block bg-[#00ff8c]">
+    <div class="slider">
+        {{--  --}}
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
 
-        <div class="slide">
-            <a href="{{ route('projeto2') }}"><x-master-projeto2/></a>
-        </div>
+            {{-- COMPONENTES --}}
+            <div class="slide first">
+                <a href="{{ route('projeto1') }}"><x-master-projeto1/></a>
+            </div>
 
-        <div class="slide">
-            <a href="{{ route('projeto3') }}"><x-master-projeto3/></a>
+            <div class="slide">
+                <a href="{{ route('projeto2') }}"><x-master-projeto2/></a>
+            </div>
+
+            <div class="slide">
+                <a href="{{ route('projeto3') }}"><x-master-projeto3/></a>
+            </div>
+
+            {{-- NAVEGATION --}}
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
         </div>
-        {{-- NAVEGATION --}}
-        <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
+        {{-- NAVEGATION MANUAL --}}
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
         </div>
-    </div>
-    {{-- NAVEGATION MANUAL --}}
-    <div class="manual-navigation">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
     </div>
 </div>
 
-{{-- BLOCO 2 --}}
 @if ($conteudo)
-<section class="w-[100%] mt-[-5px] inline-block">
-    {{--  --}}
-    <div id="container_bloco1" class="w-[100%] bg-[#fafafa] inline-block">
-        {{--  --}}
-        <div id="lado_a_bloco1" class="w-[50%] pl-[80px] pb-[50px] float-left inline-block">
-            {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
-                {{--  --}}
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <ul id="list_acess" class="mt-[100px]">
-                        <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
-                        <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+{{-- NEW BLOCK PRIME --}}
+<section id="section-master-prime" class="w-[100%] inline-block pb-[40px]">
+    <div class="w-[100%] inline-block">
+        <div class="w-[100%] inline-block">
+            {{-- BLOCK IMAGE PRIME --}}
+            <div id="block-prime-video" class="w-[50%] pl-[5%] float-left inline-block">
+                {{-- BUTTON ACESSIBILITY --}}
+                <div class="w-[100%] mt-[40px] inline-block">
+                    <ul>
+                        <li class="mr-[2px] inline-block"><img id="audios_home" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        <li class="mr-[2px] inline-block"><img id="libras_home" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
                     </ul>
                 </div>
-                {{--  --}}
-                <div id="box_libra" style="display: none;" class="w-[100%] h-[330px] mt-[20px] inline-block bg-[orange]"><video id="video-missão" src="/img/menor.mp4" controls="controls" ></video></div>
-                {{--  --}}
-                <div style="background-image: url('/img/conteudo/{{ $conteudo[0]->imagem }}'); background-size: 110%;" id="box_audio" class="w-[100%] h-[350px] mt-[20px] inline-block bg-[purple]"></div>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="lado_b_bloco1" class="w-[50%] pb-[50px] px-[80px] float-left inline-block">
-            {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
-                <div id="import" ></div>
-                {{--  --}}
-                <p id="titulo_bloco1" class="text-[30px] font-bold mb-[30px] mt-[170px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $conteudo[0]->titulo }}</p>
-
-                @foreach ($descricao_blocos as $paragrafo)
-                <p id="text_projeto3" class="mb-[10px] text-justify text-[{{ $numb_font }}px]">{{ $paragrafo }}.</p>
-                @endforeach
-
+                {{-- IMAGE/VIDEO --}}
+                <div id="moldure-prime" class="w-[100%] inline-block">
+                    <img id="box_audio_home" class="rounded-[20px] border-[1px] shadow-lg" src="/img/conteudo/{{ $conteudo[0]->imagem }}">
+                    <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/img/menor.mp4" controls="controls"></video>
+                </div>
                 {{-- AUDIO --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
+                    <div id="audio_libra_home" style="display: none;" class="inline-block float-left mt-[20px]">
                         {{--  --}}
                         <audio autoplay="autoplay" controls="controls">
                             <source src="sua_musica.mp3" type="audio/mp3" />
@@ -94,171 +82,79 @@
                         </audio>
                     </div>
                 </div>
+            </div>
+            {{-- BLOCK TEXT PRIME --}}
+            <div id="block-prime-text" class="w-[45%] float-left inline-block pl-[80px] pb-[20px] pt-[80px] text-justify">
 
+                <p class="text-[30px] leading-[30px] float-left text-left font-bold text-[#080E45]">{{ $conteudo[0]->titulo }}</p>
+
+                <div class="w-[100%] mt-[40px] inline-block">
+                    @foreach ($descricao_blocos as $paragrafo)
+                    <p id="text_projeto3" class="mb-[10px] text-justify text-[{{ $numb_font }}px]">{{ $paragrafo }}.</p>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
 </section>
 @endif
 
-{{-- NOVO BLOCO DE MISSÃO --}}
-<div id="missão" style="display: none;" class="w-[100%]  inline-block">
-    {{--  --}}
-    <div id="lado_a_respira" style="background: linear-gradient(90deg, rgba(250,250,250,1) 75%, rgba(92,209,255,1) 75%);" class="w-[50%] inline-block float-left h-[700px] bg-[green] pl-[80px]">
-        {{--  --}}
-        <div id="container_respira_home">
-            {{--  --}}
-            <div class="w-[100%] inline-block">
-                {{--  --}}
-                <ul id="list_acess" class="mt-[100px]">
-                    <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
-                    <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
-                </ul>
-            </div>
-            {{--  --}}
-            <div id="box_libra" style="display: none;" class="w-[100%] h-[330px] mt-[20px] inline-block bg-[orange]"><video id="video-missão" src="/img/menor.mp4" controls="controls" ></video></div>
-            {{--  --}}
-            <div style="background-image: url(/img/img_missao.png); background-size: 110%;" id="box_audio" class="w-[100%] h-[350px] mt-[20px] inline-block bg-[purple]"></div>
-        </div>
-    </div>
-    {{--  --}}
-    <div id="lado_b_respira" class="w-[50%] inline-block float-left h-[700px] bg-[#5CD1FF] px-[80px]">
-        {{--  --}}
-        <div id="container_respira_home">
-            {{--  --}}
-            <p id="titulo_missa" class="text-[30px] leading-[30px] mt-[100px] float-right text-right w-[500px] font-bold text-[#080E45]">MISSÃO</p>
-            {{--  --}}
-            <p id="text_missao_RS" class="text-right mt-[40px] text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">O RespiraSaúde é uma ponte entre o conhecimento produzido, através da ciência, e a comunicação com a sociedade. </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">A nossa missão é comunicar de forma simples e acessível, para todas as pessoas, os resultados de pesquisas importantes. Normalmente, os resultados de grandes pesquisas são publicados em jornais científicos e na grande maioria das vezes, em outros idiomas. Saiba aqui no RespiraSaúde como elas acontecem e compreenda os seus resultados. </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">Aqui, no RespiraSaúde estão disponíveis informações importantes e atualizadas sobre as principais doenças respiratórias agudas e crônicas. </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">Queremos que você entenda como elas acontecem no nosso corpo, e como podem ser prevenidas e tratadas.
-            Neste canal você terá ainda, informações sobre os eventos abertos para a comunidade, além das oportunidades para participar de projetos de pesquisa e projetos de extensão no Laboratório de Avaliação e Intervenção Respiratória!
-            </p>
-            <p id="text_missao_RS"  class="mt-[20px] text-right text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#080E45]">Nossa missão acima de tudo é promover educação em saúde e contribuir com a sua Saúde Respiratória!</p>
-        </div>
-        {{-- AUDIO --}}
-        <div class="w-[100%] inline-block">
-            {{--  --}}
-            <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
-                {{--  --}}
-                <audio autoplay="autoplay" controls="controls">
-                    <source src="sua_musica.mp3" type="audio/mp3" />
-                    seu navegador não suporta HTML5
-                </audio>
-            </div>
-        </div>
-    </div>
-</div>
-
 @if ($eventos)
 {{-- BLOCO DE EVENTOS --}}
-<section class="w-[100%] my-[10%] inline-block">
+<section class="w-[100%] mt-[40px] inline-block">
     {{--  --}}
     <div class="w-[90%] mx-[5%] inline-block">
         {{--  --}}
-        <p class="text-center font-bold text-[30px]">Eventos</p>
-        {{--  --}}
-        <div class="w-[100%] inline-block">
-            {{--  --}}
-            <ul style="display: none;" class="float-right">
-                <li class="inline-block ml-[10px]"><button class="px-[30px] rounded-[100px] h-[40px] bg-[blue] text-[#ffffff] font-bold text-[12px]">Encerrrados</button></li>
-                <li class="inline-block ml-[10px]"><button class="px-[30px] rounded-[100px] h-[40px] bg-[blue] text-[#ffffff] font-bold text-[12px]">Futuros</button></li>
-            </ul>
-            {{--  --}}
-        </div>
+        <p class="text-center font-bold text-[25px]">Eventos</p>
         {{--  --}}
         @foreach ($eventos as $evento)
         {{--  --}}
-        <div class="w-full mt-4 flex flex-wrap">
-            <div class="w-full md:w-1/3 px-2 mb-4">
-                <div style="background-image: url('/img/eventos/{{ $evento->imagem }}'); background-size: cover; background-position: center;" class="w-full rounded-lg h-48 md:h-64 bg-gray-300"></div>
-                {{-- <center><p class="uppercase text-[17px]">{{ $evento->titulo }}</p></center> --}}
-                <a href="">
-                    <p class="text-center uppercase text-sm font-bold mt-[10px]">Ver mais</p>
+        <div class="w-[100%] mt-[20px] inline-block">
+            <div id="mentos" class="w-[30.3%] mx-[1.5%] inline-block">
+                <a href="{{ route('admin.eventos.modal', ['id' => $evento->id]) }}">
+                    <div class="w-[100%] shadow-lg border-[1px] inline-block h-[200px] rounded-[20px]" style="background-image: url('/img/eventos/{{ $evento->imagem }}'); background-size: cover; background-position: center;"></div>
                 </a>
+                {{--  --}}
+                <div class="w-[100%] mt-[25px] inline-block">
+                    <p class="font-bold text-[16px] uppercase">{{ $evento->titulo }}</p>
+                    <p class="mt-[3px]">{{ $evento->subtitulo }}</p>
+                </div>
             </div>
         </div>
         @endforeach
-        {{-- MODAL MASTER --}}
-        @if (isset($evento_cat) AND !empty($evento_cat))
+
+        {{-- MODAL EVENTO --}}
+        @if (isset($evento_detal) AND !empty($evento_detal))
         {{--  --}}
         <div class="modal_master_eventos">
             {{--  --}}
-            <div style="background-image: url('/img/fundo_ARlindo.png'); background-size: 100%;" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] p-[40px] h-[500px] rounded-[20px] mx-auto">
+            <div id="modal_evento" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] h-[520px] p-[50px] rounded-[20px] mx-auto">
+                {{--  --}}
+                <div class="w-[100%] mb-[30px] inline-block">
+                    {{--  --}}
+                   <div class="w-[70%] inlin-block float-left">
+                        {{--  --}}
+                        <p class="font-bold font-size-[20px] uppercase">{{ $evento_detal->titulo }}</p>
+                        <p class="mt-[5px]">{{ $evento_detal->subtitulo }}</p>
+                   </div>
+                   {{--  --}}
+                   <div class="w-[30%] inlin-block float-left">
+                        {{--  --}}
+                        <a href="{{ route('home.respira_saude') }}"><p class="float-right font-[20px]">✕</p></a>
+                   </div>
+                </div>
+                {{--  --}}
+                <div id="content-modal" class="w-[100%] inline-block h-[300px] overflow-scroll">
+                    {{--  --}}
+                    <div class="w-[100%] h-[150px] rounded-[20px] border-[1px] border-[#cdcdcd]" style="background-image: url('/img/eventos/{{ $evento_detal->imagem }}'); background-size: cover;"></div>
+                    {{--  --}}
+                    <p class="mt-[20px] text-[13px]">{{ $texto_detal }}</p>
+                </div>
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div class="w-[50%] inline-block float-left">
-                        {{--  --}}
-                        <p class="text-[15px] text-[#ffffff] font-bold uppercase">convivendo com a asma</p>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[50%] inline-block float-left">
-                        {{--  --}}
-                        <a href="{{ route('home.respira_saude') }}"><p class="float-right text-[#ffffff]">✕</p></a>
-                    </div>
+                    <a href="{{ $evento_detal->link_video }}" target="_blank"><button id="button_externo" class="px-[20px] text-[13px] h-[40px] rounded-[100px] bg-[#212121] text-[#ffffff]">Link externo</button></a>
                 </div>
-                {{-- CONTEÚDO E-BOOK --}}
-                @if ($evento_cat == "ebook")
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">e-book</p>
-                    {{--  --}}
-                    <center>
-                        {{--  --}}
-                        <button class="px-[40px] h-[40px] rounded-[100px] mt-[15%] bg-[#00FF8C] text-[#080E45] text-[12px] font-bold">Baixar e-book do evento</button>
-                    </center>
-                </div>
-                @endif
-                {{-- CONTEÚDO PALESTRA --}}
-                @if ($evento_cat == "palestras")
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">palestras</p>
-                    {{--  --}}
-                    <div class="w-[100%] bg-[#ffffff] overflow-scroll pt-[30px] px-[15px] rounded-[20px] mt-[30px] h-[300px] inline-block">
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=mpR7Fm32ZvQ&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=14" target="_blank"><div style="background-image: url('/img/8- (3).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=3wJlQvYEdf4&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=8" target="_blank"><div style="background-image: url('/img/5.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=88udAKuAheM&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=9" target="_blank"><div style="background-image: url('/img/8- (1).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=gXkLtt2tHlw&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=12" target="_blank"><div style="background-image: url('/img/8- (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=5VjgO_nnJE4&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=11" target="_blank"><div style="background-image: url('/img/10-1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=bMoK0r7Civo&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=5" target="_blank"><div style="background-image: url('/img/3 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=LDCoCah3wTI&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=6" target="_blank"><div style="background-image: url('/img/4 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=cSkDbXbWi4I&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=7" target="_blank"><div style="background-image: url('/img/6 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=ok92HQosYsw&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=15" target="_blank"><div style="background-image: url('/img/7.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=YrN_qAF-OO0&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=13" target="_blank"><div style="background-image: url('/img/12.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=hddSibrnSrM&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=10" target="_blank"><div style="background-image: url('/img/9 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=GzcvhjbWHLU&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=1" target="_blank"><div style="background-image: url('/img/1.png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-                        {{--  --}}
-                        <a href="https://www.youtube.com/watch?v=oSfq8CsvKJs&list=PLbjVywU2RQGKscmPaR0NOODu_dW0Nb2aH&index=4" target="_blank"><div style="background-image: url('/img/2 (2).png'); background-size: 100%;" class="w-[30.3%] mx-[1.5%] float-left mb-[30px] h-[150px] rounded-[10px]"></div></a>
-
-                    </div>
-                </div>
-                @endif
-                {{-- CONTEÚDO PLANO DE AÇÃO --}}
-                @if ($evento_cat == "plano")
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <p class="text-[30px] uppercase text-[#ffffff] font-bold">plano de ação</p>
-                    {{--  --}}
-                    <center>
-                        {{--  --}}
-                        <button class="px-[40px] h-[40px] rounded-[100px] mt-[15%] bg-[#00FF8C] text-[#080E45] text-[12px] font-bold">Baixar nosso plano de ação</button>
-                    </center>
-                </div>
-                @endif
             </div>
         </div>
         @endif
@@ -270,7 +166,7 @@
 <section id="projeto_extensao" class="w-[100%] inline-block">
     {{--  --}}
     <center>
-        <p id="pex" class="font-bold text-[#212121] text-[30px] leading-[35px] w-[500px] mt-[60px] pb-[20px]">Projetos de Extensão</p>
+        <p id="pex" class="font-bold text-[#212121] text-[25px] leading-[35px] w-[500px] mt-[60px] pb-[20px]">Projetos de Extensão</p>
     </center>
     <div id="caixa_evt" class="w-[94%] mx-[3%] mt-[70px] inline-block">
         {{--  --}}
@@ -330,37 +226,6 @@
         </center>
     </div>
 </section>
-
-{{--  --}}
-<div style="display: none;" class="modal_laire">
-    {{--  --}}
-    <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[800px] h-[550px] rounded-[20px] bg-[#ffffff] mx-auto mt-[10%] shadow-lg">
-        {{--  --}}
-        <div class="w-[100%] inline-block px-[30px]">
-            {{--  --}}
-            <div class="float-left w-[100%]">
-                {{--  --}}
-                <p id="modal_laire" class="float-right text-[16px] text-[#ffffff] mt-[30px] cursor-pointer">✕</p>
-            </div>
-        </div>
-        {{--  --}}
-        <div class="w-[100%] px-[40px] inline-block">
-            {{--  --}}
-            <div class="w-[100%] inline-block">
-                {{--  --}}
-                <p class="text-[20px] text-[#ffffff] text-center mt-[-30px] leading-[40px]">RespiraSaúde</p>
-                {{--  --}}
-                <p class="text-[30px] text-[#ffffff] text-center leading-[40px] font-bold">O ARlindo pode te ajudar!</p>
-            </div>
-            {{--  --}}
-            <div class="w-[100%] mt-[40px] inline-block">
-                {{--  --}}
-                <div class="w-[100%] h-[350px] bg-[#212121]"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 @endsection
 <script src="{{ asset('/sw.js') }}"></script>

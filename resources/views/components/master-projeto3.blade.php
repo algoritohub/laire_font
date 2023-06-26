@@ -9,21 +9,22 @@
     }
 @endphp
 
-<div class="component">
+
+<div id="component">
     {{-- SECTION --}}
-    <section id="carrossel_prox3" class="w-[100%] mt-[100px] inline-block bg-[#5CD1FF]">
+    <section id="box-master-component" class="background-carrossel-3">
         {{--  --}}
         <div class="w-[90%] mx-[5%] inline-block">
             {{--  --}}
-            <div id="bloco_nulo3" class="w-[30%] h-[600px] inline-block float-left">
-
+            <div id="block-one" class="w-[30%] h-[600px] inline-block float-left">
+                {{--  --}}
             </div>
             {{--  --}}
-            <div id="base_geral3" class="w-[70%] h-[600px] pt-[80px] inline-block float-left">
+            <div id="block-two" class="w-[70%] h-auto pt-[80px] inline-block float-left">
                 {{--  --}}
-                <div id="base_text_home_rs" class="inline-block bg-[#ffffff] rounded-[20px] opacity-[0.9] p-[50px] shadow-lg">
+                <div id="box-prime-content-carrossel" class="inline-block bg-[#ffffff] rounded-[20px] opacity-[0.9] p-[50px] shadow-lg">
                     {{--  --}}
-                    <div id="button_max3" class="w-[100px] rounded-[100px] h-[100px] bg-[#5CD1FF] ml-[-100px] absolute">
+                    <div id="button-plus">
                         {{--  --}}
                         <p class="text-[#080E45] text-[11px] text-center mt-[45%] uppercase font-bold">ver mais</p>
                     </div>
@@ -35,9 +36,9 @@
                     {{--  --}}
                     <div class="w-[100%] float-right inline-block">
                         {{--  --}}
-                        <p id="max_box3" class="font-bold text-[#080E45] float-right w-[500px] text-[30px] leading-[34px] text-right">Projeto de desenvolvimento do sistema e-asma</p>
+                        <p id="max_box1" class="font-bold text-[#080E45] float-right text-[30px] leading-[34px] text-right text-[{{ $numb_font }}px]">Projeto de desenvolvimento do sistema e-asma</p>
                         {{--  --}}
-                        <p id="max_loc3" class="mt-[50px] w-[600px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nihil hic nesciunt sequi explicabo, natus molestias voluptate tenetur. Aut odit sed odio quibusdam. Libero dolorum aut provident vel repellendus iusto?</p>
+                        <p id="max_loc1" class="mt-[30px] text-[{{ $numb_font }}px] text-[#080E45] float-right text-right text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar.</p>
                     </div>
                     {{--  --}}
                     <div class="w-[100%] mt-[15px] inline-block">

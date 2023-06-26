@@ -443,6 +443,10 @@
 @endphp
 
 <body>
+    <section class="w-[100%] fixed">
+        {{-- BUTTON LAIRE --}}
+        <a href="{{ route('home.laire') }}"><div class="w-[50px] h-[50px] mr-[10px] mt-[170px] rounded-[100px] float-right cursor-pointer" title="Volte ao Laire" style="background-image: url('/img/avt_laire.png'); background-size: 100%; z-index: 500;"></div></a>
+    </section>
     <!-- HEADER  -->
     <header class="w-[100%] inline-block bg-[#080e45] fixed" style="z-index: 10;">
         <div class="w-[95%] ml-[5%] inline-block">
@@ -489,24 +493,26 @@
                             <!-- MENU PRIME -->
                             <div id="shadow" class="w-[100%] inline-block float-left overflow-scroll">
                                 <!-- LISTEM -->
-                                <ul class="w-[100%]">
-                                    <div id="mixedSlider">
-                                        {{-- ITENS --}}
-                                        <div class="MS-content box_avalia_egg">
-                                            <li class="item"><button>Missão</button></a></li>
-                                            <li class="item"><button style="background-color: transparent;" id="cronicas">Doenças respiratórias crônicas</button></li>
-                                            <li class="item"><button>Doenças respiratórias agudas</button></li>
-                                            <li class="item"><button>Projetos</button></li>
-                                            <li class="item"><button>Eventos</button></li>
-                                            <li class="item"><button>Projetos de Extensão</button></li>
+                                <nav>
+                                    <ul class="w-[100%]">
+                                        <div id="mixedSlider">
+                                            {{-- ITENS --}}
+                                            <div class="MS-content box_avalia_egg">
+                                                <li class="item"><button>Missão</button></a></li>
+                                                <li class="item"><button id="menu-doenca">Doenças respiratórias crônicas</button></li>
+                                                <li class="item"><button>Doenças respiratórias agudas</button></li>
+                                                <li class="item"><button id="menu-projetos">Projetos</button></li>
+                                                <li class="item"><button id="menu-eventos">Eventos</button></li>
+                                                <li class="item"><button>Projetos de Extensão</button></li>
+                                            </div>
+                                            {{-- BUTTONS --}}
+                                            <div class="MS-controls" style="margin-top: -30px; position: absolute;">
+                                                <button class="MS-left"></button>
+                                                <button class="MS-right"><img src="/img/angulo-direito.png"></button>
+                                            </div>
                                         </div>
-                                        {{-- BUTTONS --}}
-                                        <div class="MS-controls" style="margin-top: -30px; position: absolute;">
-                                            <button class="MS-left"></button>
-                                            <button class="MS-right"><img src="/img/angulo-direito.png"></button>
-                                        </div>
-                                    </div>
-                                </ul>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -515,50 +521,68 @@
         </div>
     </header>
     {{-- SUBMENU --}}
-    <header id="sub_cronicas" class="w-[100%] mt-[106px] fixed inline-block" style="display: none;">
+    <header id="sub_cronicas" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
             <ul class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_cronicas as $doenca_cronica)
-                    {{--  --}}
-                    <li class="inline-block ml-[30px]"><b><a id="look" class="text-[#080E45] text-[13px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}">{{ $doenca_cronica->nome }}</a></b></li>
+                    <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
                 @endforeach
             </ul>
         </div>
     </header>
-    {{-- SLIDE --}}
-    <div style="margin-top: 5px; z-index: -10; display: none;" class="slider">
-        {{--  --}}
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            {{-- COMPONENTES --}}
-            <div class="slide first">
-                <a href="{{ route('projeto1') }}"><x-master-projeto1/></a>
-            </div>
-
-            <div class="slide">
-                <a href="{{ route('projeto2') }}"><x-master-projeto2/></a>
-            </div>
-
-            <div class="slide">
-                <a href="{{ route('projeto3') }}"><x-master-projeto3/></a>
-            </div>
-            {{-- NAVEGATION --}}
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
+    {{-- SUBMENU --}}
+    <header id="sub_projetos" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul class="mt-[12px] mr-[-10px] float-right">
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Efeitos da atenção domiciliar para adultos...</button></a></li>
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
+            </ul>
         </div>
-        {{-- NAVEGATION MANUAL --}}
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
+    </header>
+    {{-- SUBMENU --}}
+    <header id="sub_eventos" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul class="mt-[12px] mr-[-10px] float-right">
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[13px]" href=""><button class="btmenu">ConVivendo com a Asma</button></a></li>
+            </ul>
+        </div>
+    </header>
+    {{-- SLIDE --}}
+    <div class="capsula-carrossel">
+        <div style="margin-top: 5px; z-index: -10; display: none;" class="slider">
+            {{--  --}}
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                {{-- COMPONENTES --}}
+                <div class="slide first">
+                    <a href="{{ route('projeto1') }}"><x-master-projeto1/></a>
+                </div>
+
+                <div class="slide">
+                    <a href="{{ route('projeto2') }}"><x-master-projeto2/></a>
+                </div>
+
+                <div class="slide">
+                    <a href="{{ route('projeto3') }}"><x-master-projeto3/></a>
+                </div>
+                {{-- NAVEGATION --}}
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            {{-- NAVEGATION MANUAL --}}
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
         </div>
     </div>
-
     {{-- NEW BLOCK PRIME --}}
     <section id="section-master-prime" class="w-[100%] inline-block mt-[100px]">
         <div class="w-[100%] inline-block">
@@ -647,7 +671,7 @@
                 <div id="container_inner_bloco2" class="w-[100%] inline-block">
                     {{--  --}}
                     <p id="title-post" class="text-[25px] font-bold mb-[20px] mt-[90px] pl-[20px] mb-[20px] border-l-[3px] border-l-[#00FF8C]">Objetivo da Pesquisa </p>
-    
+
                     <p id="metodo" class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Propor soluções para que a população seja capaz de aumentar a sua adesão às medidas de prevenção </b>.</p>
                     <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">e controle da COVID-19 e outras doenças respiratórias contagiosas. </p>
                     <p class="mt-[20px] text-right float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC) e Ministério da Saúde (MS). O seu objetivo é propor soluções para que a população seja capaz de aumentar a sua adesão às medidas de prevenção e controle da COVID-19 e outras doenças respiratórias contagiosas. Para isso, realizaremos uma importante e extensa revisão sistemática para compreender as barreiras e facilitadores da adesão às medidas de prevenção e controle a nível mundial. Posteriormente, a partir do desenvolvimento, validação a aplicação do questionário ADHERE no território nacional. </p>
@@ -708,6 +732,68 @@
             @endif
         </section>
     </section>
+
+    <nav id="menu_prime" class="mt-[5px]">
+        <ul class="menu">
+            <li><b><a href="#text_missao_RS">Missão</a></b></li>
+            <li><b><a href="#">Doenças respiratórias crônicas</a></b>
+                <ul>
+                    <li class="ma"><a href="#">Conheça as principais</a>
+                        <ul class="mx">
+                            @foreach ($doencas_cronicas as $doenca_cronica)
+                                {{--  --}}
+                                <li><a href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}">{{ $doenca_cronica->nome }}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    <li class="ma"><a href="#">Como controlar os sintomas</a>
+                        <ul class="mx">
+                            {{-- DOENÇAS AQUI --}}
+                        </ul>
+                    </li>
+                    <li class="ma"><a href="#">Tratamento</a>
+                        <ul class="mx">
+                            {{-- DOENÇAS AQUI --}}
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><b><a href="#">Doenças respiratórias agudas</a></b>
+                <ul>
+                    <li class="ma"><a href="#">Como prevenir?</a>
+                        <ul class="mx">
+                            <li><a href="#">Vacinas</a></li>
+                            <li><a href="#">Higienização das mãos</a></li>
+                            <li><a href="#">Uso de máscaras faciais</a></li>
+                            <li><a href="#">Isolamento social</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><b><a href="#">Projetos</a></b>
+                <ul>
+                    <li class="ma"><a href="/respira-saude/projeto/1">Efeitos da atenção domiciliar para adultos...</a>
+                    </li>
+                    <li class="ma"><a href="/respira-saude/projeto/2">Soluções para aumentar a aceitabilidade, adesão...</a>
+                    </li>
+                    <li class="ma"><a href="/respira-saude/projeto/3">Desenvolvimento e validação de um sistema eletrônico...</a>
+                    </li>
+                </ul>
+            </li>
+            <li><b><a href="#">Eventos</a></b>
+                <ul>
+                    <li class="ma"><a href="#">ConVivendo com a Asma</a>
+                        <ul class="mx">
+                            <li><a href="#">Vídeos</a></li>
+                            <li><a href="#">E-books</a></li>
+                            <li><a href="#">Infográficos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><b><a href="#projeto_extensao">Projetos de Extensão</a></b></li>
+        </ul>
+    </nav>
 
     <!-- BODY  -->
     <section class="w-[100%] h-[1000px]"></section>

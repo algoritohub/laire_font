@@ -46,205 +46,131 @@
 @endphp
 {{--  --}}
 <body id="pagina">
-    {{-- NOVO ACESSIBILIDADE DESKTOP MOBILE --}}
-    <div id="barra_superior_acessibilidade_mobile" class="w-[100%] inline_block bg-[#212121] fixed">
-        {{--  --}}
-        <div class="w-[90%] mx-[5%] inline-block">
-            {{--  --}}
-            <div id="barra_acessibilidade_azul" class="w-[70%] inline-block h-[40px] float-left"></div>
-            {{--  --}}
-            <div id="barra_acessibilidade_roxa" class="w-[30%] inline-block h-[40px] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div id="sub_barra_acessibilidade_verde" class="w-[53.3%] h-[40px] inline-block float-left">
-                        {{--  --}}
-                        <ul id="button_font" class="float-right mt-[5px]">
-                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-                        </ul>
-                    </div>
-                    {{--  --}}
-                    <div id="sub_barra_acessibilidade_vermelho" class="w-[23.3%] h-[40px] inline-block float-left">
-                        {{--  --}}
-                        <a href="{{ route('mapa_site') }}"><p class="text-[9px] mt-[14px] float-right text-[#ffffff] font-bold uppercase">Mapa do Site</p></a>
-                    </div>
-                    {{--  --}}
-                    <div id="sub_barra_acessibilidade_cinza" class="w-[23.3%] h-[40px] inline-block float-left">
-                        {{--  --}}
-                        <ul class="mt-[10px] float-right">
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-                        </ul>
-                    </div>
+    <!-- HEADER  -->
+    <header class="w-[100%] inline-block bg-[#080e45] fixed" style="z-index: 10;">
+        <div class="w-[95%] ml-[5%] inline-block">
+            <div class="w-[100%] h-[100px] inline-block">
+                <div id="header-left" class="w-[20%] h-[100px] float-left inline-block bg-[#080E45]">
+                    <!-- LOGO DESK -->
+                    <img class="float-left mt-[20px] w-[75px] mr-[10px]" src="/img/rs_logo.png" alt="RespiraSaúde"/>
+                    <p id="nombre" class="text-[20px] mt-[35px] text-[#ffffff]"><b>Respira</b>Saúde</p>
                 </div>
-            </div>
-        </div>
-    </div>
-    {{-- BARRA SUPERIOR MOBILE --}}
-    <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
-        {{--  --}}
-        <div id="barra_secundaria"  class="w-[90%] mx-[5%] h-[100px] inline-block">
-            {{--  --}}
-            <div class="w-[70%] inline-block float-left">
-                {{--  --}}
-                <a href="{{ route('home.respira_saude') }}">
-                    <img class="float-left mt-[20px] w-[60px] mr-[10px]" src="/img/rs_logo.png" alt=""/>
-                    <p class="text-[20px] mt-[32px] text-[#ffffff]"><b>Respira</b>Saúde</p>
-                </a>
-            </div>
-            {{--  --}}
-            <div class="w-[30%] inline-block float-left">
-                {{--  --}}
-                <p id="busca_mobile" class="text-[#ffffff] cursor-pointer text-[18px] mt-[40px] float-right"><i class="fi fi-bs-search"></i></p>
-            </div>
-        </div>
-    </header>
-    {{--  --}}
-    <header id="barra_superior_menu_mobile" class="w-[100%] mt-[140px] bg-[#5CD1FF] overflow-scroll inline-block fixed">
-        {{--  --}}
-        <div id="menu_principal" class="w-[1030px] py-[10px] inline-block">
-            {{--  --}}
-            <ul class="menu">
-                <li><b><a href="#text_missao_RS">Missão</a></b></li>
-                <li><b><a id="cronicas_doencas" href="#">Doenças respiratórias crônicas <i class="fi fi-rr-angle-small-down"></i></a></b></li>
-                <li><b><a id="cronicas_agudas" href="#">Doenças respiratórias agudas <i class="fi fi-rr-angle-small-down"></i></a></b></li>
-                <li><b><a href="#">Projetos</a></b></li>
-                <li><b><a href="#">Eventos</a></b><li>
-                <li><b><a href="#projeto_extensao">Projetos de Extensão</a></b></li>
-            </ul>
-        </div>
-        {{--  --}}
-        <div style="display: none;" id="menu_cronicas_doencas" class="w-[1200px] py-[16px] inline-block">
-            {{--  --}}
-            <ul class="">
-
-            </ul>
-        </div>
-        {{--  --}}
-        <div style="display: none;" id="menu_agudas_doencas" class="w-[800px] py-[16px] inline-block">
-            {{--  --}}
-            <ul class="">
-
-            </ul>
-        </div>
-        {{--  --}}
-        <div style="display: none;" id="busca_mobile_menu" class="w-[90%] mx-[5%] inline-block">
-            {{--  --}}
-            <form class="m-[0px]" action="" method="POST">
-                @csrf
-                <input class="w-[100%] h-[30px] bg-[#ffffff] outline-none pl-[10px] my-[10px] rounded-[5px]" type="text" placeholder="Busque por algo!">
-            </form>
-        </div>
-    </header>
-    {{-- NOVO HEADER --}}
-    <header style="background: url(/img/background_header.png); background-size: 100%; background-repeat: no-repeat;" id="barra_superior_fixa" class="w-[100%] inline-block fixed">
-        {{--  --}}
-        <div class="w-[90%] inline-block mx-[5%]">
-            {{--  --}}
-            <div class="w-[20%] float-left inline-block">
-                {{--  --}}
-                <a href="{{ route('home.respira_saude') }}">
-                    <img class="float-left mt-[20px] w-[70px] mr-[10px]" src="/img/rs_logo.png" alt=""/>
-                    <p class="text-[22px] mt-[30px] text-[#ffffff]"><b>Respira</b>Saúde</p>
-                </a>
-            </div>
-            {{--  --}}
-            <div class="w-[80%] float-left inline-block">
-                {{--  --}}
-                <div class="w-[100%] h-[40px] inline-block">
-                    {{--  --}}
-                    <div class="w-[70%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <ul id="button_font" class="float-right mt-[5px]">
-                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-                        </ul>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[15%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[15%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <ul class="mt-[5px] mr-[10px] float-right">
-                            <li class="inline-block ml-[10px]"><a href="{{ route('idioma_portugues') }}"> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                            <li class="inline-block ml-[10px]"><a href="{{ route('idioma_ingles') }}"> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] h-[60px] inline-block">
-                    {{--  --}}
-                    <div class="w-[95%] inline-block float-left">
-                        {{--  --}}
-                        <nav>
-                            <ul class="menu">
-                                <li><b><a href="#">Doenças respiratórias crônicas</a></b>
-                                    <ul>
-                                        <li class="ma"><a href="#">Definição</a>
-                                            <ul class="mx">
-                                                @foreach ($doencas_cronicas as $doenca_cronica)
-                                                    {{--  --}}
-                                                    <li><a href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}">{{ $doenca_cronica->nome }}</a></li>
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Como controlar os sintomas</a>
-                                            <ul class="mx">
-                                                {{-- DOENÇAS AQUI --}}
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Tratamento</a>
-                                            <ul class="mx">
-                                                {{-- DOENÇAS AQUI --}}
-                                            </ul>
-                                        </li>
+                <div id="header-right" class="w-[80%] h-[100px] float-left inline-block">
+                    <div class="w-[100%] inline-block">
+                        <!-- ACESSIBILITY -->
+                        <div id="shadow" class="w-[100%] px-[6%] float-left h-[50px] inline-block bg-[#212121]">
+                            <div class="w-[100%] inline-block">
+                                <!-- BUTTONS -->
+                                <div id="acessibility-left" class="w-[70%] pr-[30px] inline-block float-left">
+                                    <!-- SEARCH -->
+                                    <input id="hidden-search-desk" placeholder="Busque algo!" class="w-[85%] ml-[15%] mt-[10px] pl-[10px] h-[35px] outline-none rounded-[5px]" type="text">
+                                    <!-- BLOCK ACESSIBILITY -->
+                                    <div id="block_acessibility" class="w-[100%] mt-[-12px] inline-block">
+                                        <!-- LINGUAGES -->
+                                        <ul class="float-right">
+                                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+                                        </ul>
+                                        {{-- SIZE FONT --}}
+                                        <ul class="float-right">
+                                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
+                                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- SEARCH -->
+                                <div id="acessibility-right" class="w-[30%] inline-block float-left">
+                                    <!-- SEARCH -->
+                                    <input id="hidden-search" placeholder="Busque algo!" class="w-[100%] text-[13px] mt-[10px] pl-[10px] h-[35px] outline-none rounded-[5px]" type="text">
+                                    <!-- BUTTON ACTIVE SEARCH -->
+                                    <p id="active-search" class="text-[#ffffff] text-center text-[16px] mt-[2px] cursor-pointer"><i class="fi fi-bs-search"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MENU -->
+                        <div class="w-[100%] float-left h-[50px] mt-[5px] inline-block bg-[#00FF8C]">
+                            <!-- MENU PRIME -->
+                            <div id="shadow" class="w-[100%] inline-block float-left overflow-scroll">
+                                <!-- LISTEM -->
+                                <nav>
+                                    <ul class="w-[100%]">
+                                        <div id="mixedSlider">
+                                            {{-- ITENS --}}
+                                            <div class="MS-content box_avalia_egg">
+                                                <li class="item"><button>Missão</button></a></li>
+                                                <li class="item"><button id="menu-doenca">Doenças respiratórias crônicas</button></li>
+                                                <li class="item"><button>Doenças respiratórias agudas</button></li>
+                                                <li class="item"><button id="menu-projetos">Projetos</button></li>
+                                                <li class="item"><button id="menu-eventos">Eventos</button></li>
+                                                <li class="item"><button>Projetos de Extensão</button></li>
+                                            </div>
+                                            {{-- BUTTONS --}}
+                                            <div class="MS-controls" style="margin-top: -30px; position: absolute;">
+                                                <button class="MS-left"></button>
+                                                <button class="MS-right"><img src="/img/angulo-direito.png"></button>
+                                            </div>
+                                        </div>
                                     </ul>
-                                </li>
-                                <li><b><a href="#import">Importância</a></b></li>
-                                <li><b><a href="#objeti">Objetivo</a></b></li>
-                                <li><b><a href="#metod">Métodos</a></b></li>
-                                <li><b><a href="#resul">Resultados</a></b></li>
-                                <li><b><a href="#pesquisadores">Pesquisadores</a></b></li>
-                                <li><b><a href="#banner-produtos">Materiais de divulgação</a></b></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[5%] inline-block float-left">
-                        {{--  --}}
-                        <a href="{{ route('home.laire') }}"><img src="/img/avt_laire.png" id="mascot" class="w-[50px] ml-[40px] mt-[1px] cursor-pointer float-right"></a>
-                    </div>
-                    {{-- MASCOTE --}}
-                    <img id="mascote" style="display:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[430px] ml-[820px] mascote">
-                    {{-- BALÃO --}}
-                    <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[380px] ml-[775px] balao">
-                        {{--  --}}
-                        <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center">Esse conteúde tem acessibilidade</p>
-                        {{--  --}}
-                        <center>
-                            <ul class="mt-[5px]">
-                                <li class="mr-[2px] inline-block"><img class="w-[37px] cursor-pointer" src="/img/audio.png"></li>
-                                <li class="mr-[2px] inline-block"><img class="w-[38px] cursor-pointer" src="/img/libra.png"></li>
-                            </ul>
-                        </center>
-                    </div>
-                    {{-- MASCOTE RESUMO --}}
-                    <img id="mascote_resumo" style="display:none" src="/img/mascote7.png" class="w-[400px] absolute mt-[430px] ml-[820px] mascote_resumo">
-                    {{-- BALÃO RESUMO --}}
-                    <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[390px] ml-[775px] balao_resumo">
-                        {{--  --}}
-                        <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center"> Vamos entender o que é uma revisão sistemática?</p>
-                        {{--  --}}
-                        <p class="mt-[15px] text-center text-[#ffffff] text-[12px]">É só clicar!</p>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        {{-- MASCOTE --}}
+        <img id="mascote" style="display:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[380px] ml-[1220px] mascote">
+        {{-- BALÃO --}}
+        <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[380px] ml-[1175px] balao">
+            {{--  --}}
+            <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center">Esse conteúde tem acessibilidade</p>
+            {{--  --}}
+            <center>
+                <ul class="mt-[5px]">
+                    <li class="mr-[2px] inline-block"><img class="w-[37px] cursor-pointer" src="/img/audio.png"></li>
+                    <li class="mr-[2px] inline-block"><img class="w-[38px] cursor-pointer" src="/img/libra.png"></li>
+                </ul>
+            </center>
+        </div>
+        {{-- MASCOTE RESUMO --}}
+        <img id="mascote_resumo" style="display:none" src="/img/mascote7.png" class="w-[400px] absolute mt-[630px] ml-[820px] mascote_resumo">
+        {{-- BALÃO RESUMO --}}
+        <div style="display:none" class="w-[200px] bg-[#080E45] shadow-lg p-[20px] rounded-[20px] absolute mt-[390px] ml-[775px] balao_resumo">
+            {{--  --}}
+            <p class="text-[#ffffff] text-[13px] leading-[15px] font-bold text-center"> Vamos entender o que é uma revisão sistemática?</p>
+            {{--  --}}
+            <p class="mt-[15px] text-center text-[#ffffff] text-[12px]">É só clicar!</p>
+        </div>
     </header>
+    {{-- SUBMENU --}}
+    <header id="sub_cronicas" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul class="mt-[12px] mr-[-10px] float-right">
+                @foreach ($doencas_cronicas as $doenca_cronica)
+                    <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
+                @endforeach
+            </ul>
+        </div>
+    </header>
+    {{-- SUBMENU --}}
+    <header id="sub_projetos" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul class="mt-[12px] mr-[-10px] float-right">
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Efeitos da atenção domiciliar para adultos...</button></a></li>
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
+            </ul>
+        </div>
+    </header>
+    {{-- SUBMENU --}}
+    <header id="sub_eventos" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul class="mt-[12px] mr-[-10px] float-right">
+                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[13px]" href=""><button class="btmenu">ConVivendo com a Asma</button></a></li>
+            </ul>
+        </div>
+    </header>
+    
     {{-- ARTICLE --}}
     <article>
         @yield('conteudo')

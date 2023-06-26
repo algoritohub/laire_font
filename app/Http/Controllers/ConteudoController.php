@@ -14,13 +14,13 @@ class ConteudoController extends Controller
     // HOME
     public function HomeRespira()
     {
-        $doencas_agudas   = DB::select("SELECT * FROM doencas WHERE tipo = 1 ORDER BY id DESC");
-        $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
-        $eventos          = DB::select("SELECT * FROM eventos");
-        $conteudo         = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 4");
-        $descricao        = strip_tags($conteudo[0]->descricao);
-        $descricao        = mb_convert_encoding($descricao, 'UTF-8', 'HTML-ENTITIES');
-        $descricao_blocos = explode('.', $descricao);
+        $doencas_agudas    = DB::select("SELECT * FROM doencas WHERE tipo = 1 ORDER BY id DESC");
+        $doencas_cronicas  = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+        $eventos           = DB::select("SELECT * FROM eventos");
+        $conteudo          = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 4");
+        @$descricao        = strip_tags($conteudo[0]->descricao);
+        @$descricao        = mb_convert_encoding($descricao, 'UTF-8', 'HTML-ENTITIES');
+        @$descricao_blocos = explode('.', $descricao);
 
         return view('respirasaude.home', compact('doencas_agudas', 'doencas_cronicas', 'conteudo', 'descricao_blocos', 'eventos'));
     }
@@ -32,12 +32,13 @@ class ConteudoController extends Controller
         $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
 
         $bloco_principal  = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 1 AND posicao = 3");
-        $descricao_prime  = strip_tags($bloco_principal[0]->descricao);
-        $descricao_prime  = mb_convert_encoding($descricao_prime, 'UTF-8', 'HTML-ENTITIES');
+        @$descricao_prime = strip_tags($bloco_principal[0]->descricao);
+        @$descricao_prime = mb_convert_encoding($descricao_prime, 'UTF-8', 'HTML-ENTITIES');
+        @$explode_texto   = explode('.', $descricao_prime);
 
-        $bloco_conteudo   = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 1 AND posicao != 3");
+        @$bloco_conteudo  = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 1 AND posicao != 3");
 
-        return view('respirasaude.projeto1', compact('pesquisadores', 'doencas_cronicas', 'bloco_principal', 'descricao_prime', 'bloco_conteudo'));
+        return view('respirasaude.projeto1', compact('pesquisadores', 'doencas_cronicas', 'bloco_principal', 'descricao_prime', 'bloco_conteudo', 'explode_texto'));
     }
 
     // PROJETO2
@@ -307,11 +308,17 @@ class ConteudoController extends Controller
     // PESQUISADORES PROJETO 1
     public function PesquisadoresProjeto1($id)
     {
+        $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+        $bloco_principal  = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 1 AND posicao = 3");
+        @$descricao_prime = strip_tags($bloco_principal[0]->descricao);
+        @$descricao_prime = mb_convert_encoding($descricao_prime, 'UTF-8', 'HTML-ENTITIES');
+        @$explode_texto   = explode('.', $descricao_prime);
+        @$bloco_conteudo  = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 1 AND posicao != 3");
         $pesquisador_info = Pesquisador::where('id', $id)->first();
         $descricao_info   = strip_tags($pesquisador_info->descricao);
         $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
 
-        return view('respirasaude.projeto1', compact('pesquisador_info', 'pesquisadores', 'descricao_info'));
+        return view('respirasaude.projeto1', compact('pesquisador_info', 'pesquisadores', 'descricao_info', 'bloco_conteudo', 'explode_texto', 'descricao_prime', 'doencas_cronicas', 'bloco_principal'));
     }
 
     // PESQUISADORES PROJETO 1

@@ -67,7 +67,7 @@ class PesquisadorController extends Controller
             $conexao->save();
         }
 
-        return redirect()->route('admin.painel_publicacao');
+        return redirect()->route('admin.pesquisadores.pag');
     }
 
     // EXIBIR MODAL DE EDIÇÃO DE PESQUISADOR

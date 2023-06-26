@@ -34,7 +34,7 @@
             {{--  --}}
             <div class="w-[50%] float-left inline-block">
                 {{--  --}}
-                <p class="font-bold text-[22px]">Meus eventos</p>
+                <p class="font-bold text-[20px]">Meus eventos</p>
             </div>
             {{--  --}}
             <div class="w-[50%] float-left inline-block">
@@ -112,9 +112,9 @@
                 {{--  --}}
                 <div class="w-[100%] mt-[10px] h-[300px] overflow-scroll inline-block">
                     {{--  --}}
-                    <input class="w-[100%] float-left outline-none mt-[10px] p-[20px] bg-[#ffffff] rounded-[10px] border-[2px] border-[#eeeeee] text-[14px] h-[40px] mb-[10px]" type="text" name="titulo" placeholder="Título da notícia">
+                    <input class="w-[100%] float-left outline-none mt-[10px] p-[20px] bg-[#ffffff] rounded-[10px] border-[2px] border-[#eeeeee] text-[14px] h-[40px] mb-[10px]" type="text" name="titulo" placeholder="Título do evento">
                     {{--  --}}
-                    <input class="w-[100%] float-left outline-none mt-[10px] p-[20px] bg-[#ffffff] rounded-[10px] border-[2px] border-[#eeeeee] text-[14px] h-[40px] mb-[10px]" type="text" name="subtitulo" placeholder="Subtítulo da notícia">
+                    <input class="w-[100%] float-left outline-none mt-[10px] p-[20px] bg-[#ffffff] rounded-[10px] border-[2px] border-[#eeeeee] text-[14px] h-[40px] mb-[10px]" type="text" name="subtitulo" placeholder="Subtítulo do evento">
                     {{--  --}}
                     <div class="w-[100%] inline-block">
                         {{--  --}}
@@ -127,6 +127,9 @@
                             <input class="w-[100%] float-left outline-none mt-[10px] p-[20px] bg-[#ffffff] rounded-[10px] border-[2px] border-[#eeeeee] text-[14px] h-[40px] mb-[10px]" id="date02" type="text" name="final" placeholder="Final do evento">
                         </div>
                     </div>
+                    {{--  --}}
+                    <input class="w-[100%] float-left outline-none p-[20px] bg-[#ffffff] rounded-[10px] border-[2px] border-[#eeeeee] text-[14px] h-[40px] mb-[10px]" type="text" name="link_video" placeholder="Link para vídeo EX.: https://youtube.com/video">
+                    {{--  --}}
                     <textarea id="tiny_pesq1" class="w-[100%] bg-[#ffffff] float-left outline-none mt-[10px] p-[20px] rounded-[5px] border-[2px] border-[#00FF8C] h-[180px]" name="texto" placeholder="Digite um texto para o evento!"></textarea>
                     {{--  --}}
                     <div class="w-[100%] inline-blog mt-[15px] mb-[30px] float-left">
@@ -219,7 +222,7 @@
             {{--  --}}
             <div class="w-[50%] float-left inline-block">
                 {{--  --}}
-                <p class="font-bold text-[22px]">Minhas notícias</p>
+                <p class="font-bold text-[20px]">Minhas notícias</p>
             </div>
             {{--  --}}
             <div class="w-[50%] float-left inline-block">
