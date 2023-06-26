@@ -97,12 +97,13 @@
                                         <div id="mixedSlider">
                                             {{-- ITENS --}}
                                             <div class="MS-content box_avalia_egg">
-                                                <li class="item"><button>Missão</button></a></li>
-                                                <li class="item"><button id="menu-doenca">Doenças respiratórias crônicas</button></li>
-                                                <li class="item"><button>Doenças respiratórias agudas</button></li>
-                                                <li class="item"><button id="menu-projetos">Projetos</button></li>
-                                                <li class="item"><button id="menu-eventos">Eventos</button></li>
-                                                <li class="item"><button>Projetos de Extensão</button></li>
+                                                <li class="item"><button id="menu-cronicas">Doenças respiratórias crônicas</button></li>
+                                                <li class="item"><button>Importância</button></li>
+                                                <li class="item"><button>Objetivo</button></li>
+                                                <li class="item"><button>Métodos</button></li>
+                                                <li class="item"><button>Resultados</button></li>
+                                                <li class="item"><button>Pesquisadores</button></li>
+                                                <li class="item"><button>Materiais de divulgação</button></li>
                                             </div>
                                             {{-- BUTTONS --}}
                                             <div class="MS-controls" style="margin-top: -30px; position: absolute;">
@@ -143,11 +144,11 @@
         </div>
     </header>
     {{-- SUBMENU --}}
-    <header id="sub_cronicas" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+    <header id="sub_cronicas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            <ul class="mt-[12px] mr-[-10px] float-right">
+            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_cronicas as $doenca_cronica)
-                    <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
+                    <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
                 @endforeach
             </ul>
         </div>
@@ -367,6 +368,21 @@
         c++;
         }
         }
+    </script>
+
+    {{-- SCRIPT --}}
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/js/multislider.js"></script>
+    <script>
+        $('#basicSlider').multislider({
+            continuous: true,
+            duration: 2000
+        });
+
+        $('#mixedSlider').multislider({
+            duration: 200,
+            interval: 0
+        });
     </script>
 
 </body>

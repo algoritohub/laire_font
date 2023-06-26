@@ -583,6 +583,8 @@
             </div>
         </div>
     </div>
+
+    
     {{-- NEW BLOCK PRIME --}}
     <section id="section-master-prime" class="w-[100%] inline-block mt-[100px]">
         <div class="w-[100%] inline-block">
