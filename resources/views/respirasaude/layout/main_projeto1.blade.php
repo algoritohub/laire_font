@@ -98,12 +98,12 @@
                                             {{-- ITENS --}}
                                             <div class="MS-content box_avalia_egg">
                                                 <li class="item"><button id="menu-cronicas">Doenças respiratórias crônicas</button></li>
-                                                <li class="item"><button>Importância</button></li>
+                                                <a href="#titulo_bloco1"><li class="item"><button>Importância</button></li></a>
                                                 <li class="item"><button>Objetivo</button></li>
                                                 <li class="item"><button>Métodos</button></li>
                                                 <li class="item"><button>Resultados</button></li>
                                                 <li class="item"><button>Pesquisadores</button></li>
-                                                <li class="item"><button>Materiais de divulgação</button></li>
+                                                <a href="#banner-produtos"><li class="item"><button>Materiais de divulgação</button></li></a>
                                             </div>
                                             {{-- BUTTONS --}}
                                             <div class="MS-controls" style="margin-top: -30px; position: absolute;">
@@ -171,7 +171,7 @@
             </ul>
         </div>
     </header>
-    
+
     {{-- ARTICLE --}}
     <article>
         @yield('conteudo')
