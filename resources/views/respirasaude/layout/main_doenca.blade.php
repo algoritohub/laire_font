@@ -37,244 +37,118 @@
 @endphp
 {{--  --}}
 <body>
-    {{-- MOBILE HEADER --}}
-    <header id="barra_superior_acessibilidade_mobile" class="w-[100%] bg-[#212121] inline-block fixed">
-        {{--  --}}
-        <div class="w-[55%] float-left inline-block h-[40px]">
-            {{--  --}}
-            <ul id="button_font" class="float-right mt-[5px]">
-                <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-            </ul>
+    <!-- HEADER  -->
+    <header class="w-[100%] inline-block bg-[#080e45] fixed" style="z-index: 10;">
+        <div class="w-[95%] ml-[5%] inline-block">
+            <div class="w-[100%] h-[105px] inline-block">
+                <div id="header-left" class="w-[20%] h-[105px] float-left inline-block bg-[#080E45]">
+                    <!-- LOGO DESK -->
+                    <img class="float-left mt-[20px] w-[75px] mr-[10px]" src="/img/rs_logo.png" alt="RespiraSaúde"/>
+                    <p id="nombre" class="text-[20px] mt-[35px] text-[#ffffff]"><b>Respira</b>Saúde</p>
+                </div>
+                <div id="header-right" class="w-[80%] h-[100px] float-left inline-block">
+                    <div class="w-[100%] inline-block">
+                        <!-- ACESSIBILITY -->
+                        <div id="shadow" class="w-[100%] px-[6%] float-left h-[50px] inline-block bg-[#212121]">
+                            <div class="w-[100%] inline-block">
+                                <!-- BUTTONS -->
+                                <div id="acessibility-left" class="w-[70%] pr-[30px] inline-block float-left">
+                                    <!-- SEARCH -->
+                                    <input id="hidden-search-desk" placeholder="Busque algo!" class="w-[85%] ml-[15%] mt-[10px] pl-[10px] h-[35px] outline-none rounded-[5px]" type="text">
+                                    <!-- BLOCK ACESSIBILITY -->
+                                    <div id="block_acessibility" class="w-[100%] mt-[-12px] inline-block">
+                                        <!-- LINGUAGES -->
+                                        <ul class="float-right">
+                                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+                                        </ul>
+                                        {{-- SIZE FONT --}}
+                                        <ul class="float-right">
+                                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
+                                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- SEARCH -->
+                                <div id="acessibility-right" class="w-[30%] inline-block float-left">
+                                    <!-- SEARCH -->
+                                    <input id="hidden-search" placeholder="Busque algo!" class="w-[100%] text-[13px] mt-[10px] pl-[10px] h-[35px] outline-none rounded-[5px]" type="text">
+                                    <!-- BUTTON ACTIVE SEARCH -->
+                                    <p id="active-search" class="text-[#ffffff] text-center text-[16px] mt-[2px] cursor-pointer"><i class="fi fi-bs-search"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MENU -->
+                        <div class="w-[100%] float-left h-[50px] mt-[5px] inline-block bg-[#00FF8C]">
+                            <!-- MENU PRIME -->
+                            <div id="shadow" class="w-[100%] inline-block float-left overflow-scroll">
+                                <!-- LISTEM -->
+                                <nav>
+                                    <ul class="w-[100%]">
+                                        <div id="mixedSlider">
+                                            {{-- ITENS --}}
+                                            <div class="MS-content box_avalia_egg">
+                                                @if ($doencas_cronicas)
+                                                <li class="item"><button id="menu-cronicas">Doenças respiratórias crônicas</button></li>
+                                                @endif
+
+                                                @if ($doencas_agudas)
+                                                <li class="item"><button id="menu-agudas">Doenças respiratórias agudas</button></li>
+                                                @endif
+                                                <li class="item"><button>Tratamento</button></li>
+                                                <li class="item"><button>Publicações</button></li>
+                                            </div>
+                                            {{-- BUTTONS --}}
+                                            <div class="MS-controls" style="margin-top: -30px; position: absolute;">
+                                                <button class="MS-left"></button>
+                                                <button class="MS-right"><img src="/img/angulo-direito.png"></button>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        {{--  --}}
-        <div class="w-[20%] float-left inline-block h-[40px]">
-            {{--  --}}
-            <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
-        </div>
-        {{--  --}}
-        <div class="w-[25%] float-left inline-block h-[40px]">
-            {{--  --}}
-            <ul class="mt-[5px] mr-[10px] float-right">
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+    </header>
+    {{-- SUBMENU --}}
+    <header id="sub_cronicas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
+                @foreach ($doencas_cronicas as $doenca_cronica)
+                    <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
+                @endforeach
             </ul>
         </div>
     </header>
-    {{-- BARRA SUPERIOR MOBILE --}}
-    <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
-        {{--  --}}
-        <div class="w-[90%] mx-[5%] h-[100px] inline-block">
-            {{--  --}}
-            <div class="w-[70%] inline-block float-left">
-                {{--  --}}
-                <a href="{{ route('home.respira_saude') }}">
-                    <img class="float-left mt-[20px] w-[60px] mr-[10px]" src="/img/rs_logo.png" alt=""/>
-                    <p class="text-[20px] mt-[32px] text-[#ffffff]"><b>Respira</b>Saúde</p>
-                </a>
-            </div>
-            {{--  --}}
-            <div class="w-[30%] inline-block float-left">
-                {{--  --}}
-                <img id="menu_bt" src="/img/menu-hamburguer.png" onclick="menu()" class="w-[20px] float-right mt-[35px]">
-            </div>
+    {{-- SUBMENU --}}
+    <header id="sub_agudas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul id="ul-agudas" class="mt-[12px] mr-[-10px] float-right">
+                @foreach ($doencas_agudas as $doencas_agudas)
+                    <li id="mobile-list-agudas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_aguda', ['id' => $doencas_agudas->id]) }}"><button class="btmenu">{{ $doencas_agudas->nome }}</button></a></li>
+                @endforeach
+            </ul>
         </div>
     </header>
-    {{--  --}}
-    <div  class="menu_mobile_cascata">
-        {{--  --}}
-        <div   class="cont_principal">
-            <div class="cont_icon_trg disable">
-                <div  class="cont_drobpdown_menu disable">
-                    <ul class="">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Missão</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Doenças respiratórias agudas</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Doenças respiratórias crônicas</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Eventos</a></li>
-                        <hr class="my-[10px]">
-                        <li class=""><a class="text-[13px] text-[#080E45] font-bold" href="#">Projetos de Extensão</a></li>
-                    </ul>
-                    {{--  --}}
-                    <input class="w-[100%] mb-[10px] mt-[20px] outline-none h-[30px] rounded-[5px] bg-[#ffffff] pl-[10px]" type="text">
-                </div>
-            </div>
+    {{-- SUBMENU --}}
+    <header id="sub_projetos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul id="ul-projetos" class="mt-[12px] mr-[-10px] float-right">
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Efeitos da atenção domiciliar para adultos...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
+            </ul>
         </div>
-    </div>
-    {{-- NOVO HEADER --}}
-    <header style="background: url(/img/background_header.png); background-size: 100%; background-repeat: no-repeat;" id="barra_superior_fixa" class="w-[100%] inline-block fixed">
-        {{--  --}}
-        <div class="w-[90%] inline-block mx-[5%]">
-            {{--  --}}
-            <div class="w-[20%] h-[100px] float-left inline-block">
-                {{--  --}}
-                <a href="{{ route('home.respira_saude') }}">
-                    <img class="float-left mt-[20px] w-[70px] mr-[10px]" src="/img/rs_logo.png" alt=""/>
-                    <p class="text-[22px] mt-[30px] text-[#ffffff]"><b>Respira</b>Saúde</p>
-                </a>
-            </div>
-            {{--  --}}
-            <div class="w-[80%] float-left inline-block">
-                {{--  --}}
-                <div class="w-[100%] h-[40px] inline-block">
-                    {{--  --}}
-                    <div class="w-[70%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <ul id="button_font" class="float-right mt-[5px]">
-                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-                        </ul>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[15%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[15%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <ul class="mt-[5px] mr-[10px] float-right">
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] h-[60px] inline-block">
-                    {{--  --}}
-                    <div class="w-[85%] inline-block float-left">
-                        {{--  --}}
-                        <nav id="menu_prime" class="mt-[0px]">
-                            <ul class="menu">
-                                {{--  --}}
-                                @if (isset($tipo) AND !empty($tipo) AND $tipo == 'cronicas')
-                                {{--  --}}
-                                <li><b><a href="#">Doenças respiratórias crônicas</a></b>
-                                    <ul>
-                                        <li class="ma"><a href="#">Conheça as principais</a>
-                                            <ul class="mx">
-                                                {{-- @foreach ($doencas_info as $doenca_definicao) --}}
-                                                    {{--  --}}
-                                                    {{-- @if (isset($doenca_definicao->definicao) AND !empty($doenca_definicao->definicao)) --}}
-                                                    {{--  --}}
-                                                    {{-- <li><a href="{{ route('doenca_cronica', ['id' => $doenca_definicao->id]) }}">{{ $doenca_definicao->nome }}</a></li> --}}
-                                                    {{-- @endif --}}
-                                                {{-- @endforeach --}}
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'asma']) }}">Asma</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}">Fibrose Cística</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}">DPOC</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}">Bronquiectasia</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}">Fibrose pulmonar</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}">Sinusite</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}">Hipertensão pulmonar</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'síndrome_pos_covid_19']) }}">Síndrome pós-COVID-19</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Como controlar os sintomas</a>
-                                            <ul class="mx">
-                                                {{-- @foreach ($doencas_info as $doenca_controle) --}}
-                                                    {{--  --}}
-                                                    {{-- @if (isset($doenca_controle->controle) AND !empty($doenca_controle->controle)) --}}
-                                                    {{--  --}}
-                                                    {{-- <li><a href="{{ route('doenca_cronica', ['id' => $doenca_controle->id]) }}#controle">{{ $doenca_controle->nome }}</a></li> --}}
-                                                    {{-- @endif --}}
-                                                {{-- @endforeach --}}
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}#sintomas">Fibrose Cística</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}#sintomas">DPOC</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}#sintomas">Bronquiectasia</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}#sintomas">Fibrose pulmonar</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}#sintomas">Sinusite</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}#sintomas">Hipertensão pulmonar</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}#sintomas">Síndrome pós-COVID-19</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Tratamento</a>
-                                            <ul class="mx">
-                                                {{-- @foreach ($doencas_info as $doenca_tratamento) --}}
-                                                    {{--  --}}
-                                                    {{-- @if (isset($doenca_tratamento->tratamento) AND !empty($doenca_tratamento->tratamento)) --}}
-                                                    {{--  --}}
-                                                    {{-- <li><a href="{{ route('doenca_cronica', ['id' => $doenca_tratamento->id]) }}#tratamento">{{ $doenca_tratamento->nome }}</a></li> --}}
-                                                    {{-- @endif --}}
-                                                {{-- @endforeach --}}
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_cistica']) }}#tratamento">Fibrose Cística</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'dpoc']) }}#tratamento">DPOC</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'bronquiectasia']) }}#tratamento">Bronquiectasia</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'fibrose_pulmonar']) }}#tratamento">Fibrose pulmonar</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sinusite']) }}#tratamento">Sinusite</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'hipertensao_pulmonar']) }}#tratamento">Hipertensão pulmonar</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'cronicas', 'doenca' => 'sindrome_pos_covid_19']) }}#tratamento">Síndrome pós-COVID-19</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                @elseif(isset($tipo) AND !empty($tipo) AND $tipo == 'agudas')
-                                <li><b><a href="#">Doenças respiratórias agudas</a></b>
-                                    <ul>
-                                        <li class="ma"><a href="#">Conheça as principais</a>
-                                            <ul class="mx">
-                                                {{-- @foreach ($doencas_agds as $doenca_agds_definicao) --}}
-                                                    {{--  --}}
-                                                    {{-- @if (isset($doenca_agds_definicao->definicao) AND !empty($doenca_agds_definicao->definicao)) --}}
-                                                    {{--  --}}
-                                                    {{-- <li><a href="{{ route('doenca_aguda', ['id' => $doenca_agds_definicao->id]) }}">{{ $doenca_agds_definicao->nome }}</a></li> --}}
-                                                    {{-- @endif --}}
-                                                {{-- @endforeach --}}
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'h1n1']) }}">H1N1</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'covid_19']) }}">COVID-19</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'tuberculose']) }}">Tuberculose</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'influenza']) }}">Influenza</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'pneumonia']) }}">Pneumonia</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'bronquiolite']) }}">Bronquiolite</a></li>
-                                                <li><a href="{{ route('pag_doencas', ['tipo' => 'agudas', 'doenca' => 'coqueluxe']) }}">Coqueluxe</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Como prevenir?</a>
-                                            <ul class="mx">
-                                                <li><a href="#">Vacinas</a></li>
-                                                <li><a href="#">Higienização das mãos</a></li>
-                                                <li><a href="#">Uso de máscaras faciais</a></li>
-                                                <li><a href="#">Isolamento social</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Barreiras para prevenção</a></li>
-                                        <li><a href="#">Facilitadores para prevenção</a></li>
-                                    </ul>
-                                </li>
-                                @endif
-                                {{--  --}}
-                                {{-- @if(isset($info_doenca[0]->controle) AND !empty($info_doenca[0]->controle)) --}}
-                                <li><b><a href="#text_missao_RS">Como controlar os sintomas</a></b></li>
-                                {{-- @endif --}}
-                                {{--  --}}
-                                {{-- @if(isset($info_doenca[0]->tratamento) AND !empty($info_doenca[0]->tratamento)) --}}
-                                <li><b><a href="#text_missao_RS">Tratamento</a></b></li>
-                                {{-- @endif --}}
-                                {{--  --}}
-                                <li><b><a href="#projeto_extensao">Publicações</a></b></li>
-                            </ul>
-                        </nav>
-                        {{--  --}}
-                        <form style="display: none;" id="mosc" class="w-[95%] float-left ml-[35px] mt-[0px]" action="" method="POST">
-                            @csrf
-                            <label for="search"></label>
-                            <input id="cx-txt-pesquise" type="text" class="w-[100%] h-[30px] mt-[10px] text-[13px] outline-none rounded-[5px] pl-[10px] " id="search" placeholder="Pesquise aqui...">
-                        </form>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[5%] inline-block float-left">
-                        {{--  --}}
-                        <p id="busca_search" class="text-[#ffffff] text-center text-[18px] mt-[16px] cursor-pointer"><i class="fi fi-bs-search"></i></p>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[10%] inline-block float-left">
-                        {{--  --}}
-                        <a href="{{ route('home.laire') }}"><img src="/img/avt_laire.png" id="mascot" class="w-[50px] ml-[40px] mt-[0px] cursor-pointer float-right"></a>
-                    </div>
-                </div>
-            </div>
+    </header>
+    {{-- SUBMENU --}}
+    <header id="sub_eventos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul id="ul-eventos" class="mt-[12px] mr-[-10px] float-right">
+                <li id="mobile-list-eventos" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[13px]" href=""><button class="btmenu">ConVivendo com a Asma</button></a></li>
+            </ul>
         </div>
     </header>
     {{-- ARTICLE --}}

@@ -1250,7 +1250,6 @@ button#bt2-1:hover{
     }
 
     #inscreva{
-        width: 100%;
         margin-top: 40px;
         font-size: 30px;
         font-weight: 30px;
@@ -1354,7 +1353,7 @@ button#bt2-1:hover{
         margin-top: 150px;
     }
     #patrocinadores{
-        height: 960px;
+        height: auto;
     }
     #titulo_missa{
         margin-top: 40px;
@@ -1371,12 +1370,6 @@ button#bt2-1:hover{
         margin: 0px 5% 0px 5%;
         display: inline-block;
         height: auto;
-    }
-
-    #eventos{
-        height: 2000px;
-        display: block;
-        width: 100%;
     }
 
     #projeto_extensao{
@@ -2667,9 +2660,6 @@ li.sub{
     padding-bottom: 30px;
     height: auto;
 }
-#img-pesquisador{
-    /* border-radius: 20px; */
-}
 
 #box-master-component{
     width: 100%;
@@ -2701,6 +2691,7 @@ li.sub{
 }
 #box-prime-content-carrossel{
     width: 100%;
+    height: 100vh;
     padding: 50px;
 }
 #button-plus{
@@ -2725,6 +2716,12 @@ li.sub{
     display: flex;
     justify-content: center;
 }
+#fechar-close{
+    width: 0px;
+    padding: 0px;
+    visibility: hidden;
+}
+
 /* CELULARES */
 @media all and (min-width:2px) and (max-width:798px) {
     body{
@@ -2777,7 +2774,8 @@ li.sub{
         display: none;
     }
     #sub_cronicas{
-        display: none;
+        padding: 0px 25px;
+        height: 100vh;
     }
     #block-prime-video{
         width: 80%;
@@ -2852,7 +2850,7 @@ li.sub{
     }
     /*  */
     #sub_agudas{
-        width: 60%;
+        padding: 0px 25px;
         height: 100vh;
     }
     #ul-agudas{
@@ -2999,6 +2997,11 @@ li.sub{
         margin: 10% 5% 0px 5%;
         display: inline-block;
     }
+    #fechar-close{
+        width: 100%;
+        padding: 20px 0px;
+        visibility: visible;
+    }
 }
 /* TABLETS */
 @media all and (min-width:800px) and (max-width:804px) {
@@ -3046,7 +3049,8 @@ li.sub{
         padding-top: 30px;
     }
     #sub_cronicas{
-        display: none;
+        padding: 0px 25px;
+        height: 100vh;
     }
     #block-prime-video{
         width: 90%;
@@ -3115,7 +3119,7 @@ li.sub{
 
     /*  */
     #sub_cronicas{
-        width: 60%;
+        padding: 0px 25px;
         height: 100vh;
     }
     ul#ul-cronicas{
@@ -3263,6 +3267,21 @@ li.sub{
     #button_externo{
         margin-top: 20px;
     }
+    #eventos1{
+        width: 48%;
+        margin: 0px 1% 20px 1%;
+        display: inline-block;
+    }
+    #mentos{
+        width: 48%;
+        margin: 0px 1%;
+        display: inline-block;
+    }
+    #eventos{
+        width: 100%;
+        height: 30px;
+        margin-top: 100px;
+    }
 }
 /* RESPONSIVIDADE IPAD */
 @media all and (min-width:805px) and (max-width:815px) {
@@ -3305,7 +3324,10 @@ li.sub{
         padding-top: 25px;
     }
     #sub_cronicas{
-        display: none;
+        sub_cronicas{
+            padding: 0px 25px;
+            height: 100vh;
+        }
     }
     #moldure-prime{
         width: 100%;
@@ -3381,7 +3403,7 @@ li.sub{
 
     /*  */
     #sub_cronicas{
-        width: 60%;
+        padding: 0px 25px;
         height: 100vh;
     }
     ul#ul-cronicas{
@@ -3397,7 +3419,7 @@ li.sub{
     }
     /*  */
     #sub_agudas{
-        width: 60%;
+        padding: 0px 25px;
         height: 100vh;
     }
     #ul-agudas{
@@ -3410,7 +3432,7 @@ li.sub{
     }
     /*  */
     #sub_projetos{
-        width: 70%;
+        padding: 0px 25px;
         height: 100vh;
     }
     #ul-projetos{
@@ -3423,7 +3445,7 @@ li.sub{
     }
     /*  */
     #sub_eventos{
-        width: 60%;
+        padding: 0px 25px;
         height: 100vh;
     }
     #ul-eventos{
@@ -3481,8 +3503,8 @@ li.sub{
         visibility: hidden;
     }
     #mentos{
-        width: 100%;
-        margin: 0px;
+        width: 48%;
+        margin: 0px 1%;
         display: inline-block;
     }
     #modal_evento{
@@ -3498,5 +3520,23 @@ li.sub{
     }
     #button_externo{
         margin-top: 20px;
+    }
+    #eventos1{
+        width: 48%;
+        margin: 0px 1% 20px 1%;
+        display: inline-block;
+    }
+    #patrocinadores{
+        width: 100%;
+        height: auto;
+    }
+    #inscreva{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #fechar-close{
+        width: 100%;
+        padding: 20px 0px;
+        visibility: visible;
     }
 }

@@ -869,6 +869,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $("#fechar-cronicas").click(function(event){
+        event.preventDefault();
+        $("#sub_cronicas").fadeOut();
+    });
+});
+
+$(document).ready(function(){
     $("#menu-agudas").click(function(event){
         event.preventDefault();
         $("#sub_agudas").fadeIn();
@@ -879,12 +886,26 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $("#fechar-agudas").click(function(event){
+        event.preventDefault();
+        $("#sub_agudas").fadeOut();
+    });
+});
+
+$(document).ready(function(){
     $("#menu-projetos").click(function(event){
         event.preventDefault();
         $("#sub_projetos").fadeIn();
         $("#sub_cronicas").hide();
         $("#sub_eventos").hide();
         $("#sub_agudas").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar-projectos").click(function(event){
+        event.preventDefault();
+        $("#sub_projetos").fadeOut();
     });
 });
 

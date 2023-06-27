@@ -49,8 +49,10 @@
             <div class="w-[100%] h-[105px] inline-block">
                 <div id="header-left" class="w-[20%] h-[105px] float-left inline-block bg-[#080E45]">
                     <!-- LOGO DESK -->
-                    <img class="float-left mt-[20px] w-[75px] mr-[10px]" src="/img/rs_logo.png" alt="RespiraSaúde"/>
-                    <p id="nombre" class="text-[20px] mt-[35px] text-[#ffffff]"><b>Respira</b>Saúde</p>
+                    <a href="{{ route('home.respira_saude') }}">
+                        <img class="float-left mt-[20px] w-[75px] mr-[10px]" src="/img/rs_logo.png" alt="RespiraSaúde"/>
+                        <p id="nombre" class="text-[20px] mt-[35px] text-[#ffffff]"><b>Respira</b>Saúde</p>
+                    </a>
                 </div>
                 <div id="header-right" class="w-[80%] h-[100px] float-left inline-block">
                     <div class="w-[100%] inline-block">
@@ -96,7 +98,7 @@
                                             <div class="MS-content box_avalia_egg">
 
                                                 @if ($conteudo)
-                                                <li class="item"><button>Missão</button></a></li>
+                                                <li class="item"><a href="#missao"><button>Missão</button></a></li>
                                                 @endif
 
                                                 @if ($doencas_cronicas)
@@ -107,8 +109,8 @@
                                                 <li class="item"><button id="menu-agudas">Doenças respiratórias agudas</button></li>
                                                 @endif
                                                 <li class="item"><button id="menu-projetos">Projetos</button></li>
-                                                <li class="item"><button id="menu-eventos">Eventos</button></li>
-                                                <li class="item"><button>Projetos de Extensão</button></li>
+                                                <li class="item"><a href="#eventos"><button>Eventos</button></a></li>
+                                                <li class="item"><a href="#extensao"><button>Projetos de Extensão</button></a></li>
                                             </div>
                                             {{-- BUTTONS --}}
                                             <div class="MS-controls" style="margin-top: -30px; position: absolute;">
@@ -128,6 +130,11 @@
     {{-- SUBMENU --}}
     <header id="sub_cronicas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
+            {{--  --}}
+            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
+                <p id="fechar-cronicas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
+            </div>
+            {{--  --}}
             <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_cronicas as $doenca_cronica)
                     <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
@@ -138,6 +145,11 @@
     {{-- SUBMENU --}}
     <header id="sub_agudas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
+            {{--  --}}
+            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
+                <p id="fechar-agudas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
+            </div>
+            {{--  --}}
             <ul id="ul-agudas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_agudas as $doencas_agudas)
                     <li id="mobile-list-agudas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_aguda', ['id' => $doencas_agudas->id]) }}"><button class="btmenu">{{ $doencas_agudas->nome }}</button></a></li>
@@ -148,18 +160,15 @@
     {{-- SUBMENU --}}
     <header id="sub_projetos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
+            {{--  --}}
+            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
+                <p id="fechar-projectos" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
+            </div>
+            {{--  --}}
             <ul id="ul-projetos" class="mt-[12px] mr-[-10px] float-right">
-                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Efeitos da atenção domiciliar para adultos...</button></a></li>
-                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
-                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
-            </ul>
-        </div>
-    </header>
-    {{-- SUBMENU --}}
-    <header id="sub_eventos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
-        <div class="w-[90%] mx-[5%] h-[50px]">
-            <ul id="ul-eventos" class="mt-[12px] mr-[-10px] float-right">
-                <li id="mobile-list-eventos" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[13px]" href=""><button class="btmenu">ConVivendo com a Asma</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto1') }}"><button class="btmenu" title="Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise">Efeitos da atenção domiciliar para adultos...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto2') }}"><button class="btmenu" title="Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto3') }}"><button class="btmenu" title="Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
             </ul>
         </div>
     </header>
@@ -174,7 +183,7 @@
             {{--  --}}
             <div id="borda" class="w-[50%] h-[400px] border-r-[1px] border-r-[#eeeeee] inliene-block float-left">
                 {{--  --}}
-                <p id="inscreva" class="text-[30px] w-[500px] leading-[40px] font-bold text-[#ffffff]">Inscreva-se hoje para receber as atualizações mais recentes.</p>
+                <p id="inscreva" class="text-[30px] leading-[40px] font-bold text-[#ffffff]">Inscreva-se hoje para receber as atualizações mais recentes.</p>
                 {{--  --}}
                 <table id="e-mail" class="mt-[40px] w-[80%]">
                     <tr>

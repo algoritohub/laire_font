@@ -284,7 +284,7 @@
                     {{--  --}}
                     <div class="w-[100%] inline-block h-[150px]">
                         {{--  --}}
-                        <a href="{{ route('pesquisadores_projeto_1', ['id' => $pessoa->id]) }}"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
+                        <a href="{{ route('pesquisadores_projeto_2', ['id' => $pessoa->id]) }}"><p class="text-center uppercase text-[15px] mt-[25px] font-bold">ver bio ➜</p></a>
                     </div>
                 </div>
                 @endif
@@ -321,7 +321,7 @@
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('projeto2') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}

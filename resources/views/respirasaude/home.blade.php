@@ -55,6 +55,7 @@
 @if ($conteudo)
 {{-- NEW BLOCK PRIME --}}
 <section id="section-master-prime" class="w-[100%] inline-block pb-[40px]">
+    <main id="missao" class="w-[100%] h-[90px]"></main>
     <div class="w-[100%] inline-block">
         <div class="w-[100%] inline-block">
             {{-- BLOCK IMAGE PRIME --}}
@@ -102,6 +103,7 @@
 @if ($eventos)
 {{-- BLOCO DE EVENTOS --}}
 <section class="w-[100%] mt-[40px] inline-block">
+    <main id="eventos" class="w-[100%] h-[130px]"></main>
     {{--  --}}
     <div class="w-[90%] mx-[5%] inline-block">
         {{--  --}}
@@ -128,7 +130,7 @@
         {{--  --}}
         <div class="modal_master_eventos">
             {{--  --}}
-            <div id="modal_evento" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] h-[520px] p-[50px] rounded-[20px] mx-auto">
+            <div id="modal_evento" class="w-[1000px] mt-[3%] shadow-lg bg-[#ffffff] h-[520px] p-[50px] rounded-[20px] mx-auto">
                 {{--  --}}
                 <div class="w-[100%] mb-[30px] inline-block">
                     {{--  --}}
@@ -164,6 +166,7 @@
 
 <!--BLOCO RESULTADOS-->
 <section id="projeto_extensao" class="w-[100%] inline-block">
+    <main id="extensao" class="w-[100%] h-[80px]"></main>
     {{--  --}}
     <center>
         <p id="pex" class="font-bold text-[#212121] text-[25px] leading-[35px] w-[500px] mt-[60px] pb-[20px]">Projetos de Extensão</p>
