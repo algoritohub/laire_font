@@ -101,8 +101,8 @@
                                                 <a href="#titulo_bloco1"><li class="item"><button>Importância</button></li></a>
                                                 <li class="item"><button>Objetivo</button></li>
                                                 <li class="item"><button>Métodos</button></li>
-                                                <li class="item"><button>Resultados</button></li>
-                                                <li class="item"><button>Pesquisadores</button></li>
+                                                <a href="#container_inner_bloco2"><li class="item"><button>Resultados</button></li></a>
+                                                <a href="#pesquisadores"><li class="item"><button>Pesquisadores</button></li></a>
                                                 <a href="#banner-produtos"><li class="item"><button>Materiais de divulgação</button></li></a>
                                             </div>
                                             {{-- BUTTONS --}}
