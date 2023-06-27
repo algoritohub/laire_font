@@ -195,6 +195,9 @@ Route::post('/dashboard/painel/editar/evento/{id}', [EventoController::class, "E
 // DELETAR EVENTO
 Route::get('/dashboard/painel/delete/evento/{id}', [EventoController::class, "DeleteEvento"])->name('delete.evento');
 
+// MODAL EVENTOS
+Route::get('/dashboard/painel/modal/eventos/{id}', [EventoController::class, "ModalEvento"])->name('admin.eventos.modal');
+
 
 
 // EXIBIR EDITOR DE CONTEÚDO

@@ -15,78 +15,80 @@
 
 @endphp
 
-{{-- SECTION --}}
-<div class="w-[100%] inline-block">
-    {{--  --}}
-    <div class="w-[100%] mt-[100px] inline-block">
-        {{--  --}}
-        <div id="lado_a_projeto" style="background: linear-gradient(101deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(0,212,255,1) 70%);" class="w-[60%] float-left inline-block h-[640px]">
-            {{--  --}}
-            <div id="container_a" class="w-[100%] pl-[80px] pt-[20px] inline-block">
-                {{-- BASE IMAGEM/VIDEO --}}
-                <div id="base_imagem" class="w-[100%] h-[450px] inline-block">
-                    {{-- NAVEGATION ACESSIBILITY --}}
-                    <div class="w-[100%] inline-block">
-                        {{--  --}}
-                        <ul>
-                            <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
-                            <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
-                        </ul>
-                    </div>
-                    {{-- IMAGEM --}}
-                    <div id="box_audio-2" class="w-[800px] bg-[yellow] h-[400px]"></div>
-                    {{-- VÍDEO --}}
-                    <div id="box_libra" style="display: none;" id="imagem_countainer" class="w-[800px] bg-[black] h-[400px]"></div>
-                </div>
-                {{-- BASE LOGOS --}}
-                <div id="base_logos" class="w-[100%] h-[150px] inline-block">
-                    {{-- LOGOS --}}
-                    <ul id="list_logos" class="my-[20px]">
-                        {{--  --}}
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[160px] " src="/img/6.png" alt=""></li>
-                        <li class="inline-block mr-[40px] my-[10px]"><img class="w-[370px]" src="/img/mcti.png" alt=""></li>
+@if ($bloco_principal)
+{{-- NEW BLOCK PRIME --}}
+<section id="section-master-prime" class="w-[100%] inline-block mt-[100px]">
+    <div class="w-[100%] inline-block">
+        <div class="w-[100%] inline-block">
+            {{-- BLOCK IMAGE PRIME --}}
+            <div id="block-prime-video" class="w-[50%] pl-[5%] float-left inline-block">
+                {{-- BUTTON ACESSIBILITY --}}
+                <div class="w-[100%] mt-[40px] inline-block">
+                    <ul>
+                        <li class="mr-[2px] inline-block"><img id="audios_home" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        <li class="mr-[2px] inline-block"><img id="libras_home" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="lado_b_projeto" class="w-[40%] pr-[50px] float-left inline-block bg-[#00d4ff] h-[640px]">
-            {{--  --}}
-            <div id="container_b" class="w-[90%] mx-[5%] inline-block">
-                {{--  --}}
-                <p id="texto_titulo_projeto" class="text-[30px] mt-[70px] leading-[30px] float-right text-right font-bold text-[#080E45]"> Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população.</p>
-                <p id="texto_projeto" class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Esta pesquisa está sendo financiada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq),</p>
-                <p id="texto_projeto" class="mt-[20px] text-right float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC) e Ministério da Saúde (MS). O seu objetivo é propor soluções para que a população seja capaz de aumentar a sua adesão às medidas de prevenção e controle da COVID-19 e outras doenças respiratórias contagiosas. Para isso, realizaremos uma importante e extensa revisão sistemática para compreender as barreiras e facilitadores da adesão às medidas de prevenção e controle a nível mundial. Posteriormente, a partir do desenvolvimento, validação a aplicação do questionário ADHERE no território nacional. </p>
-            </div>
-            {{-- AUDIO --}}
-            <div class="w-[90%] inline-block mx-[5%]">
-                {{--  --}}
-                <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
+                {{-- IMAGE/VIDEO --}}
+                <div id="moldure-prime" class="w-[100%] inline-block rounded-[20px]">
                     {{--  --}}
-                    <audio autoplay="autoplay" controls="controls">
-                        <source src="sua_musica.mp3" type="audio/mp3" />
-                        seu navegador não suporta HTML5
-                    </audio>
+                    <img id="box_audio_home" class="w-[100%] rounded-[20px]" src="/img/conteudo/{{ $bloco_principal[0]->imagem }}" />
+                    <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/img/menor.mp4" controls="controls"></video>
+                </div>
+                {{-- BASE LOGOS --}}
+                <div id="base_logos" class="w-[80%] mt-[20px] h-[150px] inline-block">
+                    {{-- LOGOS --}}
+                    <div class="w-[40%] float-left inline-block">
+                        <img class="w-[80%]" src="/img/6.png" alt="CNPq">
+                    </div>
+                    {{--  --}}
+                    <div class="w-[60%] float-left inline-block">
+                        <img class="w-[100%]" src="/img/mcti.png" alt="Ministério Ciência e Tecnologia">
+                    </div>
+                </div>
+            </div>
+            {{-- BLOCK TEXT PRIME --}}
+            <div id="block-prime-text" class="w-[45%] float-left inline-block pl-[80px] pb-[20px] pt-[80px] text-justify">
+
+                <p class="text-[30px] leading-[30px] float-right text-right font-bold text-[#080E45]">{{ $bloco_principal[0]->titulo }}</p>
+
+                <div class="w-[100%] mt-[40px] inline-block">
+                    @foreach ($explode_texto as $paragrafo)
+                    <p id="text_projeto3" class="mb-[10px] text-justify text-[{{ $numb_font }}px]">{{ $paragrafo }}.</p>
+                    @endforeach
+                </div>
+
+                {{-- AUDIO --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="audio_libra_home" style="display: none;" class="inline-block float-right mt-[20px]">
+                        {{--  --}}
+                        <audio autoplay="autoplay" controls="controls">
+                            <source src="sua_musica.mp3" type="audio/mp3" />
+                            seu navegador não suporta HTML5
+                        </audio>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+@endif
 
-{{-- BLOCO EXEMPLO 2 --}}
-<section class="w-[100%] mt-[-5px] inline-block">
+{{-- BLOCO FIXO 1 --}}
+<section class="w-[100%] mt-[-5px] bg-[#f1f1f1] inline-block">
     {{--  --}}
-    <div id="container_bloco1" class="w-[100%] inline-block">
+    <div id="container-block" class="w-[100%] inline-block">
         {{--  --}}
-        <div id="lado_a_bloco1" style="background: linear-gradient(90deg, rgba(238,238,238,1) 27%, rgba(250,250,250,1) 27%);" class="w-[50%] h-[800px] pl-[80px] float-left inline-block">
+        <div id="band_a_block" class="w-[50%] pl-[80px] float-left inline-block">
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco1-pj2" class="w-[100%] h-[600px] bg-[purple] mt-[100px]"></div>
+                <img class="img-public" src="/img/Pesquisa 2/Pesquisa 2 - imagem 1.png">
             </div>
         </div>
         {{--  --}}
-        <div id="lado_b_bloco1" class="w-[50%] h-[800px] px-[80px] bg-[#fafafa] float-left inline-block">
+        <div id="band_b_block" class="w-[50%] px-[80px] float-left inline-block">
             <div id="importacncia_projeto2"></div>
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
@@ -102,57 +104,95 @@
     </div>
 </section>
 
-{{-- BLOCO EXEMPLO 3 --}}
+{{-- BLOCO DINAMICOS AQUI --}}
+@if ($bloco_conteudo)
 
-<section class="w-[100%] mt-[-5px] inline-block">
-    <div id="objetivo"></div>
-    {{--  --}}
-    <div id="container_bloco2" class="w-[100%] inline-block">
-        {{--  --}}
-        <div id="lado_a_bloco2" class="w-[50%] h-[630px] px-[80px] inline-block float-left">
+    @foreach ($bloco_conteudo as $bloco)
+
+        @php
+            $descricao_contt = strip_tags($bloco->descricao);
+            $descricao_contt = mb_convert_encoding($descricao_contt, 'UTF-8', 'HTML-ENTITIES');
+            $descricao_contb = explode('.', $descricao_contt);
+        @endphp
+
+        @if ($bloco->posicao == 1)
+        {{-- BLOCO TIPO 1 --}}
+        <section class="w-[100%] mt-[-5px] bg-[#fafafa] inline-block">
             {{--  --}}
-            <div id="container_inner_bloco2" class="w-[100%] inline-block">
+            <div id="container-block" class="w-[100%] inline-block">
                 {{--  --}}
-                <p  class="text-[25px] font-bold mb-[20px] mt-[90px] pl-[20px] mb-[20px] border-l-[3px] border-l-[#00FF8C]">Objetivo da Pesquisa </p>
+                <div id="band_a_block" class="w-[50%] px-[80px] inline-block float-left">
+                    {{--  --}}
+                    <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <p id="texto_titulo_bloco2" class="text-[25px] font-bold mb-[20px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $bloco->titulo }}</p>
 
-                <p id="metodo" class="mb-[20px] text-[{{ $numb_font }}px] text-justify">Propor soluções para que a população seja capaz de aumentar a sua adesão às medidas de prevenção </b>.</p>
-                <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">e controle da COVID-19 e outras doenças respiratórias contagiosas. </p>
-
+                        @foreach ($descricao_contb as $texto_paragrafo)
+                        <p class="mb-[20px] text-[{{ $numb_font }}px] text-justify">{{ $texto_paragrafo }}.</p>
+                        @endforeach
+                    </div>
+                </div>
+                {{--  --}}
+                <div id="band_b_block" class="w-[50%] inline-block float-left pr-[80px]">
+                    {{--  --}}
+                    <div id="container_inner_bloco2" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <img class="img-public" src="/img/conteudo/{{ $bloco->imagem }}">
+                    </div>
+                </div>
             </div>
-        </div>
-        {{--  --}}
-        <div id="lado_b_bloco2" style="background: linear-gradient(90deg, rgba(255,255,255,1) 75%, rgba(238,238,238,1) 75%);" class="w-[50%] h-[630px] inline-block float-left pr-[80px]">
+        </section>
+        @elseif($bloco->posicao == 2)
+        {{-- BLOCO EXEMPLO metodo --}}
+        <section class="w-[100%] mt-[-5px] bg-[#f1f1f1] inline-block">
             {{--  --}}
-            <div id="container_inner_bloco2" class="w-[100%] inline-block">
+            <div id="container-block" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco2" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                <div id="band_a_block" class="w-[50%] pl-[80px] float-left inline-block">
+                    {{--  --}}
+                    <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <img class="img-public" src="/img/conteudo/{{ $bloco->imagem }}">
+                    </div>
+                </div>
+                {{--  --}}
+                <div id="band_b_block" class="w-[50%] px-[80px] float-left inline-block">
+                    <div id="importacncia_projeto2"></div>
+                    {{--  --}}
+                    <div id="container_inner_bloco1" class="w-[100%] inline-block">
+                        {{--  --}}
+                        <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">{{ $bloco->titulo }}</p>
+
+                        @foreach($descricao_contb as $texto_paragrafo)
+                        <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">{{ $texto_paragrafo }}.</p>
+                        @endforeach
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+        @endif
+    @endforeach
+@endif
 
-
-{{-- BLOCO EXEMPLO 4--}}
-
-<section class="w-[100%] mt-[-5px] inline-block">
+{{-- BLOCO 1 --}}
+<section class="w-[100%] mt-[-5px] bg-[#f1f1f1] inline-block">
     {{--  --}}
-    <div id="container_bloco1" class="w-[100%] inline-block">
+    <div id="container-block" class="w-[100%] inline-block">
         {{--  --}}
-        <div id="lado_a_bloco1" style="background: linear-gradient(90deg, rgba(238,238,238,1) 27%, rgba(250,250,250,1) 27%);" class="w-[50%] h-[630px] pl-[80px] float-left inline-block">
+        <div id="band_a_block" class="w-[50%] pl-[80px] float-left inline-block">
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco1-pj2a" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                <img class="img-public" src="/img/Pesquisa 2/Pesquisa 2 - imagem 3.png">
             </div>
         </div>
         {{--  --}}
-        <div id="lado_b_bloco1" class="w-[50%] h-[630px] px-[80px] bg-[#fafafa] float-left inline-block">
-            <div id="titulo_projeto2_pesquisa" ></div>
+        <div id="band_b_block" class="w-[50%] px-[80px] float-left inline-block">
+            <div id="importacncia_projeto2"></div>
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
                 <p  class="text-[25px] font-bold mb-[40px] mt-[90px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Como a pesquisa foi feita</p>
-
                 <p class="mb-[20px] text-justify text-[{{ $numb_font }}px]"><section id="cronicas" class="w-[100%] mb-[40px] inline-block">Vamos lá, primeiro foi necessário entender quais são os aspectos que ajudam as pessoas a preveni estas doenças. Isso é o que chamamos de <b><b>facilitadores</b> de adesão às medidas de prevenção e controle!</b></p>
                 <p class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mas, vocês concordam que também é importante entender quais são os aspectos que nos atrapalham na prevenção destas doenças? Isso é o que chamamos de <b><b>barreiras</b> de adesão às medidas de prevenção e controle!</b></p>
                 <p class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Esta pesquisa está sendo realizada em três etapas!</p>
@@ -168,18 +208,12 @@
     </div>
 </section>
 
-
-
-
-{{-- BLOCO EXEMPLO 3 --}}
-
-<section class="w-[100%] mt-[-5px] inline-block">
+{{-- BLOCO 2 --}}
+<section class="w-[100%] mt-[-5px] bg-[#fafafa] inline-block">
     {{--  --}}
-    <div id="container_bloco2" class="w-[100%] inline-block">
-        <div id="text_projeto_resultado" ></div>
+    <div id="container-block" class="w-[100%] inline-block">
         {{--  --}}
-        <div id="lado_a_bloco2" class="w-[50%] h-[630px] px-[80px] inline-block float-left">
-
+        <div id="band_a_block" class="w-[50%] px-[80px] inline-block float-left">
             {{--  --}}
             <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}
@@ -188,15 +222,14 @@
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"></b> As intervenções de atenção domiciliar avaliadas nos estudos foram: <b>consulta domiciliar</b>,<b> tratamento domiciliar de exacerbações, alta precoce, hospital em casa, antibioticoterapia domiciliar e programa de reabilitação domiciliar.</b></p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Não encontramos evidências suficientes para recomendar a atenção domiciliar para adultos com doenças respiratórias crônicas. </p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entretanto, foi possível observar que os estudos, na sua maioria, <b>observaram que os pacientes tratados com atenção domiciliar tiveram menor taxa de readmissão no hospital, menos eventos adversos, menor mortalidade  e melhor estado funcional.</b></p>
-
             </div>
         </div>
         {{--  --}}
-        <div id="lado_b_bloco2" style="background: linear-gradient(90deg, rgba(255,255,255,1) 75%, rgba(238,238,238,1) 75%);" class="w-[50%] h-[630px] inline-block float-left pr-[80px]">
+        <div id="band_b_block" class="w-[50%] inline-block float-left pr-[80px]">
             {{--  --}}
             <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}
-                <div id="imagem_bloco1-pj2b" class="w-[100%] h-[400px] bg-[purple] mt-[100px]"></div>
+                <img class="img-public" src="/img/Pesquisa 2/Pesquisa 2 - imagem 4.png">
             </div>
         </div>
     </div>
@@ -225,22 +258,21 @@
         </center>
         {{--  --}}
         <div class="w-[100%] mt-[70px] inline-block">
-
             @if($pesquisadores)
                 @foreach ($pesquisadores as $pessoa)
 
                 @php
                 $id_pesqs = $pessoa->id;
-                $pesquisa = Illuminate\Support\Facades\DB::select("SELECT * FROM conect_pesquisas WHERE pesquisa = 2 AND pesquisador = '$id_pesqs'");
+                $pesquisa = Illuminate\Support\Facades\DB::select("SELECT * FROM conect_pesquisas WHERE pesquisa = 4 AND pesquisador = '$id_pesqs'");
                 @endphp
 
                 @if($pesquisa)
                 {{-- CARD PESQUISADOR --}}
-                <div id="pesquisador1" class="w-[20%] mx-[2.5%] float-left">
+                <div id="pesquisador-new" class="w-[20%] mx-[2.5%] float-left">
                     {{--  --}}
-                    <div class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
+                    <div id="img-pesquisador" class="w-[100%] bg-[#fafafa] shadow-lg h-[350px] inline-block border-t-[5px] border-t-[orange]">
                         {{--  --}}
-                        <div style="background: url('/img/pesquisadores/{{ $pessoa->imagem }}'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
+                        <div id="rounded-img" style="background: url('/img/pesquisadores/{{ $pessoa->imagem }}'); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] mt-[50px] bg-[#FFC122] mx-auto transform hover:scale-110 transition duration-300 border-[1px]"></div>
                         {{--  --}}
                         <div class="w-[90%] mx-[5%] mt-[20px] inline-block">
                             {{--  --}}
@@ -267,19 +299,29 @@
         {{--  --}}
         <div class="modal_info_pesquisadores">
             {{--  --}}
-            <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
+            <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto rounded-[20px] h-[500px] mt-[10%] shadow-lg bg-[#ffffff]">
                 {{--  --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
                     <div class="w-[80%] inline-block float-left">
                         {{--  --}}
                         <p class="font-bold leading-[23px] text-[20px]">{{ $pesquisador_info->nome }}</p>
-                        <p class="text-[13px] uppercase">{{ $pesquisador_info->categoria }}</p>
+                        @if($pesquisador_info->categoria == "professor")
+                        <p class="text-[13px] uppercase">Professor</p>
+                        @elseif($pesquisador_info->categoria == "pesquisador")
+                        <p class="text-[13px] uppercase">Pesquisador</p>
+                        @elseif($pesquisador_info->categoria == "aic")
+                        <p class="text-[13px] uppercase">Aluno de Iniciação Científica</p>
+                        @elseif($pesquisador_info->categoria == "am")
+                        <p class="text-[13px] uppercase">Aluno de Mestrado</p>
+                        @elseif($pesquisador_info->categoria == "ad")
+                        <p class="text-[13px] uppercase">Aluno de Doutorado</p>
+                        @endif
                     </div>
                     {{--  --}}
                     <div class="w-[20%] inline-block float-left">
                         {{--  --}}
-                        <a href="{{ route('projeto1') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                        <a href="{{ route('projeto2') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                     </div>
                 </div>
                 {{--  --}}

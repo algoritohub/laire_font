@@ -9,21 +9,22 @@
     }
 @endphp
 
+
 <div class="component">
     {{-- SECTION --}}
-    <section id="carrossel_prox2" class="w-[100%] mt-[100px] inline-block bg-[#5CD1FF]">
+    <section id="box-master-component" class="background-carrossel-2">
         {{--  --}}
         <div class="w-[90%] mx-[5%] inline-block">
             {{--  --}}
-            <div id="bloco_nulo2" class="w-[30%] h-[600px] inline-block float-left">
+            <div id="block-one" class="w-[30%] inline-block float-left">
 
             </div>
             {{--  --}}
-            <div id="base_geral2" class="w-[70%] h-[600px] pt-[80px] inline-block float-left">
+            <div id="block-two" class="w-[70%] pt-[80px] inline-block float-left">
                 {{--  --}}
-                <div id="base_text_home_rs" class="inline-block bg-[#ffffff] rounded-[20px] opacity-[0.9] p-[50px] shadow-lg">
+                <div id="box-prime-content-carrossel" class="inline-block bg-[#ffffff] rounded-[20px] opacity-[0.9] p-[50px] shadow-lg">
                     {{--  --}}
-                    <div id="button_max2" class="w-[100px] rounded-[100px] h-[100px] bg-[#5CD1FF] ml-[-100px] absolute">
+                    <div id="button-plus">
                         {{--  --}}
                         <p class="text-[#080E45] text-[11px] text-center mt-[45%] uppercase font-bold">ver mais</p>
                     </div>

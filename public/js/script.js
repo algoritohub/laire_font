@@ -486,6 +486,23 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#audios_home").click(function(event){
+        event.preventDefault();
+        $("#box_audio_home").fadeIn();
+        $("#box_libra_home").hide();
+        $("#audio_libra_home").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#libras_home").click(function(event){
+        event.preventDefault();
+        $("#box_libra_home").fadeIn();
+        $("#box_audio_home").hide();
+        $("#audio_libra_home").hide();
+    });
+});
 
 // DOENÇAS
 
@@ -842,15 +859,96 @@ $(document).ready(function(){
 
 //  SUBMENU
 $(document).ready(function(){
-    $("#cronicas").mouseover(function(event){
+    $("#menu-cronicas").click(function(event){
         event.preventDefault();
         $("#sub_cronicas").fadeIn();
+        $("#sub_projetos").hide();
+        $("#sub_eventos").hide();
+        $("#sub_agudas").hide();
     });
 });
 
 $(document).ready(function(){
-    $("#sub_cronicas, #lock").mouseout(function(event){
+    $("#fechar-cronicas").click(function(event){
         event.preventDefault();
         $("#sub_cronicas").fadeOut();
     });
 });
+
+$(document).ready(function(){
+    $("#menu-agudas").click(function(event){
+        event.preventDefault();
+        $("#sub_agudas").fadeIn();
+        $("#sub_projetos").hide();
+        $("#sub_eventos").hide();
+        $("#sub_cronicas").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar-agudas").click(function(event){
+        event.preventDefault();
+        $("#sub_agudas").fadeOut();
+    });
+});
+
+$(document).ready(function(){
+    $("#menu-projetos").click(function(event){
+        event.preventDefault();
+        $("#sub_projetos").fadeIn();
+        $("#sub_cronicas").hide();
+        $("#sub_eventos").hide();
+        $("#sub_agudas").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar-projectos").click(function(event){
+        event.preventDefault();
+        $("#sub_projetos").fadeOut();
+    });
+});
+
+$(document).ready(function(){
+    $("#menu-eventos").click(function(event){
+        event.preventDefault();
+        $("#sub_eventos").fadeIn();
+        $("#sub_cronicas").hide();
+        $("#sub_projetos").hide();
+        $("#sub_agudas").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#bt-android").click(function(event){
+        event.preventDefault();
+        $("#text-android").fadeIn();
+        $("#text-ios").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#bt-ios").click(function(event){
+        event.preventDefault();
+        $("#text-ios").fadeIn();
+        $("#text-android").hide();
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("#video_arlindo").click(function(event){
+        event.preventDefault();
+        $(".modal-video-arlindo").fadeIn();
+        $(".pelicula_banner").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar-video-arlindo").click(function(event){
+        event.preventDefault();
+        $(".modal-video-arlindo").fadeOut();
+    });
+});
+

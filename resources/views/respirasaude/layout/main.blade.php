@@ -43,248 +43,133 @@
 @endphp
 {{--  --}}
 <body id="pagina">
-    {{-- NOVO ACESSIBILIDADE DESKTOP MOBILE --}}
-    <div id="barra_superior_acessibilidade_mobile" class="w-[100%] inline_block bg-[#212121] fixed">
-        {{--  --}}
-        <div class="w-[90%] mx-[5%] inline-block">
-            {{--  --}}
-            <div id="barra_acessibilidade_azul" class="w-[70%] inline-block h-[40px] float-left"></div>
-            {{--  --}}
-            <div id="barra_acessibilidade_roxa" class="w-[30%] inline-block h-[40px] float-left">
-                {{--  --}}
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div id="sub_barra_acessibilidade_verde" class="w-[53.3%] h-[40px] inline-block float-left">
-                        {{--  --}}
-                        <ul id="button_font" class="float-right mt-[5px]">
-                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-                        </ul>
-                    </div>
-                    {{--  --}}
-                    <div id="sub_barra_acessibilidade_vermelho" class="w-[23.3%] h-[40px] inline-block float-left">
-                        {{--  --}}
-                        <a href="{{ route('mapa_site') }}"><p class="text-[9px] mt-[14px] float-right text-[#ffffff] font-bold uppercase">Mapa do Site</p></a>
-                    </div>
-                    {{--  --}}
-                    <div id="sub_barra_acessibilidade_cinza" class="w-[23.3%] h-[40px] inline-block float-left">
-                        {{--  --}}
-                        <ul class="mt-[10px] float-right">
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-                        </ul>
+    <!-- HEADER  -->
+    <header class="w-[100%] inline-block bg-[#080e45] fixed" style="z-index: 10;">
+        <div class="w-[95%] ml-[5%] inline-block">
+            <div class="w-[100%] h-[105px] inline-block">
+                <div id="header-left" class="w-[20%] h-[105px] float-left inline-block bg-[#080E45]">
+                    <!-- LOGO DESK -->
+                    <a href="{{ route('home.respira_saude') }}">
+                        <img class="float-left mt-[20px] w-[75px] mr-[10px]" src="/img/rs_logo.png" alt="RespiraSaúde"/>
+                        <p id="nombre" class="text-[20px] mt-[35px] text-[#ffffff]"><b>Respira</b>Saúde</p>
+                    </a>
+                </div>
+                <div id="header-right" class="w-[80%] h-[100px] float-left inline-block">
+                    <div class="w-[100%] inline-block">
+                        <!-- ACESSIBILITY -->
+                        <div id="shadow" class="w-[100%] px-[6%] float-left h-[50px] inline-block bg-[#212121]">
+                            <div class="w-[100%] inline-block">
+                                <!-- BUTTONS -->
+                                <div id="acessibility-left" class="w-[70%] pr-[30px] inline-block float-left">
+                                    <!-- SEARCH -->
+                                    <input id="hidden-search-desk" placeholder="Busque algo!" class="w-[85%] ml-[15%] mt-[10px] pl-[10px] h-[35px] outline-none rounded-[5px]" type="text">
+                                    <!-- BLOCK ACESSIBILITY -->
+                                    <div id="block_acessibility" class="w-[100%] mt-[-12px] inline-block">
+                                        <!-- LINGUAGES -->
+                                        <ul class="float-right">
+                                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
+                                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
+                                        </ul>
+                                        {{-- SIZE FONT --}}
+                                        <ul class="float-right">
+                                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
+                                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- SEARCH -->
+                                <div id="acessibility-right" class="w-[30%] inline-block float-left">
+                                    <!-- SEARCH -->
+                                    <input id="hidden-search" placeholder="Busque algo!" class="w-[100%] text-[13px] mt-[10px] pl-[10px] h-[35px] outline-none rounded-[5px]" type="text">
+                                    <!-- BUTTON ACTIVE SEARCH -->
+                                    <p id="active-search" class="text-[#ffffff] text-center text-[16px] mt-[2px] cursor-pointer"><i class="fi fi-bs-search"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MENU -->
+                        <div class="w-[100%] float-left h-[50px] mt-[5px] inline-block bg-[#00FF8C]">
+                            <!-- MENU PRIME -->
+                            <div id="shadow" class="w-[100%] inline-block float-left overflow-scroll">
+                                <!-- LISTEM -->
+                                <nav>
+                                    <ul class="w-[100%]">
+                                        <div id="mixedSlider">
+                                            {{-- ITENS --}}
+                                            <div class="MS-content box_avalia_egg">
+
+                                                @if ($conteudo)
+                                                <li class="item"><a href="#missao"><button>Missão</button></a></li>
+                                                @endif
+
+                                                @if ($doencas_cronicas)
+                                                <li class="item"><button id="menu-cronicas">Doenças respiratórias crônicas</button></li>
+                                                @endif
+
+                                                @if ($doencas_agudas)
+                                                <li class="item"><button id="menu-agudas">Doenças respiratórias agudas</button></li>
+                                                @endif
+                                                <li class="item"><button id="menu-projetos">Projetos</button></li>
+                                                <li class="item"><a href="#eventos"><button>Eventos</button></a></li>
+                                                <li class="item"><a href="#extensao"><button>Projetos de Extensão</button></a></li>
+                                            </div>
+                                            {{-- BUTTONS --}}
+                                            <div class="MS-controls" style="margin-top: -30px; position: absolute;">
+                                                <button class="MS-left"></button>
+                                                <button class="MS-right"><img src="/img/angulo-direito.png"></button>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    {{-- BARRA SUPERIOR MOBILE --}}
-    <header id="barra_superior_fixa_mobile" class="w-[100%] mt-[40px] bg-[#080E45] inline-block fixed">
-        {{--  --}}
-        <div id="barra_secundaria"  class="w-[90%] mx-[5%] h-[100px] inline-block">
-            {{--  --}}
-            <div class="w-[70%] inline-block float-left">
-                {{--  --}}
-                <a href="{{ route('home.respira_saude') }}">
-                    <img class="float-left mt-[20px] w-[60px] mr-[10px]" src="/img/rs_logo.png" alt=""/>
-                    <p class="text-[20px] mt-[32px] text-[#ffffff]"><b>Respira</b>Saúde</p>
-                </a>
-            </div>
-            {{--  --}}
-            <div class="w-[30%] inline-block float-left">
-                {{--  --}}
-                <p id="busca_mobile" class="text-[#ffffff] cursor-pointer text-[18px] mt-[40px] float-right"><i class="fi fi-bs-search"></i></p>
             </div>
         </div>
     </header>
-    {{--  --}}
-    <header id="barra_superior_menu_mobile" class="w-[100%] mt-[140px] bg-[#5CD1FF] overflow-scroll inline-block fixed">
-        {{--  --}}
-        <div id="menu_principal" class="w-[950px] py-[16px] inline-block">
+    {{-- SUBMENU --}}
+    <header id="sub_cronicas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
             {{--  --}}
-            <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="cronicas_doencas" href="">Doenças respiratórias crônicas</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="voltar_menu" href="#text_missao_RS">Missão</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" id="cronicas_agudas" href="">Doenças respiratórias agudas</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Projetos</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Eventos</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Projetos de Extensão</a></b></li>
+            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
+                <p id="fechar-cronicas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
+            </div>
+            {{--  --}}
+            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
+                @foreach ($doencas_cronicas as $doenca_cronica)
+                    <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
+                @endforeach
             </ul>
-        </div>
-        {{--  --}}
-        <div style="display: none;" id="menu_cronicas_doencas" class="w-[1150px] py-[16px] inline-block">
-            {{--  --}}
-            <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff] text-[13px]" id="voltar_menu2" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Asma</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Fibrose Cística</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">DPOC</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Bronquiectasia</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Fibrose pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Sinusite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Hipertensão pulmonar</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Síndrome pós-COVID-19</a></b></li>
-            </ul>
-        </div>
-        {{--  --}}
-        <div style="display: none;" id="menu_agudas_doencas" class="w-[850px] py-[16px] inline-block">
-            {{--  --}}
-            <ul class="">
-                <li class="inline-block ml-[25px]"><b><a class="text-[#ffffff] text-[13px]" id="voltar_menu1" href="">Menu Principal</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">H1N1</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">COVID-19</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Tuberculose</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Influenza</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Pneumonia</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Bronquiolite</a></b></li>
-                <li class="inline-block ml-[25px]"><b><a class="text-[#080E45] text-[13px]" href="">Coqueluxe</a></b></li>
-            </ul>
-        </div>
-        {{--  --}}
-        <div style="display: none;" id="busca_mobile_menu" class="w-[90%] mx-[5%] inline-block">
-            {{--  --}}
-            <form class="m-[0px]" action="" method="POST">
-                @csrf
-                <input class="w-[100%] h-[30px] bg-[#ffffff] outline-none pl-[10px] my-[10px] rounded-[5px]" type="text" placeholder="Busque por algo!">
-            </form>
         </div>
     </header>
-    {{-- NOVO HEADER --}}
-    <header style="background: url(/img/background_header.png); background-size: 100%; background-repeat: no-repeat;" id="barra_superior_fixa" class="w-[100%] inline-block fixed">
-        {{--  --}}
-        <div class="w-[90%] inline-block mx-[5%]">
+    {{-- SUBMENU --}}
+    <header id="sub_agudas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
             {{--  --}}
-            <div class="w-[20%] h-[100px] float-left inline-block">
-                {{--  --}}
-                <a href="{{ route('home.respira_saude') }}">
-                    <img class="float-left mt-[20px] w-[70px] mr-[10px]" src="/img/rs_logo.png" alt=""/>
-                    <p class="text-[22px] mt-[30px] text-[#ffffff]"><b>Respira</b>Saúde</p>
-                </a>
+            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
+                <p id="fechar-agudas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
             </div>
             {{--  --}}
-            <div class="w-[80%] float-left inline-block">
-                {{--  --}}
-                <div class="w-[100%] h-[40px] inline-block">
-                    {{--  --}}
-                    <div class="w-[70%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <ul id="button_font" class="float-right mt-[5px]">
-                            <li class="inline-block mr-[15px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_down') }}">A-</a></li>
-                            <li class="inline-block mr-[20px]"><a class="font-bold text-[17px] text-[#ffffff]" href="{{ route('font_up') }}">A+</a></li>
-                        </ul>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[15%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <a href="{{ route('mapa_site') }}"><p class="text-[12px] mt-[10px] float-right text-[#ffffff]">Mapa do site</p></a>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[15%] float-left inline-block h-[50px]">
-                        {{--  --}}
-                        <ul class="mt-[5px] mr-[10px] float-right">
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/brasil.png" alt=""></a></li>
-                            <li class="inline-block ml-[10px]"><a href=""> <img class="w-[25px] h-[25px]" src="/img/eua.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-                {{--  --}}
-                <div class="w-[100%] h-[60px] inline-block">
-                    {{--  --}}
-                    <div class="w-[90%] inline-block float-left">
-                        {{--  --}}
-                        <nav id="menu_prime" class="mt-[5px]">
-                            <ul class="menu">
-                                <li><b><a href="#text_missao_RS">Missão</a></b></li>
-                                <li><b><a href="#">Doenças respiratórias crônicas</a></b>
-                                    <ul>
-                                        <li class="ma"><a href="#">Conheça as principais</a>
-                                            <ul class="mx">
-                                                @foreach ($doencas_cronicas as $doenca_cronica)
-                                                    {{--  --}}
-                                                    <li><a href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}">{{ $doenca_cronica->nome }}</a></li>
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Como controlar os sintomas</a>
-                                            <ul class="mx">
-                                                {{-- DOENÇAS AQUI --}}
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Tratamento</a>
-                                            <ul class="mx">
-                                                {{-- DOENÇAS AQUI --}}
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><b><a href="#">Doenças respiratórias agudas</a></b>
-                                    <ul>
-                                        <li class="ma"><a href="#">Conheça as principais</a>
-                                            <ul class="mx">
-                                                @foreach ($doencas_agudas as $doenca_aguda)
-                                                    {{--  --}}
-                                                    <li><a href="{{ route('doenca_aguda', ['id' => $doenca_aguda->id]) }}">{{ $doenca_aguda->nome }}</a></li>
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                        <li class="ma"><a href="#">Como prevenir?</a>
-                                            <ul class="mx">
-                                                <li><a href="#">Vacinas</a></li>
-                                                <li><a href="#">Higienização das mãos</a></li>
-                                                <li><a href="#">Uso de máscaras faciais</a></li>
-                                                <li><a href="#">Isolamento social</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Barreiras para prevenção</a></li>
-                                        <li><a href="#">Facilitadores para prevenção</a></li>
-                                    </ul>
-                                </li>
-                                <li><b><a href="#">Projetos</a></b>
-                                    <ul>
-                                        <li class="ma"><a href="/respira-saude/projeto/1">Efeitos da atenção domiciliar para adultos...</a>
-                                        </li>
-                                        <li class="ma"><a href="/respira-saude/projeto/2">Soluções para aumentar a aceitabilidade, adesão...</a>
-                                        </li>
-                                        <li class="ma"><a href="/respira-saude/projeto/3">Desenvolvimento e validação de um sistema eletrônico...</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><b><a href="#">Eventos</a></b>
-                                    <ul>
-                                        <li class="ma"><a href="#">ConVivendo com a Asma</a>
-                                            <ul class="mx">
-                                                <li><a href="#">Vídeos</a></li>
-                                                <li><a href="#">E-books</a></li>
-                                                <li><a href="#">Infográficos</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><b><a href="#projeto_extensao">Projetos de Extensão</a></b></li>
-                            </ul>
-                        </nav>
-                        {{--  --}}
-                        <form style="display: none;" id="mosc" class="w-[95%] float-left ml-[35px] mt-[5px]" action="" method="POST">
-                            @csrf
-                            <label for="search"></label>
-                            <input id="cx-txt-pesquise" type="text" class="w-[100%] h-[30px] mt-[10px] text-[13px] outline-none rounded-[5px] pl-[10px] " id="search" placeholder="Pesquise aqui...">
-                        </form>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[5%] inline-block float-left">
-                        {{--  --}}
-                        <p id="busca_search" class="text-[#ffffff] text-center text-[18px] mt-[22px] cursor-pointer"><i class="fi fi-bs-search"></i></p>
-                    </div>
-                    {{--  --}}
-                    <div class="w-[5%] inline-block float-left">
-                        {{--  --}}
-                        <a href="{{ route('home.laire') }}"><img src="/img/avt_laire.png" id="mascot" class="w-[50px] ml-[40px] mt-[5px] cursor-pointer float-right"></a>
-                    </div>
-                </div>
-                {{-- MASCOTE --}}
-                {{-- <img id="mascote" style="diplay:none" src="/img/mascote6.png" class="w-[400px] absolute mt-[380px] ml-[780px]"> --}}
-                {{-- <div class="w-[200px] bg-[blue] h-[100px] rounded-[100px] absolute mt-[340px] ml-[740px]"></div> --}}
+            <ul id="ul-agudas" class="mt-[12px] mr-[-10px] float-right">
+                @foreach ($doencas_agudas as $doencas_agudas)
+                    <li id="mobile-list-agudas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_aguda', ['id' => $doencas_agudas->id]) }}"><button class="btmenu">{{ $doencas_agudas->nome }}</button></a></li>
+                @endforeach
+            </ul>
+        </div>
+    </header>
+    {{-- SUBMENU --}}
+    <header id="sub_projetos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            {{--  --}}
+            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
+                <p id="fechar-projectos" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
             </div>
+            {{--  --}}
+            <ul id="ul-projetos" class="mt-[12px] mr-[-10px] float-right">
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto1') }}"><button class="btmenu" title="Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise">Efeitos da atenção domiciliar para adultos...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto2') }}"><button class="btmenu" title="Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto3') }}"><button class="btmenu" title="Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
+            </ul>
         </div>
     </header>
     {{-- ARTICLE --}}
@@ -298,7 +183,7 @@
             {{--  --}}
             <div id="borda" class="w-[50%] h-[400px] border-r-[1px] border-r-[#eeeeee] inliene-block float-left">
                 {{--  --}}
-                <p id="inscreva" class="text-[30px] w-[500px] leading-[40px] font-bold text-[#ffffff]">Inscreva-se hoje para receber as atualizações mais recentes.</p>
+                <p id="inscreva" class="text-[30px] leading-[40px] font-bold text-[#ffffff]">Inscreva-se hoje para receber as atualizações mais recentes.</p>
                 {{--  --}}
                 <table id="e-mail" class="mt-[40px] w-[80%]">
                     <tr>
@@ -355,8 +240,6 @@
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[200px]" src="/img/ppgfis.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/img/10.png" alt=""></li>
-
-
                         </ul>
                     </center>
                 </div>
@@ -395,12 +278,54 @@
         </div>
     </footer>
 
+    {{-- MODAL VÍDEO ARLINDO --}}
+    <div class="modal-video-arlindo">
+        {{--  --}}
+        <div id="arlindo-modal-video" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] h-[520px] p-[50px] rounded-[20px] mx-auto">
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[70%] inline-block float-left">
+                    {{--  --}}
+                    <p class="uppercase text-[18px] font-bold">Quem é o arlindo?</p>
+                </div>
+                {{--  --}}
+                <div class="w-[30%] inline-block float-left">
+                    {{--  --}}
+                    <p id="fechar-video-arlindo" class="float-right font-[20px] cursor-pointer">✕</p>
+                </div>
+            </div>
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+
+            </div>
+        </div>
+    </div>
+
     {{-- MODAL PWA --}}
     <div class="modal_pwa">
         {{--  --}}
-        <div class="w-[300px] mx-auto mt-[10%] rounded-[20px] bg-[#ffffff] p-[30px] shadow-lg">
+        <div class="w-[300px] mx-auto mt-[8%] rounded-[20px] bg-[#ffffff] p-[30px] shadow-lg">
             <img src="/img/frame.png" alt="qr">
-            <p class="text-[13px]">Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
+
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[49%] mr-[1%] inline-block float-left">
+                    <button id="bt-android" class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">Android</button>
+                </div>
+                {{--  --}}
+                <div class="w-[49%] ml-[1%] inline-block float-left">
+                    <button id="bt-ios" class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">IOS</button>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="text-android" class="mt-[20px]">
+                <p class="text-[13px]">Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
+            </div>
+            {{--  --}}
+            <div id="text-ios" class="mt-[20px]" style="display: none;">
+                <p class="text-[13px]">No IOS Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
+            </div>
             <a href="{{ route('banner.pwa') }}"><button class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">Ok, entendi</button></a>
         </div>
     </div>
@@ -412,16 +337,16 @@
             {{--  --}}
             <div id="area_transparent" class="w-[100%] inline-block h-[85vh]"></div>
             {{--  --}}
-            <div class="w-[100%] inline-block bg-[#cdcdcd] shadow-lg h-[15vh] px-[50px] py-[20px]">
+            <div id="banner-claveland" class="w-[100%] inline-block bg-[#eeeeee] shadow-lg h-[15vh] px-[50px] py-[20px]">
                 {{--  --}}
-                <div class="w-[70%] inline-block float-left">
+                <div id="tik" class="w-[70%] inline-block float-left">
                     <img src="/img/ARLINDO.png" class="w-[300px] mt-[-100px] ml-[-50px] absolute">
-                    <p class="leading-[17px] ml-[200px] mt-[10px]">Oi Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minima totam ducimus maxime quos iste similique at iure, commodi laboriosam exercitationem. Dolor numquam perferendis illum impedit voluptas iure, eum placeat!</p>
+                    <p id="text-arlindo" class="leading-[17px] text-[14px] ml-[200px] mt-[10px]">Olá, me chamo Arlindo e vou ser seu assistênte durante sua visita ao nosso portal. Quer saber mais sobre mim, tem um vídeo com acessibilidade pra você me conhecer melhor, basta <b class="cursor-pointer" id="video_arlindo">clicar aqui!</b></p>
                 </div>
                 {{--  --}}
-                <div class="w-[30%] inline-block float-left">
-                    <ul class="float-right mt-[15px]">
-                        <li class="inline-block ml-[10px]"><button id="como_instalar" class="w-[180px] h-[40px] rounded-[5px] border-[1px] border-[#cdcdcd] bg-[#212121] text-[12px] text-[#ffffff]">Como instalar?</button></li>
+                <div id="tok" class="w-[30%] inline-block float-left">
+                    <ul id="btn-varejao" class="float-right mt-[15px]">
+                        <li class="inline-block ml-[10px]"><button id="como_instalar" class="w-[180px] h-[40px] rounded-[5px] border-[1px] border-[#cdcdcd] bg-[#212121] text-[12px] text-[#ffffff]">Instale o app</button></li>
                         <li class="inline-block ml-[10px]"><a href="{{ route('banner.pwa') }}"><button class="w-[180px] h-[40px] rounded-[5px] border-[1px] border-[#cdcdcd] bg-[#212121] text-[12px] text-[#ffffff]">Não exibir novamente</button></a></li>
                     </ul>
                 </div>
@@ -504,6 +429,21 @@
                 }
 
             });
+    </script>
+
+    {{-- SCRIPT --}}
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/js/multislider.js"></script>
+    <script>
+        $('#basicSlider').multislider({
+            continuous: true,
+            duration: 2000
+        });
+
+        $('#mixedSlider').multislider({
+            duration: 200,
+            interval: 0
+        });
     </script>
 
 </body>
