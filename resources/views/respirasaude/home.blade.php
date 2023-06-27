@@ -100,7 +100,6 @@
 </section>
 @endif
 
-<<<<<<< HEAD
 {{-- NOVO BLOCO DE MISSÃO --}}
 <div id="missão" style="display: none;" class="w-[100%]  inline-block">
     {{--  --}}
@@ -165,8 +164,6 @@
             </div>
     </div>
 
-=======
->>>>>>> 94e57f7aa55a8433e48bc8f9f4eb857fc06c8d99
 @if ($eventos)
 {{-- BLOCO DE EVENTOS --}}
 <section class="w-[100%] mt-[40px] inline-block">

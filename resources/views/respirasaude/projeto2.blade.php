@@ -33,7 +33,7 @@
                 <div id="moldure-prime" class="w-[100%] inline-block rounded-[20px]">
                     {{--  --}}
                     <img id="box_audio_home" class="w-[100%] rounded-[20px]" src="/img/conteudo/{{ $bloco_principal[0]->imagem }}" />
-                    <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/img/menor.mp4" controls="controls"></video>
+                    <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/videos/resumo_pesquisa_2.wmv" controls="controls"></video>
                 </div>
                 {{-- BASE LOGOS --}}
                 <div id="base_logos" class="w-[80%] mt-[20px] h-[150px] inline-block">
