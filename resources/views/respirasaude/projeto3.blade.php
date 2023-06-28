@@ -20,7 +20,7 @@
     {{--  --}}
     <div class="w-[100%] mt-[100px] inline-block">
         {{--  --}}
-        <div id="lado_a_projeto" style="background: linear-gradient(101deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(0,212,255,1) 70%);" class="w-[60%] float-left inline-block h-[600px]">
+        <div id="lado_a_projeto" style="background: linear-gradient(101deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(0,212,255,1) 70%);" class="w-[60%] float-left inline-block h-[700px]">
             {{--  --}}
             <div id="container_a" class="w-[100%] pl-[80px] pt-[20px] inline-block">
                 {{-- BASE IMAGEM/VIDEO --}}
@@ -50,7 +50,7 @@
             </div>
         </div>
         {{--  --}}
-        <div id="lado_b_projeto" class="w-[40%] pr-[50px] float-left inline-block bg-[#00d4ff] h-[600px]">
+        <div id="lado_b_projeto" class="w-[40%] pr-[50px] float-left inline-block bg-[#00d4ff] h-[700px]">
             {{--  --}}
             <div id="container_b" class="w-[90%] mx-[5%] inline-block">
                 {{--  --}}
@@ -63,8 +63,8 @@
                 {{--  --}}
                 <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
                     {{--  --}}
-                    <audio autoplay="autoplay" controls="controls">
-                        <source src="sua_musica.mp3" type="audio/mp3" />
+                    <audio  controls="controls">
+                        <source src="/mp3/Resumo pesquisa 3.mp3" type="audio/mp3" />
                         seu navegador não suporta HTML5
                     </audio>
                 </div>

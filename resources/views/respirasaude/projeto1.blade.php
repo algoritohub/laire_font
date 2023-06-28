@@ -35,6 +35,17 @@
                     <img id="box_audio_home" class="w-[100%] rounded-[20px]" src="/img/conteudo/{{ $bloco_principal[0]->imagem }}" />
                     <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/videos/resumo_pesquisa_1.mp4" controls="controls"></video>
                 </div>
+                {{-- AUDIO --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="audio_libra_home" style="display: none;" class="inline-block float-left mt-[20px]">
+                        {{--  --}}
+                        <audio  controls="controls">
+                            <source src="/mp3/Resumo pesquisa 1.mp3" type="audio/mp3" />
+                            seu navegador não suporta HTML5
+                        </audio>
+                    </div>
+                </div>
                 {{-- BASE LOGOS --}}
                 <div id="base_logos" class="w-[80%] mt-[20px] h-[150px] inline-block">
                     {{-- LOGOS --}}
@@ -56,18 +67,6 @@
                     @foreach ($explode_texto as $paragrafo)
                     <p id="text_projeto3" class="mb-[10px] text-justify text-[{{ $numb_font }}px]">{{ $paragrafo }}.</p>
                     @endforeach
-                </div>
-
-                {{-- AUDIO --}}
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div id="audio_libra_home" style="display: none;" class="inline-block float-right mt-[20px]">
-                        {{--  --}}
-                        <audio autoplay="autoplay" controls="controls">
-                            <source src="sua_musica.mp3" type="audio/mp3" />
-                            seu navegador não suporta HTML5
-                        </audio>
-                    </div>
                 </div>
             </div>
         </div>
