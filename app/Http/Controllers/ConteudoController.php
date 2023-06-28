@@ -63,7 +63,14 @@ class ConteudoController extends Controller
         $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY categoria DESC");
         $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
 
-        return view('respirasaude.projeto3', compact('pesquisadores', 'doencas_cronicas'));
+        $bloco_principal  = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 3 AND posicao = 3");
+        @$descricao_prime = strip_tags($bloco_principal[0]->descricao);
+        @$descricao_prime = mb_convert_encoding($descricao_prime, 'UTF-8', 'HTML-ENTITIES');
+        @$explode_texto   = explode('.', $descricao_prime);
+
+        @$bloco_conteudo  = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 3 AND posicao != 3");
+
+        return view('respirasaude.projeto3', compact('pesquisadores', 'doencas_cronicas', 'bloco_principal', 'descricao_prime', 'bloco_conteudo', 'explode_texto'));
     }
 
     // PROJETO4

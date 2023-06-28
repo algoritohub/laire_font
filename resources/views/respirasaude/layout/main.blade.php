@@ -135,7 +135,7 @@
                 <p id="fechar-cronicas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
             </div>
             {{--  --}}
-            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
+            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px]">
                 @foreach ($doencas_cronicas as $doenca_cronica)
                     <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
                 @endforeach
@@ -150,7 +150,7 @@
                 <p id="fechar-agudas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
             </div>
             {{--  --}}
-            <ul id="ul-agudas" class="mt-[12px] mr-[-10px] float-right">
+            <ul id="ul-agudas" class="mt-[12px] mr-[-10px]">
                 @foreach ($doencas_agudas as $doencas_agudas)
                     <li id="mobile-list-agudas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_aguda', ['id' => $doencas_agudas->id]) }}"><button class="btmenu">{{ $doencas_agudas->nome }}</button></a></li>
                 @endforeach

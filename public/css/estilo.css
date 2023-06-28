@@ -2760,6 +2760,7 @@ li.sub{
     #active-search{
         width: 100%;
         height: 20px;
+        margin-top: 10px;
         visibility: visible;
     }
     #hidden-search{
@@ -2774,7 +2775,7 @@ li.sub{
         display: none;
     }
     #sub_cronicas{
-        padding: 0px 25px;
+        width: 100%;
         height: 100vh;
     }
     #block-prime-video{
@@ -2834,7 +2835,7 @@ li.sub{
     }
     /*  */
     #sub_cronicas{
-        width: 60%;
+        padding: 0px 25px;
         height: 100vh;
     }
     ul#ul-cronicas{
@@ -2842,11 +2843,8 @@ li.sub{
         margin: 40px 0px 0px -10px;
     }
     li#mobile-list-cronicas{
-        display: flex;
+        display: block;
         margin-bottom: 15px;
-    }
-    button.btmenu{
-        font-size: 18px;
     }
     /*  */
     #sub_agudas{
@@ -3148,7 +3146,7 @@ li.sub{
     }
     /*  */
     #sub_cronicas{
-        width: 60%;
+        padding: 0px 25px;
         height: 100vh;
     }
     ul#ul-cronicas{
@@ -3324,10 +3322,8 @@ li.sub{
         padding-top: 25px;
     }
     #sub_cronicas{
-        sub_cronicas{
-            padding: 0px 25px;
-            height: 100vh;
-        }
+        padding: 0px 25px;
+        height: 100vh;
     }
     #moldure-prime{
         width: 100%;

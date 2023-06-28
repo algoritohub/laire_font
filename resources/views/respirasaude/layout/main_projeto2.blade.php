@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <!-- MENU -->
-                        <div class="w-[100%] float-left h-[50px] mt-[5px] inline-block bg-[#00FF8C]">
+                        <div class="w-[100%] float-left h-[50px] mt-[6px] inline-block bg-[#00FF8C]">
                             <!-- MENU PRIME -->
                             <div id="shadow" class="w-[100%] inline-block float-left overflow-scroll">
                                 <!-- LISTEM -->
@@ -306,6 +306,21 @@
         c++;
         }
         }
+    </script>
+
+    {{-- SCRIPT --}}
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/js/multislider.js"></script>
+    <script>
+        $('#basicSlider').multislider({
+            continuous: true,
+            duration: 2000
+        });
+
+        $('#mixedSlider').multislider({
+            duration: 200,
+            interval: 0
+        });
     </script>
 
 </body>

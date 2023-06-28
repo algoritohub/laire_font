@@ -75,35 +75,6 @@
 </section>
 @endif
 
-{{-- BLOCO FIXO 1 --}}
-<section class="w-[100%] mt-[-5px] bg-[#f1f1f1] inline-block">
-    {{--  --}}
-    <div id="container-block" class="w-[100%] inline-block">
-        {{--  --}}
-        <div id="band_a_block" class="w-[50%] pl-[80px] float-left inline-block">
-            {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
-                {{--  --}}
-                <img class="img-public" src="/img/Pesquisa 2/Pesquisa 2 - imagem 1.png">
-            </div>
-        </div>
-        {{--  --}}
-        <div id="band_b_block" class="w-[50%] px-[80px] float-left inline-block">
-            <div id="importacncia_projeto2"></div>
-            {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
-                {{--  --}}
-                <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Algumas doenças respiratórias infecciosas matam milhares de brasileiros todos os anos, pois elas são contagiosas e passam de uma pessoa para outra muito facilmente através da respiração, tosse, espirros e mãos contaminadas.</b>.</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Então, saber um pouco mais sobre essas doenças é muito importante. Precisamos entender como elas são transmitidas, quais são os seus sintomas e principalmente, como podemos nos proteger do contágio. Então, pense conosco... se nós conhecermos melhor essas doenças, e como nós podemos nos proteger delas, será possível diminuir a <b>mortalidade</b> no nosso país!</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Vamos dar agora alguns exemplos de doenças respiratórias que são contagiosas, algumas delas você já deve conhecer, outras talvez não. Vamos lá!</p>
-                <p id="text_projeto2" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Você já ouviu falar em <b>pneumonia</b>, <b>tuberculose</b>, <b>H1N1</b>, <b>bronquiolite</b>, <b>influenza</b>, <b>coqueluche</b>, <b>COVID-19</b></p>
-                <p id="text_projeto2" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Vamos compartilhar aqui de uma forma muito simples, como esta pesquisa está acontecendo e os seus resultados. Ela está sendo realizada com o apoio do Ministério da Saúde, CNPq. </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 {{-- BLOCO DINAMICOS AQUI --}}
 @if ($bloco_conteudo)
 
@@ -173,68 +144,6 @@
         @endif
     @endforeach
 @endif
-
-{{-- BLOCO 1 --}}
-<section class="w-[100%] mt-[-5px] bg-[#f1f1f1] inline-block">
-    {{--  --}}
-    <div id="container-block" class="w-[100%] inline-block">
-        {{--  --}}
-        <div id="band_a_block" class="w-[50%] pl-[80px] float-left inline-block">
-            {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
-                {{--  --}}
-                <img class="img-public" src="/img/Pesquisa 2/Pesquisa 2 - imagem 3.png">
-            </div>
-        </div>
-        {{--  --}}
-        <div id="band_b_block" class="w-[50%] px-[80px] float-left inline-block">
-            <div id="importacncia_projeto2"></div>
-            {{--  --}}
-            <div id="container_inner_bloco1" class="w-[100%] inline-block">
-                {{--  --}}
-                <p  class="text-[25px] font-bold mb-[40px] mt-[90px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Como a pesquisa foi feita</p>
-                <p class="mb-[20px] text-justify text-[{{ $numb_font }}px]"><section id="cronicas" class="w-[100%] mb-[40px] inline-block">Vamos lá, primeiro foi necessário entender quais são os aspectos que ajudam as pessoas a preveni estas doenças. Isso é o que chamamos de <b><b>facilitadores</b> de adesão às medidas de prevenção e controle!</b></p>
-                <p class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mas, vocês concordam que também é importante entender quais são os aspectos que nos atrapalham na prevenção destas doenças? Isso é o que chamamos de <b><b>barreiras</b> de adesão às medidas de prevenção e controle!</b></p>
-                <p class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Esta pesquisa está sendo realizada em três etapas!</p>
-
-                <ul class="ml-[-10px]">
-                    <li class="mb-[10px] flex"><p class="ml-[10px] float-left">●</p> <p class="ml-[10px] float-left text-[{{ $numb_font }}px]">Realizamos uma revisão sistemática para identificar a partir dos resultados de muitos estudos, feitos em vários países do mundo, quais são as barreiras e facilitadores para a adesão das pessoas a medidas de prevenção e controle da COVID-19 e outras doenças respiratórias graves.</p></li>
-                    <li class="mb-[10px] flex"><p class="ml-[10px] float-left">●</p> <p class="ml-[10px] float-left text-[{{ $numb_font }}px]">Estamos desenvolvendo um questionário para entender quais são os aspectos que facilitam ou atrapalham os brasileiros na prevenção de doenças respiratórias contagiosas. O nome deste questionário é ADHERE.
-                    </p></li>
-                    <li class="mb-[10px] flex"><p class="ml-[10px] float-left">●</p> <p class="ml-[10px] float-left text-[{{ $numb_font }}px]">Aplicar o questionário ADHERE em todo o Brasil e fazer um diagnóstico nacional para entender o atrapalha e o que ajuda os brasileiros na prevenção das doenças respiratórias contagiosas.</p></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- BLOCO 2 --}}
-<section class="w-[100%] mt-[-5px] bg-[#fafafa] inline-block">
-    {{--  --}}
-    <div id="container-block" class="w-[100%] inline-block">
-        {{--  --}}
-        <div id="band_a_block" class="w-[50%] px-[80px] inline-block float-left">
-            {{--  --}}
-            <div id="container_inner_bloco2" class="w-[100%] inline-block">
-                {{--  --}}
-                <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Resultados</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">A revisão incluiu <b>13 estudos </b>presentando 1.056 pacientes com <b>asma, doença pulmonar obstrutiva crônica (DPOC) e fibrose cística.</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"></b> As intervenções de atenção domiciliar avaliadas nos estudos foram: <b>consulta domiciliar</b>,<b> tratamento domiciliar de exacerbações, alta precoce, hospital em casa, antibioticoterapia domiciliar e programa de reabilitação domiciliar.</b></p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Não encontramos evidências suficientes para recomendar a atenção domiciliar para adultos com doenças respiratórias crônicas. </p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entretanto, foi possível observar que os estudos, na sua maioria, <b>observaram que os pacientes tratados com atenção domiciliar tiveram menor taxa de readmissão no hospital, menos eventos adversos, menor mortalidade  e melhor estado funcional.</b></p>
-            </div>
-        </div>
-        {{--  --}}
-        <div id="band_b_block" class="w-[50%] inline-block float-left pr-[80px]">
-            {{--  --}}
-            <div id="container_inner_bloco2" class="w-[100%] inline-block">
-                {{--  --}}
-                <img class="img-public" src="/img/Pesquisa 2/Pesquisa 2 - imagem 4.png">
-            </div>
-        </div>
-    </div>
-</section>
-
 
 {{-- PESQUISADORES--}}
 <section  class="w-[100%] inline-block">
@@ -506,5 +415,4 @@
                 </center>
             </div>
         </section>
-
 @endsection
