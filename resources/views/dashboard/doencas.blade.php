@@ -142,6 +142,20 @@
                         <input style="display: none;" id="imagem3x" type="file" name="imagem3">
                     </div>
                     {{--  --}}
+                    <div class="w-[100%] inline-blog mt-[0px] mb-[30px] float-left">
+                        {{--  --}}
+                        <label class="px-[100px] rounded-[100px] text-[12px] cursor-pointer py-[11px] bg-[#00FF8C] text-[#080E45]" for="video">Carregar um vídeo para o conteúdo acima</label>
+                        <!--  -->
+                        <input style="display: none;" id="video" type="file" name="video">
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] inline-blog mt-[0px] mb-[30px] float-left">
+                        {{--  --}}
+                        <label class="px-[100px] rounded-[100px] text-[12px] cursor-pointer py-[11px] bg-[#00FF8C] text-[#080E45]" for="audio">Carregar um audio para o conteúdo acima</label>
+                        <!--  -->
+                        <input style="display: none;" id="audio" type="file" name="audio">
+                    </div>
+                    {{--  --}}
                     <div class="w-[100%] mt-[20px] inline-block">
                         {{--  --}}
                         <div class="w-[100%] inline-blog float-left">
@@ -230,6 +244,20 @@
                         <label class="px-[100px] rounded-[100px] text-[12px] cursor-pointer py-[11px] bg-[#00FF8C] text-[#080E45]" for="imagem3x">Carregar uma imagem para conteúdo acima</label>
                         <!--  -->
                         <input style="display: none;" id="imagem3x" type="file" name="imagem3">
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] inline-blog mt-[0px] mb-[30px] float-left">
+                        {{--  --}}
+                        <label class="px-[100px] rounded-[100px] text-[12px] cursor-pointer py-[11px] bg-[#00FF8C] text-[#080E45]" for="video1">Carregar um vídeo para o conteúdo acima</label>
+                        <!--  -->
+                        <input style="display: none;" id="video1" type="file" name="video">
+                    </div>
+                    {{--  --}}
+                    <div class="w-[100%] inline-blog mt-[0px] mb-[30px] float-left">
+                        {{--  --}}
+                        <label class="px-[100px] rounded-[100px] text-[12px] cursor-pointer py-[11px] bg-[#00FF8C] text-[#080E45]" for="audio1">Carregar um audio para o conteúdo acima</label>
+                        <!--  -->
+                        <input style="display: none;" id="audio1" type="file" name="audio">
                     </div>
                     {{--  --}}
                     <div class="w-[100%] mt-[20px] inline-block">

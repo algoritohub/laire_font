@@ -90,6 +90,26 @@ class ConteudoController extends Controller
         $doenca->controle   = $request->controle;
         $doenca->tratamento = $request->tratamento;
 
+        if ($request->hasFile('video') && $request->file('video')->isValid()) {
+
+            $requestImage = $request->video;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('videos/doencas'), $imageName);
+
+            $doenca->video = $imageName;
+        }
+
+        if ($request->hasFile('audio') && $request->file('audio')->isValid()) {
+
+            $requestImage = $request->audio;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('audios/doencas'), $imageName);
+
+            $doenca->video = $imageName;
+        }
+
         if ($request->hasFile('imagem1') && $request->file('imagem1')->isValid()) {
 
             $requestImage = $request->imagem1;
@@ -154,6 +174,41 @@ class ConteudoController extends Controller
             'tratamento' => $request->tratamento,
             'tipo'       => $request->tipo,
         ]);
+
+        if ($request->hasFile('video') && $request->file('video')->isValid()) {
+
+            if(!empty($doenca->video)){
+                File::delete('videos/doencas/'.$doenca->video);
+            }
+
+            $requestImage = $request->video;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('videos/doencas'), $imageName);
+
+            $doenca->update([
+                'video' => $imageName,
+            ]);
+        }
+
+        if ($request->hasFile('audio') && $request->file('audio')->isValid()) {
+
+            if(!empty($doenca->audio)){
+                File::delete('audios/doencas/'.$doenca->audio);
+            }
+
+            dd("audio aqui");
+            exit();
+
+            $requestImage = $request->audio;
+            $extension    = $requestImage->extension();
+            $imageName    = md5($requestImage->getClientOriginalName()) . strtotime("now") . "." . $extension;
+            $requestImage->move(public_path('audio/doencas'), $imageName);
+
+            $doenca->update([
+                'audio' => $imageName,
+            ]);
+        }
 
         if ($request->hasFile('imagem1') && $request->file('imagem1')->isValid()) {
 

@@ -23,25 +23,37 @@
                 {{-- BUTTON ACESSIBILITY --}}
                 <div class="w-[100%] mt-[40px] inline-block">
                     <ul>
+                        @if (isset($doenca[0]->audio) AND !empty($doenca[0]->audio))
                         <li class="mr-[2px] inline-block"><img id="audios_home" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        @endif
+                        
+                        @if (isset($doenca[0]->video) AND !empty($doenca[0]->video))
                         <li class="mr-[2px] inline-block"><img id="libras_home" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                        @endif
                     </ul>
                 </div>
                 {{-- IMAGE/VIDEO --}}
                 <div id="moldure-prime" class="w-[100%] inline-block">
+
                     <img id="box_audio_home" class="rounded-[20px] border-[1px] shadow-lg" src="/img/doencas/{{ $doenca[0]->imagem1 }}">
-                    <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/img/menor.mp4" controls="controls"></video>
+
+                    @if (isset($doenca[0]->video) AND !empty($doenca[0]->video))
+                    <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/videos/doencas/{{ $doenca[0]->video }}" controls="controls"></video>
+                    @endif
+
                 </div>
                 {{-- AUDIO --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
+                    @if (isset($doenca[0]->audio) AND !empty($doenca[0]->audio))
                     <div id="audio_libra_home" style="display: none;" class="inline-block float-left mt-[20px]">
                         {{--  --}}
                         <audio autoplay="autoplay" controls="controls">
-                            <source src="sua_musica.mp3" type="audio/mp3" />
+                            <source src="/audios/doencas/{{ $doenca[0]->audio }}" type="audio/mp3" />
                             seu navegador não suporta HTML5
                         </audio>
                     </div>
+                    @endif
                 </div>
             </div>
             {{-- BLOCK TEXT PRIME --}}
