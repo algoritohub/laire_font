@@ -77,8 +77,8 @@
                     {{--  --}}
                     <div id="audio_libra_home" style="display: none;" class="inline-block float-left mt-[20px]">
                         {{--  --}}
-                        <audio autoplay="autoplay" controls="controls">
-                            <source src="sua_musica.mp3" type="audio/mp3" />
+                        <audio controls="controls">
+                            <source src="/mp3/Missão ‐ Feito com o Clipchamp.mp3" type="audio/mp3" />
                             seu navegador não suporta HTML5
                         </audio>
                     </div>

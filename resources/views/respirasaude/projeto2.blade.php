@@ -29,11 +29,23 @@
                         <li class="mr-[2px] inline-block"><img id="libras_home" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
                     </ul>
                 </div>
+
                 {{-- IMAGE/VIDEO --}}
                 <div id="moldure-prime" class="w-[100%] inline-block rounded-[20px]">
                     {{--  --}}
                     <img id="box_audio_home" class="w-[100%] rounded-[20px]" src="/img/conteudo/{{ $bloco_principal[0]->imagem }}" />
                     <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/videos/resumo_pesquisa_2.wmv" controls="controls"></video>
+                </div>
+                {{-- AUDIO --}}
+                <div class="w-[100%] inline-block">
+                    {{--  --}}
+                    <div id="audio_libra_home" style="display: none;" class="inline-block float-left mt-[20px]">
+                        {{--  --}}
+                        <audio controls="controls">
+                            <source src="/mp3/Resumo pesquisa 2.mp3" type="audio/mp3" />
+                            seu navegador não suporta HTML5
+                        </audio>
+                    </div>
                 </div>
                 {{-- BASE LOGOS --}}
                 <div id="base_logos" class="w-[80%] mt-[20px] h-[150px] inline-block">
@@ -47,6 +59,7 @@
                     </div>
                 </div>
             </div>
+
             {{-- BLOCK TEXT PRIME --}}
             <div id="block-prime-text" class="w-[45%] float-left inline-block pl-[80px] pb-[20px] pt-[80px] text-justify">
 
@@ -58,17 +71,7 @@
                     @endforeach
                 </div>
 
-                {{-- AUDIO --}}
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div id="audio_libra_home" style="display: none;" class="inline-block float-right mt-[20px]">
-                        {{--  --}}
-                        <audio autoplay="autoplay" controls="controls">
-                            <source src="sua_musica.mp3" type="audio/mp3" />
-                            seu navegador não suporta HTML5
-                        </audio>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
