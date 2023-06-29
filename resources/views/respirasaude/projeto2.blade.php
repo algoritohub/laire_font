@@ -203,11 +203,18 @@
             {{--  --}}
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
-                <p id="title-post" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Algumas doenças respiratórias infecciosas matam milhares de brasileiros todos os anos, pois elas são contagiosas e passam de uma pessoa para outra muito facilmente através da respiração, tosse, espirros e mãos contaminadas.</b>.</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Então, saber um pouco mais sobre essas doenças é muito importante. Precisamos entender como elas são transmitidas, quais são os seus sintomas e principalmente, como podemos nos proteger do contágio. Então, pense conosco... se nós conhecermos melhor essas doenças, e como nós podemos nos proteger delas, será possível diminuir a <b>mortalidade</b> no nosso país!</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Vamos dar agora alguns exemplos de doenças respiratórias que são contagiosas, algumas delas você já deve conhecer, outras talvez não. Vamos lá!</p>
-                <p id="text_projeto2" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Você já ouviu falar em <b>pneumonia</b>, <b>tuberculose</b>, <b>H1N1</b>, <b>bronquiolite</b>, <b>influenza</b>, <b>coqueluche</b>, <b>COVID-19</b></p>
+                <p id="title-post" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">COMO A PESQUISA FOI FEITA</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Vamos lá, primeiro foi necessário entender quais são os aspectos que ajudam as pessoas a prevenir estas doenças. Isso é o que chamamos de <b>facilitadores de adesão às medidas de prevenção e controle!</b> </b>.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mas, vocês concordam que também é importante entender quais são os aspectos que nos atrapalham na prevenção destas doenças? Isso é o que chamamos de <b>barreiras de adesão às medidas de prevenção e controle!</b></p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Esta pesquisa está sendo realizada em três etapas!</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">
+                <ul>
+                    <li><p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"> <b>1 )</b> Realizamos uma revisão sistemática para identificar a partir dos resultados de muitos estudos, realizados em vários países do mundo, quais são as <b>barreiras e facilitadores </b>para a adesão das pessoas a medidas de prevenção e controle da COVID-19 e outras doenças respiratórias graves.</p></li>
+                    <li><p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"> <b>2 )</b> Estamos desenvolvendo um questionário para entender quais são os aspectos que facilitam ou atrapalham os brasileiros na prevenção de doenças respiratórias contagiosas. O nome deste questionário é ADHERE.</p></li>
+                    <li><p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"> <b>3 )</b> Vamos aplicar o questionário ADHERE em todo o Brasil e fazer um diagnóstico nacional para entender o atrapalha e o que ajuda os brasileiros na prevenção das doenças respiratórias contagiosas</p></li>
+                </ul>
+               </p>
+               <!-- <p id="text_projeto2" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Você já ouviu falar em <b>pneumonia</b>, <b>tuberculose</b>, <b>H1N1</b>, <b>bronquiolite</b>, <b>influenza</b>, <b>coqueluche</b>, <b>COVID-19</b></p>-->
             </div>
         </div>
     </div>
@@ -218,7 +225,7 @@
 
 
 
-
+o
 {{-- PESQUISADORES--}}
 <section  class="w-[100%] inline-block">
     {{--  --}}
