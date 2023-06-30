@@ -259,7 +259,7 @@
                 </div>
                 {{--  --}}
                 <div class="w-[40%] inline-block float-left">
-                    <img src="/img/">
+                    {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
                 </div>
             </div>
         </div>

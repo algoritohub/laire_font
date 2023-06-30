@@ -2681,11 +2681,11 @@ button#bt2-1:hover{
     margin: 0;
 }
 
-#mixedSlider{
-    padding: 13px 0px;
+#mixedSlider {
     position: relative;
     z-index: 20;
 }
+
 #mixedSlider .MS-content {
     white-space: nowrap;
     overflow: hidden;
@@ -2727,6 +2727,7 @@ li.item button{
 }
 #shadow{
     box-shadow: rgba(8, 14, 69, 1) 100px 0px 36px -50px inset;
+    scrollbar-width: none;
 }
 #active-search{
     width: 0px;

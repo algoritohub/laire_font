@@ -20,6 +20,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
@@ -89,7 +90,7 @@
                         <!-- MENU -->
                         <div class="w-[100%] float-left h-[50px] mt-[5px] inline-block bg-[#00FF8C]">
                             <!-- MENU PRIME -->
-                            <div id="shadow" class="w-[100%] inline-block float-left overflow-scroll">
+                            <div id="shadow" style="padding: 15px 0px;" class="w-[100%] inline-block float-left">
                                 <!-- LISTEM -->
                                 <nav>
                                     <ul class="w-[100%]">

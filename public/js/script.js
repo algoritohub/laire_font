@@ -832,6 +832,7 @@ $(document).ready(function(){
     $(".como_instalar").click(function(event){
         event.preventDefault();
         $(".modal_pwa").fadeIn();
+        $(".modal-video-arlindo").hide();
     });
 });
 
@@ -975,6 +976,7 @@ $(document).ready(function(){
     $(".video_arlindo").click(function(event){
         event.preventDefault();
         $(".modal-video-arlindo").fadeIn();
+        $(".modal_pwa").hide();
     });
 });
 
