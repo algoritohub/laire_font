@@ -280,6 +280,37 @@ $(document).ready(function(){
 
 
 
+$(document).ready(function(){
+    $("#mini-btn-app").mouseover(function(event){
+        event.preventDefault();
+        $("#texto_app").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#mini-btn-app").mouseout(function(event){
+        event.preventDefault();
+        $("#texto_app").fadeOut();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#mini-btn-arlindo").mouseover(function(event){
+        event.preventDefault();
+        $("#texto_arlindo").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#mini-btn-arlindo").mouseout(function(event){
+        event.preventDefault();
+        $("#texto_arlindo").fadeOut();
+    });
+});
+
+
+
 
 
 $(document).ready(function(){
@@ -801,10 +832,16 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $("#como_instalar").click(function(event){
+    $(".como_instalar").click(function(event){
         event.preventDefault();
         $(".modal_pwa").fadeIn();
-        $(".pelicula_banner").fadeOut();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_como_instalar").click(function(event){
+        event.preventDefault();
+        $(".modal_pwa").fadeOut();
     });
 });
 
@@ -938,17 +975,18 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $("#video_arlindo").click(function(event){
+    $(".video_arlindo").click(function(event){
         event.preventDefault();
         $(".modal-video-arlindo").fadeIn();
-        $(".pelicula_banner").hide();
     });
 });
 
 $(document).ready(function(){
-    $("#fechar-video-arlindo").click(function(event){
+    $("#fechar-banner-mascote").click(function(event){
         event.preventDefault();
         $(".modal-video-arlindo").fadeOut();
     });
 });
+
+
 

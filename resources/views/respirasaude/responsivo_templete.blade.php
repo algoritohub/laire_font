@@ -584,7 +584,7 @@
         </div>
     </div>
 
-    
+
     {{-- NEW BLOCK PRIME --}}
     <section id="section-master-prime" class="w-[100%] inline-block mt-[100px]">
         <div class="w-[100%] inline-block">
@@ -796,6 +796,21 @@
             <li><b><a href="#projeto_extensao">Projetos de Extensão</a></b></li>
         </ul>
     </nav>
+
+    <div class="mt-[100px] w-[100%] h-[300px] p-[50px] bg-[purple] inline-block">
+        <div id="caixa" class="w-[100%] h-[100%] bg-[red] mt-[-50px] ml-[-50px] absolute opacity-[0.5] border-[10px] border-[yellow]"></div>
+        <center>
+            <a style="position: bottom right;" href="https://www.google.com" target="blank_"><button class="px-[20px] h-[40px] rounded-[100px] bg-[blue] text-[#ffffff]">Button Teste</button></a>
+        </center>
+
+        <a href="https://wa.me/5531994365903?text=Ola%20estou%20na%20sua%20loja" class="button_wpp" target="_blank">
+        <i style="margin-top:16px" class="fab fa-whatsapp"></i>
+        </a>
+
+
+        {{-- FDP ARLINDO --}}
+        <img src="/img/anime.png" id="ftp" style="width: 200px;">
+    </div>
 
     <!-- BODY  -->
     <section class="w-[100%] h-[1000px]"></section>

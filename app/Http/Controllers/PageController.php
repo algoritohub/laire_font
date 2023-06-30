@@ -16,4 +16,12 @@ class PageController extends Controller
 
         return view('laire.home', compact('pesquisadores'));
     }
+
+    public function PesquisadoresLaire($id)
+    {
+        $pesquisadores = Pesquisador::all();
+        $modal_usuario = Pesquisador::find($id);
+
+        return view('laire.home', compact('pesquisadores', 'modal_usuario'));
+    }
 }

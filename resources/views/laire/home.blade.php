@@ -121,69 +121,70 @@
     <center>
         <p id="pesquisadores" class="font-bold text-[#212121] text-3xl border-b-4 w-44 pb-5">Equipe</p>
     </center>
-    <div id="sub_bloco_pesq" class="w-[90%] mt-10 flex flex-wrap justify-left ml-[10%] ">
-        @foreach ($pesquisadores as $pesquisador)
-        <a href="" class="w-1/2 sm:w-auto px-1 mb-10 inline-block float-left ">
-            <div id="amanda" style="background-image: url('/img/pesquisadores/{{ $pesquisador->imagem }}'); background-size: 100%;" class="w-40 h-40 bg-gray-900 mx-auto rounded-full transform hover:scale-110 transition duration-500"></div>
-            <p class="text-lg mt-[10px] font-bold text-center">{{ $pesquisador->nome }}</p>
-            <p class="text-sm text-center">{{ $pesquisador->referencia }}</p>
-        </a>
-        @endforeach
-    </div>
-    {{-- MODAL INFO PESQUISADORES --}}
-    @if (isset($info_pesquisador) AND !empty($info_pesquisador))
-    {{--  --}}
-    <div class="modal_info_pesquisadores">
-        {{--  --}}
-        <div id="modal_pesq_laire" class="w-[1000px] p-[40px] mx-auto h-[500px] rounded-[20px] mt-[10%] shadow-lg bg-[#ffffff]">
-            {{-- Amanda Quirino --}}
-            @if ($info_pesquisador == "amanda")
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div class="w-[80%] inline-block float-left">
-                        {{--  --}}
-                        <p class="font-bold leading-[23px] text-[20px]">Amanda Quirino</p>
-                        <p class="font-bold leading-[13px] text-[13px]"> Colaboradora em projetos de pesquisa e extensão</p>
+    <div id="sub_bloco_pesq" class="w-[90%] mx-[5%] inline-block">
+        <div class="w-[100%] mt-[50px] inline-block">
+            @foreach ($pesquisadores as $pesquisador)
+                <div id="card-laire-pesq" class="w-[23%] mb-[30px] inline-block mx-[1%] float-left">
+                    <div class="w-[100%] h-[150px]">
+                        <center>
+                            <div style="background-image: url(/img/pesquisadores/{{ $pesquisador->imagem }}); background-size: 100%;" class="w-[150px] h-[150px] rounded-[100px] bg-[#eeeeee] zoom-img"></div>
+                        </center>
                     </div>
-                    {{--  --}}
-                    <div class="w-[20%] inline-block float-left">
-                        {{--  --}}
-                        <a href="{{ route('home.laire') }}#pesquisadores"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                    <div class="w-[100%] mt-[20px] h-[180px]">
+                        <center>
+                            <div class="w-[100%] h-[80px]">
+                                <p class="font-bold leading-[17px]">{{ $pesquisador->nome }}</p>
+                                <p class="uppercase mt-[5px] font-size: 12px;">{{ $pesquisador->referencia }}</p>
+                            </div>
+                            <a href="{{ route('pesquisadores.laire', ['id' => $pesquisador->id]) }}"><button class="border-[1px] border-[#212121] py-[10px] px-[15px] rounded-[5px] uppercase font-bold text-[13px] mt-[20px] motion-btn">✚ Ver mais</button></a>
+                        </center>
                     </div>
                 </div>
-                {{--  --}}
+            @endforeach
+        </div>
+        @if (isset($modal_usuario) AND !empty($modal_usuario))
+        {{-- MODAL --}}
+        <div class="modal_pesquisadores_laire">
+            <div class="w-[1000px] bg-[#ffffff] h-[550px] mx-auto mt-[5%] p-[50px] rounded-[20px]">
+                {{-- linha header --}}
                 <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div id="imagem_pesq_mob" style="background-image: url('/img/Amanda Quirino.jpg'); background-size: 100%;" class="w-[150px] h-[150px] mt-[-30px] rounded-[100px] bg-[#eeeeee] mx-auto"></div>
-                    {{--  --}}
-                    <div id="caixa_descricao" class="w-[100%] mt-[30px] inline-block">
-                        {{--  --}}
-                        <p class="leading-[17px] text-[14px] text-center mt-[0px]">
-                            Amanda Quirino é graduanda em Fisioterapia pela Universidade Federal do Rio Grande do
-                            Norte. É técnica em informática formada pelo Instituto Federal de Educação, Ciência e
-                            Tecnologia do Rio Grande do Norte. Contribui como colaboradora em projetos de pesquisa
-                            e extensão na área de Avaliação e Intervenção em Fisioterapia Respiratória. Participa do
-                            projeto de Iniciação Científica na área de Intervenção e Análise do Movimento na
-                            Fisioterapia Neurofuncional e atualmente também participa do projeto de extensão AGruPar
-                            (Assistência Fisioterapêutica em Grupo para Indivíduos com Doença de Parkinson).
+                    <div class="w-[70%] inline-block float-left">
+                        <p class="text-[20px] font-bold leading-[24px]">
+                            {{ $modal_usuario->nome }}
                         </p>
+                        <p class="uppercase mt-[3px]">{{ $modal_usuario->referencia }}</p>
+                    </div>
+                    <div class="w-[30%] inline-block float-left">
+                        <a href="{{ route('home.laire') }}"><p class="float-right cursor-pointer">✕</p></a>
                     </div>
                 </div>
-                {{--  --}}
+                {{-- line body --}}
                 <div class="w-[100%] inline-block">
-                    {{--  --}}
                     <center>
-                    {{--  --}}
-                    <ul id="links_pesq_mob" class="mt-[20px]">
-                        <li class="mr-[20px] inline-block"><a href="http://lattes.cnpq.br/9863112397601600"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">LATTES</button></a></li>
-                        <li class="mr-[20px] inline-block"><a href="ttps://orcid.org/0000-0002-9034-0812"><button class="w-[200px] h-[40px] rounded-[100px] bg-[#080E45] font-bold text-[10px] text-[#ffffff]">ORCID</button></a></li>
-                    </ul>
+                        <div id="img-modal-laire" style="background-image: url(/img/pesquisadores/{{ $modal_usuario->imagem }}); background-size: 100%;" class="w-[150px] mt-[-20px] h-[150px] rounded-[100px] border-[1px] border-[#cdcdcd] bg-[#cdcdcd]"></div>
+                    </center>
+                    <div class="w-[100%] h-[160px] mt-[20px] overflow-scroll inline-block">
+                        <p class="leading-[19px]">{!! $modal_usuario->descricao !!}</p>
+                    </div>
+                </div>
+                {{-- links --}}
+                <div class="w-[100%] inline-block">
+                    <center>
+                        <ul class="mt-[30px]">
+                            @if (!empty($modal_usuario->link_lattes))
+                            <li class="inline-block"><a href="{{ $modal_usuario->link_lattes }}" target="_blank"><button class="w-[150px] h-[40px] rounded-[100px] bg-[#080E45] text-[#ffffff] font-bold cur-btn">LATTES</button></a></li>
+                            @endif
+
+                            @if (!empty($modal_usuario->link_orcid))
+                            <li class="inline-block"><a href="{{ $modal_usuario->link_orcid }}" target="_blank"><button class="w-[150px] h-[40px] rounded-[100px] bg-[#080E45] text-[#ffffff] font-bold cur-btn">ORCID</button></a></li>
+                            @endif
+                        </ul>
                     </center>
                 </div>
-            @endif
+            </div>
         </div>
+        @endif
     </div>
-    @endif
 </section>
 
 <div id="bk-"></div>

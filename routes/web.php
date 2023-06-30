@@ -31,6 +31,9 @@ Route::get('/feed/noticias', [NoticiaController::class, "feedNoticias"])->name('
 // BANNER INICIAL
 Route::get('/banner/respira/out', [AdminController::class, "BannerOut"])->name('banner_out');
 
+// PESQUISADORES LAIRE
+Route::get('/pesquisadores/laire/{id}', [PageController::class, "PesquisadoresLaire"])->name('pesquisadores.laire');
+
 
 // +------------------------------------------------------------+
 // | RESPIRASAÚDE                                               |

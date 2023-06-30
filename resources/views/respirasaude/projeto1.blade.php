@@ -464,6 +464,10 @@
             </ul>
         </center>
     </div>
+
+    {{-- FDP ARLINDO --}}
+    {{-- <img src="/img/anime.png" id="ftp" style="width: 200px;"> --}}
+
 </section>
 
 @endsection

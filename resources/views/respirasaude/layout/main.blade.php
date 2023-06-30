@@ -278,61 +278,9 @@
         </div>
     </footer>
 
-    {{-- MODAL VÍDEO ARLINDO --}}
-    <div class="modal-video-arlindo">
-        {{--  --}}
-        <div id="arlindo-modal-video" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] h-[520px] p-[50px] rounded-[20px] mx-auto">
-            {{--  --}}
-            <div class="w-[100%] inline-block">
-                {{--  --}}
-                <div class="w-[70%] inline-block float-left">
-                    {{--  --}}
-                    <p class="uppercase text-[18px] font-bold">Quem é o arlindo?</p>
-                </div>
-                {{--  --}}
-                <div class="w-[30%] inline-block float-left">
-                    {{--  --}}
-                    <p id="fechar-video-arlindo" class="float-right font-[20px] cursor-pointer">✕</p>
-                </div>
-            </div>
-            {{--  --}}
-            <div class="w-[100%] inline-block">
-
-            </div>
-        </div>
-    </div>
-
-    {{-- MODAL PWA --}}
-    <div class="modal_pwa">
-        {{--  --}}
-        <div class="w-[300px] mx-auto mt-[8%] rounded-[20px] bg-[#ffffff] p-[30px] shadow-lg">
-            <img src="/img/frame.png" alt="qr">
-
-            <div class="w-[100%] inline-block">
-                {{--  --}}
-                <div class="w-[49%] mr-[1%] inline-block float-left">
-                    <button id="bt-android" class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">Android</button>
-                </div>
-                {{--  --}}
-                <div class="w-[49%] ml-[1%] inline-block float-left">
-                    <button id="bt-ios" class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">IOS</button>
-                </div>
-            </div>
-            {{--  --}}
-            <div id="text-android" class="mt-[20px]">
-                <p class="text-[13px]">Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
-            </div>
-            {{--  --}}
-            <div id="text-ios" class="mt-[20px]" style="display: none;">
-                <p class="text-[13px]">No IOS Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
-            </div>
-            <a href="{{ route('banner.pwa') }}"><button class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">Ok, entendi</button></a>
-        </div>
-    </div>
-
     {{-- BANNER FIXO --}}
     @if (!isset($banner_pwa) AND empty($banner_pwa))
-    <div id="hide_banner" class="pelicula_banner">
+    <div id="hide_banner" style="display: none;" class="pelicula_banner">
         <div class="w-[100%] h-[100vh] inline-block">
             {{--  --}}
             <div id="area_transparent" class="w-[100%] inline-block h-[85vh]"></div>
