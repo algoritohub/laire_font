@@ -292,7 +292,18 @@
     @endif
 
     {{-- FDP ARLINDO --}}
-    <img src="/img/mascote7.png" id="ftp2">
+    <div style="display: none;" class="mascote" id="ftp2">
+        <div class="w-[200px] h-[120px] ml-[-50px] mt-[-20px] rounded-[10px] bg-[silver] absolute p-[20px] shadow-lg">
+            <center>
+                <ul>
+                    <li class="mr-[2px] inline-block"><img id="audios_home" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                    <li class="mr-[2px] inline-block"><img id="libras_home" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
+                </ul>
+                <p class="text-[#212121] text-[12px] leading-[15px] font-bold mt-[-5px]">Esse conteúdo tem acessibilidade!</p>
+            </center>
+        </div>
+        <img class="ml-[20px]" src="/img/mascote7.png">
+    </div>
 
 
     {{-- CARROSSEL --}}

@@ -249,10 +249,19 @@
         </div>
         {{--  --}}
         <div class="w-[100%] inline-block">
-            {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
-            {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
-            {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
-            {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+            <div class="w-[100%] inline-block">
+                <div class="w-[60%] inline-block float-left">
+                    <video src=""></video>
+                    {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                    {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                    {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                    {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                </div>
+                {{--  --}}
+                <div class="w-[40%] inline-block float-left">
+                    <img src="/img/">
+                </div>
+            </div>
         </div>
     </div>
 </div>

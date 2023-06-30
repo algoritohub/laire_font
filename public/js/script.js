@@ -167,17 +167,14 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#revisao").mouseover(function(event){
         event.preventDefault();
-        $(".modal_resumo").fadeOut();
-        $(".mascote_resumo").fadeIn();
-        $(".balao_resumo").fadeIn();
+        $(".mascote").fadeIn();
     });
 });
 
 $(document).ready(function(){
     $("#revisao").mouseout(function(event){
         event.preventDefault();
-        $(".mascote_resumo").fadeOut();
-        $(".balao_resumo").fadeOut();
+        $(".mascote").fadeOut();
     });
 });
 

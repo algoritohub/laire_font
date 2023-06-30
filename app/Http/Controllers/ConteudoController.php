@@ -375,7 +375,13 @@ class ConteudoController extends Controller
     // PÁGINA DE REVISÃO SISTEMÁTICA
     public function PagRevisaoSistematica()
     {
-        return view('respirasaude.revisao_sistematica');
+        $pesquisadores    = DB::select("SELECT * FROM pesquisadors ORDER BY id DESC");
+        $doencas          = DB::select("SELECT * FROM doencas ORDER BY id DESC");
+        $conteudo         = DB::select("SELECT * FROM conteudo_respiras WHERE projeto = 4");
+        $doencas_cronicas = DB::select("SELECT * FROM doencas WHERE tipo = 2 ORDER BY id DESC");
+        $doencas_agudas   = DB::select("SELECT * FROM doencas WHERE tipo = 1 ORDER BY id DESC");
+
+        return view('respirasaude.revisao_sistematica', compact('conteudo', 'doencas', 'pesquisadores', 'doencas_cronicas', 'doencas_agudas'));
     }
 
     // PESQUISADORES PROJETO 1
