@@ -9,10 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
-
-    {{-- ICONES --}}
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
@@ -27,8 +24,8 @@
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
     <script src="/js/script.js"></script>
 </head>
-{{--  --}}
 @php
+    // FUNÇÃO FONTE
     $session_font = session('font');
     if (isset($session_font) AND !empty($session_font)) {
         $numb_font = session('font');
@@ -36,14 +33,15 @@
     else{
         $numb_font = 15;
     }
+
 @endphp
 {{--  --}}
 <body>
     <!-- HEADER  -->
     <header class="w-[100%] inline-block bg-[#080e45] fixed" style="z-index: 10;">
         <div class="w-[95%] ml-[5%] inline-block">
-            <div class="w-[100%] h-[100px] inline-block">
-                <div id="header-left" class="w-[20%] h-[100px] float-left inline-block bg-[#080E45]">
+            <div class="w-[100%] h-[105px] inline-block">
+                <div id="header-left" class="w-[20%] h-[105px] float-left inline-block bg-[#080E45]">
                     <!-- LOGO DESK -->
                     <a href="{{ route('home.respira_saude') }}">
                         <img class="float-left mt-[20px] w-[75px] mr-[10px]" src="/img/rs_logo.png" alt="RespiraSaúde"/>
@@ -83,7 +81,7 @@
                             </div>
                         </div>
                         <!-- MENU -->
-                        <div class="w-[100%] float-left h-[50px] mt-[6px] inline-block bg-[#00FF8C]">
+                        <div class="w-[100%] float-left h-[50px] mt-[11px] inline-block bg-[#00FF8C]">
                             <!-- MENU PRIME -->
                             <div id="shadow" style="padding: 13px 0px;" class="w-[100%] inline-block float-left">
                                 <!-- LISTEM -->
@@ -92,12 +90,14 @@
                                         <div id="mixedSlider">
                                             {{-- ITENS --}}
                                             <div class="MS-content box_avalia_egg">
-                                                <li class="item"><button>Missão</button></a></li>
-                                                <li class="item"><button id="menu-doenca">Doenças respiratórias crônicas</button></li>
-                                                <li class="item"><button>Doenças respiratórias agudas</button></li>
+                                                @if ($doencas_cronicas)
+                                                <li class="item"><button id="menu-cronicas">Doenças respiratórias crônicas</button></li>
+                                                @endif
+
+                                                @if ($doencas_agudas)
+                                                <li class="item"><button id="menu-agudas">Doenças respiratórias agudas</button></li>
+                                                @endif
                                                 <li class="item"><button id="menu-projetos">Projetos</button></li>
-                                                <li class="item"><button id="menu-eventos">Eventos</button></li>
-                                                <li class="item"><button>Projetos de Extensão</button></li>
                                             </div>
                                             {{-- BUTTONS --}}
                                             <div class="MS-controls" style="margin-top: -30px; position: absolute;">
@@ -115,30 +115,45 @@
         </div>
     </header>
     {{-- SUBMENU --}}
-    <header id="sub_cronicas" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+    <header id="sub_cronicas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            <ul class="mt-[12px] mr-[-10px] float-right">
+            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_cronicas as $doenca_cronica)
-                    <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
+                    <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
                 @endforeach
             </ul>
         </div>
     </header>
     {{-- SUBMENU --}}
-    <header id="sub_projetos" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+    <header id="sub_agudas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            <ul class="mt-[12px] mr-[-10px] float-right">
-                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Efeitos da atenção domiciliar para adultos...</button></a></li>
-                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
-                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href=""><button class="btmenu">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
+            <ul id="ul-agudas" class="mt-[12px] mr-[-10px] float-right">
+                @foreach ($doencas_agudas as $doencas_agudas)
+                    <li id="mobile-list-agudas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_aguda', ['id' => $doencas_agudas->id]) }}"><button class="btmenu">{{ $doencas_agudas->nome }}</button></a></li>
+                @endforeach
             </ul>
         </div>
     </header>
     {{-- SUBMENU --}}
-    <header id="sub_eventos" class="w-[100%] mt-[106px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+    <header id="sub_projetos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            <ul class="mt-[12px] mr-[-10px] float-right">
-                <li class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[13px]" href=""><button class="btmenu">ConVivendo com a Asma</button></a></li>
+            {{--  --}}
+            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
+                <p id="fechar-projectos" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
+            </div>
+            {{--  --}}
+            <ul id="ul-projetos" class="mt-[12px] mr-[-10px] float-right">
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto1') }}"><button class="btmenu" title="Efeitos da atenção domiciliar para adultos com doenças respiratórias crônicas e síndrome pós-covid-19 na rotatividade hospitalar: uma revisão sistemática com metanálise">Efeitos da atenção domiciliar para adultos...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto2') }}"><button class="btmenu" title="Soluções para aumentar a aceitabilidade, adesão e cumprimento das medidas de prevenção e controle da covid-19 na população">Soluções para aumentar a aceitabilidade, adesão...</button></a></li>
+                <li id="mobile-list-projeto" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('projeto3') }}"><button class="btmenu" title="Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a Doença Pulmonar Obstrutiva Crônica (DPOC), a asma, a fibrose cística, a bronquiectasia e a fibrose pulmonar">Desenvolvimento e validação de um sistema eletrônico...</button></a></li>
+            </ul>
+        </div>
+    </header>
+    {{-- SUBMENU --}}
+    <header id="sub_eventos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul id="ul-eventos" class="mt-[12px] mr-[-10px] float-right">
+                <li id="mobile-list-eventos" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[13px]" href=""><button class="btmenu">ConVivendo com a Asma</button></a></li>
             </ul>
         </div>
     </header>
@@ -193,7 +208,7 @@
                     <p class="font-bold text-[#ffffff] text-[16px]">Contatos</p>
                     {{--  --}}
                     <ul class="mt-[20px]">
-                        <li class="mb-[5px] flex"><!--<img class="mr-[10px] float-left" src="" alt="P">--><p class="float-left text-[#ffffff] text-[16px]">asmabasep@gmail.com</p></li>
+                        <li class="mb-[5px] flex"><!--<img class="mr-[10px] float-left" src="" alt="P">--><p class="float-left text-[#ffffff] text-[16px]">laire@ccs.ufrn.br</p></li>
                         <!--<li class="mb-[5px] flex"><img class="mr-[10px] float-left" src="" alt="F"><p class="float-left text-[#ffffff]"></p></li>-->
                         <!--<li class="mb-[5px] flex"><img class="mr-[10px] float-left" src="" alt="E"><p class="float-left text-[#ffffff]"></p></li>-->
                     </ul>
@@ -304,6 +319,21 @@
         c++;
         }
         }
+    </script>
+
+    {{-- SCRIPT --}}
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/js/multislider.js"></script>
+    <script>
+        $('#basicSlider').multislider({
+            continuous: true,
+            duration: 2000
+        });
+
+        $('#mixedSlider').multislider({
+            duration: 200,
+            interval: 0
+        });
     </script>
 
 </body>
