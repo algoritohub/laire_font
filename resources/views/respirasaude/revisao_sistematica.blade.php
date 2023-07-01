@@ -1,4 +1,4 @@
-@extends('respirasaude.layout.main')
+@extends('respirasaude.layout.main_revisao')
 @section('titulo', 'RespiraSaude | Home')
 @section('conteudo')
 
@@ -13,52 +13,30 @@
     }
 
 @endphp
-{{-- SECTION --}}
-<section class="w-[100%] mt-[-20px] inline-block">
-    {{--  --}}
-    <div id="missao" class="w-[100%] h-[110px]"></div>
-    {{--  --}}
-    <section class="w-[100%] inline-block">
-        {{--  --}}
-        <div id="caixa-cinza-1" class="w-[100%] bg-[#eeeeee] inline-block">
-            {{--  --}}
-            <div style="background: linear-gradient(90deg, rgba(250,250,250,1) 75%, rgba(92,209,255,1) 75%);" id="texto" class="w-[50%] pl-[5%] h-[700px] inline-block float-left">
 
-                {{-- REVISÃO SISTEMÁTICA --}}
-                <div class="w-[100%] inline-block">
-                    {{--  --}}
-                    <div class="w-[100%] h-[40px] mt-[50px]">
-                        <ul class="">
-                            <li class="mr-[2px] inline-block"><img id="audios" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
-                            <li class="mr-[2px] inline-block"><img id="libras" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
-                        </ul>
-                    </div>
-                    {{--  --}}
-                    <div id="box_audio" style="background: url('/img/Asma.png'); background-size: 100%; background-repeat: no-repeat;" class="w-[100%] mt-[30px] inline-block h-[450px]"></div>
-                    {{--  --}}
-                    <div class="mt-[30px]" style="display: none;" id="box_libra" class="w-[100%] inline-block h-[450px]">
-                        {{-- AQUI VAI O VÍDEO DE ASMA --}}
-                        <video id="video_missao" class="w-[100%]" controls="controls">
-                            <source src="/img/Asma - Vídeo Em Líbras.mp4" type="video/mp4">
-                        </video>
-                    </div>
+{{-- NEW BLOCK PRIME --}}
+<section id="section-master-prime" class="w-[100%] inline-block mt-[100px]">
+    <div class="w-[100%] inline-block">
+        <div class="w-[100%] inline-block">
+            {{-- BLOCK IMAGE PRIME --}}
+            <div id="block-prime-video" class="w-[50%] pl-[5%] float-left inline-block">
+                {{-- BUTTON ACESSIBILITY --}}
+                <div class="w-[100%] mt-[40px] inline-block">
+                    <ul>
+                        <li class="mr-[2px] inline-block"><img id="audios_home" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
+                        {{-- <li class="mr-[2px] inline-block"><img id="libras_home" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li> --}}
+                    </ul>
                 </div>
-            </div>
-
-
-
-            {{--  --}}
-            <div id="caixa_text_missao" class="w-[50%] pr-[5%] h-[700px] pt-[70px] inline-block float-left bg-[#5CD1FF]">
-
-                {{-- TEXTO REVISÃO --}}
-                <p id="text_missao_RS" class="text-[30px] leading-[30px] float-right text-right w-[500px] font-bold text-[#0C3D7F]">Revisão Sistemática</p>
-                {{--  --}}
-                <p id="text_missao_RS" class="text-right mt-[40px] text-[{{ $numb_font }}px] float-right text-justify w-[550px] text-[#212121]">Doença crônica que causa inflamação dos "tubos", chamados de brônquios, que levam ar até os pulmões. Os sintomas mais comuns da asma são: falta de ar, tosse, aperto ou chiado no peito. Os sintomas podem ser desencadeados por gatilhos como: alérgenos, frio, atividade física e gripes.</p>
-
+                {{-- IMAGE/VIDEO --}}
+                <div id="moldure-prime" class="w-[100%] inline-block rounded-[20px]">
+                    {{--  --}}
+                    <img id="box_audio_home" class="w-[100%] rounded-[20px]" src="/img/revisao_sistematica.jpg" />
+                    {{-- <video id="box_libra_home" style="display: none; border-radius: 20px;" id="video-missão" src="/videos/resumo_pesquisa_1.mp4" controls="controls"></video> --}}
+                </div>
                 {{-- AUDIO --}}
                 <div class="w-[100%] inline-block">
                     {{--  --}}
-                    <div id="audio_libra" style="display: none;" class="inline-block float-right mt-[20px]">
+                    <div id="" style="display: none;" class="inline-block float-right mt-[20px]">
                         {{--  --}}
                         <audio autoplay="autoplay" controls="controls">
                             <source src="sua_musica.mp3" type="audio/mp3" />
@@ -67,11 +45,14 @@
                     </div>
                 </div>
             </div>
+            {{-- BLOCK TEXT PRIME --}}
+            <div id="block-prime-text" class="w-[45%] float-left inline-block pl-[80px] pb-[20px] pt-[80px] text-justify">
+                <p class="text-[30px] leading-[30px] float-right text-right font-bold text-[#080E45]">Revisão Sistemática</p>
+                <p class="text-right mt-[40px] float-right text-justify text-[#080E45] text-[{{ $numb_font }}px]">Revisão sistemática, é um tipo de pesquisa em que o pesquisador identifica os estudos existentes sobre um tema de interesse, para responder uma pergunta específica, são necessários métodos muito rigorosos para encontrar e selecionar os estudos, depois os resultados desses estudos são agrupados para encontrar um único resultado que represente vários estudos, por fim é feita uma análise de qualidade para saber se é possível ter certeza nesse resultado.</p>
+            </div>
         </div>
-    </section>
-
+    </div>
 </section>
-{{-- CONTROLE --}}
 
 {{-- TRATAMENTO --}}
 

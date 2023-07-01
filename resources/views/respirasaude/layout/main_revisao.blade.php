@@ -9,10 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
-
-    {{-- ICONES --}}
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef"/>
     <link rel="apple-touch-icon" href="{{ asset('/laire/laire/public/img/web_logo.png') }}">
@@ -20,16 +18,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/normalize.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
     <script src="/js/script.js"></script>
 </head>
-{{-- FONT --}}
 @php
-    // FUNÇÃO DE FONTE
+    // FUNÇÃO FONTE
     $session_font = session('font');
     if (isset($session_font) AND !empty($session_font)) {
         $numb_font = session('font');
@@ -38,12 +34,9 @@
         $numb_font = 15;
     }
 
-    // SESSION BANNER PWA
-    @$banner_pwa = session('banner_pwa');
-
 @endphp
 {{--  --}}
-<body id="pagina">
+<body>
     <!-- HEADER  -->
     <header class="w-[100%] inline-block bg-[#080e45] fixed" style="z-index: 10;">
         <div class="w-[95%] ml-[5%] inline-block">
@@ -88,20 +81,15 @@
                             </div>
                         </div>
                         <!-- MENU -->
-                        <div class="w-[100%] float-left h-[50px] mt-[5px] inline-block bg-[#00FF8C]">
+                        <div class="w-[100%] float-left h-[50px] mt-[11px] inline-block bg-[#00FF8C]">
                             <!-- MENU PRIME -->
-                            <div id="shadow" style="padding: 15px 0px;" class="w-[100%] inline-block float-left">
+                            <div id="shadow" style="padding: 13px 0px;" class="w-[100%] inline-block float-left">
                                 <!-- LISTEM -->
                                 <nav>
                                     <ul class="w-[100%]">
                                         <div id="mixedSlider">
                                             {{-- ITENS --}}
                                             <div class="MS-content box_avalia_egg">
-
-                                                @if ($conteudo)
-                                                <li class="item"><a href="#missao"><button>Missão</button></a></li>
-                                                @endif
-
                                                 @if ($doencas_cronicas)
                                                 <li class="item"><button id="menu-cronicas">Doenças respiratórias crônicas</button></li>
                                                 @endif
@@ -110,8 +98,6 @@
                                                 <li class="item"><button id="menu-agudas">Doenças respiratórias agudas</button></li>
                                                 @endif
                                                 <li class="item"><button id="menu-projetos">Projetos</button></li>
-                                                <li class="item"><a href="#eventos"><button>Eventos</button></a></li>
-                                                <li class="item"><a href="#extensao"><button>Projetos de Extensão</button></a></li>
                                             </div>
                                             {{-- BUTTONS --}}
                                             <div class="MS-controls" style="margin-top: -30px; position: absolute;">
@@ -131,12 +117,7 @@
     {{-- SUBMENU --}}
     <header id="sub_cronicas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            {{--  --}}
-            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
-                <p id="fechar-cronicas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
-            </div>
-            {{--  --}}
-            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px]">
+            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_cronicas as $doenca_cronica)
                     <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
                 @endforeach
@@ -146,12 +127,7 @@
     {{-- SUBMENU --}}
     <header id="sub_agudas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            {{--  --}}
-            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
-                <p id="fechar-agudas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
-            </div>
-            {{--  --}}
-            <ul id="ul-agudas" class="mt-[12px] mr-[-10px]">
+            <ul id="ul-agudas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_agudas as $doencas_agudas)
                     <li id="mobile-list-agudas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_aguda', ['id' => $doencas_agudas->id]) }}"><button class="btmenu">{{ $doencas_agudas->nome }}</button></a></li>
                 @endforeach
@@ -173,6 +149,14 @@
             </ul>
         </div>
     </header>
+    {{-- SUBMENU --}}
+    <header id="sub_eventos" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
+        <div class="w-[90%] mx-[5%] h-[50px]">
+            <ul id="ul-eventos" class="mt-[12px] mr-[-10px] float-right">
+                <li id="mobile-list-eventos" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[13px]" href=""><button class="btmenu">ConVivendo com a Asma</button></a></li>
+            </ul>
+        </div>
+    </header>
     {{-- ARTICLE --}}
     <article>
         @yield('conteudo')
@@ -184,7 +168,7 @@
             {{--  --}}
             <div id="borda" class="w-[50%] h-[400px] border-r-[1px] border-r-[#eeeeee] inliene-block float-left">
                 {{--  --}}
-                <p id="inscreva" class="text-[30px] leading-[40px] font-bold text-[#ffffff]">Inscreva-se hoje para receber as atualizações mais recentes.</p>
+                <p id="inscreva" class="text-[30px] w-[500px] leading-[40px] font-bold text-[#ffffff]">Inscreva-se hoje para receber as atualizações mais recentes.</p>
                 {{--  --}}
                 <table id="e-mail" class="mt-[40px] w-[80%]">
                     <tr>
@@ -213,7 +197,7 @@
                     <p class="font-bold text-[#ffffff] text-[16px]">Endereço</p>
                     {{--  --}}
                     <ul class="mt-[20px]">
-                        <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Departamento de Fisioterapia <br> Da Universidade federal do Rio Grande do Norte</p></li>
+                        <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Departamento de Fisioterapia <br> Da UFRN</p></li>
                         <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Natal/Rn</p></li>
                         <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Brasil</p></li>
                     </ul>
@@ -238,8 +222,8 @@
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/8.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/6.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/3.png" alt=""></li>
-                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[250px]" src="/img/mcti.png" alt=""></li>
-                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[200px]" src="/img/ppgfis.png" alt=""></li>
+                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/7.png" alt=""></li>
+                            <li class="inline-block mx-[30px] my-[10px]"><img class="w-[110px]" src="/img/ppgfis.png" alt=""></li>
                             <li class="inline-block mx-[30px] my-[10px]"><img class="w-[410px]" src="/img/10.png" alt=""></li>
                         </ul>
                     </center>
@@ -279,31 +263,6 @@
         </div>
     </footer>
 
-    {{-- BANNER FIXO --}}
-    @if (!isset($banner_pwa) AND empty($banner_pwa))
-    <div id="hide_banner" style="display: none;" class="pelicula_banner">
-        <div class="w-[100%] h-[100vh] inline-block">
-            {{--  --}}
-            <div id="area_transparent" class="w-[100%] inline-block h-[85vh]"></div>
-            {{--  --}}
-            <div id="banner-claveland" class="w-[100%] inline-block bg-[#eeeeee] shadow-lg h-[15vh] px-[50px] py-[20px]">
-                {{--  --}}
-                <div id="tik" class="w-[70%] inline-block float-left">
-                    <img src="/img/ARLINDO.png" class="w-[300px] mt-[-100px] ml-[-50px] absolute">
-                    <p id="text-arlindo" class="leading-[17px] text-[14px] ml-[200px] mt-[10px]">Olá, me chamo Arlindo e vou ser seu assistênte durante sua visita ao nosso portal. Quer saber mais sobre mim, tem um vídeo com acessibilidade pra você me conhecer melhor, basta <b class="cursor-pointer" id="video_arlindo">clicar aqui!</b></p>
-                </div>
-                {{--  --}}
-                <div id="tok" class="w-[30%] inline-block float-left">
-                    <ul id="btn-varejao" class="float-right mt-[15px]">
-                        <li class="inline-block ml-[10px]"><button id="como_instalar" class="w-[180px] h-[40px] rounded-[5px] border-[1px] border-[#cdcdcd] bg-[#212121] text-[12px] text-[#ffffff]">Instale o app</button></li>
-                        <li class="inline-block ml-[10px]"><a href="{{ route('banner.pwa') }}"><button class="w-[180px] h-[40px] rounded-[5px] border-[1px] border-[#cdcdcd] bg-[#212121] text-[12px] text-[#ffffff]">Não exibir novamente</button></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    @endif
-
     {{-- CARROSSEL --}}
     <script>
 
@@ -325,7 +284,6 @@
     }
 
     </script>
-
     {{-- VLIBRAS --}}
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -361,23 +319,6 @@
         c++;
         }
         }
-    </script>
-
-    <script>
-        // Script jQuery para esconder um elemento na página quando a rolagem ultrapassar 200px
-        $(window).scroll(function(){
-
-                if($(document).scrollTop() > 600){// se a rolagem passar de 200px esconde o elemento
-
-                    $('#elementoAEsconder').fadeOut();
-
-                } else { // senão ele volta a ser visivel
-
-                    $('#elementoAEsconder').fadeIn();
-
-                }
-
-            });
     </script>
 
     {{-- SCRIPT --}}

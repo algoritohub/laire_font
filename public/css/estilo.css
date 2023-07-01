@@ -370,6 +370,17 @@ button#bt2:hover{
     display: none;
 }
 
+.btn-produtos{
+    background-color: #ffffff;
+    color: #02173d;
+    transition: 200ms linear;
+}
+.btn-produtos:hover{
+    background-color: #00FF8C;
+    color: #02173d;
+    transition: 200ms linear;
+}
+
 .modal_add_eventos_admin{
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -2681,11 +2692,11 @@ button#bt2-1:hover{
     margin: 0;
 }
 
-#mixedSlider{
-    padding: 13px 0px;
+#mixedSlider {
     position: relative;
     z-index: 20;
 }
+
 #mixedSlider .MS-content {
     white-space: nowrap;
     overflow: hidden;
@@ -2727,6 +2738,7 @@ li.item button{
 }
 #shadow{
     box-shadow: rgba(8, 14, 69, 1) 100px 0px 36px -50px inset;
+    scrollbar-width: none;
 }
 #active-search{
     width: 0px;
