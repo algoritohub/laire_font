@@ -251,7 +251,9 @@
         <div class="w-[100%] inline-block">
             <div class="w-[100%] inline-block">
                 <div class="w-[60%] inline-block float-left">
-                    <video src=""></video>
+                    <video controls>
+                        <source src="/img/Apreentação de Arlindo.mp4" type="video/mp4">
+                      </video>
                     {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
                     {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
                     {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
