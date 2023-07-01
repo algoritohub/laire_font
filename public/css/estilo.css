@@ -370,6 +370,17 @@ button#bt2:hover{
     display: none;
 }
 
+.btn-produtos{
+    background-color: #ffffff;
+    color: #02173d;
+    transition: 200ms linear;
+}
+.btn-produtos:hover{
+    background-color: #00FF8C;
+    color: #02173d;
+    transition: 200ms linear;
+}
+
 .modal_add_eventos_admin{
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;

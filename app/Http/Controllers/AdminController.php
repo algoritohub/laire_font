@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\Pesquisa;
 use App\Models\ConteudoRespira;
 use App\Models\Admin;
+use App\Models\Pesquisador;
+use App\Models\Blog;
+use App\Models\Doenca;
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
@@ -191,17 +194,22 @@ class AdminController extends Controller
 
         // CRIAR NOVA SESSÃO
         session()->put('admin', $admin);
-        return redirect()->route('admin.painel_geral');
+
+        $doencas_count       = count(Doenca::all());
+        $pesquisadores_count = count(Pesquisador::all());
+        $postagens_count     = count(Blog::all());
+
+        return view('dashboard.painel_geral', compact('postagens_count', 'pesquisadores_count', 'doencas_count'));
     }
 
     // CRIE UM NOVO USUÁRIO ADMIN
     public function master()
     {
         $admin = new Admin;
-        $admin->nome     = 'Algorito Hub';
-        $admin->email    = 'admin@algoritohub.com.br';
+        $admin->nome     = 'Administrador';
+        $admin->email    = 'admin@ufrn.br';
         $admin->nivel    = 3;
-        $admin->senha    = Hash::make('algorito2023');
+        $admin->senha    = Hash::make('admin@laire2023');
         $admin->checkin  = '00/00/0000';
         $admin->checkout = '00/00/0000';
         $admin->save();

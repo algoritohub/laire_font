@@ -32,14 +32,14 @@
                 {{--  --}}
                 <div class="w-[40%] float-left inline-block">
                     {{--  --}}
-                    <p class="text-[#080E45] font-bold text-[18px]">Publicações</p>
+                    <p class="text-[#080E45] font-bold text-[18px]">Doenças</p>
                     {{--  --}}
                     <p class="text-bold text-[13px] text-[#080E45]">Gerais</p>
                 </div>
                 {{--  --}}
                 <div class="w-[60%] float-left inline-block">
                     {{--  --}}
-                    <p class="text-[30px] float-right font-bold text-[#080E45]">0</p>
+                    <p class="text-[30px] float-right font-bold text-[#080E45]">{{ $doencas_count }}</p>
                 </div>
                 {{--  --}}
                 <button id="bt2_ds" class="w-[100%] text-[11px] h-[30px] bg-[#080E45] text-[#5CD1FF] mt-[40px] rounded-[100px]">Publicações por página</button>
@@ -59,7 +59,7 @@
                 {{--  --}}
                 <div class="w-[60%] float-left inline-block">
                     {{--  --}}
-                    <p class="text-[30px] float-right font-bold text-[#080E45]">0</p>
+                    <p class="text-[30px] float-right font-bold text-[#080E45]">{{ $postagens_count }}</p>
                 </div>
                 {{--  --}}
                 <button id="bt3_ds" class="w-[100%] text-[11px] h-[30px] bg-[#080E45] text-[#5CD1FF] mt-[40px] rounded-[100px]">Publicar algo novo</button>
@@ -79,7 +79,7 @@
                 {{--  --}}
                 <div class="w-[60%] float-left inline-block">
                     {{--  --}}
-                    <p class="text-[30px] float-right font-bold text-[#080E45]">0</p>
+                    <p class="text-[30px] float-right font-bold text-[#080E45]">{{ $pesquisadores_count }}</p>
                 </div>
                 {{--  --}}
                 <button id="bt4_ds" class="w-[100%] text-[11px] h-[30px] bg-[#080E45] text-[#5CD1FF] mt-[40px] rounded-[100px]">Pesquisadores por projeto</button>
@@ -109,25 +109,6 @@
                     </table>
                     {{--  --}}
                     <hr class="my-[5px]">
-                    {{--  --}}
-                    <table class="w-[100%]">
-                        {{--  --}}
-                        <tr>
-                            <td class="w-[50%]"><p class="text-[13px]">exemplo@gmail.com</p></td>
-                            <td class="w-[25%]"><p class="text-[13px]">20/04/1991</p></td>
-                            <td class="w-[25%]"><button class="w-[80%] float-right rounded-[8px] text-[11px] h-[25px] bg-[#00FF8C] text-[#080E45]">Ver</button></td>
-                        </tr>
-                    </table>
-                    <hr class="my-[5px]">
-                    {{--  --}}
-                    <table class="w-[100%]">
-                        {{--  --}}
-                        <tr>
-                            <td class="w-[50%]"><p class="text-[13px]">exemplo@gmail.com</p></td>
-                            <td class="w-[25%]"><p class="text-[13px]">20/04/1991</p></td>
-                            <td class="w-[25%]"><button class="w-[80%] float-right rounded-[8px] text-[11px] h-[25px] bg-[#00FF8C] text-[#080E45]">Ver</button></td>
-                        </tr>
-                    </table>
                 </div>
             </div>
         </div>
