@@ -193,7 +193,7 @@ Route::post('/dashboard/painel/add/eventos', [EventoController::class, "AddNewEv
 Route::get('/dashboard/painel/edit/evento/{id}', [EventoController::class, "ShowEditEvento"])->name('edit.modal_evento');
 
 // EDITAR EVENTO
-Route::post('/dashboard/painel/editar/evento/{id}', [EventoController::class, "EditEvento"])->name('editar.evento');
+Route::get('/dashboard/painel/editar/evento/{id}', [EventoController::class, "EditEvento"])->name('editar.evento');
 
 // DELETAR EVENTO
 Route::get('/dashboard/painel/delete/evento/{id}', [EventoController::class, "DeleteEvento"])->name('delete.evento');
@@ -273,5 +273,10 @@ Route::get('/dashboard/new/pesquisa', [AdminController::class, "novaPesquisa"])-
 
 // FECHAR BANNER PWA
 Route::get('/dashboard/closed/banner/pwa', [AdminController::class, "fecharBannerPWA"])->name('banner.pwa');
+
+
+Route::get('/dashboard/pesquisadores/posicao/up/{id}', [AdminController::class, "positionUp"])->name('posicao.up');
+
+Route::get('/dashboard/pesquisadores/posicao/down/{id}', [AdminController::class, "positionDown"])->name('posicao.down');
 
 

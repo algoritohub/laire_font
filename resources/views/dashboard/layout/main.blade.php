@@ -44,7 +44,7 @@
             <ul id="menu_adm" class="mt-[30px]">
                 <li><a href="{{ route('admin.painel_geral') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/home.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Geral</p></button></a></li>
 
-                <li><a href="{{ route('admin.painel_publicacao') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/public.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Laire</p></button></a></li>
+                <li><button disabled class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45] opacity-[0.5]"><img src="/img/public.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">Laire</p></button></li>
 
                 <li><a href="{{ route('admin.respirasaude.pag') }}"><button class="w-[100%] mb-[5px] h-[50px] rounded-[100px] px-[20px] bg-[#080E45]"><img src="/img/public.png" class="w-[20px] float-left"> <p class="text-[#99E2FF] text-[13px] ml-[10px] float-left">RespiraSaúde</p></button></a></li>
 

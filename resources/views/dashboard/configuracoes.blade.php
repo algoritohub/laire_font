@@ -15,7 +15,7 @@
             {{--  --}}
             <p class="font-bold text-[18px] pl-[15px] border-l-[3px] border-l-[#00FF8C]">Alterar acesso</p>
             {{--  --}}
-            <p class="mt-[20px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sint quos mollitia ad commodi ut libero earum reprehenderit. Ea excepturi rem, neque eveniet optio earum ut beatae quasi porro ex!</p>
+            <p class="mt-[20px] text-[12px]">Altere as informações de acesso do seu acesso administrativo, essa operação necessitará de confirmação de senha atual.</p>
         </div>
         {{--  --}}
         <div class="w-[30%] inline-block float-left">
@@ -102,7 +102,7 @@
             {{--  --}}
             <p class="font-bold text-[18px] pl-[15px] border-l-[3px] border-l-[#00FF8C]">Criar novos acessos <button class="px-[10px] ml-[10px] h-[20px] text-[#080E45] bg-[#00FF8C] rounded-[5px] text-[9px]">Master</button></p>
             {{--  --}}
-            <p class="mt-[20px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sint quos mollitia ad commodi ut libero earum reprehenderit. Ea excepturi rem, neque eveniet optio earum ut beatae quasi porro ex!</p>
+            <p class="mt-[20px] text-[12px]">Crie novos usuários administrativos para terem acesso ao dashboard, o novo usuário poderá alterar a senha criada pelo usuário master sempre que precisar.</p>
         </div>
         {{--  --}}
         <div class="w-[30%] inline-block float-left">
@@ -116,7 +116,7 @@
             {{--  --}}
             <p class="font-bold text-[18px] pl-[15px] border-l-[3px] border-l-[#00FF8C]">Gerenciar acessos <button class="px-[10px] ml-[10px] h-[20px] text-[#080E45] bg-[#00FF8C] rounded-[5px] text-[9px]">Master</button></p>
             {{--  --}}
-            <p class="mt-[20px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sint quos mollitia ad commodi ut libero earum reprehenderit. Ea excepturi rem, neque eveniet optio earum ut beatae quasi porro ex!</p>
+            <p class="mt-[20px] text-[12px]">Gerencie os logs de acessos e atualizações do dashboard, acompanhe os logs de entra e saída dos usuários administrativos, realize bloqueio de acesso e exclusão de usuários administrativos.</p>
         </div>
         {{--  --}}
         <div class="w-[30%] inline-block float-left">

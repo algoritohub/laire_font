@@ -299,7 +299,7 @@
     <div id="mini-btn-app" class="w-[40px] h-[40px] rounded-[15px] cursor-pointer como_instalar" style="background-image: url(/img/unnamed.webp); background-size: cover;">
         <div style="display: none;" id="texto_app" class="absolute w-[150px] ml-[-160px] bg-[#212121] rounded-[10px] text-[12px] py-[10px] font-bold text-[#ffffff]">Instalar no celular</div>
     </div>
-    <div id="mini-btn-arlindo" class="w-[40px] h-[40px] rounded-[15px] bg-[orange] mt-[20px] cursor-pointer video_arlindo">
+    <div id="mini-btn-arlindo" class="w-[40px] h-[40px] rounded-[15px] mt-[20px] cursor-pointer video_arlindo" style="background-image: url(/img/mini-mascote.png); background-size: cover;">
         <div style="display: none;" id="texto_arlindo" class="absolute w-[150px] ml-[-160px] bg-[#212121] rounded-[10px] text-[12px] py-[10px] font-bold text-[#ffffff]">Conheça o Arlindo</div>
     </div>
 </div>

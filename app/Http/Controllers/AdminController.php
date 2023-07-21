@@ -53,14 +53,17 @@ class AdminController extends Controller
     // CRIE UM NOVO USUÁRIO ADMIN
     public function geral()
     {
-        // if(session()->has('admin')){
-        //     return view('dashboard.painel_geral');
-        // }
-        // else{
-        //     return redirect()->route('dashboard');
-        // }
+        if(session()->has('admin')){
 
-        return view('dashboard.painel_geral');
+            $doencas_count       = count(Doenca::all());
+            $pesquisadores_count = count(Pesquisador::all());
+            $postagens_count     = count(Blog::all());
+
+            return view('dashboard.painel_geral', compact('postagens_count', 'pesquisadores_count', 'doencas_count'));
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
     }
 
     // CRIE UM NOVO USUÁRIO ADMIN
@@ -96,7 +99,7 @@ class AdminController extends Controller
     {
         if(session()->has('admin')){
 
-            $pesquisadores = DB::select("SELECT * FROM pesquisadors ORDER BY id DESC");
+            $pesquisadores = Pesquisador::orderBy('posicao', 'ASC')->get();
 
             return view('dashboard.pesquisadores', compact('pesquisadores'));
         }
@@ -230,6 +233,16 @@ class AdminController extends Controller
         $pesquisa->save();
 
         echo 'Pesquisa adicionado!';
+    }
+
+    public function positionUp()
+    {
+        
+    }
+
+    public function positionDown()
+    {
+
     }
 
     public function fecharBannerPWA()

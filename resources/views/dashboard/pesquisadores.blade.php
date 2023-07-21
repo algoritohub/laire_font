@@ -32,9 +32,10 @@
                 <table class="w-[100%]">
                     <tr>
                         <td class="w-[6%]"><p class="text-[#ffffff] text-[12px] font-bold">ID</p></td>
-                        <td class="w-[34%]"><p class="text-[#ffffff] text-[12px] font-bold">Nome</p></td>
+                        <td class="w-[25%]"><p class="text-[#ffffff] text-[12px] font-bold">Nome</p></td>
                         <td class="w-[20%]"><p class="text-[#ffffff] text-[12px] font-bold">Categoria</p></td>
-                        <td class="w-[20%]"><p class="text-[#ffffff] text-[12px] font-bold">Referência</p></td>
+                        <td class="w-[16%]"><p class="text-[#ffffff] text-[12px] font-bold">Referência</p></td>
+                        <td class="w-[13%]"><p class="text-[#ffffff] text-[12px] font-bold"></p></td>
                         <td class="w-[20%]"><p class="text-[#ffffff] text-[12px] font-bold"></td>
                     </tr>
                 </table>
@@ -48,8 +49,8 @@
             <div class="w-[100%] inline-block px-[40px] py-[10px] rounded-[100px]">
                 <table class="w-[100%]">
                     <tr>
-                        <td class="w-[6%]"><p class="text-[#212121] text-[12px]">{{ $pesquisador->id }}</p></td>
-                        <td class="w-[34%]"><p class="text-[#212121] text-[12px]">{{ $pesquisador->nome }}</p></td>
+                        <td class="w-[6%]"><p class="text-[#212121] text-[12px]">{{ $pesquisador->posicao }}</p></td>
+                        <td class="w-[25%]"><p class="text-[#212121] text-[12px]">{{ $pesquisador->nome }}</p></td>
                         <td class="w-[20%]">
                             @if ($pesquisador->categoria == "professor")
                             <p class="text-[#212121] text-[12px]">Professor</p>
@@ -63,7 +64,8 @@
                             <p class="text-[#212121] text-[12px]">Aluno de doutorado</p>
                             @endif
                         </td>
-                        <td class="w-[20%]"><p class="text-[#212121] text-[12px]">{{ $pesquisador->referencia }}</p></td>
+                        <td class="w-[16%]"><p class="text-[#212121] text-[12px]">{{ $pesquisador->referencia }}</p></td>
+                        <td class="w-[13%]"><p class="text-[#212121] text-[12px]"><button class="mx-[5px] px-[5px] border-[1px] border-[#cdcdcd] h-[30px]">up</button> <button class="mx-[5px] px-[5px] border-[1px] border-[#cdcdcd] h-[30px]">down</button></p></td>
                         <td class="w-[20%]"><p class="text-[#212121] text-[12px]">
                             <ul class="float-right">
                                 <li class="inline-block ml-[10px]"><a href="{{ route('admin.edit_pesquisadores', ['id' => $pesquisador->id]) }}"><button class="bg-[orange] rounded-[100px] text-[#ffffff] px-[20px] h-[30px] text-[10px] font-bold">Editar</button></a></li>

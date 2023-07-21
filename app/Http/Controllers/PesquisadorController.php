@@ -23,6 +23,10 @@ class PesquisadorController extends Controller
         $pesquisador->descricao   = $request->descricao;
         $pesquisador->imagem      = "person.png";
 
+        $all_pesquisadoes         = Pesquisador::orderBy('posicao', 'DESC')->first();
+        $posicao_atual            = $all_pesquisadoes->posicao + 1;
+        $pesquisador->posicao     = $posicao_atual;
+
         if ($request->hasFile('imagem') && $request->file('imagem')->isValid()) {
 
             $requestImage = $request->imagem;

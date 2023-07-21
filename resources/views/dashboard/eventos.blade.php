@@ -167,7 +167,7 @@
                 {{--  --}}
                 <div class="float-left w-[50%]">
                     {{--  --}}
-                    <a href=""><p class="float-right text-[16px] cursor-pointer">✕</p></a>
+                    <a href="{{ route('admin.eventos.pag') }}"><p class="float-right text-[16px] cursor-pointer">✕</p></a>
                 </div>
             </div>
             {{--  --}}
