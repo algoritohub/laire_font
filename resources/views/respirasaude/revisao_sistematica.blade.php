@@ -38,7 +38,7 @@
                     {{--  --}}
                     <div id="" style="display: none;" class="inline-block float-right mt-[20px]">
                         {{--  --}}
-                        <audio autoplay="autoplay" controls="controls">
+                        <audio controls="controls">
                             <source src="sua_musica.mp3" type="audio/mp3" />
                             seu navegador não suporta HTML5
                         </audio>

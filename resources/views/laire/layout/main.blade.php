@@ -142,14 +142,18 @@
                         <div id="rout" class="inline-block float-right">
                             {{--  --}}
                             <ul id="barca" class="float-left mt-[30px]">
-                                <li class="inline-block ml-[30px]"><a href="#laboratorio" class="text-[#ffffff] text-[14px] font-bold"><strong>Laboratório</strong></a></li>
-                                <li class="inline-block ml-[30px]"><a href="#pesquisadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Equipe</strong></a></li>
-                                <li class="inline-block ml-[30px]"><a href="#patrocinadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Parceiros</strong></a></li>
-                                <li class="inline-block ml-[30px]"><a href="#pesquisas." class="text-[#ffffff] text-[14px] font-bold"><strong>Pesquisas</strong>
-                                <li class="inline-block ml-[30px]"><a href="#bk-" class="text-[#ffffff] text-[14px] font-bold"><strong>Eventos</strong></a></li>
+                                <!--<li class="inline-block ml-[30px]"><a href="#laboratorio" class="text-[#ffffff] text-[14px] font-bold"><strong>Laboratório</strong></a></li>
+                                <li class="inline-block ml-[30px]"><a href="#pesquisas." class="text-[#ffffff] text-[14px] font-bold"><strong>Pesquisas</strong>--><!-- por não ter conteúdo até o momento, foram inutilizados os botões-->
                                 <li class="inline-block ml-[30px]"><a href="#noticias_slide" class="text-[#ffffff] text-[14px] font-bold"><strong>Notícias</strong></a></li>
-                                <li class="inline-block ml-[30px]"><a href="#contatos." class="text-[#ffffff] text-[14px] font-bold"><strong>Contatos</strong></a></li>
+                                <li class="inline-block ml-[30px]"><a href="#sobre" class="text-[#ffffff] text-[14px] font-bold"><strong>Sobre</strong></a></li>
+                                <li class="inline-block ml-[30px]"><a href="#pesquisadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Equipe</strong></a></li>
+                                <li class="inline-block ml-[30px]"><a href="#bk-" class="text-[#ffffff] text-[14px] font-bold"><strong>Eventos</strong></a></li>
                                 <li class="inline-block ml-[30px]"><a href="#botao_youtube-" class="text-[#ffffff] text-[14px] font-bold"><strong>Redes Sociais</strong></a></li>
+                                <li class="inline-block ml-[30px]"><a href="#patrocinadores" class="text-[#ffffff] text-[14px] font-bold"><strong>Parceiros</strong></a></li>
+                                <li class="inline-block ml-[30px]"><a href="#contatos." class="text-[#ffffff] text-[14px] font-bold"><strong>Contatos</strong></a></li>
+
+
+
                             </ul>
                         </div>
                     </div>
@@ -211,7 +215,7 @@
                     <p class="font-bold text-[#ffffff] text-[16px]">Endereço</p>
                     {{--  --}}
                     <ul class="mt-[20px]">
-                        <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Departamento de Fisioterapia <br> Da UFRN</p></li>
+                        <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Departamento <br> de Fisioterapia <br> Da UFRN</p></li> <br>
                         <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Natal/Rn</p></li>
                         <li class="mb-[5px]"><p class="text-[#ffffff] text-[16px]">Brasil</p></li>
                     </ul>
