@@ -66,7 +66,7 @@
         <label for="radio3" class="manual-btn"></label>
     </div>
 </div>
-{{--  --}}
+{{--  --}}<div id="sobre" ></div>
 <div class="w-[100%] inline-block">
     {{--  --}}
     <center>
@@ -76,6 +76,7 @@
 
 {{-- NOVO BLOCO LAIRE --}}
 <section class="w-[100%] mt-[50px] inline-block">
+
     {{--  --}}
     <div class="w-[100%] inline-block">
         {{--  --}}
@@ -94,8 +95,11 @@
                 <div id="box_libra" style="display: none;" class="w-[100%] inline-block h-[400px] mt-[10px] bg-[orange]"></div>
                 {{--  --}}
                 <div id="box_audio" class="w-[100%] inline-block h-[400px] mt-[10px] bg-[purple]"></div>
+
             </div>
+
         </div>
+
         {{--  --}}
         <div id="bloco_laire_b" class="w-[50%] inline-block float-left h-[auto] px-[80px]">
             {{--  --}}

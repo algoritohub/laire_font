@@ -26,7 +26,7 @@
                         @if (isset($doenca[0]->audio) AND !empty($doenca[0]->audio))
                         <li class="mr-[2px] inline-block"><img id="audios_home" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
                         @endif
-                        
+
                         @if (isset($doenca[0]->video) AND !empty($doenca[0]->video))
                         <li class="mr-[2px] inline-block"><img id="libras_home" class="w-[40px] cursor-pointer" title="Ver libras" src="/img/libra.png"></li>
                         @endif
@@ -48,7 +48,7 @@
                     @if (isset($doenca[0]->audio) AND !empty($doenca[0]->audio))
                     <div id="audio_libra_home" style="display: none;" class="inline-block float-left mt-[20px]">
                         {{--  --}}
-                        <audio autoplay="autoplay" controls="controls">
+                        <audio controls="controls">
                             <source src="/audios/doencas/{{ $doenca[0]->audio }}" type="audio/mp3" />
                             seu navegador não suporta HTML5
                         </audio>
