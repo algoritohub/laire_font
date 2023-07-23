@@ -131,12 +131,7 @@
     {{-- SUBMENU --}}
     <header id="sub_cronicas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            {{--  --}}
-            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
-                <p id="fechar-cronicas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
-            </div>
-            {{--  --}}
-            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px]">
+            <ul id="ul-cronicas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_cronicas as $doenca_cronica)
                     <li id="mobile-list-cronicas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_cronica', ['id' => $doenca_cronica->id]) }}"><button class="btmenu">{{ $doenca_cronica->nome }}</button></a></li>
                 @endforeach
@@ -146,12 +141,7 @@
     {{-- SUBMENU --}}
     <header id="sub_agudas" class="w-[100%] mt-[105px] fixed inline-block" style="display: none; background: #080e45; z-index: 10;">
         <div class="w-[90%] mx-[5%] h-[50px]">
-            {{--  --}}
-            <div id="fechar-close" class="w-[100%] py-[20px] inline-block">
-                <p id="fechar-agudas" class="float-right text-[12px] shadow-lg text-[#ffffff] cursor-pointer">[ fechar ]</p>
-            </div>
-            {{--  --}}
-            <ul id="ul-agudas" class="mt-[12px] mr-[-10px]">
+            <ul id="ul-agudas" class="mt-[12px] mr-[-10px] float-right">
                 @foreach ($doencas_agudas as $doencas_agudas)
                     <li id="mobile-list-agudas" class="inline-block ml-[30px]"><a class="text-[#ffffff] text-[12px]" href="{{ route('doenca_aguda', ['id' => $doencas_agudas->id]) }}"><button class="btmenu">{{ $doencas_agudas->nome }}</button></a></li>
                 @endforeach

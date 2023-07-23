@@ -496,8 +496,81 @@
         </center>
     </div>
 
-    {{-- FDP ARLINDO --}}
-    {{-- <img src="/img/anime.png" id="ftp" style="width: 200px;"> --}}
+    {{-- MODAL VÍDEO ARLINDO --}}
+    <div class="modal-video-arlindo">
+        {{--  --}}
+        <div id="arlindo-modal-video" class="w-[1000px] mt-[10%] shadow-lg bg-[#ffffff] h-[520px] p-[50px] rounded-[20px] mx-auto">
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[70%] inline-block float-left">
+                    {{--  --}}
+                    <p class="uppercase text-[18px] font-bold">Quem é o arlindo?</p>
+                </div>
+                {{--  --}}
+                <div class="w-[30%] inline-block float-left">
+                    {{--  --}}
+                    <p id="fechar-banner-mascote" class="float-right font-[20px] cursor-pointer">✕</p>
+                </div>
+            </div>
+            {{--  --}}
+            <div class="w-[100%] inline-block">
+                <div class="w-[100%] inline-block">
+                    <div class="w-[60%] inline-block float-left">
+                        <video controls>
+                            <source src="/img/Apreentação de Arlindo.mp4" type="video/mp4">
+                        </video>
+                        {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                        {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                        {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                        {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                    </div>
+                    {{--  --}}
+                    <div class="w-[40%] inline-block float-left">
+                        {{-- INCLUIR VÍDEO DO ARLINDO AQUI --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- MODAL PWA --}}
+    <div class="modal_pwa">
+        {{--  --}}
+        <div class="w-[300px] mx-auto mt-[8%] rounded-[20px] bg-[#ffffff] p-[30px] shadow-lg">
+            <img src="/img/frame.png" alt="qr">
+
+            <div class="w-[100%] inline-block">
+                {{--  --}}
+                <div class="w-[49%] mr-[1%] inline-block float-left">
+                    <button id="bt-android" class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">Android</button>
+                </div>
+                {{--  --}}
+                <div class="w-[49%] ml-[1%] inline-block float-left">
+                    <button id="bt-ios" class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">IOS</button>
+                </div>
+            </div>
+            {{--  --}}
+            <div id="text-android" class="mt-[20px]">
+                <p class="text-[13px]">Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
+            </div>
+            {{--  --}}
+            <div id="text-ios" class="mt-[20px]" style="display: none;">
+                <p class="text-[13px]">No IOS Aponte a câmera do seu celular pro QR code e acesse a versão mobile da nossa página, em seguida aguarde o banner de instalação da aplicação em seu aparelho, clique em instalar e aguarde o ícone do respira saúde aparecer na sua lista de Apps. Pronto!</p>
+            </div>
+            <button id="fechar_como_instalar" class="w-[100%] mt-[10px] h-[40px] text-[#ffffff] bg-[#212121] rounded-[5px] border-[1px] border-[#cdcdcd] text-[13px]">Ok, entendi</button>
+        </div>
+    </div>
+
+    {{-- MINI_BANNER --}}
+    <div id="ftp" class="rounded-[10px]">
+        <div id="mini-btn-app" class="w-[40px] h-[40px] rounded-[15px] cursor-pointer como_instalar" style="background-image: url(/img/unnamed.webp); background-size: cover;">
+            <div style="display: none;" id="texto_app" class="absolute w-[150px] ml-[-160px] bg-[#212121] rounded-[10px] text-[12px] py-[10px] font-bold text-[#ffffff]">Instalar no celular</div>
+        </div>
+        <div id="mini-btn-arlindo" class="w-[40px] h-[40px] rounded-[15px] mt-[20px] cursor-pointer video_arlindo" style="background-image: url(/img/mini-mascote.png); background-size: cover;">
+            <div style="display: none;" id="texto_arlindo" class="absolute w-[150px] ml-[-160px] bg-[#212121] rounded-[10px] text-[12px] py-[10px] font-bold text-[#ffffff]">Conheça o Arlindo</div>
+        </div>
+    </div>
 
 </section>
 
