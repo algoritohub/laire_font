@@ -235,14 +235,70 @@ class AdminController extends Controller
         echo 'Pesquisa adicionado!';
     }
 
-    public function positionUp()
+    public function positionUp($id)
     {
-        
+        $titular     = Pesquisador::find($id);
+        $position    = $titular->posicao; //
+
+        $novaPosicao = 0;
+        $count_case  = 0;
+
+        $novaPosicao = $position - 1;
+
+        while ($count_case == 0) {
+
+            $substituto = Pesquisador::where('posicao', $novaPosicao)->first();
+
+            if($substituto){
+
+                $update_sbtt = Pesquisador::find($substituto->id);
+                $update_sbtt->update([
+                    'posicao' => $position,
+                ]);
+
+                $titular->update([
+                    'posicao' => $novaPosicao,
+                ]);
+
+                return redirect()->back();
+            }
+
+            $novaPosicao = $novaPosicao - 1;
+            $count_case  = count($substituto);
+        }
     }
 
-    public function positionDown()
+    public function positionDown($id)
     {
+        $titular     = Pesquisador::find($id);
+        $position    = $titular->posicao; // 6
 
+        $novaPosicao = 0;
+        $count_case  = 0;
+
+        $novaPosicao = $position + 1;
+
+        while ($count_case == 0) {
+
+            $substituto  = Pesquisador::where('posicao', $novaPosicao)->first(); // 7
+
+            if($substituto){
+
+                $update_sbtt = Pesquisador::find($substituto->id);
+                $update_sbtt->update([
+                    'posicao' => $position,
+                ]);
+
+                $titular->update([
+                    'posicao' => $novaPosicao,
+                ]);
+
+                return redirect()->back();
+            }
+
+            $novaPosicao = $novaPosicao + 1;
+            $count_case  = count($substituto);
+        }
     }
 
     public function fecharBannerPWA()

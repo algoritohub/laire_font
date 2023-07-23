@@ -2694,6 +2694,7 @@ button#bt2-1:hover{
 
 #mixedSlider {
     position: relative;
+    padding: 13px 0px;
     z-index: 20;
 }
 
@@ -2850,9 +2851,11 @@ li.sub{
         font-family: 'Montserrat', sans-serif;
     }
     #mixedSlider{
-        padding: 13px 0px;
         position: relative;
         z-index: 20;
+    }
+    .xvv{
+        padding: 6px 0px;
     }
     #header-left{
         width: 20%;
@@ -3115,6 +3118,9 @@ li.sub{
         width: 100%;
         padding: 20px 0px;
         visibility: visible;
+    }
+    #shadow{
+        padding: 0px 0px;
     }
 }
 /* TABLETS */
@@ -3652,5 +3658,5 @@ li.sub{
         visibility: visible;
     }
 
-    
+
 }

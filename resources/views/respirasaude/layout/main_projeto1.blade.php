@@ -54,7 +54,7 @@
                     <!-- LOGO DESK -->
                     <a href="{{ route('home.respira_saude') }}">
                         <img class="float-left mt-[20px] w-[75px] mr-[10px]" src="/img/rs_logo.png" alt="RespiraSaúde"/>
-                        <p id="nombre" class="text-[20px] mt-[35px] text-[#ffffff]"><b>Respira</b>Saúde</p>
+                        <p id="nombre" class="text-[20px] mt-[35px] text-[#ffffff]"><b>RespiraSaúde</b></p>
                     </a>
                 </div>
                 <div id="header-right" class="w-[80%] h-[100px] float-left inline-block">
@@ -92,7 +92,7 @@
                         <!-- MENU -->
                         <div class="w-[100%] float-left h-[50px] mt-[6px] inline-block bg-[#00FF8C]">
                             <!-- MENU PRIME -->
-                            <div id="shadow" style="padding: 13px 0px;" class="w-[100%] inline-block float-left">
+                            <div id="shadow" class="w-[100%] inline-block float-left">
                                 <!-- LISTEM -->
                                 <nav>
                                     <ul class="w-[100%]">

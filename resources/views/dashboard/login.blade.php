@@ -77,25 +77,25 @@
                                 {{--  --}}
                                 <tr>
                                     <td>
-                                        <p class="">E-mail</p>
+                                        <p class="text-[12px]">E-mail</p>
                                     </td>
                                 </tr>
                                 {{--  --}}
                                 <tr>
                                     <td>
-                                        <input class="w-[100%] pl-[10px] border-[2px] border-[#00FF8C] mt-[5px] mb-[5px] h-[40px] rounded-[6px]" type="text" name="email">
+                                        <input class="w-[100%] pl-[10px] text-[12px] border-[2px] border-[#00FF8C] mt-[5px] mb-[5px] h-[40px] rounded-[6px]" type="text" name="email">
                                     </td>
                                 </tr>
                                 {{--  --}}
                                 <tr>
                                     <td>
-                                        <p class="">Senha</p>
+                                        <p class="text-[12px]">Senha</p>
                                     </td>
                                 </tr>
                                 {{--  --}}
                                 <tr>
                                     <td>
-                                        <input class="w-[100%] pl-[10px] border-[2px] border-[#00FF8C] mt-[5px] mb-[10px] h-[40px] rounded-[6px]" type="password" name="senha">
+                                        <input class="w-[100%] pl-[10px] text-[12px] border-[2px] border-[#00FF8C] mt-[5px] mb-[10px] h-[40px] rounded-[6px]" type="password" name="senha">
                                     </td>
                                 </tr>
                                 {{--  --}}
@@ -107,7 +107,7 @@
                                 {{--  --}}
                                 <tr>
                                     <td>
-                                        <button class="w-[100%] h-[40px] mt-[10px] bg-[#00FF8C] font-bold text-[#080E45] rounded-[6px]">Entrar</button>
+                                        <button class="w-[100%] h-[40px] mt-[10px] bg-[#00FF8C] text-[14px] font-bold text-[#080E45] rounded-[6px]">Entrar</button>
                                     </td>
                                 </tr>
                             </table>
