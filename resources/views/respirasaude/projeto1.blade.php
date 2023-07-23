@@ -427,6 +427,34 @@
                     </div>
                 </div>
             </div>
+
+            {{--  --}}
+            <div style="display: none;" class="banner_produtos3">
+                {{--  --}}
+                <div style="background: url(/img/fundo_ARlindo.png); background-size: 100%;" class="w-[1000px] mx-auto mt-[10%] p-[40px] h-[500px] rounded-[20px] shadow-lg bg-[#ffffff]">
+                    {{--  --}}
+                    <div class="w-[100%] inline-block">
+                        {{--  --}}
+                        <div class="w-[70%] inline-block float-left">
+                            {{--  --}}
+                            <p class="text-[#ffffff] uppercase font-bold">Resumo Sistemático</p>
+                        </div>
+                        {{--  --}}
+                        <div class="w-[30%] inline-block float-left">
+                            {{--  --}}
+                            <p id="fechar_produto3" class="float-right text-[#ffffff] cursor-pointer">✕</p>
+                        </div>
+                    </div>
+                    {{--  --}}
+                     {{--  --}}
+                     <div class="w-[100%] mt-[30px] inline-block">
+                        {{--  --}}
+                        <center>
+                            <a href="/downloads/ResumoExecutivo.pdf" target="blank_"><button class="w-[500px] h-[350px] rounded-[100px]  text-[12px] bg-[] font-bold text-[#080E45]"><video src="/img/Videocast Versao Final Mesclado Menor780p - Libras.mp4" controls></video> </button></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
             {{--  --}}
             <div class="modal_resumo">
                 {{--  --}}

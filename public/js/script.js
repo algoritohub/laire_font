@@ -217,8 +217,6 @@ $(document).ready(function(){
     });
 });
 
-
-
 // FIBROSE
 $(document).ready(function(){
     $(".fibrose").mouseover(function(event){
@@ -236,7 +234,6 @@ $(document).ready(function(){
         $(".balao").fadeOut();
     });
 });
-
 
 // FIBROSE PULMONAR
 $(document).ready(function(){
@@ -788,6 +785,23 @@ $(document).ready(function(){
     $("#podcst_produto").click(function(event){
         event.preventDefault();
         $(".banner_produtos1").fadeIn();
+    });
+});
+
+
+
+//
+$(document).ready(function(){
+    $("#video_produto").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos3").fadeIn();
+    });
+});
+
+$(document).ready(function(){
+    $("#fechar_produto3").click(function(event){
+        event.preventDefault();
+        $(".banner_produtos3").fadeOut();
     });
 });
 
