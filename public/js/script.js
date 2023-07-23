@@ -181,7 +181,7 @@ $(document).ready(function(){
 
 // DPOC
 $(document).ready(function(){
-    $("#DPOC").mouseover(function(event){
+    $(".DPOC").mouseover(function(event){
         event.preventDefault();
         $(".mascote").fadeIn();
         $(".balao").fadeIn();
@@ -190,7 +190,7 @@ $(document).ready(function(){
 
 // DPOC
 $(document).ready(function(){
-    $("#DPOC").mouseout(function(event){
+    $(".DPOC").mouseout(function(event){
         event.preventDefault();
         $(".mascote").fadeOut();
         $(".balao").fadeOut();
@@ -199,10 +199,9 @@ $(document).ready(function(){
 
 
 
-
 // ASMA
 $(document).ready(function(){
-    $("#asma").mouseover(function(event){
+    $(".asma1").mouseover(function(event){
         event.preventDefault();
         $(".mascote").fadeIn();
         $(".balao").fadeIn();
@@ -211,7 +210,7 @@ $(document).ready(function(){
 
 // ASMA
 $(document).ready(function(){
-    $("#asma").mouseout(function(event){
+    $(".asma1").mouseout(function(event){
         event.preventDefault();
         $(".mascote").fadeOut();
         $(".balao").fadeOut();
@@ -222,7 +221,7 @@ $(document).ready(function(){
 
 // FIBROSE
 $(document).ready(function(){
-    $("#fibrose").mouseover(function(event){
+    $(".fibrose").mouseover(function(event){
         event.preventDefault();
         $(".mascote").fadeIn();
         $(".balao").fadeIn();
@@ -231,7 +230,7 @@ $(document).ready(function(){
 
 // FIBROSE
 $(document).ready(function(){
-    $("#fibrose").mouseout(function(event){
+    $(".fibrose").mouseout(function(event){
         event.preventDefault();
         $(".mascote").fadeOut();
         $(".balao").fadeOut();

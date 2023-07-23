@@ -93,7 +93,7 @@
             <div id="container_inner_bloco1" class="w-[100%] inline-block">
                 {{--  --}}
                 <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Vamos entender a importância da pesquisa</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href="{{ route('doenca_cronica', ['id' => 3]) }}"><b id="DPOC" class="text-[#2B98AD]">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href="{{ route('doenca_cronica', ['id' => 1]) }}"><b id="asma" class="text-[#2B98AD]">asma</b></a>, a <a href="{{ route('doenca_cronica', ['id' => 2]) }}"><b id="fibrose" class="text-[#2B98AD]">fibrose cística</b></a>, a <a href="{{ route('doenca_cronica', ['id' => 4]) }}"><b id="bronquiectasia" class="text-[#2B98AD]">bronquiectasia</b></a> e a <a href="{{ route('doenca_cronica', ['id' => 5]) }}"><b id="pulmonar" class="text-[#2B98AD]">fibrose pulmonar</b></a>.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Mundialmente as doenças respiratórias crônicas têm uma alta taxa de internação hospitalar e mortalidade. Alguns exemplos importantes dessas doenças são a <a href="{{ route('doenca_cronica', ['id' => 3]) }}"><b class="text-[#2B98AD] DPOC">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a>, a <a href="{{ route('doenca_cronica', ['id' => 1]) }}"><b class="text-[#2B98AD] asma1">asma</b></a>, a <a href="{{ route('doenca_cronica', ['id' => 2]) }}"><b class="text-[#2B98AD]">fibrose cística</b></a>, a <a href="{{ route('doenca_cronica', ['id' => 4]) }}"><b id="bronquiectasia" class="text-[#2B98AD]">bronquiectasia</b></a> e a <a href="{{ route('doenca_cronica', ['id' => 5]) }}"><b id="pulmonar" class="text-[#2B98AD]">fibrose pulmonar</b></a>.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Aqui no <b>RespiraSaúde</b> vamos falar, de uma forma muito simples, sobre a pesquisa que foi realizada pelo nosso time de pesquisadores em parceria com o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e Ministério da Saúde (MS).</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Nesta pesquisa nós realizamos uma <a href="{{ route('pag_revisao_sistematica') }}"><b id="revisao" class="text-[#2B98AD] cursor-pointer">revisão sistemática</b></a> com o objetivo de comparar os efeitos da assistência domiciliar com a assistência hospitalar para pessoas com doenças respiratórias crônicas.</p>
                 {{-- <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"><b>Isso mesmo, nós comparamos os resultados do tratamento recebido em casa com o recebido no hospital!</b></p> --}}
@@ -182,7 +182,7 @@
             <div id="container_inner_bloco2" class="w-[100%] inline-block">
                 {{--  --}}
                 <p id="titulo_bloco1" class="text-[25px] font-bold mb-[40px] mt-[100px] pl-[20px] border-l-[3px] border-l-[#00FF8C]">Resultados</p>
-                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">A revisão incluiu <b>13 estudos </b>presentando 1.056 pacientes com <b class="text-[#2B98AD]">asma</b>, <b class="text-[#2B98AD]">doença pulmonar obstrutiva crônica (DPOC)</b> e <b class="text-[#2B98AD]">fibrose cística</b>.</p>
+                <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">A revisão incluiu <b>13 estudos </b>presentando 1.056 pacientes com <a href="{{ route('doenca_cronica', ['id' => 1]) }}"><b class="text-[#2B98AD] asma1">asma</b></a>, <a href="{{ route('doenca_cronica', ['id' => 3]) }}"><b class="text-[#2B98AD] DPOC">Doença Pulmonar Obstrutiva Crônica (DPOC)</b></a> e <a href="{{ route('doenca_cronica', ['id' => 2]) }}"><b class="text-[#2B98AD]">fibrose cística</b></a>.</p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]"></b> As intervenções de atenção domiciliar avaliadas nos estudos foram: <b>consulta domiciliar</b>,<b> tratamento domiciliar de exacerbações, alta precoce, hospital em casa, antibioticoterapia domiciliar e programa de reabilitação domiciliar.</b></p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Não encontramos evidências suficientes para recomendar a atenção domiciliar para adultos com doenças respiratórias crônicas. </p>
                 <p id="text_projeto3" class="mb-[20px] text-justify text-[{{ $numb_font }}px]">Entretanto, foi possível observar que os estudos, na sua maioria, <b>observaram que os pacientes tratados com atenção domiciliar tiveram menor taxa de readmissão no hospital, menos eventos adversos, menor mortalidade  e melhor estado funcional.</b></p>
@@ -450,7 +450,7 @@
         </section>
 
 
-        
+
         <!--patrocinadores-->
         <section class="w-[100%] h-[650px]  inline-block bg-[#ffffff]">
         {{--  --}}

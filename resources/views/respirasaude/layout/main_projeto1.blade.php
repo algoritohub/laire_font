@@ -293,7 +293,7 @@
 
     {{-- FDP ARLINDO --}}
     <div style="display: none;" class="mascote" id="ftp2">
-        <div class="w-[200px] h-[120px] ml-[-50px] mt-[-20px] rounded-[10px] bg-[silver] absolute p-[20px] shadow-lg">
+        <div class="w-[200px] h-[120px] ml-[-50px] mt-[-50px] rounded-[10px] bg-[silver] absolute p-[20px] shadow-lg">
             <center>
                 <ul>
                     <li class="mr-[2px] inline-block"><img id="audios_home" class="w-[39px] cursor-pointer" title="Escute o texto" src="/img/audio.png"></li>
