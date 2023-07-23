@@ -109,10 +109,9 @@
         {{--  --}}
         <p class="text-center font-bold text-[25px]">Eventos</p>
         {{--  --}}
-        @foreach ($eventos as $evento)
-        {{--  --}}
         <div class="w-[100%] mt-[20px] inline-block">
-            <div id="mentos" class="w-[30.3%] mx-[1.5%] inline-block">
+            @foreach ($eventos as $evento)
+            <div id="mentos" class="w-[30.3%] mx-[1.5%] float-left inline-block">
                 <a href="{{ route('admin.eventos.modal', ['id' => $evento->id]) }}">
                     <div class="w-[100%] shadow-lg border-[1px] inline-block h-[200px] rounded-[20px]" style="background-image: url('/img/eventos/{{ $evento->imagem }}'); background-size: cover; background-position: center;"></div>
                 </a>
@@ -122,9 +121,8 @@
                     <p class="mt-[3px]">{{ $evento->subtitulo }}</p>
                 </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
-
         {{-- MODAL EVENTO --}}
         @if (isset($evento_detal) AND !empty($evento_detal))
         {{--  --}}
